@@ -1,0 +1,19 @@
+.header{
+    .employer_dropdown{
+        margin-left: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: $primary;
+        letter-spacing: 2px;
+    }
+    .dropdown-menu{
+        padding: 5px 15px;
+        top: 52px;
+        right: 10px;
+        text-align: end;
+        min-width: 120px;
+        a{
+            text-decoration: none;
+        }
+    }
+}

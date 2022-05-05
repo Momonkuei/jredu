@@ -1,0 +1,2475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所有客戶資料</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="sidebar_box">
+        <div class="sidebar-menu me-2">
+            <a class="brand" href="home.html"><img src="images/logo.png" alt="logo"> 傑人公司管理系統</a>
+            <ul id="menu">
+                <li>
+                    <a href="javascript:void(0);">客戶服務部<i class="fa fa-angle-right pull-right"></i></a>
+                    <ul>
+                        <li><a href="allCustomer.html" target="_blank">客戶資料</a></li>
+                        <li><a href="ui-panels.html" target="_blank">訪談紀錄</a></li>
+                        <li><a href="ui-buttons.html" target="_blank">來電紀錄</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">電子廣告 EDM</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">資工研發部<i class="fa fa-angle-right pull-right"></i></a>
+                    <ul>
+                        <li><a href="allCustomer.html" target="_blank">客戶資料</a></li>
+                        <li><a href="ui-panels.html" target="_blank">訪談紀錄</a></li>
+                        <li><a href="ui-buttons.html" target="_blank">來電紀錄</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">資設部處理中</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">資訊部已回覆</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">行銷事業部<i class="fa fa-angle-right pull-right"></i></a>
+                    <ul>
+                        <li><a href="allCustomer.html" target="_blank">客戶資料</a></li>
+                        <li><a href="ui-panels.html" target="_blank">訪談紀錄</a></li>
+                        <li><a href="ui-buttons.html" target="_blank">來電紀錄</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">匯出甘丹名單</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">匯出金鼎名單</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">電子廣告EDM</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">匯入新客戶名單</a></li>
+                        <li><a href="commodityOn.html" target="_blank">商品上架</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">財務人資部<i class="fa fa-angle-right pull-right"></i></a>
+                    <ul>
+                        <li><a href="allCustomer.html" target="_blank">客戶資料</a></li>
+                        <li><a href="ui-panels.html" target="_blank">人事資料</a></li>
+                        <li><a href="ui-buttons.html" target="_blank">薪資管理</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">訂單作業</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">新訂單（有權限）</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">統計作業</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">收支作業</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">庫存統計</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">加盟商品訂單</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">甘丹數學<i class="fa fa-angle-right pull-right"></i></a>
+                    <ul>
+                        <li><a href="allCustomer.html" target="_blank">客戶資料</a></li>
+                        <li><a href="ui-panels.html" target="_blank">甘丹訂單</a></li>
+                        <li><a href="ui-buttons.html" target="_blank">產品資料</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">進貨作業</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">庫存統計</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">金鼎作文<i class="fa fa-angle-right pull-right"></i></a>
+                    <ul>
+                        <li><a href="allCustomer.html" target="_blank">客戶資料</a></li>
+                        <li><a href="ui-panels.html" target="_blank">金鼎訂單</a></li>
+                        <li><a href="ui-buttons.html" target="_blank">產品資料</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">進貨作業</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">庫存統計</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">總部辦公室<i class="fa fa-angle-right pull-right"></i></a>
+                    <ul>
+                        <li><a href="allCustomer.html" target="_blank">客戶資料</a></li>
+                        <li><a href="ui-panels.html" target="_blank">訪談紀錄</a></li>
+                        <li><a href="ui-buttons.html" target="_blank">來電記錄</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">廠商資料</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">簡訊通數</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">統計作業</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">訂單作業</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">新訂單（有權限）</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">收支作業</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">人事資料</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">權限設定</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">產品資料</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">電子廣告EDM</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">進貨作業</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">庫存統計</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">客戶資料匯入官網</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">郵寄名單</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">工作管理</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">行事曆</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">知識庫</a></li>
+                        <li><a href="ui-slider-progress.html" target="_blank">公告看板</a></li>
+                        <li><a href="commodityOn.html" target="_blank">商品上架</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">系統設定<i class="fa fa-angle-right pull-right"></i></a>
+                    <ul>
+                        <li><a href="allCustomer.html" target="_blank">基本設定</a></li>
+                        <li><a href="ui-panels.html" target="_blank">系統參數</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/#accordion-->
+    <div class="right_content">
+        <div class="container-fluid">
+            <div class="header mb-3 pt-3 d-flex justify-content-between">
+                <div class="tab_label d-flex">
+                    <h3 class="tab_title">客戶資料</h3>
+                    <button class="btn nav-link me-1" onclick="location.href='index.html'">新訂單<span
+                            class="notice">888</span></button>
+                    <button class="btn nav-link me-1" onclick="location.href='index.html'">未處理<span
+                            class="notice">12</span></button>
+                    <button class="btn nav-link me-1" onclick="location.href='index.html'">資訊部已回覆<span
+                            class="notice">1</span></button>
+                    <button class="btn nav-link me-1" onclick="location.href='index.html'">客服處理中<span
+                            class="notice">6</span></button>
+                    <button class="btn nav-link me-1" onclick="location.href='index.html'">待資訊部處理<span
+                            class="notice">6</span></button>
+                    <button class="btn nav-link me-1" onclick="location.href='index.html'">資訊部處理中<span
+                            class="notice">3</span></button>
+                    <button class="btn nav-link me-1" onclick="location.href='index.html'">本日已處理<span
+                            class="notice">1</span></button>
+                    <button class="btn nav-link me-1" onclick="location.href='index.html'">排程處理<span
+                            class="notice">1</span></button>
+                    <button class="btn nav-link me-1" onclick="location.href='index.html'">待提問人處理<span
+                            class="notice">3</span></button>
+                    <button class="btn nav-link me-1" onclick="location.href='index.html'">提問人已回覆<span
+                            class="notice">2</span></button>
+                </div>
+                <div>
+                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="系統公告"><img
+                            src="images/announcement.png"></a>
+                    <a class="dropdown-toggle employer_dropdown" href='#'>林員工</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">登出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="mb-4 btn_box d-flex justify-content-between">
+                <div class="left_btn">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#new_order">建立新訂單</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#view_order">查看客戶訂單</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#create_order">電訪紀錄</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#interview_record">面訪記錄</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#composition">金鼎作文</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#math">甘丹數學</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#software">商品購買資訊</button>
+                </div>
+                <div class="right_btn">
+                    <button type="button" class="btn btn-primary other_btn">其他選項</button>
+                    <div class="border border-primary other_btn_box">
+                        <button type="button" class="btn btn-primary">名條列印</button>
+                        <button type="button" class="btn btn-primary">匯出妙管家名單</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#expired_customer">查詢大掌櫃到期客戶</button>
+                        <button type="button" class="btn btn-primary">匯出軟體到期名單</button>
+                        <button type="button" class="btn btn-primary">匯出大掌櫃名單</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="search_box">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">編號</th>
+                                    <th scope="col">縣市</th>
+                                    <th scope="col">客戶名稱</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">52144</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">48534</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">34145</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">52144</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">48534</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">34145</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">52144</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">48534</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">34145</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">52144</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">48534</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">34145</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">52144</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">48534</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">34145</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">34145</th>
+                                    <td>台中市</td>
+                                    <td><a href="" class="search_link">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-3 switch_box">
+                        <div class="form-check">
+                            <input class="form-check-input switch" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                類別
+                            </label>
+                        </div>
+                        <select class="form-select turn_on" aria-label="Default select">
+                            <option selected>補教大掌櫃客戶</option>
+                            <option value="1">補教大掌櫃客戶2</option>
+                        </select>
+                    </div>
+                    <div class="mt-3 switch_box">
+                        <div class="form-check">
+                            <input class="form-check-input switch2" type="checkbox" value="" id="flexCheckDefault2">
+                            <label class="form-check-label" for="flexCheckDefault2">
+                                縣市
+                            </label>
+                        </div>
+                        <select class="form-select turn_on2" aria-label="Default select">
+                            <option selected>台中市</option>
+                            <option value="1">台北市</option>
+                        </select>
+                    </div>
+                    <div class="mt-3 search_address">地址<input type="text" class="form-control"></div>
+                    <div class="mt-3 search_options">
+                        <input type="search" class="form-control">
+                        <button class="btn btn-primary me-2">搜尋</button>
+                        <!-- Button modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2">選項 </button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <form class="row">
+                        <div class="col-6 mb-2">客戶編號<input type="text" class="form-control"></div>
+                        <div class="col-6 mb-2">客戶簡稱<input type="text" class="form-control"></div>
+                        <div class="col-8 mb-2">客戶名稱<input type="text" class="form-control"></div>
+                        <div class="col-4 mb-2">學區<input type="text" class="form-control"></div>
+                        <div class="col-4 mb-2">郵遞區號<input type="text" class="form-control"></div>
+                        <div class="col-4 mb-2">所屬縣市
+                            <select class="form-select" aria-label="Default select">
+                                <option selected>台中市</option>
+                                <option value="1">台北市</option>
+                            </select>
+                        </div>
+                        <div class="col-4 mb-2">地區
+                            <select class="form-select" aria-label="Default select">
+                                <option selected>西區</option>
+                                <option value="1">中區</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mb-2">門牌號碼<input type="text" class="form-control"></div>
+                        <div class="col-12 mb-2">地址
+                            <div class="map_field">
+                                <input type="text" class="form-control mb-2">
+                                <button type="button" class="btn btn-primary">瀏覽地圖</button>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-2">連絡電話1<input type="text" class="form-control"></div>
+                        <div class="col-4 mb-2">連絡電話2<input type="text" class="form-control"></div>
+                        <div class="col-4 mb-2">傳真<input type="text" class="form-control"></div>
+                        <div class="col-4 mb-2">聯絡人<input type="text" class="form-control"></div>
+                        <div class="col-4 mb-2">職稱<input type="text" class="form-control"></div>
+                        <div class="col-4 mb-2">性別<select class="form-select" aria-label="Default select">
+                                <option selected>男</option>
+                                <option value="1">女</option>
+                            </select>
+                        </div>
+                        <div class="col-6 mb-2">電話<input type="text" class="form-control"></div>
+                        <div class="col-6 mb-2">聯絡人分機<input type="text" class="form-control"></div>
+                        <div class="col-8 mb-2">email
+                            <div class="email_field">
+                                <input type="text" class="form-control">
+                                <button type="button" class="btn btn-primary">發送 Mail</button>
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex align-items-center">
+                            <div class="form-check pt-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    是否為代理商
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-2">網站<input type="text" class="form-control"></div>
+                        <div class="col-6 mb-2">所屬代理商<select class="form-select" aria-label="Default select">
+                                <option selected>育安文理短期補習班</option>
+                                <option value="1">育安文理短期補習班</option>
+                            </select>
+                        </div>
+                        <div class="col-4 mb-2">客戶狀態<select class="form-select" aria-label="Default select">
+                                <option selected>正常經營</option>
+                                <option value="1">正常經營</option>
+                            </select>
+                        </div>
+                        <div class="col-4 mb-2 d-flex align-items-center">
+                            <div class="form-check pt-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2">
+                                <label class="form-check-label" for="flexCheckChecked2">
+                                    不寄送DM
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-2 d-flex align-items-center">
+                            <div class="form-check pt-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
+                                <label class="form-check-label" for="flexCheckChecked3">
+                                    最ㄏㄤ客戶
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-4">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="basic-tab" data-bs-toggle="tab" data-bs-target="#basic"
+                                type="button" role="tab" aria-controls="basic" aria-selected="true">基本資料</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="category-tab" data-bs-toggle="tab" data-bs-target="#category"
+                                type="button" role="tab" aria-controls="category" aria-selected="false">客戶類別</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="situation-tab" data-bs-toggle="tab" data-bs-target="#situation"
+                                type="button" role="tab" aria-controls="situation" aria-selected="false">目前狀況</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="history-tab" data-bs-toggle="tab" data-bs-target="#history"
+                                type="button" role="tab" aria-controls="history" aria-selected="false">瀏覽紀錄</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content pt-2" id="myTabContent">
+                        <div class="tab-pane show active" id="basic" role="tabpanel" aria-labelledby="basic-tab">
+                            <div class="row">
+                                <div class="col-4 mb-2">負責人<input type="text" class="form-control"></div>
+                                <div class="col-4 mb-2">性別<select class="form-select"
+                                        aria-label="Default select example">
+                                        <option selected>男</option>
+                                        <option value="1">女</option>
+                                    </select>
+                                </div>
+                                <div class="col-4 mb-2">連絡電話<input type="text" class="form-control"></div>
+                                <div class="col-4 mb-2">成立人<input type="text" class="form-control"></div>
+                                <div class="col-4 mb-2">性別<select class="form-select"
+                                        aria-label="Default select example">
+                                        <option selected>男</option>
+                                        <option value="1">女</option>
+                                    </select>
+                                </div>
+                                <div class="col-4 mb-2">連絡電話<input type="text" class="form-control"></div>
+                                <div class="col-4 mb-2">班主任<input type="text" class="form-control"></div>
+                                <div class="col-4 mb-2">性別<select class="form-select"
+                                        aria-label="Default select example">
+                                        <option selected>男</option>
+                                        <option value="1">女</option>
+                                    </select>
+                                </div>
+                                <div class="col-4 mb-2">連絡電話<input type="text" class="form-control"></div>
+                                <div class="col-12 mb-2">立案字號<input type="text" class="form-control"></div>
+                                <div class="col-12 mb-2">立案日期<input type="date" class="form-control"></div>
+                                <div class="col-12 mb-2">發票號碼<input type="text" class="form-control"></div>
+                                <div class="col-12 mb-2">發票抬頭<input type="text" class="form-control"></div>
+                                <div class="col-12 mb-2">發票地址<input type="text" class="form-control"></div>
+                                <div class="bill_field">
+                                    <div class="col-6 check_box">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4">
+                                        <label class="form-check-label" for="flexCheckChecked4">
+                                            開立發票
+                                        </label>
+                                    </div>
+                                    <div class="col-6">稅率<input type="text" class="form-control"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="category" role="tabpanel" aria-labelledby="category-tab">
+                            <div class="category_list mt-2 mb-3">
+                                <div class="list-group" id="list-tab" role="tablist">
+                                    <a class="list-group-item list-group-item-action active" data-bs-toggle="list"
+                                        href="#">金鼎作文會員</a>
+                                    <a class="list-group-item list-group-item-action" data-bs-toggle="list"
+                                        href="#">金鼎作文會員</a>
+                                    <a class="list-group-item list-group-item-action" data-bs-toggle="list"
+                                        href="#">金鼎作文會員</a>
+                                    <a class="list-group-item list-group-item-action" data-bs-toggle="list"
+                                        href="#">金鼎作文會員</a>
+                                    <a class="list-group-item list-group-item-action" data-bs-toggle="list"
+                                        href="#">金鼎作文會員</a>
+                                    <a class="list-group-item list-group-item-action" data-bs-toggle="list"
+                                        href="#">金鼎作文會員</a>
+                                    <a class="list-group-item list-group-item-action" data-bs-toggle="list"
+                                        href="#">金鼎作文會員</a>
+                                    <a class="list-group-item list-group-item-action" data-bs-toggle="list"
+                                        href="#">金鼎作文會員</a>
+                                </div>
+                            </div>
+                            <!-- Button modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">增加列別 </button>
+                            <button class="btn btn-danger">移除列別</button>
+                            <div class="remark mt-5">
+                                <label for="exampleFormControlTextarea2" class="form-label">備註</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea2" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="situation" role="situation" aria-labelledby="situation-tab">
+                            <div class="situation_field"><span>所在樓層</span> <input type="text" class="form-control"> 樓
+                            </div>
+                            <div class="situation_field"><span>經營年資</span> <input type="text" class="form-control"> 年
+                            </div>
+                            <div class="situation_field"><span>學生人數</span> <input type="text" class="form-control"> 人
+                            </div>
+                            <div class="situation_field"><span>教室間數</span> <input type="text" class="form-control"> 間
+                            </div>
+                            <div class="situation_field"><span>座位總數</span> <input type="text" class="form-control"> 人
+                            </div>
+                            <div class="situation_field"><span>最大座位總數</span> <input type="text" class="form-control"> 人
+                            </div>
+                            <div class="situation_field"><span>最小座位總數</span> <input type="text" class="form-control"> 人
+                            </div>
+                            <div>
+                                <label for="exampleFormControlTextarea3" class="form-label">備註</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea3" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="history" role="tabpanel" aria-labelledby="history-tab">
+                            <div class="browe">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">編號</th>
+                                            <th scope="col">客戶名稱</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">52144</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">48534</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">34145</th>
+                                            <td><a href="">客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-3 mb-3">
+                    <button class="btn btn-primary me-2">新增客戶</button>
+                    <button class="btn btn-primary">儲存</button>
+                </div>
+            </div>
+        </div>
+        <!-- 增加列別Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid mt-4 mb-3">
+                            <select class="form-select mb-4" aria-label="Default select">
+                                <option selected>金鼎作文會員</option>
+                                <option value="1">金鼎作文會員2</option>
+                            </select>
+                            <div class="add_btn text-center">
+                                <button class="btn btn-primary me-2">確認</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 搜尋選項Modal -->
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid mt-4 mb-3">
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <div class="form-check option_side">
+                                        <input class="form-check-input" type="checkbox" value="" id="modal_check">
+                                        <label class="form-check-label" for="modal_check">最ㄏㄤ</label>
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected>林員工</option>
+                                            <option value="1">大員工</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3 option_check">
+                                    <input class="form-check-input" type="checkbox" value="" id="modal_check2">
+                                    <label class="form-check-label" for="modal_check2">空</label>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="modal_check3">
+                                    <label class="form-check-label" for="modal_check3">軟體到期日</label>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="modal_check4">
+                                    <label class="form-check-label" for="modal_check4">陌生</label>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="modal_check5">
+                                    <label class="form-check-label" for="modal_check5">需電話續訪</label>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="modal_check6">
+                                    <label class="form-check-label" for="modal_check6">需面訪客戶</label>
+                                </div>
+                                <div class="col-12 mb-3 modal_switch">
+                                    <div class="form-check">
+                                        <input class="form-check-input switch3" type="checkbox" value=""
+                                            id="modal_check7">
+                                        <label class="form-check-label" for="modal_check7">
+                                            久未聯絡客戶
+                                        </label>
+                                    </div>
+                                    <select class="form-select turn_on3" aria-label="Default select">
+                                        <option selected>7日</option>
+                                        <option value="1">14日</option>
+                                    </select>
+                                </div>
+                                <div class="col-4 mb-3"><input class="form-check-input" type="checkbox" value=""
+                                        id="modal_check8">
+                                    <label class="form-check-label" for="modal_check8">久未2</label>
+                                </div>
+                                <div class="col-4 mb-3 modal_field">起<input type="text" class="form-control"></div>
+                                <div class="col-4 mb-3 modal_field">迄<input type="text" class="form-control"></div>
+                                <div class="col-12 mb-3 modal_switch">
+                                    <div class="form-check">
+                                        <input class="form-check-input switch4" type="checkbox" value=""
+                                            id="modal_check9">
+                                        <label class="form-check-label" for="modal_check9">
+                                            學區
+                                        </label>
+                                    </div>
+                                    <input type="text" class="form-control turn_on4">
+                                </div>
+                                <div class="col-12 mb-3 modal_switch">
+                                    <div class="form-check">
+                                        <input class="form-check-input switch5" type="checkbox" value=""
+                                            id="modal_check10">
+                                        <label class="form-check-label" for="modal_check10">
+                                            對產品有興趣(3個月內)
+                                        </label>
+                                    </div>
+                                    <select class="form-select turn_on5" aria-label="Default select">
+                                        <option selected>補教大掌櫃</option>
+                                        <option value="1">補教大掌櫃2</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mb-3 modal_switch">
+                                    <div class="form-check">
+                                        <input class="form-check-input switch6" type="checkbox" value=""
+                                            id="modal_check11">
+                                        <label class="form-check-label" for="modal_check11">
+                                            縣市2
+                                        </label>
+                                    </div>
+                                    <select class="form-select turn_on6" aria-label="Default select">
+                                        <option selected>台中市</option>
+                                        <option value="1">台北市</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 mb-3 modal_switch">
+                                    <div class="form-check">
+                                        <input class="form-check-input switch7" type="checkbox" value=""
+                                            id="modal_check12">
+                                        <label class="form-check-label" for="modal_check12">
+                                            縣市3
+                                        </label>
+                                    </div>
+                                    <select class="form-select turn_on7" aria-label="Default select">
+                                        <option selected>台中市</option>
+                                        <option value="1">台北市</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="form-check option_date">
+                                        <input class="form-check-input" type="checkbox" value="" id="modal_check13">
+                                        <label class="form-check-label" for="modal_check13">合約到期日</label>
+                                        <input type="date" class="form-control date_field">
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="modal_check14">
+                                    <label class="form-check-label" for="modal_check14">拒繳(備註)</label>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="modal_check15">
+                                    <label class="form-check-label" for="modal_check15">"無"電話</label>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="modal_check16">
+                                    <label class="form-check-label" for="modal_check16">"刪/删"客戶</label>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="modal_check17">
+                                    <label class="form-check-label" for="modal_check17">排除"刪/删/殺"</label>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="modal_check18">
+                                    <label class="form-check-label" for="modal_check18">"殺"客戶</label>
+                                </div>
+                                <div class="col-12 mb-3 modal_switch">
+                                    <div class="form-check">
+                                        <input class="form-check-input switch8" type="checkbox" value=""
+                                            id="modal_check19">
+                                        <label class="form-check-label" for="modal_check19">
+                                            訪談目的/內容
+                                        </label>
+                                    </div>
+                                    <input type="text" class="form-control turn_on8">
+                                </div>
+                            </div>
+                            <div class="add_btn text-center">
+                                <button class="btn btn-primary me-2">搜尋</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 建立新訂單Modal -->
+        <div class="modal fade" id="new_order" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xxl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">建立新訂單</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>訂單編號20220331-0001</h5>
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <div class="new_order_content">
+                                    <div class="row">
+                                        <div class="col-12 mb-2">
+                                            補習班名稱<span class="red">*</span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="col-6 mb-2">姓名<span class="red">*</span><input type="text"
+                                                class="form-control"></div>
+                                        <div class="col-6 mb-2">身分證字號<input type="text" class="form-control"></div>
+                                        <div class="col-6 mb-2">室內電話<span class="red">*</span><input type="text"
+                                                class="form-control"></div>
+                                        <div class="col-6 mb-2">行動電話<input type="text" class="form-control"></div>
+                                        <div class="col-3 mb-2">郵遞區號<input type="text" class="form-control"></div>
+                                        <div class="col-9 mb-2">地址<span class="red">*</span><input type="text"
+                                                class="form-control"></div>
+                                        <div class="col-6 mb-2">電子郵件<input type="text" class="form-control"></div>
+                                        <div class="col-6 mb-2">發票抬頭<input type="text" class="form-control"></div>
+                                        <div class="col-6 mb-2">發票統編<input type="text" class="form-control"></div>
+                                        <div class="col-6 mb-2">運費<input type="text" class="form-control"></div>
+                                        <div class="col-12 mb-2">
+                                            <label for="school_nameTextarea" class="form-label mb-0">備註</label>
+                                            <textarea class="form-control" id="school_nameTextarea" rows="2"></textarea>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-check pt-4">
+                                                <div class="tax_field">
+                                                    <input class="form-check-input tax_check" type="checkbox" value=""
+                                                        id="tax">
+                                                    <label class="form-check-label" for="tax">
+                                                        是否含稅<input type="text" class="form-control tax_dollar">元
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-2">訂單總金額<input type="text" class="form-control"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-check pt-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="same_orderer">
+                                    <label class="form-check-label" for="same_orderer">
+                                        同訂購人
+                                    </label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 mb-2">姓名<span class="red">*</span><input type="text"
+                                            class="form-control"></div>
+                                    <div class="col-6 mb-2">室內電話<span class="red">*</span><input type="text"
+                                            class="form-control"></div>
+                                    <div class="col-12 mb-2">行動電話<span class="red">*</span><input type="text"
+                                            class="form-control"></div>
+                                    <div class="col-3 mb-2">郵遞區號<input type="text" class="form-control"></div>
+                                    <div class="col-9 mb-2">地址<span class="red">*</span><input type="text"
+                                            class="form-control"></div>
+                                    <div class="col-6 mb-2">收費時段
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected="">8:00~12:00</option>
+                                            <option value="1">12:00~14:00</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6 mb-2">付款方式
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected="">當面交易</option>
+                                            <option value="1">貨到付款</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="mb-2">訂單建立人</p>
+                                        <span class="new_order_blue">林員工</span>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="mb-2">訂單建立日</p>
+                                        <span class="new_order_blue">2022/12/31</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h5>訂購項目</h5>
+                                <div class="order_item">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">廠商</th>
+                                                <th scope="col">產品名稱</th>
+                                                <th scope="col">產品型號</th>
+                                                <th scope="col">售價</th>
+                                                <th scope="col">版本</th>
+                                                <th scope="col">數量</th>
+                                                <th scope="col">小記</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">傑人文教股份有限公司</th>
+                                                <td>產品名稱產品名稱產品名稱</td>
+                                                <td>0</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>1</td>
+                                                <td>0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">傑人文教股份有限公司</th>
+                                                <td>產品名稱產品名稱產品名稱</td>
+                                                <td>0</td>
+                                                <td>0.00</td>
+                                                <td>0.00</td>
+                                                <td>1</td>
+                                                <td>0.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table_operate mt-3">
+                                    <div class="">
+                                        <button class="btn btn-primary me-2 add_pro_btn">新增產品</button>
+                                        <button class="btn btn-danger me-2">刪除產品</button>
+                                    </div>
+                                    <!-- 新增產品 -->
+                                    <div class="border border-primary new_order_add">
+                                        <div class="new_order_search d-flex mb-4">
+                                            <input type="text" class="form-control w-75">
+                                            <button class="btn btn-primary ms-3">搜尋</button>
+                                        </div>
+                                        <div class="new_order_table">
+                                            <table class="table table-hover table-light">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">編號</th>
+                                                        <th scope="col">廠商</th>
+                                                        <th scope="col">產品名稱</th>
+                                                        <th scope="col">產品型號</th>
+                                                        <th scope="col">市價</th>
+                                                        <th scope="col">會員價</th>
+                                                        <th scope="col">成本</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">211227-0001</th>
+                                                        <td>傑人文教科技有限公司</td>
+                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                        <td>0</td>
+                                                        <td>52963</td>
+                                                        <td>65000</td>
+                                                        <td>85000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">211227-0001</th>
+                                                        <td>傑人文教科技有限公司</td>
+                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                        <td>0</td>
+                                                        <td>52963</td>
+                                                        <td>65000</td>
+                                                        <td>85000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">211227-0001</th>
+                                                        <td>傑人文教科技有限公司</td>
+                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                        <td>0</td>
+                                                        <td>52963</td>
+                                                        <td>65000</td>
+                                                        <td>85000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">211227-0001</th>
+                                                        <td>傑人文教科技有限公司</td>
+                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                        <td>0</td>
+                                                        <td>52963</td>
+                                                        <td>65000</td>
+                                                        <td>85000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">211227-0001</th>
+                                                        <td>傑人文教科技有限公司</td>
+                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                        <td>0</td>
+                                                        <td>52963</td>
+                                                        <td>65000</td>
+                                                        <td>85000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">211227-0001</th>
+                                                        <td>傑人文教科技有限公司</td>
+                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                        <td>0</td>
+                                                        <td>52963</td>
+                                                        <td>65000</td>
+                                                        <td>85000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">211227-0001</th>
+                                                        <td>傑人文教科技有限公司</td>
+                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                        <td>0</td>
+                                                        <td>52963</td>
+                                                        <td>65000</td>
+                                                        <td>85000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">211227-0001</th>
+                                                        <td>傑人文教科技有限公司</td>
+                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                        <td>0</td>
+                                                        <td>52963</td>
+                                                        <td>65000</td>
+                                                        <td>85000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="d-flex mb-3">
+                                            產品名稱<input type="text" class="form-control w-50 ms-2 me-2">
+                                            數量<input type="number" class="form-control w-25 ms-2">
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="btn btn-primary me-2">確認</button>
+                                            <button type="button"
+                                                class="btn btn-secondary new_order_add_cancel">取消</button>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">
+                                        訂購總金額<span class="dollar">0</span>元
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                            <button class="btn btn-primary me-2">儲存新訂單</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 查看客戶訂單Modal -->
+        <div class="modal fade" id="view_order" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xxl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">查看客戶訂單</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="internal_order_tab" data-bs-toggle="tab"
+                                    data-bs-target="#internal_order" type="button" role="tab"
+                                    aria-controls="internal_order" aria-selected="true">內部訂單作業</button>
+                                <button class="nav-link" id="shopping_order_tab" data-bs-toggle="tab"
+                                    data-bs-target="#shopping_order" type="button" role="tab"
+                                    aria-controls="shopping_order" aria-selected="false">購物網訂單</button>
+                                <button class="nav-link" id="period_order_tab" data-bs-toggle="tab"
+                                    data-bs-target="#period_order" type="button" role="tab" aria-controls="period_order"
+                                    aria-selected="false">期間訂單</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="internal_order" role="tabpanel"
+                                aria-labelledby="internal_order_tab">
+                                <div class="row mt-3">
+                                    <div class="col-4">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" value="" id="unpaid_order">
+                                            <label class="form-check-label ms-2 me-2" for="unpaid_order">未付款訂單</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check  d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="unshipped_order">
+                                            <label class="form-check-label ms-2 me-2"
+                                                for="unshipped_order">未出貨訂單</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check  d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="incomplete_order">
+                                            <label class="form-check-label ms-2 me-2"
+                                                for="incomplete_order">未完成訂單</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="order_number">
+                                                <label class="form-check-label ms-2 me-2"
+                                                    for="order_number">訂單編號</label>
+                                                <input type="text" class="form-control search_input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="customer_phone">
+                                                <label class="form-check-label ms-2 me-2"
+                                                    for="customer_phone">客戶電話</label>
+                                                <input type="text" class="form-control search_input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="client_name">
+                                                <label class="form-check-label ms-2 me-2" for="client_name">客戶名稱</label>
+                                                <input type="text" class="form-control search_input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check">
+                                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="client_name">
+                                                <input type="text" class="form-control search_input ms-2">
+                                                <button class="btn btn-primary ms-2">搜尋</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order_item mt-4 mb-4">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">訂單編號</th>
+                                                <th scope="col">客戶名稱</th>
+                                                <th scope="col">訂購人</th>
+                                                <th scope="col">連絡電話</th>
+                                                <th scope="col">訂單日期</th>
+                                                <th scope="col">處理狀況</th>
+                                                <th scope="col">付款狀況</th>
+                                                <th scope="col">出貨狀況</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">20180709-0002</th>
+                                                <td>陳志中(軟體經銷商)</td>
+                                                <td>陳志中</td>
+                                                <td>0912345678</td>
+                                                <td>2018/09/30 下午05:36:00</td>
+                                                <td>處理中</td>
+                                                <td>未付款</td>
+                                                <td>已出貨</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">20180709-0002</th>
+                                                <td>陳志中(軟體經銷商)</td>
+                                                <td>陳志中</td>
+                                                <td>0912345678</td>
+                                                <td>2018/09/30 下午05:36:00</td>
+                                                <td>處理中</td>
+                                                <td>未付款</td>
+                                                <td>已出貨</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="d-flex title">
+                                    <p class="me-4">訂單編號:<span>20180709-0002</span></p>
+                                    <p>客戶名稱:<span>陳志中(軟體經銷商)</span></p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <button class="nav-link active" id="customer_information_tab"
+                                                    data-bs-toggle="tab" data-bs-target="#customer_information"
+                                                    type="button" role="tab" aria-controls="customer_information"
+                                                    aria-selected="true">訂單客戶資料</button>
+                                                <button class="nav-link" id="order_detail_tab" data-bs-toggle="tab"
+                                                    data-bs-target="#order_detail" type="button" role="tab"
+                                                    aria-controls="order_detail" aria-selected="false">訂單明細</button>
+                                                <button class="nav-link" id="order_note_tab" data-bs-toggle="tab"
+                                                    data-bs-target="#order_note" type="button" role="tab"
+                                                    aria-controls="order_note" aria-selected="false">訂單備註</button>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content" id="nav-tabContent">
+                                            <div class="tab-pane fade show active mt-3" id="customer_information"
+                                                role="tabpanel" aria-labelledby="customer_information_tab">
+                                                <div class="row">
+                                                    <div class="col-7">
+                                                        <p class="fs-5 mb-2">訂購人</p>
+                                                        <div class="row">
+                                                            <div class="col-6 mb-2">補習班名稱<input type="text"
+                                                                    class="form-control" value="陳志中(軟體經銷商)">
+                                                            </div>
+                                                            <div class="col-6 mb-2">姓名<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2">身分證字號<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2">行動電話<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-3 mb-2">郵遞區號<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-9 mb-2">地址<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2">室內電話<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2">電子郵件<input type="email"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2">發票抬頭<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2">發票統編<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-12 mb-2">
+                                                                <label for="exampleFormControlTextarea2"
+                                                                    class="form-label">備註</label>
+                                                                <textarea class="form-control"
+                                                                    id="exampleFormControlTextarea2"
+                                                                    rows="3"></textarea>
+                                                            </div>
+                                                            <div class="col-6 mb-2">運費<input type="number"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2">收款日<input type="date"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2">出貨日<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2">託運單編號<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2 d-flex justify-content-between">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="include_tax02">
+                                                                <label class="form-check-label ms-1"
+                                                                    for="include_tax02">是否含稅</label>
+                                                                <input type="text"
+                                                                    class="form-control w-auto ms-1 me-1">
+                                                                <span> 元</span>
+                                                            </div>
+                                                            <div class="col-6 mb-2">訂單總金額<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <p class="fs-5 mb-2">收件人</p>
+                                                        <div class="row">
+                                                            <div class="col-6 mb-2">姓名<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2">室內電話<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2">行動電話<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-6 mb-2">收件時間
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>08:00-12:00</option>
+                                                                    <option value="1">12:00-17:00</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-3 mb-2">郵遞區號<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-9 mb-2">地址<input type="text"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-12 mb-2">付款方式
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>08:00-12:00</option>
+                                                                    <option value="1">12:00-17:00</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-6 mb-2">訂單建立人<input type="text"
+                                                                    class="form-control" value="林員工" disabled>
+                                                            </div>
+                                                            <div class="col-6 mb-2">訂單建立日<input type="text"
+                                                                    class="form-control" value="2018/09/08 下午05:36:00"
+                                                                    disabled>
+                                                            </div>
+                                                            <div class="col-6 mb-2">最後異動人<input type="text"
+                                                                    class="form-control" value="林員工" disabled>
+                                                            </div>
+                                                            <div class="col-6 mb-2">最後異動日<input type="text"
+                                                                    class="form-control" value="2018/09/08 下午06:59:00"
+                                                                    disabled>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade mt-3" id="order_detail" role="tabpanel"
+                                                aria-labelledby="order_detail_tab">
+                                                <div class="order_item">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">廠商</th>
+                                                                <th scope="col">產品名稱</th>
+                                                                <th scope="col">產品型號</th>
+                                                                <th scope="col">售價</th>
+                                                                <th scope="col">成本</th>
+                                                                <th scope="col">數量</th>
+                                                                <th scope="col">小記</th>
+                                                                <th scope="col">成本小記</th>
+                                                                <th scope="col">庫存</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">傑人文教股份有限公司</th>
+                                                                <td>產品名稱產品名稱產品名稱</td>
+                                                                <td>0</td>
+                                                                <td>0.00</td>
+                                                                <td>0.00</td>
+                                                                <td>1</td>
+                                                                <td>0.00</td>
+                                                                <td>0</td>
+                                                                <td>-1520</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">傑人文教股份有限公司</th>
+                                                                <td>產品名稱產品名稱產品名稱</td>
+                                                                <td>0</td>
+                                                                <td>0.00</td>
+                                                                <td>0.00</td>
+                                                                <td>1</td>
+                                                                <td>0.00</td>
+                                                                <td>0</td>
+                                                                <td>-1520</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="table_operate mt-3">
+                                                    <div class="">
+                                                        <button class="btn btn-primary me-2 add_pro_btn">新增產品</button>
+                                                        <button class="btn btn-danger me-2">刪除產品</button>
+                                                    </div>
+                                                    <!-- 新增產品 -->
+                                                    <div class="border border-primary new_order_add02">
+                                                        <div class="new_order_search d-flex mb-4">
+                                                            <input type="text" class="form-control w-75">
+                                                            <button class="btn btn-primary ms-3">搜尋</button>
+                                                        </div>
+                                                        <div class="new_order_table">
+                                                            <table class="table table-hover table-light">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">編號</th>
+                                                                        <th scope="col">廠商</th>
+                                                                        <th scope="col">產品名稱</th>
+                                                                        <th scope="col">產品型號</th>
+                                                                        <th scope="col">市價</th>
+                                                                        <th scope="col">會員價</th>
+                                                                        <th scope="col">成本</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">211227-0001</th>
+                                                                        <td>傑人文教科技有限公司</td>
+                                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                                        <td>0</td>
+                                                                        <td>52963</td>
+                                                                        <td>65000</td>
+                                                                        <td>85000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">211227-0001</th>
+                                                                        <td>傑人文教科技有限公司</td>
+                                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                                        <td>0</td>
+                                                                        <td>52963</td>
+                                                                        <td>65000</td>
+                                                                        <td>85000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">211227-0001</th>
+                                                                        <td>傑人文教科技有限公司</td>
+                                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                                        <td>0</td>
+                                                                        <td>52963</td>
+                                                                        <td>65000</td>
+                                                                        <td>85000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">211227-0001</th>
+                                                                        <td>傑人文教科技有限公司</td>
+                                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                                        <td>0</td>
+                                                                        <td>52963</td>
+                                                                        <td>65000</td>
+                                                                        <td>85000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">211227-0001</th>
+                                                                        <td>傑人文教科技有限公司</td>
+                                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                                        <td>0</td>
+                                                                        <td>52963</td>
+                                                                        <td>65000</td>
+                                                                        <td>85000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">211227-0001</th>
+                                                                        <td>傑人文教科技有限公司</td>
+                                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                                        <td>0</td>
+                                                                        <td>52963</td>
+                                                                        <td>65000</td>
+                                                                        <td>85000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">211227-0001</th>
+                                                                        <td>傑人文教科技有限公司</td>
+                                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                                        <td>0</td>
+                                                                        <td>52963</td>
+                                                                        <td>65000</td>
+                                                                        <td>85000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">211227-0001</th>
+                                                                        <td>傑人文教科技有限公司</td>
+                                                                        <td>產品名稱產品名稱產品名稱產品名稱產品名稱</td>
+                                                                        <td>0</td>
+                                                                        <td>52963</td>
+                                                                        <td>65000</td>
+                                                                        <td>85000</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="d-flex mb-3">
+                                                            產品名稱<input type="text" class="form-control w-50 ms-2 me-2">
+                                                            數量<input type="number" class="form-control w-25 ms-2">
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <button class="btn btn-primary me-2">確認</button>
+                                                            <button type="button"
+                                                                class="btn btn-secondary new_order_add_cancel02">取消</button>
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0">
+                                                        訂購總金額<span class="dollar">0</span>元
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade mt-3" id="order_note" role="tabpanel"
+                                                aria-labelledby="order_note_tab">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="col-12 mb-2">主旨<input type="text"
+                                                                class="form-control">
+                                                        </div>
+                                                        <div class="col-12 mb-2">
+                                                            <label for="exampleFormControlTextarea2"
+                                                                class="form-label">備註</label>
+                                                            <textarea class="form-control"
+                                                                id="exampleFormControlTextarea2" rows="3"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="new_order_table">
+                                                            <table class="table table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col">號碼</th>
+                                                                        <th scope="col">日期</th>
+                                                                        <th scope="col">備註</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">1</th>
+                                                                        <td>2022/08/05</td>
+                                                                        <td>備註備註備註備註備註備註備註</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">2</th>
+                                                                        <td>2022/05/30</td>
+                                                                        <td>備註備註備註備註備註備註</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">3</th>
+                                                                        <td>2022/08/09</td>
+                                                                        <td>備註備註備註備註備註備註備註備註備註</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 mt-5">
+                                        <div class="form-check d-flex align-items-center mt-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="paid_check">
+                                            <label class="form-check-label ms-2 me-2 fs-5" for="paid_check">已付款</label>
+                                            <button class="btn btn-primary">通知已處理</button>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center mt-3">
+                                            <input class="form-check-input" type="checkbox" value="" id="shipped_check">
+                                            <label class="form-check-label ms-2 me-2 fs-5"
+                                                for="shipped_check">已出貨</label>
+                                            <button class="btn btn-primary">通知已出貨</button>
+                                        </div>
+                                        <div class="form-check d-flex align-items-center mt-3">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="completed_check">
+                                            <label class="form-check-label ms-2 me-2 fs-5"
+                                                for="completed_check">已完成</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade mt-3" id="shopping_order" role="tabpanel"
+                                aria-labelledby="shopping_order_tab">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" value="" id="order_not">
+                                            <label class="form-check-label ms-2 me-2" for="order_not">未處理訂單</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="unpaid_order02">
+                                            <label class="form-check-label ms-2 me-2" for="unpaid_order02">未付款訂單</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="customer_phone02">
+                                                <label class="form-check-label ms-2 me-2"
+                                                    for="customer_phone02">客戶電話</label>
+                                                <input type="text" class="form-control search_input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="order_number02">
+                                                <label class="form-check-label ms-2 me-2"
+                                                    for="order_number02">訂單編號</label>
+                                                <input type="text" class="form-control search_input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary m-auto d-block mt-2">搜尋</button>
+                                <div class="order_item mt-3 mb-3">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">訂單編號</th>
+                                                <th scope="col">客戶名稱</th>
+                                                <th scope="col">連絡電話</th>
+                                                <th scope="col">訂單日期</th>
+                                                <th scope="col">處理狀況</th>
+                                                <th scope="col">付款狀況</th>
+                                                <th scope="col">總金額</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">2022/08/06-0005</th>
+                                                <td>客戶名稱客戶名稱</td>
+                                                <td>0985658963</td>
+                                                <td>2022/02/30</td>
+                                                <td>處理狀況</td>
+                                                <td>付款狀況</td>
+                                                <td>50000</td>
+                                            <tr>
+                                            <tr>
+                                                <th scope="row">2022/08/06-0005</th>
+                                                <td>客戶名稱客戶名稱</td>
+                                                <td>0985658963</td>
+                                                <td>2022/02/30</td>
+                                                <td>處理狀況</td>
+                                                <td>付款狀況</td>
+                                                <td>50000</td>
+                                            <tr>
+                                            <tr>
+                                                <th scope="row">2022/08/06-0005</th>
+                                                <td>客戶名稱客戶名稱</td>
+                                                <td>0985658963</td>
+                                                <td>2022/02/30</td>
+                                                <td>處理狀況</td>
+                                                <td>付款狀況</td>
+                                                <td>50000</td>
+                                            <tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <button class="btn btn-primary mb-3">轉內部訂單</button>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5>訂單編號 : 2022/02/30-0005</h5>
+                                        <p class="mb-2">訂單會員資料</p>
+                                        <div class="row">
+                                            <div class="col-6 mb-2">姓名<input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-6 mb-2">身分證字號<input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-6 mb-2">公司名稱<input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-6 mb-2">電話<input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-6 mb-2">行動電話<input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-6 mb-2">電子郵件<input type="email" class="form-control">
+                                            </div>
+                                            <div class="col-3 mb-2">郵遞區號<input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-9 mb-2">地址<input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-6 mb-2">發票抬頭<input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-6 mb-2">發票統編<input type="email" class="form-control">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="exampleFormControlTextarea" class="form-label">意見</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea"
+                                                    rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="mb-2">訂單明細</p>
+                                        <div class="order_detail mt-3 mb-3">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">產品名稱</th>
+                                                        <th scope="col">產品型號</th>
+                                                        <th scope="col">售價</th>
+                                                        <th scope="col">成本</th>
+                                                        <th scope="col">數量</th>
+                                                        <th scope="col">小記</th>
+                                                        <th scope="col">廠商</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">產品名稱產品名稱</th>
+                                                        <td>產品型號產品型號</td>
+                                                        <td>50000</td>
+                                                        <td>20000</td>
+                                                        <td>5858</td>
+                                                        <td>1250</td>
+                                                        <td>廠商廠商廠商廠商廠商</td>
+                                                    <tr>
+                                                    <tr>
+                                                        <th scope="row">產品名稱產品名稱</th>
+                                                        <td>產品型號產品型號</td>
+                                                        <td>50000</td>
+                                                        <td>20000</td>
+                                                        <td>5858</td>
+                                                        <td>1250</td>
+                                                        <td>廠商廠商廠商廠商廠商</td>
+                                                    <tr>
+                                                    <tr>
+                                                        <th scope="row">產品名稱產品名稱</th>
+                                                        <td>產品型號產品型號</td>
+                                                        <td>50000</td>
+                                                        <td>20000</td>
+                                                        <td>5858</td>
+                                                        <td>1250</td>
+                                                        <td>廠商廠商廠商廠商廠商</td>
+                                                    <tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="d-flex">
+                                            <p class="me-5">訂單總件數:100</p>
+                                            <p>訂單總金額:100</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade mt-3" id="period_order" role="tabpanel"
+                                aria-labelledby="period_order_tab">期間訂單</div>
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary me-2">儲存</button>
+                            <button class="btn btn-primary me-2">出貨作業單</button>
+                            <button class="btn btn-primary me-2">列印作業單</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 電訪紀錄單Modal -->
+        <div class="modal fade" id="create_order" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xxl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">電訪紀錄</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-8 mb-3">
+                                <div class="col-12 mb-3 d-flex">
+                                    <button class="btn btn-primary me-2">新增</button>
+                                    <button class="btn btn-danger me-2">刪除</button>
+                                    <button class="btn btn-primary me-2">儲存</button>
+                                    <select class="form-select w-25 me-2" aria-label="Default select example">
+                                        <option selected>待訪記錄</option>
+                                        <option value="1">全部記錄</option>
+                                    </select>
+                                    <button class="btn btn-primary">搜尋</button>
+                                </div>
+                                <div class="tel_interview">
+                                    <div class="row">
+                                        <div class="col-4 mb-2">訪談日期<input type="date" class="form-control"></div>
+                                        <div class="col-4 mb-2">聯絡人<input type="text" class="form-control"></div>
+                                        <div class="col-2 d-flex align-items-center"><button
+                                                class="btn btn-primary appointment">約電訪</button></div>
+                                        <div class="col-2 d-flex align-items-center"><span
+                                                class="employee_name">林員工</span>
+                                        </div>
+                                        <div class="col-8 mb-2">訪談目的<input type="text" class="form-control"></div>
+                                        <div class="col-12 mb-2">
+                                            <label for="exampleFormControlTextarea4" class="form-label">訪談紀錄</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea4"
+                                                rows="4"></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="exampleFormControlTextarea" class="form-label">備註</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea"
+                                                rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="appointment_content">
+                                    <div class="row">
+                                        <h6>下次電訪</h6>
+                                        <div class="col-6 mb-2">訪談日期<input type="date" class="form-control"></div>
+                                        <div class="col-6 mb-2">時間<input type="time" class="form-control"></div>
+                                        <div class="col-12 mb-2">聯絡人<input type="text" class="form-control"></div>
+                                        <div class="col-12 mb-2">訪談目的
+                                            <div class="map_field">
+                                                <input type="text" class="form-control mb-2">
+                                                <button type="button"
+                                                    class="btn btn-primary interview_purpose_choose">選擇</button>
+                                            </div>
+                                            <div class="border border-primary interview_purpose text-center p-2">
+                                                <select class="form-select me-2 mb-2" aria-label="Default select">
+                                                    <option selected>訪談目的</option>
+                                                    <option value="1">電話中</option>
+                                                </select>
+                                                <button class="btn btn-primary me-2">確認</button>
+                                                <button
+                                                    class="btn btn-primary me-2 interview_purpose_closebtn">取消</button>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="btn btn-primary me-2">儲存</button>
+                                            <button class="btn btn-primary me-2 appointment_closebtn">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <h5>本次訪談產品意願</h5>
+                                <div class="product_interview">
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">產品名稱</th>
+                                                <th scope="col">意願</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">資優數學</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <button class="btn btn-primary ms-2 me-2 interview_addbtn">新增</button>
+                                <button class="btn btn-danger me-2">刪除</button>
+                                <div class="border border-primary product_interview_add">
+                                    <select class="form-select mb-4" aria-label="Default select">
+                                        <option selected>補教大掌櫃</option>
+                                        <option value="1">資優數學</option>
+                                    </select>
+                                    <select class="form-select mb-4" aria-label="Default select">
+                                        <option selected>非常有意願</option>
+                                        <option value="1">非常有意願</option>
+                                    </select>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary me-2">確認</button>
+                                        <button class="btn btn-primary me-2 interview_closebtn">關閉</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">日期</th>
+                                            <th scope="col">時間</th>
+                                            <th scope="col">訪談目的</th>
+                                            <th scope="col">訪談人</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">18/05/05(週三)</th>
+                                            <td>14:20</td>
+                                            <td>訪談目的訪談目的訪談目的訪談目的訪談目的訪談目</td>
+                                            <td>林員工</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">18/05/05(週三)</th>
+                                            <td>14:20</td>
+                                            <td>訪談目的訪談目的訪談目的訪談目的訪談目的訪談目</td>
+                                            <td>林員工</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary me-2">確認</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 面訪紀錄Modal -->
+        <div class="modal fade" id="interview_record" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xxl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">面訪紀錄</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-8 mb-3">
+                                <div class="col-12 mb-3 d-flex">
+                                    <button class="btn btn-primary me-2">新增</button>
+                                    <button class="btn btn-danger me-2">刪除</button>
+                                    <button class="btn btn-primary me-2">儲存</button>
+                                    <select class="form-select w-25 me-2" aria-label="Default select">
+                                        <option selected>待訪記錄</option>
+                                        <option value="1">全部記錄</option>
+                                    </select>
+                                    <button class="btn btn-primary">搜尋</button>
+                                </div>
+                                <div class="interview_record">
+                                    <div class="row">
+                                        <div class="col-4 mb-2">訪談日期<input type="date" class="form-control"></div>
+                                        <div class="col-4 mb-2">時間<input type="time" class="form-control"></div>
+                                        <div class="col-4 mb-2 d-flex align-items-center">
+                                            <input class="form-check-input me-2 mt-0" type="checkbox" value=""
+                                                id="modal_check20">
+                                            <label class="form-check-label" for="modal_check20">已完成訪談，不再修改</label>
+                                        </div>
+                                        <div class="col-4 mb-2">聯絡人<input type="text" class="form-control"></div>
+                                        <div class="col-4">拜訪人
+                                            <select class="form-select" aria-label="Default select">
+                                                <option selected>林員工</option>
+                                                <option value="1">大員工</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-4 d-flex align-items-center"><button
+                                                class="btn btn-primary make_appointment">約面訪</button></div>
+                                        <div class="col-8 mb-2">訪談目的<input type="text" class="form-control"></div>
+                                        <div class="col-12 mb-2">
+                                            <label for="exampleFormControlTextarea4" class="form-label">訪談紀錄</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea4"
+                                                rows="4"></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="exampleFormControlTextarea2" class="form-label">備註</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea2"
+                                                rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="on_appointment">
+                                    <div class="row ">
+                                        <h6>實地約訪</h6>
+                                        <div class="col-6 mb-2">訪談日期<input type="date" class="form-control"></div>
+                                        <div class="col-6 mb-2">時間<input type="time" class="form-control"></div>
+                                        <div class="col-6 mb-2">聯絡人<input type="text" class="form-control"></div>
+                                        <div class="col-6 mb-2">拜訪人
+                                            <select class="form-select me-2 mb-2" aria-label="Default select">
+                                                <option selected>林員工</option>
+                                                <option value="1">大員工</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 mb-2">訪談目的
+                                            <input type="text" class="form-control mb-2">
+                                            <div class="border border-primary interview_purpose text-center p-2">
+                                                <select class="form-select me-2 mb-2" aria-label="Default select">
+                                                    <option selected>訪談目的</option>
+                                                    <option value="1">電話中</option>
+                                                </select>
+                                                <button class="btn btn-primary me-2">確認</button>
+                                                <button
+                                                    class="btn btn-primary me-2 interview_purpose_closebtn">取消</button>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="btn btn-primary me-2">儲存</button>
+                                            <button class="btn btn-primary me-2 on_appointment_closebtn">取消</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <h5>本次訪談產品意願</h5>
+                                <div class="product_interview">
+                                    <table class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">產品名稱</th>
+                                                <th scope="col">意願</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">資優數學</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">金鼎作文</th>
+                                                <td>非常有意願</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <button class="btn btn-primary ms-2 me-2 interview_addbtn">新增</button>
+                                <button class="btn btn-danger me-2">刪除</button>
+                                <div class="border border-primary product_interview_add">
+                                    <select class="form-select mb-4" aria-label="Default select">
+                                        <option selected>補教大掌櫃</option>
+                                        <option value="1">資優數學</option>
+                                    </select>
+                                    <select class="form-select mb-4" aria-label="Default select">
+                                        <option selected>非常有意願</option>
+                                        <option value="1">非常有意願</option>
+                                    </select>
+                                    <div class="text-center">
+                                        <button class="btn btn-primary me-2">確認</button>
+                                        <button class="btn btn-primary me-2 interview_closebtn">關閉</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">日期</th>
+                                            <th scope="col">時間</th>
+                                            <th scope="col">訪談目的</th>
+                                            <th scope="col">訪談人</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">18/05/05(週三)</th>
+                                            <td>14:20</td>
+                                            <td>訪談目的訪談目的訪談目的訪談目的訪談目的訪談目</td>
+                                            <td>林員工</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">18/05/05(週三)</th>
+                                            <td>14:20</td>
+                                            <td>訪談目的訪談目的訪談目的訪談目的訪談目的訪談目</td>
+                                            <td>林員工</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-primary me-2">確認</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 金鼎作文Modal -->
+        <div class="modal fade" id="composition" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xxl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">金鼎作文</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 mb-3 d-flex">
+                                <button class="btn btn-primary me-2">儲存</button>
+                                <button class="btn btn-primary me-2"
+                                    onclick="window.open('/jinding.html', '_blank')">金鼎訂單</button>
+                                <button class="btn btn-primary me-2 maintenance_credit_btn">維護抵用金額</button>
+                            </div>
+                            <div class="jinding_order">
+                                <div class="row">
+                                    <div class="col-4 mb-2">介紹單位<input type="text" class="form-control"></div>
+                                    <div class="col-4 mb-2">開發人
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected>林員工</option>
+                                            <option value="1">大員工</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 mb-2">負責人
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected>林員工</option>
+                                            <option value="1">大員工</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 mb-2">簽約人
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected>林員工</option>
+                                            <option value="1">大員工</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4">收款人
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected>林員工</option>
+                                            <option value="1">大員工</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 mb-2">合約編號<input type="text" class="form-control"></div>
+                                    <div class="col-4 mb-2">簽約日<input type="date" class="form-control"></div>
+                                    <div class="col-4 mb-2">到期日<input type="date" class="form-control"></div>
+                                    <div class="col-4 mb-2">建檔日期<input type="date" class="form-control"></div>
+                                    <div class="col-6 mb-2">抵用金額<input type="text" class="form-control"></div>
+                                    <div class="col-6">可用餘額<input type="text" class="form-control"></div>
+                                    <div class="col-12">
+                                        <label for="exampleFormControlTextarea3" class="form-label">備註</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea3"
+                                            rows="5"></textarea>
+                                    </div>
+                                    <div class="mt-4 text-center">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">取消</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="maintenance_credit">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="maintenance_credit_table">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">維護者</th>
+                                                        <th scope="col">建立日期</th>
+                                                        <th scope="col">金額</th>
+                                                        <th scope="col">備註</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>林員工</td>
+                                                        <td>2021/12/31 15:15:15</td>
+                                                        <td>-900</td>
+                                                        <td>2021/10/31 轉數學抵用</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>林員工</td>
+                                                        <td>2021/12/31 15:15:15</td>
+                                                        <td>-900</td>
+                                                        <td>2021/10/31 轉數學抵用</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>林員工</td>
+                                                        <td>2021/12/31 15:15:15</td>
+                                                        <td>-900</td>
+                                                        <td>2021/10/31 轉數學抵用</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>林員工</td>
+                                                        <td>2021/12/31 15:15:15</td>
+                                                        <td>-900</td>
+                                                        <td>2021/10/31 轉數學抵用</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>林員工</td>
+                                                        <td>2021/12/31 15:15:15</td>
+                                                        <td>-900</td>
+                                                        <td>2021/10/31 轉數學抵用</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="d-flex">
+                                            金額<input type="number" class="form-control num_field"><span>(0~9之數字)</span>
+                                        </div>
+                                        <div class="d-flex align-items-start mt-3">
+                                            備註<textarea class="form-control jinding_remark"
+                                                id="exampleFormControlTextarea4" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-center">
+                                    <button type="button"
+                                        class="btn btn-secondary maintenance_credit_cancel">關閉</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 甘丹數學Modal -->
+        <div class="modal fade" id="math" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xxl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">甘丹數學</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 mb-3 d-flex">
+                                <button class="btn btn-primary me-2">儲存</button>
+                                <button class="btn btn-primary me-2"
+                                    onclick="window.open('/math.html', '_blank')">甘丹訂單</button>
+                                <button class="btn btn-primary me-2 maintenance_credit_btn">維護抵用金額</button>
+                            </div>
+                            <div class="jinding_order">
+                                <div class="row">
+                                    <div class="col-4 mb-2">介紹單位<input type="text" class="form-control"></div>
+                                    <div class="col-4 mb-2">開發人
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected>林員工</option>
+                                            <option value="1">大員工</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 mb-2">負責人
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected>林員工</option>
+                                            <option value="1">大員工</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 mb-2">簽約人
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected>林員工</option>
+                                            <option value="1">大員工</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4">收款人
+                                        <select class="form-select" aria-label="Default select">
+                                            <option selected>林員工</option>
+                                            <option value="1">大員工</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4 mb-2">合約編號<input type="text" class="form-control"></div>
+                                    <div class="col-4 mb-2">簽約日<input type="date" class="form-control"></div>
+                                    <div class="col-4 mb-2">到期日<input type="date" class="form-control"></div>
+                                    <div class="col-4 mb-2">建檔日期<input type="date" class="form-control"></div>
+                                    <div class="col-6 mb-2">抵用金額<input type="text" class="form-control"></div>
+                                    <div class="col-6">可用餘額<input type="text" class="form-control"></div>
+                                    <div class="col-12">
+                                        <label for="exampleFormControlTextarea3" class="form-label">備註</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea3"
+                                            rows="5"></textarea>
+                                    </div>
+                                    <div class="mt-4 text-center">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">取消</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="maintenance_credit">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <div class="maintenance_credit_table">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">維護者</th>
+                                                        <th scope="col">建立日期</th>
+                                                        <th scope="col">金額</th>
+                                                        <th scope="col">備註</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>林員工</td>
+                                                        <td>2021/12/31 15:15:15</td>
+                                                        <td>-900</td>
+                                                        <td>2021/10/31 轉數學抵用</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>林員工</td>
+                                                        <td>2021/12/31 15:15:15</td>
+                                                        <td>-900</td>
+                                                        <td>2021/10/31 轉數學抵用</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>林員工</td>
+                                                        <td>2021/12/31 15:15:15</td>
+                                                        <td>-900</td>
+                                                        <td>2021/10/31 轉數學抵用</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">4</th>
+                                                        <td>林員工</td>
+                                                        <td>2021/12/31 15:15:15</td>
+                                                        <td>-900</td>
+                                                        <td>2021/10/31 轉數學抵用</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">5</th>
+                                                        <td>林員工</td>
+                                                        <td>2021/12/31 15:15:15</td>
+                                                        <td>-900</td>
+                                                        <td>2021/10/31 轉數學抵用</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="d-flex">
+                                            金額<input type="number" class="form-control num_field"><span>(0~9之數字)</span>
+                                        </div>
+                                        <div class="d-flex align-items-start mt-3">
+                                            備註<textarea class="form-control jinding_remark"
+                                                id="exampleFormControlTextarea4" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-center">
+                                    <button type="button"
+                                        class="btn btn-secondary maintenance_credit_cancel">關閉</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 商品購買資訊Modal -->
+        <div class="modal fade" id="software" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xxl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">軟體購買資訊</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-4">
+                            <button class="btn btn-primary me-2">新增</button>
+                            <button class="btn btn-primary me-2">儲存</button>
+                            <button class="btn btn-primary me-2">上傳授權</button>
+                            <button class="btn btn-primary view_detail">檢視詳細資訊</button>
+                        </div>
+                        <div class="software_table">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">軟體名稱</th>
+                                        <th scope="col">使用狀況</th>
+                                        <th scope="col">硬碟序號</th>
+                                        <th scope="col">授權版本</th>
+                                        <th scope="col">教室或位置</th>
+                                        <th scope="col">收款單位</th>
+                                        <th scope="col">購買日期</th>
+                                        <th scope="col">授權開通日</th>
+                                        <th scope="col">授權到期日</th>
+                                        <th scope="col">建檔日期</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>補教大掌櫃</td>
+                                        <td>正常</td>
+                                        <td>529635896</td>
+                                        <td>旗艦版</td>
+                                        <td>主機</td>
+                                        <td>傑人文教事業有限公司</td>
+                                        <td>07年4月4日</td>
+                                        <td>07年4月4日</td>
+                                        <td>07年4月4日</td>
+                                        <td>07年4月4日</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="software_information">
+                            <div class="row">
+                                <div class="col-4">收款單位<input type="text" class="form-control"></div>
+                                <div class="col-4"> 硬碟序號<input type="text" class="form-control"></div>
+                                <div class="col-4"> 收款人<input type="text" class="form-control"></div>
+                                <div class="col-4">購買日<input type="text" class="form-control"></div>
+                                <div class="col-4"> 授權碼<input type="text" class="form-control"></div>
+                                <div class="col-4"> 購買版本<input type="text" class="form-control"></div>
+                                <div class="col-4">教室/位置<input type="text" class="form-control"></div>
+                                <div class="col-4">開通日<input type="text" class="form-control"></div>
+                                <div class="col-4"> 作業系統<input type="text" class="form-control"></div>
+                                <div class="col-4"> 到期日<input type="text" class="form-control"></div>
+                                <div class="col-4"> 登記人<input type="text" class="form-control"></div>
+                                <div class="col-4"> 建檔日<input type="text" class="form-control"></div>
+                                <div class="col-4"> 價格<input type="text" class="form-control"></div>
+                                <div class="col-4 form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5">
+                                    <label class="form-check-label" for="flexCheckChecked5">
+                                        停用此組硬碟序號
+                                    </label>
+                                </div>
+                                <div class="col-4"> 備註<textarea type="text" class="form-control"></textarea></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 查詢大掌櫃到期客戶Modal -->
+        <div class="modal fade" id="expired_customer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xxl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">查詢大掌櫃到期客戶</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-4 d-flex align-items-center">
+                            <button class="btn btn-primary me-2">今日到期</button>
+                            <select class="form-select w-25 me-2" aria-label="Default select">
+                                <option selected>1個月內</option>
+                                <option value="1">2隔月內</option>
+                            </select>
+                            <button class="btn btn-primary me-2">匯出到期資</button>
+                            <p class="red mb-0 fs-5">到期的補習班共有56家</p>
+                        </div>
+                        <div class="software_table">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">補習班編號</th>
+                                        <th scope="col">補習班名稱</th>
+                                        <th scope="col">大掌櫃版本</th>
+                                        <th scope="col">大掌櫃到期日</th>
+                                        <th scope="col">聯絡人</th>
+                                        <th scope="col">聯絡人手機</th>
+                                        <th scope="col">電話(一)</th>
+                                        <th scope="col">電話(二)</th>
+                                        <th scope="col">住址</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">58596</th>
+                                        <td>東興文理短期補習班(鮑金秀)</td>
+                                        <td>旗艦版</td>
+                                        <td>2022/21/31 上午12:00:00</td>
+                                        <td>楊主任</td>
+                                        <td></td>
+                                        <td>0985658963</td>
+                                        <td>0258456933</td>
+                                        <td>台中市台中區台中里台中路台中巷台中弄369號</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js" async></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

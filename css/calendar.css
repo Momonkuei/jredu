@@ -1,0 +1,25 @@
+.view-container-border {
+  background-color: #000 !important;
+}
+
+.outerMain {
+  border: 1px solid red;
+  text-align: center;
+  padding: 20px;
+}
+
+.outerMain .view-container-border {
+  background-color: #000 !important;
+}
+
+.innerIframe {
+  border: 2px solid blue;
+  width: 80%;
+  margin: 0 auto;
+  height: 290px;
+}
+
+.innerIframe .view-container-border {
+  background-color: #000 !important;
+}
+/*# sourceMappingURL=calendar.css.map */

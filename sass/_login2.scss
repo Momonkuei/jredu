@@ -1,0 +1,46 @@
+.login {
+    height: 100vh;
+    background-color: $mainColor;
+    display: flex;
+    .login_btn {
+        width: 100%;
+    }
+}
+
+.logo{
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px; 
+    }
+}
+
+.login_field {
+    align-self: center;
+    width: 25%;
+}
+
+.code {
+    align-items: center;
+    display: flex;
+    position: relative;
+    .code_input {
+        margin-right: 6px;
+        width: 80%;
+    }
+    .is-invalid ~ .invalid-feedback {
+        position: absolute;
+        bottom: -20px;
+    }
+    .code_update {
+        margin-left: 6px;
+        background-color: #f8f9fb;
+        border: 1px solid #b6b6b6;
+        -moz-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        transform: scaleX(-1);
+        padding-bottom: 4px;
+        border-radius: 4px;
+    }
+}

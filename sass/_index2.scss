@@ -1,0 +1,95 @@
+.right_content {
+    margin-left: 240px;
+}
+
+// .new_order {
+//     color: #fff;
+//     background-color: #741b47;
+// }
+
+// .not_processed {
+//     background-color: #e7b8b0;
+// }
+
+// .pending {
+//     background-color: #fbe5cd;
+// }
+
+// .information_pending {
+//     background-color: #c9daf8;
+// }
+
+// .information_replied {
+//     background-color: #dad2e9;
+// }
+
+// .processed_today {
+//     background-color: #fce9da;
+// }
+
+// .schedule_processing {
+//     background-color: #e06665;
+//     color: #fff;
+// }
+
+.tab_label {
+    .nav-link {
+        margin-right: 5px;
+        background-color: $mainColor;
+        color: #000;
+    }
+    .notice {
+        padding: 2px 7px;
+        background-color: #ff4444;
+        color: #fff;
+        border-radius: 50px;
+        font-size: 14px;
+        vertical-align: text-bottom;
+        margin-left: 2px;
+    }
+    button {
+        border: 1px solid #e2e2e2;
+        padding: 6px 30px;
+    }
+}
+
+.red {
+    color: $red;
+}
+
+.tab_content {
+    thead {
+        background-color: $primary;
+        color: #fff;
+    }
+}
+
+.case_btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.side_field {
+    display: flex;
+    select,
+    input {
+        width: 160px;
+        height: 38px;
+        margin-right: 5px;
+    }
+    button {
+        height: 38px;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        width: 18px;
+        padding: 0px 5px;
+        margin: 0px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+}
+
+/*modal-xxl*/
+.modal-xxl {
+    max-width: 1600px;
+}

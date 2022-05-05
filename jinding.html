@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金鼎訂單</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="container-fluid pt-3 jinding">
+        <ul class="nav nav-pills tab_label mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="affiliate_product_tab" data-bs-toggle="pill"
+                    data-bs-target="#affiliate_product" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="true">加盟商品出貨作業
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="order_statistics_tab" data-bs-toggle="pill"
+                    data-bs-target="#order_statistics" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">訂單統計
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="affiliate_product" role="tabpanel"
+                aria-labelledby="order_statistics_tab">
+                <div class="row">
+                    <div class="col-12 d-flex mb-4">
+                        <div class="w-25 d-flex">
+                            <select class="form-select w-75" aria-label="Default select">
+                                <option selected>金鼎作文</option>
+                                <option value="1">甘丹數學</option>
+                            </select>
+                            <span class="fs-4 ms-2">2筆</span>
+                        </div>
+                        <div class="w-25 d-flex">
+                            <input type="search" class="form-control w-75">
+                            <button class="btn btn-primary ms-2">搜尋</button>
+                        </div>
+                    </div>
+                    <h4>所有訂單</h4>
+                    <div class="col-8">
+                        <div class="all_order mb-3">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">訂單編號</th>
+                                        <th scope="col">客戶名稱</th>
+                                        <th scope="col">訂購人</th>
+                                        <th scope="col">連絡電話</th>
+                                        <th scope="col">訂單日期</th>
+                                        <th scope="col">出貨狀況</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">0125478963</th>
+                                        <td>柏克來文理技藝短期補習班</td>
+                                        <td>林員工主任,李XX理事長</td>
+                                        <td>05-2168178</td>
+                                        <td>2020/02/02 15:15:15</td>
+                                        <td>是</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">0125478963</th>
+                                        <td>柏克來文理技藝短期補習班</td>
+                                        <td>林員工,理事長</td>
+                                        <td>05-2168178</td>
+                                        <td>2020/02/02 15:15:15</td>
+                                        <td>是</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">0125478963</th>
+                                        <td>柏克來文理技藝短期補習班</td>
+                                        <td>林員工,理事長</td>
+                                        <td>05-2168178</td>
+                                        <td>2020/02/02 15:15:15</td>
+                                        <td>是</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">0125478963</th>
+                                        <td>柏克來文理技藝短期補習班</td>
+                                        <td>林員工,理事長</td>
+                                        <td>05-2168178</td>
+                                        <td>2020/02/02 15:15:15</td>
+                                        <td>是</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">0125478963</th>
+                                        <td>柏克來文理技藝短期補習班</td>
+                                        <td>林員工,理事長</td>
+                                        <td>05-2168178</td>
+                                        <td>2020/02/02 15:15:15</td>
+                                        <td>是</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="client_name mb-3">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>客戶名稱</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>--檢是最新訂單--</td>
+                                    </tr>
+                                    <tr>
+                                        <td>動態數學短期補習班</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <p class="fs-5">
+                        <span>訂單編號:</span>
+                        <span class="red ms-1 me-2">585296314</span>
+                        <span>剩餘抵扣金額:</span>
+                        <span class="red ms-1">8596</span>
+                    </p>
+                    <div class="col-5">
+                        <p class="fs-5 mb-2">訂購人</p>
+                        <div class="row">
+                            <div class="col-6 mb-2">補習班名稱<input type="text" class="form-control"></div>
+                            <div class="col-6 mb-2">姓名<input type="text" class="form-control"></div>
+                            <div class="col-6 mb-2">室內電話<input type="text" class="form-control"></div>
+                            <div class="col-6 mb-2">行動電話<input type="text" class="form-control"></div>
+                            <div class="col-3 mb-2">郵遞區號<input type="text" class="form-control"></div>
+                            <div class="col-9 mb-2">地址<input type="text" class="form-control"></div>
+                            <div class="col-12 mb-2">電子郵件<input type="email" class="form-control"></div>
+                            <div class="col-6 mb-2">發票抬頭<input type="text" class="form-control"></div>
+                            <div class="col-6 mb-2">發票統編<input type="text" class="form-control"></div>
+                            <div class="col-12 mb-2">
+                                <label for="exampleFormControlTextarea2" class="form-label">備註</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+                            </div>
+                            <div class="col-6 mb-2">運費<input type="number" class="form-control"></div>
+                            <div class="col-6 d-flex align-items-center"><span class="red"> 11月以後新簽約，可能需要付運費</span>
+                            </div>
+                            <div class="col-12 mb-2">收件時間
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>08:00-12:00</option>
+                                    <option value="1">12:00-17:00</option>
+                                </select>
+                            </div>
+                            <div class="col-6 mb-2">出貨日<input type="text" class="form-control"></div>
+                            <div class="col-6 mb-2">託運單編號<input type="text" class="form-control"></div>
+                            <div class="col-6 mb-2 d-flex justify-content-between">
+                                <input class="form-check-input switch2" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ms-1" for="flexCheckDefault">是否含稅</label>
+                                <input type="text" class="form-control w-auto ms-1 me-1">
+                                <span> 元</span>
+                            </div>
+                            <div class="col-6 mb-2">訂單總金額<input type="text" class="form-control">
+                            </div>
+                            <div class="col-6 mb-2 mt-2"><input type="date" class="form-control"></div>
+                            <div class="col-6 mb-2 mt-2"><input type="date" class="form-control"></div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <p class="fs-5 mb-2">金鼎作文訂單</p>
+                        <p class="red">訂單選擇[已完成]之後才會進行扣除抵扣金額,請確認出貨無誤在勾選。</p>
+                        <div class="row">
+                            <div class="col-6">
+                                訂單建立人
+                                <span class="order_information">林員工</span>
+                                <input class="form-check-input switch2" type="checkbox" value="" id="flexCheckDefault2">
+                                <label class="form-check-label ms-1" for="flexCheckDefault2">已出貨</label>
+                            </div>
+                            <div class="col-6">
+                                訂單建立日
+                                <span class="order_information">2022/02/02 14:05:59</span>
+                                <input class="form-check-input switch2" type="checkbox" value="" id="flexCheckDefault3">
+                                <label class="form-check-label ms-1" for="flexCheckDefault3">已完成</label>
+                            </div>
+                        </div>
+                        <div class="order_product">
+                            <table class="table table-hover mt-4">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">產品名稱</th>
+                                        <th scope="col">成本</th>
+                                        <th scope="col">售價</th>
+                                        <th scope="col">數量</th>
+                                        <th scope="col">小記</th>
+                                        <th scope="col">實際出貨</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>金鼎作文簿</td>
+                                        <td>0.0</td>
+                                        <td>25.0</td>
+                                        <td>20</td>
+                                        <td>500.0</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>金鼎作文簿</td>
+                                        <td>0.0</td>
+                                        <td>25.0</td>
+                                        <td>20</td>
+                                        <td>500.0</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>金鼎作文簿</td>
+                                        <td>0.0</td>
+                                        <td>25.0</td>
+                                        <td>20</td>
+                                        <td>500.0</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>金鼎作文簿</td>
+                                        <td>0.0</td>
+                                        <td>25.0</td>
+                                        <td>20</td>
+                                        <td>500.0</td>
+                                        <td>20</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">名稱<input type="text" class="form-control"></div>
+                            <div class="col-3">
+                                數量
+                                <div class="d-flex">
+                                    <input type="text" class="form-control me-2 quantity_input">
+                                    <button class="btn btn-danger">刪除</button>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <p class="mb-1">總數量</p>
+                                <p class="order_information m-0">20</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="mb-1">總數量</p>
+                                <p class="order_information m-0">500</p>
+                            </div>
+                        </div>
+                        <p class="mt-4">金鼎作文,其他X20</p>
+                    </div>
+                </div>
+                <div class="col-12 justify-content-center d-flex mt-3 mb-4">
+                    <button class="btn btn-primary me-2">新增訂單</button>
+                    <select class="form-select me-2 print_select" aria-label="Default select example">
+                        <option selected>列印抵扣金額</option>
+                        <option value="1">不列印抵扣金額</option>
+                    </select>
+                    <button class="btn btn-primary me-2">列印出貨單</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">刪除訂單</button>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="order_statistics" role="tabpanel" aria-labelledby="not_processed_tab">
+                <h4>統計選項</h4>
+                <div class="row">
+                    <div class="col-6 d-flex mb-2">
+                        客戶名稱<input type="text" class="form-control w-25  ms-2">
+                        <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckDefault4">
+                        <label class="form-check-label ms-1" for="flexCheckDefault4">訂單分類</label>
+                        <select class="form-select ms-2 w-25" aria-label="Default select">
+                            <option selected>金鼎作文</option>
+                            <option value="1">甘丹數學</option>
+                        </select>
+                    </div>
+                    <div class="col-6 d-flex mb-2">
+                        產品名稱<input type="text" class="form-control w-25 ms-2">
+                        <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckDefault5">
+                        <label class="form-check-label ms-1" for="flexCheckDefault5">產品分類</label>
+                        <select class="form-select ms-2 w-25" aria-label="Default select">
+                            <option selected>金鼎作文-主教材-學生版</option>
+                            <option value="1">金鼎作文-其他</option>
+                        </select>
+                    </div>
+                    <div class="col-6">起始<input type="date" class="form-control"></div>
+                    <div class="col-6">結束<input type="date" class="form-control"></div>
+                </div>
+                <button class="btn btn-primary mx-auto d-block mt-4 mb-4">搜尋</button>
+                <div class="row">
+                    <div class="col-6">
+                        <p class="fs-5 mb-2">總計 - 總筆數84,總數量999,總金額39395</p>
+                        <div class="total">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">產品名稱</th>
+                                        <th scope="col">總數量</th>
+                                        <th scope="col">總價格</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">金鼎作文主教材509S</th>
+                                        <td>10</td>
+                                        <td>24895</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">金鼎作文主教材509S</th>
+                                        <td>10</td>
+                                        <td>24895</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">金鼎作文主教材589S</th>
+                                        <td>10</td>
+                                        <td>24895</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">金鼎作文主教材509S</th>
+                                        <td>10</td>
+                                        <td>24895</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">金鼎作文主教材509S</th>
+                                        <td>10</td>
+                                        <td>24895</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <p class="fs-5 mb-2">客戶列表</p>
+                        <div class="total_client mb-2">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">客戶編號</th>
+                                        <th scope="col">名稱</th>
+                                        <th scope="col">地址</th>
+                                        <th scope="col">電話</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">0125896-563</th>
+                                        <td>貝斯特語文補習班</td>
+                                        <td>嘉義市東區加北接嘉北路100巷100弄100號</td>
+                                        <td>05-2168178</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">0125896-563</th>
+                                        <td>貝斯特語文補習班</td>
+                                        <td>嘉義市東區加北接嘉北路100巷100弄100號</td>
+                                        <td>05-2168178</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">0125896-563</th>
+                                        <td>貝斯特語文補習班</td>
+                                        <td>嘉義市東區加北接嘉北路100巷100弄100號</td>
+                                        <td>05-2168178</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">0125896-563</th>
+                                        <td>貝斯特語文補習班</td>
+                                        <td>嘉義市東區加北接嘉北路100巷100弄100號</td>
+                                        <td>05-2168178</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">0125896-563</th>
+                                        <td>貝斯特語文補習班</td>
+                                        <td>嘉義市東區加北接嘉北路100巷100弄100號</td>
+                                        <td>05-2168178</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="fs-5 mb-2">訂購細項</p>
+                        <div class="total_order">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">產品名稱</th>
+                                        <th scope="col">總金額</th>
+                                        <th scope="col">總數量</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">金鼎作文主教材604S-教師版</th>
+                                        <td>120</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">金鼎作文主教材604S-教師版</th>
+                                        <td>120</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">金鼎作文主教材604S-教師版</th>
+                                        <td>120</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">金鼎作文主教材604S-教師版</th>
+                                        <td>120</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">金鼎作文主教材604S-教師版</th>
+                                        <td>120</td>
+                                        <td>5</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
