@@ -1,0 +1,201 @@
+// @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css");
+
+.brand {
+    padding: 10px;
+    background: #86b7fe;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 2px solid #6ea8fe;
+
+    &:hover {
+        color: #fff;
+        background-color: #094db1;
+
+        img {
+            transform: scale(0.98);
+        }
+    }
+
+    img {
+        width: 30px;
+    }
+}
+
+.sidebar-menu {
+    width: 240px;
+    height: 100vh;
+    background: $mainColor;
+    float: left;
+    min-height: 100%;
+    position: absolute;
+}
+
+/* 打开和关闭手风琴面板的样式 */
+.sideBar_accordion {
+    background-color: #86b7fe;
+    color: #444;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 2px solid #9ec5fe;
+
+    P {
+        display: flex;
+        align-items: center;
+        /*取消下面留白，來自bootstrap的預設*/
+        margin-bottom: 0;
+
+        span {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    .accordionsIcon {
+        margin-left: auto;
+    }
+}
+
+/* 设置点击和鼠标移到选项上面时（悬停）的样式 */
+.active,
+.sideBar_accordion:hover {
+    background-color: #094db1;
+    color: #fff;
+    border-radius: 0 0 15PX 0;
+}
+
+
+/* 設置點擊後，icon旋轉的樣式 */
+.active {
+    .accordionsIcon {
+        transform: rotate(180deg);
+    }
+}
+
+/* 为手风琴面板设计样式。 默认隐藏 */
+.panel {
+    width: 100%;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+
+
+
+    /*點開連結樣式設定 */
+    ul.panelList {
+
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 0;
+        padding-left: 0;
+
+
+        li {
+            a {
+
+                background-color: #cfe2ff;
+                color: #222;
+                width: 100%;
+                display: inline-block;
+                cursor: pointer;
+                padding: 0.5rem 2rem;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #e7f1ff;
+                    box-shadow: 0 4px 4px rgba(207, 226, 255, 0.75);
+                }
+            }
+        }
+    }
+}
+
+
+/*舊版本=>顯示方式 鼠標觸發右邊連結顯示_更改日期2022/05/06*/
+// #menu {
+//     padding: 0;
+
+//     li {
+//         position: relative;
+//         margin: 0;
+//         padding: 0;
+
+//         &:hover {
+//             ul {
+//                 visibility: visible;
+//                 opacity: 1;
+//             }
+//         }
+
+//         ul {
+//             width: 240px;
+//             height: auto;
+//             position: absolute;
+//             left: 0%;
+//             top: 100%;
+//             padding: 0;
+//             visibility: hidden;
+//             background-color: #ffe589;
+//             opacity: 0;
+//             transition: opacity 0.1s linear;
+//             border-top: none;
+//             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+//             z-index: 999;
+
+//             li {
+//                 background-color: #ffe589;
+//                 float: left;
+//                 width: 100%;
+//                 text-align: center;
+
+//                 a {
+//                     font-size: 15px;
+//                     padding: 10px 0px;
+
+//                     &:hover {
+//                         background-color: #fff7da;
+//                         color: #000;
+//                     }
+//                 }
+//             }
+//         }
+
+//         a {
+//             display: block;
+//             padding: 12px 15px;
+//             color: #000;
+//             white-space: nowrap;
+//             font-size: 16px;
+//             text-decoration: none;
+//             white-space: pre-wrap;
+
+//             &:hover {
+//                 color: #ffffff;
+//                 transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+//                 background-color: $primary;
+//             }
+//         }
+//     }
+// }
