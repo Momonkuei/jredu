@@ -2,10 +2,13 @@
     thead {
         background-color: $primary;
         color: #fff;
+
     }
+
     .photo {
         width: 80px;
     }
+
     .sale {
         background-color: #91f3a7;
     }
@@ -24,13 +27,15 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
+
     /* checking style */
-    &:checked + .switch_label {
+    &:checked+.switch_label {
         background: $primary;
         border: 2px solid $primary;
     }
+
     /* move */
-    &:checked + .switch_label .onf_btn {
+    &:checked+.switch_label .onf_btn {
         left: 34px;
         background: #fff;
         box-shadow: 1px 2px 3px #00000020;
@@ -47,9 +52,11 @@
     border: 2px solid $primary;
     border-radius: 20px;
     transition: 0.2s;
+
     &:hover {
         background: #efefef;
     }
+
     .onf_btn {
         position: absolute;
         top: 2px;
