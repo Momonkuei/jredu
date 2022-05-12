@@ -1,0 +1,181 @@
+/*
+color 主色調:#094db1
+
+;
+
+firstTabe hover color:#225fb9
+
+點開 active #3a71c1 (-20%)
+
+hover #6b94d0 (-40%)
+
+second-header table 標頭 #225fb9 (10%)
+
+solid #9ec5fe
+
+listtable
+#5382c8
+
+hover #9db8e0 (-60%)
+*/
+
+
+
+
+.content-table {
+    margin: 0 auto !important;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1rem;
+    min-width: 800px;
+    border-radius: 5px 5px 0 0;
+    // overflow: hidden;
+    //彈出視窗在使用  position: absolute; 一樣會被遮蓋掉
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+
+}
+
+.content-table thead tr {
+    background-color: #094db1;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #86b7fe;
+}
+
+.content-table tbody tr:hover {
+    background-color: #6b94d0;
+    color: #fff;
+}
+
+.content-table tbody tr.active-row {
+    background-color: #84a6d8;
+    color: #fff;
+}
+
+/******************/
+/* 按鈕 */
+/******************/
+
+
+
+.list_table_toggle_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+
+    &:hover {
+        color: #ffffff;
+    }
+}
+
+// 次表單
+.td_list_table:hover {
+    color: 333;
+}
+
+
+.content-table .td_list_table {
+    // background-color: #5382c8;
+    // display: none;
+    padding: 0;
+
+}
+
+.active {
+    display: block;
+}
+
+.list_table {
+    background-color: #5382c8;
+    width: 100%;
+    text-align: center;
+
+}
+
+.list_table thead tr {
+    background-color: #5382c8;
+    text-align: center;
+}
+
+.list_table tbody tr {
+    background-color: #f3f3f3;
+
+    &:hover {
+        background-color: #9db8e0;
+    }
+}
+
+/******************/
+/* 下拉選單 */
+/******************/
+
+.list_table_dropdown {
+    position: relative;
+}
+
+.list_table_dropdown_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+
+    &:hover {
+        color: #ffffff;
+    }
+
+}
+
+.list_table_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    top: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.list_table_dropdown_content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: #ddd;
+    }
+}
+
+.list_table_dropdown:hover .list_table_dropdown_content {
+    display: block;
+}

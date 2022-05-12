@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首頁</title>
+    <title>預存款管理</title>
     <link rel="stylesheet" href="./css/sass/all.css">
 </head>
 
 <body>
+
+
+
+
     <div class="sidebar_box">
         <div class="sidebar-menu me-2">
-            <a class="brand" href="home.html"><img src="images/logo.png" alt="logo"> 傑人公司管理系統</a>
+            <a class="brand" href="home.html"><img src="./images/logo.png" alt="logo"> 傑人公司管理系統</a>
             <!-- 測試位置 -->
             <!-- 客戶服務部 -->
             <button class="sideBar_accordion">
@@ -211,9 +215,7 @@
             <!-- 測試版本 -->
 
             <div class="nav_container">
-                <div class="header_title">
-                    <h2 class="header_title_contant">首頁</h2>
-                </div>
+                <h2 class="header_title">預存款管理</h2>
                 <nav class="header_navbar">
                     <ul class="navbar_list">
                         <li>
@@ -286,31 +288,6 @@
             </div>
 
 
-            <!-- 舊版 -->
-            <!-- <div class="tab_label d-flex">
-                    <h3 class="tab_title">首頁</h3>
-                    <button class="btn nav-link me-1" onclick="location.href='index.html'">新訂單<span
-                            class="notice">888</span></button>
-                    <button class="btn nav-link me-1" onclick="location.href='index.html'">未處理<span
-                            class="notice">12</span></button>
-                    <button class="btn nav-link me-1" onclick="location.href='index.html'">資訊部已回覆<span
-                            class="notice">1</span></button>
-                    <button class="btn nav-link me-1" onclick="location.href='index.html'">客服處理中<span
-                            class="notice">6</span></button>
-                    <button class="btn nav-link me-1" onclick="location.href='index.html'">待資訊部處理<span
-                            class="notice">6</span></button>
-                    <button class="btn nav-link me-1" onclick="location.href='index.html'">資訊部處理中<span
-                            class="notice">3</span></button>
-                    <button class="btn nav-link me-1" onclick="location.href='index.html'">本日已處理<span
-                            class="notice">1</span></button>
-                    <button class="btn nav-link me-1" onclick="location.href='index.html'">排程處理<span
-                            class="notice">1</span></button>
-                    <button class="btn nav-link me-1" onclick="location.href='index.html'">待提問人處理<span
-                            class="notice">2</span></button>
-                    <button class="btn nav-link me-1" onclick="location.href='index.html'">提問人已回覆<span
-                            class="notice">40</span></button>
-                </div> -->
-
             <!-- 登入提示系統 -->
             <div class="login_prompt">
                 <div class="dropdown">
@@ -324,7 +301,7 @@
                     </div>
                 </div>
                 <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="系統公告"><img
-                        src="images/announcement.png"></a>
+                        src="./images/announcement.png"></a>
                 <a class="dropdown-toggle employer_dropdown" href='#'>林員工</a>
                 <ul class="dropdown-menu" role="menu">
                     <li><a href="#">登出</a></li>
@@ -333,130 +310,156 @@
         </div>
 
 
+        <!-- table -->
         <div class="container-fluid">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h3 class="mb-0">傑人公告區</h3>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#announcement_add">新增 </button>
-            </div>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <table class="table table-bordered">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="d-flex justify-content-between align-items-center px-3 py-2">
-                                        <p class="mb-0 announcement_title">標題標題 <span class="float-end">發佈日期:2022/04/12
-                                                10:20:53</span></p>
-                                        <button class="btn btn-warning">置頂</button>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#announcement_edit">編輯 </button>
-                                        <button class="btn btn-danger">刪除</button>
-                                        <button class="btn collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                            aria-controls="flush-collapseOne">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <div class="container-fluid">
+                <div class="row flex">
+                    <div>
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>編號</th>
+                                    <th>縣市</th>
+                                    <th>客戶名稱</th>
+                                    <th>預存餘額</th>
+                                    <th>應存款</th>
+                                    <th>應扣不足款</th>
+                                    <th>應扣日期</th>
+                                    <th>應扣名稱</th>
+                                    <th>細節</th>
+                                    <th>設定</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>1</td>
+                                    <td>台中市</td>
+                                    <td>徐威英語-北屯分校</td>
+                                    <td>32,000</td>
+                                    <td>64,000</td>
+                                    <td>10,000</td>
+                                    <td>2022/10/10</td>
+                                    <td>學生管理系統</td>
+                                    <td>
+                                        <button class="list_table_toggle_btn">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
                                         </button>
-                                    </div>
-                                    <div id="flush-collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">清潔工作請於每日午前完成，謝謝。</div>
+                                    </td>
+                                    <td>
+                                        <div class="list_table_dropdown">
+                                            <button class="list_table_dropdown_btn">
+                                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                            </button>
+                                            <div class="list_table_dropdown_content">
+                                                <a href="#">取消應存</a>
+                                                <a href="#">設定應存款</a>
+                                                <a href="#">送出設定</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td><input type="checkbox"></td>
+                                    <td>1(點擊下拉)</td>
+                                    <td>台中市</td>
+                                    <td>徐威英語-北屯分校</td>
+                                    <td>32,000</td>
+                                    <td>64,000</td>
+                                    <td>10,000</td>
+                                    <td>2022/10/10</td>
+                                    <td>學生管理系統</td>
+                                    <td>
+                                        <button class="list_table_toggle_btn">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="list_table_dropdown">
+                                            <button class="list_table_dropdown_btn">
+                                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                            </button>
+                                            <div class="list_table_dropdown_content">
+                                                <a href="#">取消應存</a>
+                                                <a href="#">設定應存款</a>
+                                                <a href="#">送出設定</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <td class="td_list_table " colspan="11">
+                                    <div class="panel_group">
+                                        <div>
+                                            <table class="list_table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>簡訊(次標題)</th>
+                                                        <th>系統年費</th>
+                                                        <th>網路空間</th>
+                                                        <th>線上報名扣次</th>
+                                                        <th>教學平台月費</th>
+                                                        <th>備註</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>1,200</td>
+                                                        <td>10G</td>
+                                                        <td>1/次</td>
+                                                        <td>$600/Mouth</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-flex justify-content-between align-items-center px-3 py-2">
-                                        <p class="mb-0 announcement_title">標題標題 <span class="float-end">發佈日期:2022/04/12
-                                                10:20:53</span></p>
-                                        <button class="btn btn-warning">置頂</button>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#announcement_edit">編輯 </button>
-                                        <button class="btn btn-danger">刪除</button>
-                                        <button class="btn collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                            aria-controls="flush-collapseTwo">
-                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>1</td>
+                                    <td>台中市</td>
+                                    <td>徐威英語-北屯分校</td>
+                                    <td>32,000</td>
+                                    <td>64,000</td>
+                                    <td>10,000</td>
+                                    <td>2022/10/10</td>
+                                    <td>學生管理系統</td>
+                                    <td>
+                                        <button class="list_table_toggle_btn">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
                                         </button>
-                                    </div>
-                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">清潔工作請於每日午前完成，謝謝。</div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="p-3 text-center">
-            <iframe
-                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTaipei&showTitle=1&showNav=1&src=amFja3NvbjE5OTFAanJlZHUubmV0&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=emgtdHcudGFpd2FuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043"
-                style="border-width:0 #777" width="100%" height="800" frameborder="0" scrolling="no">
-            </iframe>
-        </div>
-        <!-- 新增公告Modal -->
-        <div class="modal fade" id="announcement_add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">新增公告</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid mt-4 mb-3">
-                            <div class="row">
-                                <div class="col-12 mb-2">公告標題<input type="text" class="form-control"></div>
-                                <div class="col-12 mb-4">
-                                    <label for="school_nameTextarea" class="form-label mb-0">公告內容</label>
-                                    <textarea class="form-control" id="school_nameTextarea" rows="4"></textarea>
-                                </div>
-                            </div>
-                            <div class="add_btn text-center">
-                                <button class="btn btn-primary me-2">確認</button>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-                            </div>
-                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="list_table_dropdown">
+                                            <button class="list_table_dropdown_btn">
+                                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                            </button>
+                                            <div class="list_table_dropdown_content">
+                                                <a href="#">取消應存</a>
+                                                <a href="#">設定應存款</a>
+                                                <a href="#">送出設定</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- 編輯公告Modal -->
-        <div class="modal fade" id="announcement_edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">編輯公告</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid mt-4 mb-3">
-                            <div class="row">
-                                <div class="col-12 mb-2">公告標題<input type="text" class="form-control" value="公告標題公告標題">
-                                </div>
-                                <div class="col-12 mb-4">
-                                    <label for="school_nameTextarea" class="form-label mb-0">公告內容</label>
-                                    <textarea class="form-control" id="school_nameTextarea" rows="4">公告內容公告內容</textarea>
-                                </div>
-                            </div>
-                            <div class="add_btn text-center">
-                                <button class="btn btn-primary me-2">確認</button>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
+
     </div>
-    <script src="js/bootstrap.bundle.min.js" async></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js" async></script>
+    <script src="./js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/sidemenu.js"></script>
+    <script src="./js/preDepositManagement.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
