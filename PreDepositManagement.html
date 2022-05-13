@@ -309,9 +309,459 @@
             </div>
         </div>
 
+        <!-- Nav pills -->
+        <div class="row">
+            <div class="col">
 
-        <!-- table -->
-        <div class="container-fluid">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="pill" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#menu1">Menu 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="pill" href="#menu2">Menu 2</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+
+                    <!-- 表單一 -->
+
+                    <div class="tab-pane container active" id="home">
+                        <div class="container-fluid">
+                            <div class="container-fluid">
+                                <div class="row flex">
+                                    <div>
+                                        <table class="content-table">
+                                            <thead>
+                                                <tr>
+                                                    <th><input type="checkbox"></th>
+                                                    <th>編號</th>
+                                                    <th>縣市</th>
+                                                    <th>客戶名稱</th>
+                                                    <th>預存餘額</th>
+                                                    <th>應存款</th>
+                                                    <th>應扣不足款</th>
+                                                    <th>應扣日期</th>
+                                                    <th>應扣名稱</th>
+                                                    <th>細節</th>
+                                                    <th>設定</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="content_table_tbody_tr">
+                                                    <td><input type="checkbox"></td>
+                                                    <td>1</td>
+                                                    <td>台中市</td>
+                                                    <td>徐威英語-北屯分校</td>
+                                                    <td>32,000</td>
+                                                    <td>64,000</td>
+                                                    <td>10,000</td>
+                                                    <td>2022/10/10</td>
+                                                    <td>學生管理系統</td>
+                                                    <td>
+                                                        <button class="list_table_toggle_btn">
+                                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <div class="list_table_dropdown">
+                                                            <button class="list_table_dropdown_btn">
+                                                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                            </button>
+                                                            <div class="list_table_dropdown_content">
+                                                                <a href="#">取消應存</a>
+                                                                <a href="#">設定應存款</a>
+                                                                <a href="#">送出設定</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <td class="td_list_table" colspan="11">
+                                                    <div class="panel_group">
+                                                        <div>
+                                                            <table class="list_table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>簡訊(次標題)</th>
+                                                                        <th>系統年費</th>
+                                                                        <th>合約時間</th>
+                                                                        <th>網路空間</th>
+                                                                        <th>線上報名扣次</th>
+                                                                        <th>教學平台月費</th>
+                                                                        <th>備註</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>1,200</td>
+                                                                        <td>2020/1/1~2022/12/31</td>
+                                                                        <td>10G</td>
+                                                                        <td>1/次</td>
+                                                                        <td>$600/Mouth</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <tr class="content_table_tbody_tr">
+                                                    <td><input type="checkbox"></td>
+                                                    <td>2(點擊下拉)</td>
+                                                    <td>台中市</td>
+                                                    <td>徐威英語-北屯分校</td>
+                                                    <td>32,000</td>
+                                                    <td>64,000</td>
+                                                    <td>10,000</td>
+                                                    <td>2022/10/10</td>
+                                                    <td>學生管理系統</td>
+                                                    <td>
+                                                        <button class="list_table_toggle_btn">
+                                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <div class="list_table_dropdown">
+                                                            <button class="list_table_dropdown_btn">
+                                                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                            </button>
+                                                            <div class="list_table_dropdown_content">
+                                                                <a href="#">取消應存</a>
+                                                                <a href="#">設定應存款</a>
+                                                                <a href="#">送出設定</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <td class="td_list_table" colspan="11">
+                                                    <div class="panel_group">
+                                                        <div>
+                                                            <table class="list_table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>簡訊(次標題)</th>
+                                                                        <th>系統年費</th>
+                                                                        <th>合約時間</th>
+                                                                        <th>網路空間</th>
+                                                                        <th>線上報名扣次</th>
+                                                                        <th>教學平台月費</th>
+                                                                        <th>備註</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>1,200</td>
+                                                                        <td>2020/1/1~2022/12/31</td>
+                                                                        <td>10G</td>
+                                                                        <td>1/次</td>
+                                                                        <td>$600/Mouth</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <tr class="content_table_tbody_tr">
+                                                    <td><input type="checkbox"></td>
+                                                    <td>3(點擊下拉)</td>
+                                                    <td>台中市</td>
+                                                    <td>徐威英語-北屯分校</td>
+                                                    <td>32,000</td>
+                                                    <td>64,000</td>
+                                                    <td>10,000</td>
+                                                    <td>2022/10/10</td>
+                                                    <td>學生管理系統</td>
+                                                    <td>
+                                                        <button class="list_table_toggle_btn">
+                                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <div class="list_table_dropdown">
+                                                            <button class="list_table_dropdown_btn">
+                                                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                            </button>
+                                                            <div class="list_table_dropdown_content">
+                                                                <a href="#">取消應存</a>
+                                                                <a href="#">設定應存款</a>
+                                                                <a href="#">送出設定</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <td class="td_list_table" colspan="11">
+                                                    <div class="panel_group">
+                                                        <div>
+                                                            <table class="list_table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>簡訊(次標題)</th>
+                                                                        <th>系統年費</th>
+                                                                        <th>合約時間</th>
+                                                                        <th>網路空間</th>
+                                                                        <th>線上報名扣次</th>
+                                                                        <th>教學平台月費</th>
+                                                                        <th>備註</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>1,200</td>
+                                                                        <td>2020/1/1~2022/12/31</td>
+                                                                        <td>10G</td>
+                                                                        <td>1/次</td>
+                                                                        <td>$600/Mouth</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 表單二 -->
+
+                    <div class="tab-pane container fade" id="menu1">
+                        <div class="container-fluid">
+                            <div class="container-fluid">
+                                <div class="row flex">
+                                    <div>
+                                        <table class="content-table">
+                                            <thead>
+                                                <tr>
+                                                    <th><input type="checkbox"></th>
+                                                    <th>編號</th>
+                                                    <th>縣市</th>
+                                                    <th>客戶名稱</th>
+                                                    <th>預存餘額</th>
+                                                    <th>應存款</th>
+                                                    <th>應扣不足款</th>
+                                                    <th>應扣日期</th>
+                                                    <th>應扣名稱</th>
+                                                    <th>細節</th>
+                                                    <th>設定</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="content_table_tbody_tr">
+                                                    <td><input type="checkbox"></td>
+                                                    <td>1</td>
+                                                    <td>台中市</td>
+                                                    <td>徐威英語-北屯分校</td>
+                                                    <td>32,000</td>
+                                                    <td>64,000</td>
+                                                    <td>10,000</td>
+                                                    <td>2022/10/10</td>
+                                                    <td>學生管理系統</td>
+                                                    <td>
+                                                        <button class="list_table_toggle_btn">
+                                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <div class="list_table_dropdown">
+                                                            <button class="list_table_dropdown_btn">
+                                                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                            </button>
+                                                            <div class="list_table_dropdown_content">
+                                                                <a href="#">取消應存</a>
+                                                                <a href="#">設定應存款</a>
+                                                                <a href="#">送出設定</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <td class="td_list_table" colspan="11">
+                                                    <div class="panel_group">
+                                                        <div>
+                                                            <table class="list_table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>簡訊(次標題)</th>
+                                                                        <th>系統年費</th>
+                                                                        <th>合約時間</th>
+                                                                        <th>網路空間</th>
+                                                                        <th>線上報名扣次</th>
+                                                                        <th>教學平台月費</th>
+                                                                        <th>備註</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>1,200</td>
+                                                                        <td>2020/1/1~2022/12/31</td>
+                                                                        <td>10G</td>
+                                                                        <td>1/次</td>
+                                                                        <td>$600/Mouth</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <tr class="content_table_tbody_tr">
+                                                    <td><input type="checkbox"></td>
+                                                    <td>2(點擊下拉)</td>
+                                                    <td>台中市</td>
+                                                    <td>徐威英語-北屯分校</td>
+                                                    <td>32,000</td>
+                                                    <td>64,000</td>
+                                                    <td>10,000</td>
+                                                    <td>2022/10/10</td>
+                                                    <td>學生管理系統</td>
+                                                    <td>
+                                                        <button class="list_table_toggle_btn">
+                                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <div class="list_table_dropdown">
+                                                            <button class="list_table_dropdown_btn">
+                                                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                            </button>
+                                                            <div class="list_table_dropdown_content">
+                                                                <a href="#">取消應存</a>
+                                                                <a href="#">設定應存款</a>
+                                                                <a href="#">送出設定</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <td class="td_list_table" colspan="11">
+                                                    <div class="panel_group">
+                                                        <div>
+                                                            <table class="list_table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>簡訊(次標題)</th>
+                                                                        <th>系統年費</th>
+                                                                        <th>合約時間</th>
+                                                                        <th>網路空間</th>
+                                                                        <th>線上報名扣次</th>
+                                                                        <th>教學平台月費</th>
+                                                                        <th>備註</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>1,200</td>
+                                                                        <td>2020/1/1~2022/12/31</td>
+                                                                        <td>10G</td>
+                                                                        <td>1/次</td>
+                                                                        <td>$600/Mouth</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+                                                <tr class="content_table_tbody_tr">
+                                                    <td><input type="checkbox"></td>
+                                                    <td>3(點擊下拉)</td>
+                                                    <td>台中市</td>
+                                                    <td>徐威英語-北屯分校</td>
+                                                    <td>32,000</td>
+                                                    <td>64,000</td>
+                                                    <td>10,000</td>
+                                                    <td>2022/10/10</td>
+                                                    <td>學生管理系統</td>
+                                                    <td>
+                                                        <button class="list_table_toggle_btn">
+                                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <div class="list_table_dropdown">
+                                                            <button class="list_table_dropdown_btn">
+                                                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                                            </button>
+                                                            <div class="list_table_dropdown_content">
+                                                                <a href="#">取消應存</a>
+                                                                <a href="#">設定應存款</a>
+                                                                <a href="#">送出設定</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <td class="td_list_table" colspan="11">
+                                                    <div class="panel_group">
+                                                        <div>
+                                                            <table class="list_table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>簡訊(次標題)</th>
+                                                                        <th>系統年費</th>
+                                                                        <th>合約時間</th>
+                                                                        <th>網路空間</th>
+                                                                        <th>線上報名扣次</th>
+                                                                        <th>教學平台月費</th>
+                                                                        <th>備註</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>2</td>
+                                                                        <td>1,200</td>
+                                                                        <td>2020/1/1~2022/12/31</td>
+                                                                        <td>10G</td>
+                                                                        <td>1/次</td>
+                                                                        <td>$600/Mouth</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 表單三 -->
+
+                    <div class="tab-pane container fade" id="menu2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- table 原型 -->
+        <!-- <div class="container-fluid">
             <div class="container-fluid">
                 <div class="row flex">
                     <div>
@@ -332,7 +782,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr class="content_table_tbody_tr">
                                     <td><input type="checkbox"></td>
                                     <td>1</td>
                                     <td>台中市</td>
@@ -360,35 +810,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="active-row">
-                                    <td><input type="checkbox"></td>
-                                    <td>1(點擊下拉)</td>
-                                    <td>台中市</td>
-                                    <td>徐威英語-北屯分校</td>
-                                    <td>32,000</td>
-                                    <td>64,000</td>
-                                    <td>10,000</td>
-                                    <td>2022/10/10</td>
-                                    <td>學生管理系統</td>
-                                    <td>
-                                        <button class="list_table_toggle_btn">
-                                            <ion-icon name="chevron-down-outline"></ion-icon>
-                                        </button>
-                                    </td>
-                                    <td>
-                                        <div class="list_table_dropdown">
-                                            <button class="list_table_dropdown_btn">
-                                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-                                            </button>
-                                            <div class="list_table_dropdown_content">
-                                                <a href="#">取消應存</a>
-                                                <a href="#">設定應存款</a>
-                                                <a href="#">送出設定</a>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <td class="td_list_table " colspan="11">
+                                <td class="td_list_table" colspan="11">
                                     <div class="panel_group">
                                         <div>
                                             <table class="list_table">
@@ -396,6 +818,7 @@
                                                     <tr>
                                                         <th>簡訊(次標題)</th>
                                                         <th>系統年費</th>
+                                                        <th>合約時間</th>
                                                         <th>網路空間</th>
                                                         <th>線上報名扣次</th>
                                                         <th>教學平台月費</th>
@@ -404,8 +827,9 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>1</td>
+                                                        <td>2</td>
                                                         <td>1,200</td>
+                                                        <td>2020/1/1~2022/12/31</td>
                                                         <td>10G</td>
                                                         <td>1/次</td>
                                                         <td>$600/Mouth</td>
@@ -416,9 +840,10 @@
                                         </div>
                                     </div>
                                 </td>
-                                <tr>
+
+                                <tr class="content_table_tbody_tr">
                                     <td><input type="checkbox"></td>
-                                    <td>1</td>
+                                    <td>2(點擊下拉)</td>
                                     <td>台中市</td>
                                     <td>徐威英語-北屯分校</td>
                                     <td>32,000</td>
@@ -444,12 +869,104 @@
                                         </div>
                                     </td>
                                 </tr>
+                                <td class="td_list_table" colspan="11">
+                                    <div class="panel_group">
+                                        <div>
+                                            <table class="list_table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>簡訊(次標題)</th>
+                                                        <th>系統年費</th>
+                                                        <th>合約時間</th>
+                                                        <th>網路空間</th>
+                                                        <th>線上報名扣次</th>
+                                                        <th>教學平台月費</th>
+                                                        <th>備註</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>1,200</td>
+                                                        <td>2020/1/1~2022/12/31</td>
+                                                        <td>10G</td>
+                                                        <td>1/次</td>
+                                                        <td>$600/Mouth</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <tr class="content_table_tbody_tr">
+                                    <td><input type="checkbox"></td>
+                                    <td>3(點擊下拉)</td>
+                                    <td>台中市</td>
+                                    <td>徐威英語-北屯分校</td>
+                                    <td>32,000</td>
+                                    <td>64,000</td>
+                                    <td>10,000</td>
+                                    <td>2022/10/10</td>
+                                    <td>學生管理系統</td>
+                                    <td>
+                                        <button class="list_table_toggle_btn">
+                                            <ion-icon name="chevron-down-outline"></ion-icon>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <div class="list_table_dropdown">
+                                            <button class="list_table_dropdown_btn">
+                                                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                                            </button>
+                                            <div class="list_table_dropdown_content">
+                                                <a href="#">取消應存</a>
+                                                <a href="#">設定應存款</a>
+                                                <a href="#">送出設定</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <td class="td_list_table" colspan="11">
+                                    <div class="panel_group">
+                                        <div>
+                                            <table class="list_table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>簡訊(次標題)</th>
+                                                        <th>系統年費</th>
+                                                        <th>合約時間</th>
+                                                        <th>網路空間</th>
+                                                        <th>線上報名扣次</th>
+                                                        <th>教學平台月費</th>
+                                                        <th>備註</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>1,200</td>
+                                                        <td>2020/1/1~2022/12/31</td>
+                                                        <td>10G</td>
+                                                        <td>1/次</td>
+                                                        <td>$600/Mouth</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+
+
                             </tbody>
                         </table>
+
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
 

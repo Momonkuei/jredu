@@ -90,7 +90,7 @@ solid #9ec5fe
 }
 
 /* 设置点击和鼠标移到选项上面时（悬停）的样式 */
-.active,
+.sideBar_active,
 .sideBar_accordion:hover {
     background-color: #094db1;
     color: #fff;
@@ -99,7 +99,7 @@ solid #9ec5fe
 
 
 /* 設置點擊後，icon旋轉的樣式 */
-.active {
+.sideBar_active {
     .accordionsIcon {
         transform: rotate(180deg);
     }

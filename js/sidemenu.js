@@ -8,7 +8,7 @@ const accordions = document.querySelectorAll('.sideBar_accordion');
 accordions.forEach(acc => {
     acc.addEventListener("click", () => {
         console.log(acc);
-        acc.classList.toggle("active");
+        acc.classList.toggle("sideBar_active");
         const panel = acc.nextElementSibling;
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;

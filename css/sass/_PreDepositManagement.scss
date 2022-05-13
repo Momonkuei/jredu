@@ -23,7 +23,8 @@ hover #9db8e0 (-60%)
 
 
 .content-table {
-    margin: 0 auto !important;
+    // margin: 0 auto !important;
+    margin: 0 auto;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 1rem;
@@ -36,6 +37,7 @@ hover #9db8e0 (-60%)
 
 }
 
+// 主標單標頭
 .content-table thead tr {
     background-color: #094db1;
     color: #ffffff;
@@ -54,23 +56,28 @@ hover #9db8e0 (-60%)
     border-bottom: 1px solid #dddddd;
 }
 
-.content-table tbody tr:nth-of-type(even) {
+.content-table tbody tr:nth-of-type(4n+3) {
     background-color: #f3f3f3;
 }
+
+
 
 .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #86b7fe;
 }
 
-.content-table tbody tr:hover {
+.content-table tbody .content_table_tbody_tr:hover {
     background-color: #6b94d0;
     color: #fff;
 }
 
-.content-table tbody tr.active-row {
-    background-color: #84a6d8;
+// 點擊下拉主選單顯示
+.content-table tbody .content_table_tbody_tr.active_row {
+    background-color: #3a71c1;
     color: #fff;
 }
+
+
 
 /******************/
 /* 按鈕 */
@@ -94,6 +101,27 @@ hover #9db8e0 (-60%)
 }
 
 // 次表單
+
+.list_table {
+    background-color: #5382c8;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+//隱藏次表單
+.td_list_table .panel_group {
+    height: 0;
+    overflow: hidden;
+}
+
+//顯示隱藏表單
+.td_list_table.List_table_active .panel_group {
+    height: 100%;
+}
+
+
+
 .td_list_table:hover {
     color: 333;
 }
@@ -106,16 +134,7 @@ hover #9db8e0 (-60%)
 
 }
 
-.active {
-    display: block;
-}
 
-.list_table {
-    background-color: #5382c8;
-    width: 100%;
-    text-align: center;
-
-}
 
 .list_table thead tr {
     background-color: #5382c8;
@@ -133,6 +152,7 @@ hover #9db8e0 (-60%)
 /******************/
 /* 下拉選單 */
 /******************/
+
 
 .list_table_dropdown {
     position: relative;
