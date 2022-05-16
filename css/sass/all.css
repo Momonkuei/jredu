@@ -13335,8 +13335,24 @@ listtable
 
 hover #9db8e0 (-60%)
 */
+/*********************/
+/* 顏色區分
+
+
+//尚未通知，尚未繳費
+
+#dc3545
+
+//已通知，尚未繳費
+#fd7e14
+
+//合約順利進行的客戶
+
+#198754
+
+*/
+/***************************/
 .content-table {
-  margin: 0 auto;
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 1rem;
@@ -13385,6 +13401,13 @@ hover #9db8e0 (-60%)
 /******************/
 /* 按鈕 */
 /******************/
+.input-date {
+  padding: 6px 10px;
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  stroke: #0d6efd;
+}
+
 .list_table_toggle_btn {
   display: -webkit-box;
   display: -ms-flexbox;
