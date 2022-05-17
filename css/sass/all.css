@@ -13344,7 +13344,14 @@ hover #9db8e0 (-60%)
 #dc3545
 
 //已通知，尚未繳費
+第一次通知
+#fea55b
+
+第二次通知
 #fd7e14
+
+第三次通知
+#b1580e
 
 //合約順利進行的客戶
 
@@ -13352,6 +13359,12 @@ hover #9db8e0 (-60%)
 
 */
 /***************************/
+/********************************/
+/*導覽與頁籤 (Navs and tabs)*/
+/**********************************/
+/**********************************/
+/*表單*/
+/***********************************/
 .content-table {
   border-collapse: collapse;
   margin: 25px 0;
@@ -13388,6 +13401,10 @@ hover #9db8e0 (-60%)
   border-bottom: 2px solid #86b7fe;
 }
 
+.content_table_tbody_tr > td {
+  vertical-align: middle;
+}
+
 .content-table tbody .content_table_tbody_tr:hover {
   background-color: #6b94d0;
   color: #fff;
@@ -13398,6 +13415,36 @@ hover #9db8e0 (-60%)
   color: #fff;
 }
 
+.content-table span {
+  display: block;
+}
+
+.payment-reminder-red,
+.payment-reminder-orange,
+.payment-reminder-green {
+  text-align: center;
+}
+
+.payment-reminder-red {
+  border-left: 4px solid rgba(220, 53, 69, 0.7);
+}
+
+.payment-reminder-orange1 {
+  border-left: 4px solid rgba(254, 164, 91, 0.7);
+}
+
+.payment-reminder-orange2 {
+  border-left: 4px solid rgba(253, 126, 20, 0.7);
+}
+
+.payment-reminder-orange3 {
+  border-left: 4px solid rgba(177, 87, 14, 0.7);
+}
+
+.payment-reminder-green {
+  border-left: 4px solid rgba(25, 135, 84, 0.7);
+}
+
 /******************/
 /* 按鈕 */
 /******************/
@@ -13406,6 +13453,54 @@ hover #9db8e0 (-60%)
   border: 1px solid #0d6efd;
   color: #0d6efd;
   stroke: #0d6efd;
+}
+
+.btn-warning.btn-orange1 {
+  color: #333;
+  background-color: #fea55b;
+  border-color: #fea55b;
+}
+
+.btn-warning.btn-orange1:active, .btn-warning.btn-orange1:hover {
+  background-color: #fd8b2c;
+  border-color: #fd8b2c;
+}
+
+.btn-warning.btn-orange1:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(253, 138, 44, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(253, 138, 44, 0.5);
+}
+
+.btn-warning.btn-orange2 {
+  color: #555;
+  background-color: #fd7e14;
+  border-color: #fd7e14;
+}
+
+.btn-warning.btn-orange2:active, .btn-warning.btn-orange2:hover {
+  background-color: #ca6510;
+  border-color: #ca6510;
+}
+
+.btn-warning.btn-orange2:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(253, 125, 20, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(253, 125, 20, 0.5);
+}
+
+.btn-warning.btn-orange3 {
+  color: #fff;
+  background-color: #b1580e;
+  border-color: #b1580e;
+}
+
+.btn-warning.btn-orange3:active, .btn-warning.btn-orange3:hover {
+  background-color: #7f3f0a;
+  border-color: #7f3f0a;
+}
+
+.btn-warning.btn-orange3:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(127, 63, 10, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(127, 63, 10, 0.5);
 }
 
 .list_table_toggle_btn {
@@ -13459,11 +13554,19 @@ hover #9db8e0 (-60%)
 }
 
 .list_table tbody tr {
+  background-color: #fff;
+}
+
+.list_table tbody tr:nth-of-type(odd) {
   background-color: #f3f3f3;
 }
 
 .list_table tbody tr:hover {
   background-color: #9db8e0;
+}
+
+.list_table tbody tr:last-child {
+  border-top: 2px solid #868e96;
 }
 
 /******************/
