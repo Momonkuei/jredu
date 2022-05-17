@@ -10,6 +10,7 @@ firstTabe hover color:#225fb9
 hover #6b94d0 (-40%)
 
 second-header table 標頭 #225fb9 (10%)
+second-header table 標頭 #5382c8 (30%)
 
 solid #9ec5fe
 
@@ -127,7 +128,9 @@ hover #9db8e0 (-60%)
 // 繳費提醒
 
 .payment-reminder-red,
-.payment-reminder-orange,
+.payment-reminder-orange1,
+.payment-reminder-orange2,
+.payment-reminder-orange3,
 .payment-reminder-green {
     text-align: center;
 
@@ -158,6 +161,10 @@ hover #9db8e0 (-60%)
 /******************/
 /* 按鈕 */
 /******************/
+
+.btn {
+    min-width: 106px;
+}
 
 .input-date {
     padding: 6px 10px;
@@ -236,6 +243,7 @@ hover #9db8e0 (-60%)
 // 次表單
 
 .list_table {
+    border-top: 5px solid #b5cae8;
     background-color: #5382c8;
     width: 100%;
     text-align: center;
