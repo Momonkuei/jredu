@@ -12126,6 +12126,10 @@ color 主色調:#094db1
 solid #9ec5fe
 
 */
+.brand-logo-box {
+  position: relative;
+}
+
 .brand {
   padding: 10px;
   background: #86b7fe;
@@ -12168,6 +12172,41 @@ solid #9ec5fe
   float: left;
   min-height: 100%;
   position: absolute;
+}
+
+.sidebarHideBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: inherit;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  display: none;
+}
+
+.sidebarHideBtn ion-icon {
+  font-size: 20px;
+}
+
+.sidebarHideBtn ion-icon:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.sidebarHideBtn:hover {
+  color: #fff;
 }
 
 /* 打开和关闭手风琴面板的样式 */
@@ -12293,6 +12332,15 @@ solid #9ec5fe
 /** RWD **/
 /***********************/
 @media (max-width: 1440px) {
+  .sidebarHideBtn {
+    display: block;
+  }
+  .brand {
+    font-size: 1.1rem;
+    width: auto;
+    padding-left: 0;
+    margin-right: auto;
+  }
   .sidebar-menu {
     width: 0px;
     overflow: hidden;
@@ -12661,6 +12709,12 @@ body {
 /*********************/
 /* RWD */
 /*********************/
+@media (max-width: 1920) {
+  .right_content {
+    margin-left: 240px;
+  }
+}
+
 @media (max-width: 1440px) {
   .right_content {
     margin-left: 0px;

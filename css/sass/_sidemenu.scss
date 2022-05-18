@@ -13,6 +13,15 @@ solid #9ec5fe
 
 */
 
+
+//logo盒子
+.brand-logo-box {
+    // display: flex;
+    // align-items: center;
+    // background-color: #86b7fe;
+    position: relative;
+}
+
 .brand {
     padding: 10px;
     background: #86b7fe;
@@ -48,6 +57,40 @@ solid #9ec5fe
     float: left;
     min-height: 100%;
     position: absolute;
+}
+
+
+
+//sidebar 按鈕控制開關
+
+
+.sidebarHideBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: inherit;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: none;
+
+    ion-icon {
+        font-size: 20px;
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+
+    &:hover {
+        color: #fff;
+    }
+
+
 }
 
 /* 打开和关闭手风琴面板的样式 */
@@ -162,6 +205,18 @@ solid #9ec5fe
 /***********************/
 
 @media (max-width:1440px) {
+
+    .sidebarHideBtn {
+        display: block;
+    }
+
+    .brand {
+        font-size: 1.1rem;
+        width: auto;
+        padding-left: 0;
+        margin-right: auto;
+    }
+
     .sidebar-menu {
         width: 0px;
         overflow: hidden;

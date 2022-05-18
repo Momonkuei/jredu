@@ -17,3 +17,40 @@ accordions.forEach(acc => {
         }
     })
 })
+
+console.log(screen.width);
+
+
+
+const hideBtn = document.querySelector('.openHideSideBar');
+const sideBarMenu = document.querySelector('.sidebar-menu');
+const rightContant = document.querySelector('.right_content');
+console.log(hideBtn);
+hideBtn.addEventListener('click', () => {
+    sideBarMenu.style.width = "240px";
+    sideBarMenu.style.overflow = "visible";
+    // rightContant.style.marginLeft = '240px';
+})
+
+const sidebarHideBtn = document.querySelector('.sidebarHideBtn');
+
+sidebarHideBtn.addEventListener('click', () => {
+
+    if (screen.width > 1440) {
+        sideBarMenu.style.width = "240px";
+        sideBarMenu.style.overflow = "visible";
+        console.log('screen>1440')
+    } else {
+        sideBarMenu.style.width = "0px";
+        sideBarMenu.style.overflow = "hidden";
+        console.log('screen <1440')
+    }
+
+})
+
+window.onresize = function () {
+    sideBarMenu.style.width = "240px";
+    sideBarMenu.style.overflow = "visible";
+    console.log('screen>1440')
+}
+

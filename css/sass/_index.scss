@@ -94,6 +94,11 @@ body {
 /*********************/
 /* RWD */
 /*********************/
+@media (max-width:1920) {
+    .right_content {
+        margin-left: 240px;
+    }
+}
 
 @media (max-width:1440px) {
     .right_content {

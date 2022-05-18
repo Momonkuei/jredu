@@ -21,13 +21,21 @@
 <body>
     <div class="sidebar_box">
         <div class="sidebar-menu me-2">
-            <a
-                class="brand"
-                href="home.html"
-            ><img
-                    src="images/logo.png"
-                    alt="logo"
-                > 傑人公司管理系統</a>
+            <div class="brand-logo-box">
+                <a
+                    class="brand"
+                    href="home.html"
+                >
+                    <img
+                        src="images/logo.png"
+                        alt="logo"
+                    >
+                    傑人公司管理系統
+                </a>
+                <button class="sidebarHideBtn">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
             <!-- 測試位置 -->
 
 
@@ -442,11 +450,11 @@
                 </div>
                 <nav class="header_navbar">
                     <ul class="navbar_list">
-                        <!-- <li>
-                            <button>
+                        <li>
+                            <button class="openHideSideBar">
                                 打開隱藏sideBar
                             </button>
-                        </li> -->
+                        </li>
                         <li>
                             <a href="#">
                                 新訂單
