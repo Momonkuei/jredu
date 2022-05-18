@@ -127,33 +127,48 @@ hover #9db8e0 (-60%)
 
 // 繳費提醒
 
-.payment-reminder-red,
-.payment-reminder-orange1,
-.payment-reminder-orange2,
-.payment-reminder-orange3,
-.payment-reminder-green {
+@mixin payment-reminder($property) {
     text-align: center;
-
+    border-left: 4px solid $property;
 }
 
+// .payment-reminder-red,
+// .payment-reminder-orange1,
+// .payment-reminder-orange2,
+// .payment-reminder-orange3,
+// .payment-reminder-green {
+//     text-align: center;
+
+// }
+
 .payment-reminder-red {
-    border-left: 4px solid rgba(220, 53, 69, 0.7);
+    // border-left: 4px solid rgba(220, 53, 69, 0.7);
+
+    @include payment-reminder(rgba(220, 53, 69, 0.7))
 }
 
 .payment-reminder-orange1 {
-    border-left: 4px solid rgba(254, 164, 91, 0.7);
+    // border-left: 4px solid rgba(254, 164, 91, 0.7);
+
+    @include payment-reminder(rgba(254, 164, 91, 0.7));
 }
 
 .payment-reminder-orange2 {
-    border-left: 4px solid rgba(253, 126, 20, 0.7);
+    // border-left: 4px solid rgba(253, 126, 20, 0.7);
+
+    @include payment-reminder(rgba(253, 126, 20, 0.7));
 }
 
 .payment-reminder-orange3 {
-    border-left: 4px solid rgba(177, 87, 14, 0.7);
+    // border-left: 4px solid rgba(177, 87, 14, 0.7);
+
+    @include payment-reminder(rgba(177, 87, 14, 0.7));
 }
 
 .payment-reminder-green {
-    border-left: 4px solid rgba(25, 135, 84, 0.7);
+    // border-left: 4px solid rgba(25, 135, 84, 0.7);
+
+    @include payment-reminder(rgba(25, 135, 84, 0.7))
 }
 
 
@@ -163,7 +178,7 @@ hover #9db8e0 (-60%)
 /******************/
 
 .btn {
-    min-width: 106px;
+    min-width: 112px;
 }
 
 .input-date {

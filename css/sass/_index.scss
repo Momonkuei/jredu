@@ -89,3 +89,14 @@ body {
 .modal-xxl {
     max-width: 1600px;
 }
+
+
+/*********************/
+/* RWD */
+/*********************/
+
+@media (max-width:1440px) {
+    .right_content {
+        margin-left: 0px;
+    }
+}

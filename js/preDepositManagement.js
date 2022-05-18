@@ -3,6 +3,8 @@
 const toggleRows = document.querySelectorAll(".content_table_tbody_tr");
 const tdListTables = document.querySelectorAll(".td_list_table");
 
+const btns = document.querySelectorAll(".btn")
+
 
 toggleRows.forEach(toggleRow => {
     toggleRow.addEventListener("click", () => {
@@ -16,3 +18,9 @@ function removeListTableActive() {
         tdListTable.classList.remove("List_table_active");
     })
 }
+
+btns.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+    })
+})
