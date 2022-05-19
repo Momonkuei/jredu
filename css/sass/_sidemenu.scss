@@ -11,7 +11,19 @@ color 主色調:#094db1
 
 solid #9ec5fe
 
+
+#9db8e0
 */
+
+/**********************************/
+/*    動畫參數                    */
+/**********************************/
+
+@mixin transitionData($sec, $bezier) {
+    transition: all $sec $bezier;
+}
+
+
 
 
 //logo盒子
@@ -57,13 +69,53 @@ solid #9ec5fe
     float: left;
     min-height: 100%;
     position: absolute;
+
+    // transition: all 0.2s ease-out;
+    @include transitionData(0.2s, ease-out)
 }
 
 
 
 //sidebar 按鈕控制開關
 
+div.openHideSideBar {
+    display: none;
+}
 
+
+
+.openHideSideBar {
+
+    position: fixed;
+    top: 10rem;
+    z-index: 0;
+    height: 5rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9db8e0;
+    opacity: 0.5;
+    border-radius: 0 10px 10px 0;
+
+    &:hover {
+
+        background-color: #094db1;
+        opacity: 1;
+
+        ion-icon {
+            color: #fff;
+        }
+    }
+
+    .openHideSideBarBtn {
+        border: none;
+        background-color: inherit;
+    }
+}
+
+
+//側邊關閉按鈕
 .sidebarHideBtn {
     display: flex;
     align-items: center;
@@ -73,13 +125,14 @@ solid #9ec5fe
     border: none;
     background-color: inherit;
     position: absolute;
-    right: 0px;
+    left: 0px;
     top: 50%;
     transform: translate(0, -50%);
     display: none;
 
+
     ion-icon {
-        font-size: 20px;
+        font-size: 25px;
 
         &:active {
             transform: scale(0.98);
@@ -129,6 +182,10 @@ solid #9ec5fe
 
     .accordionsIcon {
         margin-left: auto;
+
+        //標籤選轉收合動畫
+        // transition: all 0.2s ease-out;
+        @include transitionData(0.2s, ease-out)
     }
 }
 
@@ -145,6 +202,8 @@ solid #9ec5fe
 .sideBar_active {
     .accordionsIcon {
         transform: rotate(180deg);
+        // transition: all 0.2s ease-out;
+        @include transitionData(0.2s, ease-out);
     }
 }
 
@@ -154,7 +213,8 @@ solid #9ec5fe
     background-color: white;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.2s ease-out;
+    // transition: all 0.2s ease-out;
+    @include transitionData(0.2s, ease-out);
 
     /*點開連結樣式設定 */
     ul.panelList {
@@ -205,6 +265,11 @@ solid #9ec5fe
 /***********************/
 
 @media (max-width:1440px) {
+
+    div.openHideSideBar {
+        display: flex;
+
+    }
 
     .sidebarHideBtn {
         display: block;

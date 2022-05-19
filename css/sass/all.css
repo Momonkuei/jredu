@@ -12125,7 +12125,12 @@ color 主色調:#094db1
 
 solid #9ec5fe
 
+
+#9db8e0
 */
+/**********************************/
+/*    動畫參數                    */
+/**********************************/
 .brand-logo-box {
   position: relative;
 }
@@ -12172,6 +12177,46 @@ solid #9ec5fe
   float: left;
   min-height: 100%;
   position: absolute;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+div.openHideSideBar {
+  display: none;
+}
+
+.openHideSideBar {
+  position: fixed;
+  top: 10rem;
+  z-index: 0;
+  height: 5rem;
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #9db8e0;
+  opacity: 0.5;
+  border-radius: 0 10px 10px 0;
+}
+
+.openHideSideBar:hover {
+  background-color: #094db1;
+  opacity: 1;
+}
+
+.openHideSideBar:hover ion-icon {
+  color: #fff;
+}
+
+.openHideSideBar .openHideSideBarBtn {
+  border: none;
+  background-color: inherit;
 }
 
 .sidebarHideBtn {
@@ -12189,7 +12234,7 @@ solid #9ec5fe
   border: none;
   background-color: inherit;
   position: absolute;
-  right: 0px;
+  left: 0px;
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -12197,7 +12242,7 @@ solid #9ec5fe
 }
 
 .sidebarHideBtn ion-icon {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .sidebarHideBtn ion-icon:active {
@@ -12258,6 +12303,8 @@ solid #9ec5fe
 
 .sideBar_accordion .accordionsIcon {
   margin-left: auto;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 /* 设置点击和鼠标移到选项上面时（悬停）的样式 */
@@ -12272,6 +12319,8 @@ solid #9ec5fe
 .sideBar_active .accordionsIcon {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 /* 为手风琴面板设计样式。 默认隐藏 */
@@ -12332,6 +12381,11 @@ solid #9ec5fe
 /** RWD **/
 /***********************/
 @media (max-width: 1440px) {
+  div.openHideSideBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .sidebarHideBtn {
     display: block;
   }
