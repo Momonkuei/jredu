@@ -14,307 +14,539 @@
     <title>所有客戶資料</title>
     <link
         rel="stylesheet"
-        href="css/all.css"
+        href="./css/sass/all.css"
     >
 </head>
 
 <body>
     <div class="sidebar_box">
         <div class="sidebar-menu me-2">
-            <a
-                class="brand"
-                href="home.html"
-            ><img
-                    src="images/logo.png"
-                    alt="logo"
-                > 傑人公司管理系統</a>
-            <ul id="menu">
-                <li>
-                    <a href="javascript:void(0);">客戶服務部<i class="fa fa-angle-right pull-right"></i></a>
-                    <ul>
-                        <li><a
-                                href="allCustomer.html"
-                                target="_blank"
-                            >客戶資料</a></li>
-                        <li><a
-                                href="ui-panels.html"
-                                target="_blank"
-                            >訪談紀錄</a></li>
-                        <li><a
-                                href="ui-buttons.html"
-                                target="_blank"
-                            >來電紀錄</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >電子廣告 EDM</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0);">資工研發部<i class="fa fa-angle-right pull-right"></i></a>
-                    <ul>
-                        <li><a
-                                href="allCustomer.html"
-                                target="_blank"
-                            >客戶資料</a></li>
-                        <li><a
-                                href="ui-panels.html"
-                                target="_blank"
-                            >訪談紀錄</a></li>
-                        <li><a
-                                href="ui-buttons.html"
-                                target="_blank"
-                            >來電紀錄</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >資設部處理中</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >資訊部已回覆</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0);">行銷事業部<i class="fa fa-angle-right pull-right"></i></a>
-                    <ul>
-                        <li><a
-                                href="allCustomer.html"
-                                target="_blank"
-                            >客戶資料</a></li>
-                        <li><a
-                                href="ui-panels.html"
-                                target="_blank"
-                            >訪談紀錄</a></li>
-                        <li><a
-                                href="ui-buttons.html"
-                                target="_blank"
-                            >來電紀錄</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >匯出甘丹名單</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >匯出金鼎名單</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >電子廣告EDM</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >匯入新客戶名單</a></li>
-                        <li><a
-                                href="commodityOn.html"
-                                target="_blank"
-                            >商品上架</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0);">財務人資部<i class="fa fa-angle-right pull-right"></i></a>
-                    <ul>
-                        <li><a
-                                href="allCustomer.html"
-                                target="_blank"
-                            >客戶資料</a></li>
-                        <li><a
-                                href="ui-panels.html"
-                                target="_blank"
-                            >人事資料</a></li>
-                        <li><a
-                                href="ui-buttons.html"
-                                target="_blank"
-                            >薪資管理</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >訂單作業</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >新訂單（有權限）</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >統計作業</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >收支作業</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >庫存統計</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >加盟商品訂單</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0);">甘丹數學<i class="fa fa-angle-right pull-right"></i></a>
-                    <ul>
-                        <li><a
-                                href="allCustomer.html"
-                                target="_blank"
-                            >客戶資料</a></li>
-                        <li><a
-                                href="ui-panels.html"
-                                target="_blank"
-                            >甘丹訂單</a></li>
-                        <li><a
-                                href="ui-buttons.html"
-                                target="_blank"
-                            >產品資料</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >進貨作業</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >庫存統計</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0);">金鼎作文<i class="fa fa-angle-right pull-right"></i></a>
-                    <ul>
-                        <li><a
-                                href="allCustomer.html"
-                                target="_blank"
-                            >客戶資料</a></li>
-                        <li><a
-                                href="ui-panels.html"
-                                target="_blank"
-                            >金鼎訂單</a></li>
-                        <li><a
-                                href="ui-buttons.html"
-                                target="_blank"
-                            >產品資料</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >進貨作業</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >庫存統計</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0);">總部辦公室<i class="fa fa-angle-right pull-right"></i></a>
-                    <ul>
-                        <li><a
-                                href="allCustomer.html"
-                                target="_blank"
-                            >客戶資料</a></li>
-                        <li><a
-                                href="ui-panels.html"
-                                target="_blank"
-                            >訪談紀錄</a></li>
-                        <li><a
-                                href="ui-buttons.html"
-                                target="_blank"
-                            >來電記錄</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >廠商資料</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >簡訊通數</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >統計作業</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >訂單作業</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >新訂單（有權限）</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >收支作業</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >人事資料</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >權限設定</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >產品資料</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >電子廣告EDM</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >進貨作業</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >庫存統計</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >客戶資料匯入官網</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >郵寄名單</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >工作管理</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >行事曆</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >知識庫</a></li>
-                        <li><a
-                                href="ui-slider-progress.html"
-                                target="_blank"
-                            >公告看板</a></li>
-                        <li><a
-                                href="commodityOn.html"
-                                target="_blank"
-                            >商品上架</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0);">系統設定<i class="fa fa-angle-right pull-right"></i></a>
-                    <ul>
-                        <li><a
-                                href="allCustomer.html"
-                                target="_blank"
-                            >基本設定</a></li>
-                        <li><a
-                                href="ui-panels.html"
-                                target="_blank"
-                            >系統參數</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="openHideSideBar">
+                <button class="openHideSideBarBtn">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="brand-logo-box">
+                <a
+                    class="brand"
+                    href="home.html"
+                >
+                    <img
+                        src="images/logo.png"
+                        alt="logo"
+                    >
+                    傑人公司管理系統
+                </a>
+                <button class="sidebarHideBtn">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+            <!-- 測試位置 -->
+
+            <!-- 總部辦公室 -->
+            <button class="sideBar_accordion">
+                <p>
+                    <span>
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                    總部辦公室
+                </p>
+                <ion-icon
+                    name="chevron-down-outline"
+                    class="accordionsIcon"
+                ></ion-icon>
+            </button>
+            <div class="panel headquartersOffice">
+                <ul class="panelList">
+                    <li><a
+                            href="allCustomer.html"
+                            target="_blank"
+                        >客戶資料</a></li>
+                    <li><a
+                            href="ui-panels.html"
+                            target="_blank"
+                        >訪談紀錄</a></li>
+                    <li><a
+                            href="ui-buttons.html"
+                            target="_blank"
+                        >來電記錄</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >廠商資料</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >簡訊通數</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >統計作業</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >訂單作業</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >新訂單（有權限）</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >收支作業</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >人事資料</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >權限設定</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >產品資料</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >電子廣告EDM</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >進貨作業</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >庫存統計</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >客戶資料匯入官網</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >郵寄名單</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >工作管理</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >行事曆</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >知識庫</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >公告看板</a></li>
+                    <li><a
+                            href="commodityOn.html"
+                            target="_blank"
+                        >商品上架</a></li>
+                </ul>
+            </div>
+
+            <!-- 客戶服務部 -->
+            <button class="sideBar_accordion">
+                <p>
+                    <span>
+                        <ion-icon name="headset-outline"></ion-icon>
+                    </span>
+                    客戶服務部
+                </p>
+                <ion-icon
+                    name="chevron-down-outline"
+                    class="accordionsIcon"
+                ></ion-icon>
+            </button>
+            <div class="panel">
+                <ul class="panelList">
+                    <li><a
+                            href="allCustomer.html"
+                            target="_blank"
+                        >客戶資料</a></li>
+                    <li><a
+                            href="PreDepositManagement.html"
+                            target="_blank"
+                        >預存款管理</a></li>
+                    <li><a
+                            href="ui-panels.html"
+                            target="_blank"
+                        >訪談紀錄</a></li>
+                    <li><a
+                            href="ui-buttons.html"
+                            target="_blank"
+                        >來電紀錄</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >電子廣告 EDM</a></li>
+                </ul>
+            </div>
+            <!-- 資工研發部 -->
+            <button class="sideBar_accordion">
+                <p>
+                    <span>
+                        <ion-icon name="desktop-outline"></ion-icon>
+                    </span>
+                    資工研發部
+                </p>
+                <ion-icon
+                    name="chevron-down-outline"
+                    class="accordionsIcon"
+                ></ion-icon>
+            </button>
+            <div class="panel">
+                <ul class="panelList">
+                    <li><a
+                            href="allCustomer.html"
+                            target="_blank"
+                        >客戶資料</a></li>
+                    <li><a
+                            href="ui-panels.html"
+                            target="_blank"
+                        >訪談紀錄</a></li>
+                    <li><a
+                            href="ui-buttons.html"
+                            target="_blank"
+                        >來電紀錄</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >資設部處理中</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >資訊部已回覆</a></li>
+                </ul>
+            </div>
+
+            <!-- 行銷事業部 -->
+            <button class="sideBar_accordion">
+                <p>
+                    <span>
+                        <ion-icon name="stats-chart-outline"></ion-icon>
+                    </span>
+                    行銷事業部
+                </p>
+                <ion-icon
+                    name="chevron-down-outline"
+                    class="accordionsIcon"
+                ></ion-icon>
+            </button>
+            <div class="panel">
+                <ul class="panelList">
+                    <li><a
+                            href="allCustomer.html"
+                            target="_blank"
+                        >客戶資料</a></li>
+                    <li><a
+                            href="ui-panels.html"
+                            target="_blank"
+                        >訪談紀錄</a></li>
+                    <li><a
+                            href="ui-buttons.html"
+                            target="_blank"
+                        >來電紀錄</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >匯出甘丹名單</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >匯出金鼎名單</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >電子廣告EDM</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >匯入新客戶名單</a></li>
+                    <li><a
+                            href="commodityOn.html"
+                            target="_blank"
+                        >商品上架</a></li>
+                </ul>
+            </div>
+
+            <!-- 財務人資部 -->
+            <button class="sideBar_accordion">
+                <p>
+                    <span>
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </span>
+                    財務人資部
+                </p>
+                <ion-icon
+                    name="chevron-down-outline"
+                    class="accordionsIcon"
+                ></ion-icon>
+            </button>
+            <div class="panel">
+                <ul class="panelList">
+                    <li><a
+                            href="allCustomer.html"
+                            target="_blank"
+                        >客戶資料</a></li>
+                    <li><a
+                            href="ui-panels.html"
+                            target="_blank"
+                        >人事資料</a></li>
+                    <li><a
+                            href="ui-buttons.html"
+                            target="_blank"
+                        >薪資管理</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >訂單作業</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >新訂單（有權限）</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >統計作業</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >收支作業</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >庫存統計</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >加盟商品訂單</a></li>
+                </ul>
+            </div>
+
+            <!-- 甘丹數學 -->
+            <button class="sideBar_accordion">
+                <p>
+                    <span>
+                        <ion-icon name="pencil-outline"></ion-icon>
+                    </span>
+                    甘丹數學
+                </p>
+                <ion-icon
+                    name="chevron-down-outline"
+                    class="accordionsIcon"
+                ></ion-icon>
+            </button>
+            <div class="panel">
+                <ul class="panelList">
+                    <li><a
+                            href="allCustomer.html"
+                            target="_blank"
+                        >客戶資料</a></li>
+                    <li><a
+                            href="ui-panels.html"
+                            target="_blank"
+                        >甘丹訂單</a></li>
+                    <li><a
+                            href="ui-buttons.html"
+                            target="_blank"
+                        >產品資料</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >進貨作業</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >庫存統計</a></li>
+                </ul>
+            </div>
+
+            <!-- 金鼎作文 -->
+            <button class="sideBar_accordion">
+                <p>
+                    <span>
+                        <ion-icon name="language-outline"></ion-icon>
+                    </span>
+                    金鼎作文
+                </p>
+                <ion-icon
+                    name="chevron-down-outline"
+                    class="accordionsIcon"
+                ></ion-icon>
+            </button>
+            <div class="panel">
+                <ul class="panelList">
+                    <li><a
+                            href="allCustomer.html"
+                            target="_blank"
+                        >客戶資料</a></li>
+                    <li><a
+                            href="ui-panels.html"
+                            target="_blank"
+                        >金鼎訂單</a></li>
+                    <li><a
+                            href="ui-buttons.html"
+                            target="_blank"
+                        >產品資料</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >進貨作業</a></li>
+                    <li><a
+                            href="ui-slider-progress.html"
+                            target="_blank"
+                        >庫存統計</a></li>
+                </ul>
+            </div>
+
+
+
+            <!-- 系統設定 -->
+            <button class="sideBar_accordion">
+                <p>
+                    <span>
+                        <ion-icon name="settings-outline"></ion-icon>
+
+                    </span>
+                    系統設定
+                </p>
+                <ion-icon
+                    name="chevron-down-outline"
+                    class="accordionsIcon"
+                ></ion-icon>
+            </button>
+            <div class="panel">
+                <ul class="panelList">
+                    <li><a
+                            href="allCustomer.html"
+                            target="_blank"
+                        >基本設定</a></li>
+                    <li><a
+                            href="ui-panels.html"
+                            target="_blank"
+                        >系統參數</a></li>
+                </ul>
+            </div>
+            <!-- 測試位置 -->
         </div>
     </div>
     <!--/#accordion-->
-    <div class="right_content">
-        <div class="container-fluid">
+    <div class="right_content hone">
+        <div class="container-fluid header mb-md-5  d-flex justify-content-between nav_shadow">
+
+            <!-- 導覽列 -->
+            <!-- 測試版本 -->
+
+            <div class="nav_container">
+                <h2 class="header_title">客戶資料</h2>
+                <nav class="header_navbar">
+                    <ul class="navbar_list">
+                        <li>
+                            <a href="#">
+                                新訂單
+                                <span class="red">9</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                未處理
+                                <span class="red">99</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                本日已處理
+                                <span class="green">666</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                資訊部待處理
+                                <span class="red">999</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                資訊部處理中
+                                <span class="orange">99</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                資訊部已回復
+                                <span class="green">33</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                客服部處理中
+                                <!-- <span class="orange"></span> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                排程處理
+                                <!-- <span class="orange"></span> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                待提問人處理
+                                <!-- <span class="orange"></span> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                提問人已回復
+                                <!-- <span class="green"></span> -->
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+
+            </div>
+
+
+            <!-- 登入提示系統 -->
+            <div class="login_prompt">
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <ion-icon name="information-circle-outline"></ion-icon>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">提醒訊息 1</a>
+                        <a href="#">提醒訊息 2</a>
+                        <a href="#">提醒訊息 3</a>
+                    </div>
+                </div>
+                <a
+                    href="#"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="bottom"
+                    title="系統公告"
+                ><img src="./images/announcement.png"></a>
+                <a
+                    class="dropdown-toggle employer_dropdown"
+                    href='#'
+                >林員工</a>
+                <ul
+                    class="dropdown-menu"
+                    role="menu"
+                >
+                    <li><a href="#">登出</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="container-fluid">
             <div class="header mb-3 pt-3 d-flex justify-content-between">
                 <div class="tab_label d-flex">
                     <h3 class="tab_title">客戶資料</h3>
@@ -378,7 +610,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="container-fluid">
             <div class="mb-4 btn_box d-flex justify-content-between">
                 <div class="left_btn">
@@ -602,54 +834,6 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">52144</th>
-                                    <td>台中市</td>
-                                    <td><a
-                                            href=""
-                                            class="search_link"
-                                        >客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">48534</th>
-                                    <td>台中市</td>
-                                    <td><a
-                                            href=""
-                                            class="search_link"
-                                        >客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">34145</th>
-                                    <td>台中市</td>
-                                    <td><a
-                                            href=""
-                                            class="search_link"
-                                        >客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">52144</th>
-                                    <td>台中市</td>
-                                    <td><a
-                                            href=""
-                                            class="search_link"
-                                        >客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">48534</th>
-                                    <td>台中市</td>
-                                    <td><a
-                                            href=""
-                                            class="search_link"
-                                        >客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">34145</th>
-                                    <td>台中市</td>
-                                    <td><a
-                                            href=""
-                                            class="search_link"
-                                        >客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">34145</th>
                                     <td>台中市</td>
                                     <td><a
                                             href=""
@@ -1124,7 +1308,7 @@
                         >
                             <div class="row">
                                 <div class="col-6">
-                                    <div class="situation_field pb-2"><span>所在樓層</span>
+                                    <div class="situation_field pb-2"><label>所在樓層</label>
                                         <input
                                             type="text"
                                             class="form-control"
@@ -3908,13 +4092,14 @@
         </div>
     </div>
     <script
-        src="js/bootstrap.bundle.min.js"
+        src="./js/bootstrap.bundle.min.js"
         async
     ></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/sidemenu.js"></script>
+    <script src="./js/preDepositManagement.js"></script>
     <script
         type="module"
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -3923,7 +4108,6 @@
         nomodule
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -32,7 +32,9 @@ openHideSideBar.addEventListener('click', () => {
     sideBarMenu.style.width = "240px";
     sideBarMenu.style.overflow = "visible";
     rightContant.style.marginLeft = '240px';
-    openHideSideBar.style.display = "none !important";
+    openHideSideBar.style.display = "none";
+
+    console.log(openHideSideBar.style.display);
 
 
 })
@@ -49,23 +51,24 @@ sidebarHideBtn.addEventListener('click', () => {
         sideBarMenu.style.width = "240px";
         sideBarMenu.style.overflow = "visible";
         rightContant.style.marginLeft = '240px';
-        openHideSideBar.style.display = "none !important";
-        console.log('screen>1440')
+        openHideSideBar.style.display = "none";
+        // console.log('screen>1440')
     } else {
         sideBarMenu.style.width = "0px";
         sideBarMenu.style.overflow = "hidden";
         rightContant.style.marginLeft = '0px';
-        openHideSideBar.style.display = "flex !important";
-        console.log('screen <1440')
+        openHideSideBar.style.display = "flex";
+        // console.log('screen <1440')
     }
 
 })
+
 //偵測螢幕寬度是否有改變，改動側邊選單的值
 window.onresize = function () {
     sideBarMenu.style.width = "240px";
     sideBarMenu.style.overflow = "visible";
     rightContant.style.marginLeft = '240px';
-    openHideSideBar.style.display = "none !important";
+    openHideSideBar.style.display = "none";
     // console.log('screen>1440')
 }
 
@@ -77,30 +80,30 @@ const panelLists = document.querySelectorAll(".panelList");
 
 
 panelLists.forEach(panelList => {
-    // console.log(panelList.children);
-    // console.log(123456);
-    // console.log(screen.width === "240px");
-    [...panelList.children].forEach(panelListLi => {
-        // console.log(panelListLi.children[0]);
-        // && sideBarMenu.style.width === "240px"
 
-        if (screen.width != 1920) {
-            panelListLi.children[0].addEventListener('click', function () {
+    [...panelList.children].forEach(panelListLi => {
+
+
+
+        panelListLi.children[0].addEventListener('click', function () {
+            //把打開的手風琴收回
+            accordions.forEach(acc => {
+                acc.classList.remove("sideBar_active");
+                const panel = acc.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                }
+            })
+            //點擊選項及收回項目
+            if (screen.width != 1920) {
                 sideBarMenu.style.width = "0px";
                 sideBarMenu.style.overflow = "hidden";
                 rightContant.style.marginLeft = '0px';
-                openHideSideBar.style.display = "flex !important";
-                console.log('123');
+                openHideSideBar.style.display = "flex";
+                // console.log('123');
+            }
 
-                //把打開的手風琴收回
-                accordions.forEach(acc => {
-                    acc.classList.remove("sideBar_active");
-                    const panel = acc.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    }
-                })
-            })
-        }
+        })
+
     })
 })

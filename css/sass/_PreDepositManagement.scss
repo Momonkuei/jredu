@@ -55,6 +55,13 @@ hover #9db8e0 (-60%)
 //     background-color: #dc3545;
 // }
 
+/**********************************/
+/*    動畫參數                    */
+/**********************************/
+
+@mixin transitionData($sec, $bezier) {
+    transition: all $sec $bezier;
+}
 
 
 /**********************************/
@@ -119,6 +126,13 @@ hover #9db8e0 (-60%)
 .content-table tbody .content_table_tbody_tr.active_row {
     background-color: #3a71c1;
     color: #fff;
+
+
+    //選轉標註圖示
+    .list_table_toggle_btn {
+        transform: rotate(180deg);
+        @include transitionData(0.2s, ease-out)
+    }
 }
 
 .content-table span {
@@ -238,6 +252,8 @@ hover #9db8e0 (-60%)
     }
 }
 
+//下拉標註
+
 .list_table_toggle_btn {
     display: flex;
     align-items: center;
@@ -247,6 +263,8 @@ hover #9db8e0 (-60%)
     border: 0;
     outline: 0;
     background-color: transparent;
+
+    @include transitionData(0.2s, ease-out);
 
     &:hover {
         color: #ffffff;
@@ -269,11 +287,13 @@ hover #9db8e0 (-60%)
 .td_list_table .panel_group {
     height: 0;
     overflow: hidden;
+    @include transitionData(0.2s, ease-out);
 }
 
 //顯示隱藏表單
 .td_list_table.List_table_active .panel_group {
     height: 100%;
+    @include transitionData(0.2s, ease-out);
 }
 
 

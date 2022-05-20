@@ -12301,7 +12301,7 @@ div.openHideSideBar {
           align-items: center;
 }
 
-.sideBar_accordion .accordionsIcon {
+.sideBar_accordion .accordionsIcon ion-icon[name='chevron-down-outline'] {
   margin-left: auto;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -12316,7 +12316,7 @@ div.openHideSideBar {
 }
 
 /* 設置點擊後，icon旋轉的樣式 */
-.sideBar_active .accordionsIcon {
+.sideBar_active ion-icon[name='chevron-down-outline'] {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: all 0.2s ease-out;
@@ -12375,6 +12375,26 @@ div.openHideSideBar {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+.openHideSideBar.close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.openHideSideBar.open {
+  display: none;
+}
+
+.sidebar-menu.close {
+  width: 0px;
+  overflow: hidden;
+}
+
+.sidebar-menu.open {
+  width: 240px;
+  overflow: visible;
 }
 
 /***********************/
@@ -12459,6 +12479,16 @@ div.openHideSideBar {
   color: #6b94d0;
 }
 
+.header_title a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header_title a.active {
+  text-decoration: none;
+  color: #6b94d0;
+}
+
 .header_title_contant {
   text-overflow: ellipsis;
 }
@@ -12476,6 +12506,15 @@ div.openHideSideBar {
   gap: 0.4rem;
 }
 
+.header_navbar ul li .active span {
+  opacity: 0;
+}
+
+.header_navbar ul li .active {
+  color: #257dfd;
+  border-bottom: 2px solid #257dfd;
+}
+
 .header_navbar ul li a {
   font-size: 1.1rem;
   font-weight: 400;
@@ -12489,7 +12528,8 @@ div.openHideSideBar {
   transition: all 0.2s ease-in;
 }
 
-.header_navbar ul li a:hover, .header_navbar ul li a:active {
+.header_navbar ul li a:hover, .header_navbar ul li a:active,
+.header_navbar ul li a .active {
   color: #257dfd;
   border-bottom: 2px solid #257dfd;
 }
@@ -12672,6 +12712,14 @@ body {
   height: 100%;
   min-height: 100%;
   max-height: 100%;
+}
+
+.right_content.open {
+  margin-left: 240px;
+}
+
+.right_content.close {
+  margin-left: 0px;
 }
 
 .right_content {
@@ -13546,6 +13594,9 @@ hover #9db8e0 (-60%)
 /*導覽與頁籤 (Navs and tabs)*/
 /**********************************/
 /**********************************/
+/*    動畫參數                    */
+/**********************************/
+/**********************************/
 /*表單*/
 /***********************************/
 .content-table {
@@ -13596,6 +13647,13 @@ hover #9db8e0 (-60%)
 .content-table tbody .content_table_tbody_tr.active_row {
   background-color: #3a71c1;
   color: #fff;
+}
+
+.content-table tbody .content_table_tbody_tr.active_row .list_table_toggle_btn {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .content-table span {
@@ -13704,6 +13762,8 @@ hover #9db8e0 (-60%)
   border: 0;
   outline: 0;
   background-color: transparent;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .list_table_toggle_btn:hover {
@@ -13721,10 +13781,14 @@ hover #9db8e0 (-60%)
 .td_list_table .panel_group {
   height: 0;
   overflow: hidden;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .td_list_table.List_table_active .panel_group {
   height: 100%;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .td_list_table:hover {

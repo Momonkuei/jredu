@@ -180,7 +180,7 @@ div.openHideSideBar {
 
     }
 
-    .accordionsIcon {
+    .accordionsIcon ion-icon[name='chevron-down-outline'] {
         margin-left: auto;
 
         //標籤選轉收合動畫
@@ -199,12 +199,20 @@ div.openHideSideBar {
 
 
 /* 設置點擊後，icon旋轉的樣式 */
-.sideBar_active {
-    .accordionsIcon {
-        transform: rotate(180deg);
-        // transition: all 0.2s ease-out;
-        @include transitionData(0.2s, ease-out);
-    }
+// .sideBar_active {
+//     .accordionsIcon {
+//         transform: rotate(180deg);
+//         // transition: all 0.2s ease-out;
+//         @include transitionData(0.2s, ease-out);
+//     }
+// }
+
+.sideBar_active ion-icon[name='chevron-down-outline'] {
+
+    transform: rotate(180deg);
+    // transition: all 0.2s ease-out;
+    @include transitionData(0.2s, ease-out);
+
 }
 
 /* 为手风琴面板设计样式。 默认隐藏 */
@@ -259,6 +267,24 @@ div.openHideSideBar {
     }
 }
 
+
+.openHideSideBar.close {
+    display: flex;
+}
+
+.openHideSideBar.open {
+    display: none;
+}
+
+.sidebar-menu.close {
+    width: 0px;
+    overflow: hidden;
+}
+
+.sidebar-menu.open {
+    width: 240px;
+    overflow: visible;
+}
 
 /***********************/
 /** RWD **/
