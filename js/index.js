@@ -52,6 +52,13 @@ $(document).ready(function () {
         $(".turn_on8").toggle();
     });
 });
+
+// 最ㄏㄤ客戶
+$(document).ready(function () {
+    $(".switch9").click(function () {
+        $(".turn_on9").toggle();
+    });
+});
 //本次產品新增
 $(document).ready(function () {
     $(".interview_addbtn").click(function () {

@@ -1,9 +1,11 @@
 .map_field {
     display: flex;
     justify-content: space-between;
+
     input {
         width: 82%;
     }
+
     button {
         height: 38px;
     }
@@ -12,9 +14,11 @@
 .email_field {
     display: flex;
     justify-content: space-between;
+
     input {
         width: 72%;
     }
+
     button {
         height: 38px;
     }
@@ -22,6 +26,7 @@
 
 .bill_field {
     display: flex;
+
     .check_box {
         align-items: center;
         margin-top: 24px;
@@ -36,9 +41,11 @@
 .situation_field {
     @include horizontal_align;
     margin-bottom: 10px;
+
     span {
         width: 96px;
     }
+
     input {
         width: 78%;
         margin: auto 10px;
@@ -48,9 +55,11 @@
 .browe {
     overflow-y: auto;
     max-height: 650px;
+
     table {
         border-collapse: collapse;
         width: 100%;
+
         thead {
             th {
                 position: sticky;
@@ -61,6 +70,7 @@
                 border: 0px;
             }
         }
+
         td {
             display: block;
             overflow: hidden;
@@ -74,9 +84,11 @@
 .search_box {
     overflow-y: auto;
     max-height: 580px;
+
     table {
         border-collapse: collapse;
         width: 100%;
+
         thead {
             th {
                 position: sticky;
@@ -88,6 +100,7 @@
             }
         }
     }
+
     .search_link {
         display: block;
         overflow: hidden;
@@ -99,19 +112,28 @@
 
 .switch_box {
     @include horizontal_align;
+
     select {
         width: 87%;
     }
+
     .turn_on {
         display: none;
     }
+
     .turn_on2 {
         display: none;
     }
+
+    select.form-select.turn_on9 {
+        display: none;
+    }
+
 }
 
 .search_address {
     @include horizontal_align;
+
     input {
         width: 90%;
     }
@@ -119,6 +141,7 @@
 
 .search_options {
     @include horizontal_align;
+
     input {
         width: 78%;
     }
@@ -126,6 +149,7 @@
 
 .option_side {
     @include horizontal_align;
+
     select {
         width: 84%;
     }
@@ -137,22 +161,27 @@
 
 .modal_switch {
     @include horizontal_align;
+
     select {
         width: 80%;
     }
+
     .turn_on3 {
         display: none;
     }
+
     .turn_on4,
     .turn_on6,
     .turn_on7 {
         display: none;
         width: 90%;
     }
+
     .turn_on5 {
         display: none;
         width: 72%;
     }
+
     .turn_on8 {
         display: none;
         width: 80%;
@@ -161,6 +190,7 @@
 
 .modal_field {
     @include horizontal_align;
+
     input {
         height: 38px;
         margin-left: 8px;
@@ -169,6 +199,7 @@
 
 .option_date {
     @include horizontal_align;
+
     .date_field {
         width: 74%;
     }
@@ -183,9 +214,11 @@
     overflow-y: auto;
     max-height: 340px;
     margin-bottom: 20px;
+
     table {
         border-collapse: collapse;
         width: 100%;
+
         thead {
             th {
                 position: sticky;
@@ -246,17 +279,21 @@
         width: 60%;
         margin: 0px 10px;
     }
+
     .jinding_remark {
         width: 87%;
         margin-left: 10px;
     }
+
     .all_order,
     .client_name {
         overflow-y: auto;
         max-height: 200px;
+
         table {
             border-collapse: collapse;
             width: 100%;
+
             thead {
                 th {
                     position: sticky;
@@ -269,20 +306,25 @@
             }
         }
     }
+
     .red {
         color: $red;
     }
+
     .order_information {
         background-color: $mainColor;
         padding: 4px 10px;
         margin: auto 15px;
     }
+
     .order_product {
         overflow-y: auto;
         max-height: 300px;
+
         table {
             border-collapse: collapse;
             width: 100%;
+
             thead {
                 th {
                     position: sticky;
@@ -295,18 +337,23 @@
             }
         }
     }
+
     .quantity_input {
         width: 72%;
     }
+
     .print_select {
         width: 15%;
     }
+
     .total {
         overflow-y: auto;
         max-height: 580px;
+
         table {
             border-collapse: collapse;
             width: 100%;
+
             thead {
                 th {
                     position: sticky;
@@ -319,13 +366,16 @@
             }
         }
     }
+
     .total_client,
     .total_order {
         overflow-y: auto;
         max-height: 260px;
+
         table {
             border-collapse: collapse;
             width: 100%;
+
             thead {
                 th {
                     position: sticky;
@@ -341,15 +391,17 @@
 }
 
 /*math*/
-.math{
+.math {
     .order_information {
         background-color: $mainColor;
         padding: 4px 10px;
         margin: auto 15px;
     }
+
     .quantity_input {
         width: 72%;
     }
+
     .print_select {
         width: 15%;
     }

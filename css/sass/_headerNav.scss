@@ -85,6 +85,7 @@
 
         &:hover,
         &:active,
+        &.active,
         .active {
           color: #257dfd;
           border-bottom: 2px solid #257dfd

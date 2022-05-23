@@ -746,7 +746,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">52144</th>
+                                    <td scope="row">52144</td>
                                     <td>台中市</td>
                                     <td><a
                                             href=""
@@ -754,7 +754,7 @@
                                         >客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">48534</th>
+                                    <td scope="row">48534</td>
                                     <td>台中市</td>
                                     <td><a
                                             href=""
@@ -762,28 +762,16 @@
                                         >客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">34145</th>
+                                    <td scope="row">34145</td>
                                     <td>台中市</td>
-                                    <td><a
+                                    <td>
+                                        <a
                                             href=""
                                             class="search_link"
-                                        >客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">52144</th>
-                                    <td>台中市</td>
-                                    <td><a
-                                            href=""
-                                            class="search_link"
-                                        >客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">48534</th>
-                                    <td>台中市</td>
-                                    <td><a
-                                            href=""
-                                            class="search_link"
-                                        >客戶名稱客戶名稱客戶名稱客戶名稱</a></td>
+                                        >
+                                            客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱
+                                        </a>
+                                    </td>
                                 </tr>
 
                             </tbody>
@@ -881,59 +869,110 @@
                                 value="五權西六街138號"
                             >
                         </div>
-                        <div class="col-12 mb-2">地址
+                        <div class="col-12 mb-2">
+                            <label for="address">地址</label>
                             <div class="map_field">
+
                                 <input
                                     type="text"
                                     class="form-control mb-2 me-2"
+                                    id="address"
+                                    value="台中市西區五權西六街138號"
                                 >
                                 <button
                                     type="button"
                                     class="btn btn-primary"
-                                >瀏覽地圖</button>
+                                >
+                                    瀏覽地圖
+                                </button>
                             </div>
                         </div>
-                        <div class="col-4 mb-2">連絡電話1<input
+                        <div class="col-4 mb-2">
+                            <label for="ContactNumber1">連絡電話1</label>
+                            <input
+                                type="tel"
+                                class="form-control"
+                                id="ContactNumber1"
+                                value="04-23724922"
+                            >
+                        </div>
+                        <div class="col-4 mb-2">
+                            <label for="ContactNumber1">連絡電話2</label>
+                            <input
+                                type="tel"
+                                class="form-control"
+                                id="ContactNumber2"
+                                value=""
+                            >
+                        </div>
+                        <div class="col-4 mb-2">
+                            <label for="fax">傳真</label>
+                            <input
+                                type="tel"
+                                class="form-control"
+                                id="fax"
+                                value="""
+                            >
+                        </div>
+                        <div class="
+                                col-4
+                                mb-2"
+                            >
+                            <label for="ContactPerson">聯絡人</label>
+                            <input
                                 type="text"
                                 class="form-control"
-                            ></div>
-                        <div class="col-4 mb-2">連絡電話2<input
+                                id="ContactPerson"
+                                value="陳春梅"
+                            >
+                        </div>
+                        <div class="col-4 mb-2">
+                            <label for="jobTitle">職稱</label>
+                            <input
                                 type="text"
                                 class="form-control"
-                            ></div>
-                        <div class="col-4 mb-2">傳真<input
-                                type="text"
-                                class="form-control"
-                            ></div>
-                        <div class="col-4 mb-2">聯絡人<input
-                                type="text"
-                                class="form-control"
-                            ></div>
-                        <div class="col-4 mb-2">職稱<input
-                                type="text"
-                                class="form-control"
-                            ></div>
-                        <div class="col-4 mb-2">性別<select
+                                id="jobTitle"
+                                value=""
+                            >
+                        </div>
+                        <div class="col-4 mb-2">
+                            <label for="gender">性別</label>
+                            <select
                                 class="form-select"
                                 aria-label="Default select"
+                                id="性別"
                             >
-                                <option selected>男</option>
-                                <option value="1">女</option>
+                                <option value="male">男</option>
+                                <option
+                                    selected
+                                    value="female"
+                                >女</option>
                             </select>
                         </div>
-                        <div class="col-6 mb-2">電話<input
+                        <div class="col-6 mb-2">
+                            <label for="ContactPersonTelephone">電話</label>
+                            <input
                                 type="text"
                                 class="form-control"
-                            ></div>
-                        <div class="col-6 mb-2">聯絡人分機<input
+                                id="ContactPersonTelephone"
+                                value="0910504220"
+                            >
+                        </div>
+                        <div class="col-6 mb-2">
+                            <label for="ContactExtension">聯絡人分機</label>
+                            <input
                                 type="text"
-                                class="form-control"
-                            ></div>
-                        <div class="col-8 mb-2">email
+                                class="form-control col-1"
+                                id="ContactExtension"
+                            >
+                        </div>
+                        <div class="col-8 mb-2">
+                            <label for="email">email</label>
                             <div class="email_field">
                                 <input
                                     type="text"
-                                    class="form-control"
+                                    class="form-control me-1"
+                                    id="email"
                                 >
                                 <button
                                     type="button"
@@ -969,7 +1008,7 @@
                                 <option value="1">育安文理短期補習班</option>
                             </select>
                         </div>
-                        <div class="col-4 mb-2">客戶狀態<select
+                        <div class="col-3 mb-2">客戶狀態<select
                                 class="form-select"
                                 aria-label="Default select"
                             >
@@ -977,7 +1016,7 @@
                                 <option value="1">正常經營</option>
                             </select>
                         </div>
-                        <div class="col-4 mb-2 d-flex align-items-center">
+                        <div class="col-3 mb-2 d-flex align-items-center">
                             <div class="form-check pt-4">
                                 <input
                                     class="form-check-input"
@@ -993,21 +1032,30 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="col-4 mb-2 d-flex align-items-center">
-                            <div class="form-check pt-4">
-                                <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckChecked3"
+                        <div class="col-6 mb-2 d-flex ">
+                            <div class="switch_box switch_box_changed">
+                                <div class="form-check pt-4">
+                                    <input
+                                        class="form-check-input switch9"
+                                        type="checkbox"
+                                        id="bestClient"
+                                    >
+                                    <label
+                                        class="form-check-label"
+                                        for="bestClient"
+                                    >
+                                        最夯客戶
+                                    </label>
+                                </div>
+                                <select
+                                    class="form-select turn_on9 "
+                                    aria-label="bestClient"
                                 >
-                                <label
-                                    class="form-check-label"
-                                    for="flexCheckChecked3"
-                                >
-                                    最ㄏㄤ客戶
-                                </label>
+                                    <option selected>林一二</option>
+                                    <option value="1">鄧小平</option>
+                                </select>
                             </div>
+
                         </div>
                     </form>
                 </div>
@@ -1023,29 +1071,29 @@
                         >
                             <button
                                 class="nav-link active"
-                                id="basic-tab"
-                                data-bs-toggle="tab"
-                                data-bs-target="#basic"
-                                type="button"
-                                role="tab"
-                                aria-controls="basic"
-                                aria-selected="true"
-                            >基本資料</button>
-                        </li>
-                        <li
-                            class="nav-item"
-                            role="presentation"
-                        >
-                            <button
-                                class="nav-link"
                                 id="category-tab"
                                 data-bs-toggle="tab"
                                 data-bs-target="#category"
                                 type="button"
                                 role="tab"
                                 aria-controls="category"
-                                aria-selected="false"
+                                aria-selected="true"
                             >客戶類別</button>
+                        </li>
+                        <li
+                            class="nav-item"
+                            role="presentation"
+                        >
+                            <button
+                                class="nav-link "
+                                id="basic-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#basic"
+                                type="button"
+                                role="tab"
+                                aria-controls="basic"
+                                aria-selected="false"
+                            >基本資料</button>
                         </li>
                         <li
                             class="nav-item"
@@ -1084,6 +1132,61 @@
                     >
                         <div
                             class="tab-pane show active"
+                            id="category"
+                            role="tabpanel"
+                            aria-labelledby="category-tab"
+                        >
+                            <div class="category_list mt-2 mb-3">
+                                <div
+                                    class="list-group"
+                                    id="list-tab"
+                                    role="tablist"
+                                >
+                                    <a
+                                        class="list-group-item list-group-item-action active"
+                                        data-bs-toggle="list"
+                                        href="#"
+                                    >金鼎作文會員</a>
+                                    <a
+                                        class="list-group-item list-group-item-action"
+                                        data-bs-toggle="list"
+                                        href="#"
+                                    >金鼎作文會員</a>
+                                    <a
+                                        class="list-group-item list-group-item-action"
+                                        data-bs-toggle="list"
+                                        href="#"
+                                    >金鼎作文會員</a>
+                                    <a
+                                        class="list-group-item list-group-item-action"
+                                        data-bs-toggle="list"
+                                        href="#"
+                                    >金鼎作文會員</a>
+
+                                </div>
+                            </div>
+                            <!-- Button modal -->
+                            <button
+                                type="button"
+                                class="btn btn-primary me-1"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"
+                            >增加列別 </button>
+                            <button class="btn btn-danger">移除列別</button>
+                            <div class="remark mt-5">
+                                <label
+                                    for="exampleFormControlTextarea2"
+                                    class="form-label"
+                                >備註</label>
+                                <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea2"
+                                    rows="10"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div
+                            class="tab-pane "
                             id="basic"
                             role="tabpanel"
                             aria-labelledby="basic-tab"
@@ -1179,61 +1282,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="tab-pane"
-                            id="category"
-                            role="tabpanel"
-                            aria-labelledby="category-tab"
-                        >
-                            <div class="category_list mt-2 mb-3">
-                                <div
-                                    class="list-group"
-                                    id="list-tab"
-                                    role="tablist"
-                                >
-                                    <a
-                                        class="list-group-item list-group-item-action active"
-                                        data-bs-toggle="list"
-                                        href="#"
-                                    >金鼎作文會員</a>
-                                    <a
-                                        class="list-group-item list-group-item-action"
-                                        data-bs-toggle="list"
-                                        href="#"
-                                    >金鼎作文會員</a>
-                                    <a
-                                        class="list-group-item list-group-item-action"
-                                        data-bs-toggle="list"
-                                        href="#"
-                                    >金鼎作文會員</a>
-                                    <a
-                                        class="list-group-item list-group-item-action"
-                                        data-bs-toggle="list"
-                                        href="#"
-                                    >金鼎作文會員</a>
 
-                                </div>
-                            </div>
-                            <!-- Button modal -->
-                            <button
-                                type="button"
-                                class="btn btn-primary"
-                                data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop"
-                            >增加列別 </button>
-                            <button class="btn btn-danger">移除列別</button>
-                            <div class="remark mt-5">
-                                <label
-                                    for="exampleFormControlTextarea2"
-                                    class="form-label"
-                                >備註</label>
-                                <textarea
-                                    class="form-control"
-                                    id="exampleFormControlTextarea2"
-                                    rows="10"
-                                ></textarea>
-                            </div>
-                        </div>
                         <div
                             class="tab-pane"
                             id="situation"

@@ -1,7 +1,25 @@
-.unhandledCase{
-    .side_field{
-        input,select{
+.unhandledCase {
+    .side_field {
+
+        input,
+        select {
             width: 400px;
         }
+    }
+}
+
+
+//
+select.form-select.turn_on9 {
+    display: none;
+}
+
+.switch_box.switch_box_changed {
+    width: 100%;
+
+    select {
+        width: 50%;
+        display: flex;
+        align-items: center;
     }
 }
