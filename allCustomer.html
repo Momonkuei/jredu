@@ -697,7 +697,7 @@
                             type="search"
                             class="form-control me-2"
                         />
-                        <button class="btn btn-primary me-2">
+                        <button class="btn btn-success me-2">
                             搜尋
                         </button>
                         <!-- Button modal -->
@@ -720,40 +720,25 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td scope="row">52144</td>
+                                <tr class="table-info">
+                                    <td scope="row">20081204-0001</td>
                                     <td>台中市</td>
                                     <td>
-                                        <a
-                                            href="#"
-                                            class="search_link"
-                                        >
-                                            客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱
-                                        </a>
+                                        動態數學短期補習班
                                     </td>
                                 </tr>
                                 <tr>
                                     <td scope="row">48534</td>
                                     <td>台中市</td>
                                     <td>
-                                        <a
-                                            href="#"
-                                            class="search_link"
-                                        >
-                                            客戶名稱客戶名稱客戶名稱客戶名稱
-                                        </a>
+                                        客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱
                                     </td>
                                 </tr>
                                 <tr>
                                     <td scope="row">34145</td>
                                     <td>台中市</td>
                                     <td>
-                                        <a
-                                            href="#"
-                                            class="search_link"
-                                        >
-                                            客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱
-                                        </a>
+                                        客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱
                                     </td>
                                 </tr>
 
@@ -764,951 +749,1035 @@
 
                 <!-- 各戶基本資料 -->
                 <div class="col-8">
-                    <ul
-                        class="nav nav-tabs"
-                        id="myTab"
-                        role="tablist"
-                    >
-                        <li
-                            class="nav-item"
-                            role="presentation"
-                        >
-                            <button
-                                class="nav-link active"
-                                id="category-tab"
-                                data-bs-toggle="tab"
-                                data-bs-target="#category"
-                                type="button"
-                                role="tab"
-                                aria-controls="category"
-                                aria-selected="true"
-                            >
-                                客戶類別
-                            </button>
-                        </li>
-                        <li
-                            class="nav-item"
-                            role="presentation"
-                        >
-                            <button
-                                class="nav-link "
-                                id="basic-tab"
-                                data-bs-toggle="tab"
-                                data-bs-target="#basic"
-                                type="button"
-                                role="tab"
-                                aria-controls="basic"
-                                aria-selected="false"
-                            >
-                                基本資料
-                            </button>
-                        </li>
-                        <li
-                            class="nav-item"
-                            role="presentation"
-                        >
-                            <button
-                                class="nav-link"
-                                id="situation-tab"
-                                data-bs-toggle="tab"
-                                data-bs-target="#situation"
-                                type="button"
-                                role="tab"
-                                aria-controls="situation"
-                                aria-selected="false"
-                            >
-                                目前狀況
-                            </button>
-                        </li>
-                        <li
-                            class="nav-item"
-                            role="presentation"
-                        >
-                            <button
-                                class="nav-link"
-                                id="preDepositUsehistory-tab"
-                                data-bs-toggle="tab"
-                                data-bs-target="#preDepositUsehistory"
-                                type="button"
-                                role="tab"
-                                aria-controls="preDepositUsehistory"
-                                aria-selected="false"
-                            >
-                                預存款使用明細
-                            </button>
-                        </li>
-                    </ul>
+                    <div class="row">
 
+                        <ul
+                            class="nav nav-tabs"
+                            id="myTab"
+                            role="tablist"
+                        >
+                            <li
+                                class="nav-item"
+                                role="presentation"
+                            >
+                                <button
+                                    class="nav-link active"
+                                    id="category-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#category"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="category"
+                                    aria-selected="true"
+                                >
+                                    客戶類別
+                                </button>
+                            </li>
+                            <li
+                                class="nav-item"
+                                role="presentation"
+                            >
+                                <button
+                                    class="nav-link "
+                                    id="basic-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#basic"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="basic"
+                                    aria-selected="false"
+                                >
+                                    基本資料
+                                </button>
+                            </li>
+                            <li
+                                class="nav-item"
+                                role="presentation"
+                            >
+                                <button
+                                    class="nav-link"
+                                    id="situation-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#situation"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="situation"
+                                    aria-selected="false"
+                                >
+                                    目前狀況
+                                </button>
+                            </li>
+                            <li
+                                class="nav-item"
+                                role="presentation"
+                            >
+                                <button
+                                    class="nav-link"
+                                    id="preDepositUsehistory-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#preDepositUsehistory"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="preDepositUsehistory"
+                                    aria-selected="false"
+                                >
+                                    預存款使用明細
+                                </button>
+                            </li>
+                        </ul>
 
-                    <div
-                        class="tab-content pt-2"
-                        id="myTabContent"
-                    >
-
-                        <!-- <div class="row"> -->
 
                         <div
-                            class="tab-pane show active"
-                            id="category"
-                            role="tabpanel"
-                            aria-labelledby="category-tab"
+                            class="tab-content pt-2"
+                            id="myTabContent"
                         >
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-6 border-end border-light">
-                                        <form class="row">
-                                            <div class="col-6 mb-2">
-                                                <label for="CustomerID">
-                                                    客戶編號
-                                                </label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="CustomerID"
-                                                    value="20081204-0001"
-                                                />
-                                            </div>
-                                            <div class="col-6 mb-2">
-                                                <label for="CustomerAbbreviation">客戶簡稱</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="CustomerAbbreviation"
-                                                    value=""
-                                                />
-                                            </div>
-                                            <div class="col-8 mb-2">
-                                                <label for="CustomerName">客戶名稱</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="CustomerName"
-                                                    value="動態數學短期補習班"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="SchoolDistrict">學區</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="SchoolDistrict"
-                                                    value="大勇"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="PostalCode">郵遞區號</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="PostalCode"
-                                                    value="403"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="CountyAndCity">縣市</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select"
-                                                    id="CountyAndCity"
-                                                >
-                                                    <option
-                                                        selected
-                                                        value="Taichung"
-                                                    >台中市</option>
-                                                    <option value="Taipei">台北市</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="area">地區</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select"
-                                                    id="area"
-                                                >
-                                                    <option
-                                                        selected
-                                                        value="WestEnd"
-                                                    >
-                                                        西區
-                                                    </option>
-                                                    <option value="CentralArea">
-                                                        中區
-                                                    </option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <label for="houseNumber">門牌號碼</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="houseNumber"
-                                                    value="台中市西區五權西六街138號"
-                                                />
-                                            </div>
 
-                                            <div class="col-4 mb-2">
-                                                <label for="ContactNumber1">連絡電話1</label>
-                                                <input
-                                                    type="tel"
-                                                    class="form-control"
-                                                    id="ContactNumber1"
-                                                    value="04-23724922"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="ContactNumber1">連絡電話2</label>
-                                                <input
-                                                    type="tel"
-                                                    class="form-control"
-                                                    id="ContactNumber2"
-                                                    value=""
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="fax">傳真</label>
-                                                <input
-                                                    type="tel"
-                                                    class="form-control"
-                                                    id="fax"
-                                                    value="""
-                                                                                />
-                                                                            </div>
-                                                                            <div class="
-                                                    col-4
-                                                    mb-2"
-                                                >
-                                                <label for="ContactPerson">聯絡人</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="ContactPerson"
-                                                    value="陳春梅"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="jobTitle">職稱</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="jobTitle"
-                                                    value=""
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="gender">性別</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select"
-                                                    id="性別"
-                                                >
-                                                    <option value="male">男</option>
-                                                    <option
-                                                        selected
-                                                        value="female"
-                                                    >女</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-6 mb-2">
-                                                <label for="ContactPersonTelephone">電話</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="ContactPersonTelephone"
-                                                    value="0910504220"
-                                                />
-                                            </div>
-                                            <div class="col-6 mb-2">
-                                                <label for="ContactExtension">聯絡人分機</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control col-1"
-                                                    id="ContactExtension"
-                                                />
-                                            </div>
-                                            <div class="col-8 mb-2">
-                                                <label for="email">email</label>
-                                                <div class="email_field">
+                            <!-- <div class="row"> -->
+
+                            <div
+                                class="tab-pane show active"
+                                id="category"
+                                role="tabpanel"
+                                aria-labelledby="category-tab"
+                            >
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6 border-end border-light">
+                                            <form class="row">
+                                                <div class="col-6 mb-2">
+                                                    <label for="CustomerID">
+                                                        客戶編號
+                                                    </label>
                                                     <input
                                                         type="text"
-                                                        class="form-control me-1"
-                                                        id="email"
+                                                        class="form-control"
+                                                        id="CustomerID"
+                                                        value="20081204-0001"
                                                     />
-                                                    <button
-                                                        type="button"
-                                                        class="btn btn-primary"
-                                                    >發送 Mail</button>
                                                 </div>
-                                            </div>
-                                            <div class="col-4 d-flex align-items-center">
-                                                <div class="form-check pt-4">
+                                                <div class="col-6 mb-2">
+                                                    <label for="CustomerAbbreviation">客戶簡稱</label>
                                                     <input
-                                                        class="form-check-input"
-                                                        type="checkbox"
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="CustomerAbbreviation"
                                                         value=""
-                                                        id="flexCheckChecked"
                                                     />
-                                                    <label
-                                                        class="form-check-label"
-                                                        for="flexCheckChecked"
-                                                    >
-                                                        是否為代理商
-                                                    </label>
                                                 </div>
-                                            </div>
-                                            <div class="col-6 mb-2">
-                                                <label for="">網站</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="col-6 mb-2">
-                                                <label for="">所屬代理商</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select"
-                                                >
-                                                    <option selected>育安文理短期補習班</option>
-                                                    <option value="1">育安文理短期補習班</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-3 mb-2">
-                                                <label for="">客戶狀態</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select"
-                                                >
-                                                    <option selected>正常經營</option>
-                                                    <option value="1">正常經營</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-3 mb-2 d-flex align-items-center">
-                                                <div class="form-check pt-4">
+                                                <div class="col-8 mb-2">
+                                                    <label for="CustomerName">客戶名稱</label>
                                                     <input
-                                                        class="form-check-input"
-                                                        type="checkbox"
-                                                        value=""
-                                                        id="flexCheckChecked2"
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="CustomerName"
+                                                        value="動態數學短期補習班"
                                                     />
-                                                    <label
-                                                        class="form-check-label"
-                                                        for="flexCheckChecked2"
-                                                    >
-                                                        不寄送DM
-                                                    </label>
                                                 </div>
-                                            </div>
-                                            <div class="col-6 mb-2 d-flex ">
-                                                <div class="switch_box switch_box_changed">
+                                                <div class="col-4 mb-2">
+                                                    <label for="SchoolDistrict">學區</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="SchoolDistrict"
+                                                        value="大勇"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="PostalCode">郵遞區號</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="PostalCode"
+                                                        value="403"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="CountyAndCity">縣市</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select"
+                                                        id="CountyAndCity"
+                                                    >
+                                                        <option
+                                                            selected
+                                                            value="Taichung"
+                                                        >台中市</option>
+                                                        <option value="Taipei">台北市</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="area">地區</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select"
+                                                        id="area"
+                                                    >
+                                                        <option
+                                                            selected
+                                                            value="WestEnd"
+                                                        >
+                                                            西區
+                                                        </option>
+                                                        <option value="CentralArea">
+                                                            中區
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <label for="houseNumber">門牌號碼</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="houseNumber"
+                                                        value="台中市西區五權西六街138號"
+                                                    />
+                                                </div>
+
+                                                <div class="col-4 mb-2">
+                                                    <label for="ContactNumber1">連絡電話1</label>
+                                                    <input
+                                                        type="tel"
+                                                        class="form-control"
+                                                        id="ContactNumber1"
+                                                        value="04-23724922"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="ContactNumber1">連絡電話2</label>
+                                                    <input
+                                                        type="tel"
+                                                        class="form-control"
+                                                        id="ContactNumber2"
+                                                        value=""
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="fax">傳真</label>
+                                                    <input
+                                                        type="tel"
+                                                        class="form-control"
+                                                        id="fax"
+                                                        value="""
+                                                    />
+                                                </div>
+                                                <div class="
+                                                        col-4
+                                                        mb-2"
+                                                    >
+                                                    <label for="ContactPerson">聯絡人</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="ContactPerson"
+                                                        value="陳春梅"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="jobTitle">職稱</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="jobTitle"
+                                                        value=""
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="gender">性別</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select"
+                                                        id="性別"
+                                                    >
+                                                        <option value="male">男</option>
+                                                        <option
+                                                            selected
+                                                            value="female"
+                                                        >女</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <label for="ContactPersonTelephone">電話</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="ContactPersonTelephone"
+                                                        value="0910504220"
+                                                    />
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <label for="ContactExtension">聯絡人分機</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control col-1"
+                                                        id="ContactExtension"
+                                                    />
+                                                </div>
+                                                <div class="col-8 mb-2">
+                                                    <label for="email">email</label>
+                                                    <div class="email_field">
+                                                        <input
+                                                            type="text"
+                                                            class="form-control me-1"
+                                                            id="email"
+                                                        />
+                                                        <button
+                                                            type="button"
+                                                            class="btn btn-success"
+                                                        >發送 Mail</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 d-flex align-items-center">
                                                     <div class="form-check pt-4">
                                                         <input
-                                                            class="form-check-input switch9"
+                                                            class="form-check-input"
                                                             type="checkbox"
-                                                            id="bestClient"
+                                                            value=""
+                                                            id="flexCheckChecked"
                                                         />
                                                         <label
                                                             class="form-check-label"
-                                                            for="bestClient"
+                                                            for="flexCheckChecked"
                                                         >
-                                                            最夯客戶
+                                                            是否為代理商
                                                         </label>
                                                     </div>
-                                                    <select
-                                                        class="form-select turn_on9 "
-                                                        aria-label="bestClient"
-                                                    >
-                                                        <option selected>林一二</option>
-                                                        <option value="1">鄧小平</option>
-                                                    </select>
                                                 </div>
-
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="category_list mt-2 mb-3">
-                                            <div
-                                                class="list-group"
-                                                id="list-tab"
-                                                role="tablist"
-                                            >
-                                                <a
-                                                    class="list-group-item list-group-item-action active"
-                                                    data-bs-toggle="list"
-                                                    href="#"
-                                                >
-                                                    金鼎作文會員
-                                                </a>
-                                                <a
-                                                    class="list-group-item list-group-item-action"
-                                                    data-bs-toggle="list"
-                                                    href="#"
-                                                >金鼎作文會員</a>
-                                                <a
-                                                    class="list-group-item list-group-item-action"
-                                                    data-bs-toggle="list"
-                                                    href="#"
-                                                >金鼎作文會員</a>
-                                                <a
-                                                    class="list-group-item list-group-item-action"
-                                                    data-bs-toggle="list"
-                                                    href="#"
-                                                >金鼎作文會員</a>
-
-                                            </div>
-                                        </div>
-                                        <!-- Button modal -->
-                                        <button
-                                            type="button"
-                                            class="btn btn-primary me-1"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop"
-                                        >增加列別 </button>
-                                        <button class="btn btn-danger">移除列別</button>
-                                        <div class="remark mt-5">
-                                            <label
-                                                for="exampleFormControlTextarea2"
-                                                class="form-label"
-                                            >備註</label>
-                                            <textarea
-                                                class="form-control"
-                                                id="exampleFormControlTextarea2"
-                                                rows="10"
-                                            ></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="tab-pane "
-                            id="basic"
-                            role="tabpanel"
-                            aria-labelledby="basic-tab"
-                        >
-
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-6 border-end border-light">
-                                        <form class="row">
-                                            <div class="col-6 mb-2">
-                                                <label for="CustomerID">
-                                                    客戶編號
-                                                </label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="CustomerID"
-                                                    value="20081204-0001"
-                                                />
-                                            </div>
-                                            <div class="col-6 mb-2">
-                                                <label for="CustomerAbbreviation">客戶簡稱</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="CustomerAbbreviation"
-                                                    value=""
-                                                />
-                                            </div>
-                                            <div class="col-8 mb-2">
-                                                <label for="CustomerName">客戶名稱</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="CustomerName"
-                                                    value="動態數學短期補習班"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="SchoolDistrict">學區</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="SchoolDistrict"
-                                                    value="大勇"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="PostalCode">郵遞區號</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="PostalCode"
-                                                    value="403"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="CountyAndCity">縣市</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select"
-                                                    id="CountyAndCity"
-                                                >
-                                                    <option
-                                                        selected
-                                                        value="Taichung"
-                                                    >台中市</option>
-                                                    <option value="Taipei">台北市</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="area">地區</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select"
-                                                    id="area"
-                                                >
-                                                    <option
-                                                        selected
-                                                        value="WestEnd"
-                                                    >
-                                                        西區
-                                                    </option>
-                                                    <option value="CentralArea">
-                                                        中區
-                                                    </option>
-                                                </select>
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <label for="houseNumber">門牌號碼</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="houseNumber"
-                                                    value="台中市西區五權西六街138號"
-                                                />
-                                            </div>
-
-                                            <div class="col-4 mb-2">
-                                                <label for="ContactNumber1">連絡電話1</label>
-                                                <input
-                                                    type="tel"
-                                                    class="form-control"
-                                                    id="ContactNumber1"
-                                                    value="04-23724922"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="ContactNumber1">連絡電話2</label>
-                                                <input
-                                                    type="tel"
-                                                    class="form-control"
-                                                    id="ContactNumber2"
-                                                    value=""
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="fax">傳真</label>
-                                                <input
-                                                    type="tel"
-                                                    class="form-control"
-                                                    id="fax"
-                                                    value="""
-                                                                                    />
-                                                                                </div>
-                                                                                <div class="
-                                                    col-4
-                                                    mb-2"
-                                                >
-                                                <label for="ContactPerson">聯絡人</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="ContactPerson"
-                                                    value="陳春梅"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="jobTitle">職稱</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="jobTitle"
-                                                    value=""
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="gender">性別</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select"
-                                                    id="性別"
-                                                >
-                                                    <option value="male">男</option>
-                                                    <option
-                                                        selected
-                                                        value="female"
-                                                    >女</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-6 mb-2">
-                                                <label for="ContactPersonTelephone">電話</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    id="ContactPersonTelephone"
-                                                    value="0910504220"
-                                                />
-                                            </div>
-                                            <div class="col-6 mb-2">
-                                                <label for="ContactExtension">聯絡人分機</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control col-1"
-                                                    id="ContactExtension"
-                                                />
-                                            </div>
-                                            <div class="col-8 mb-2">
-                                                <label for="email">email</label>
-                                                <div class="email_field">
-                                                    <input
-                                                        type="text"
-                                                        class="form-control me-1"
-                                                        id="email"
-                                                    />
-                                                    <button
-                                                        type="button"
-                                                        class="btn btn-primary"
-                                                    >發送 Mail</button>
-                                                </div>
-                                            </div>
-                                            <div class="col-4 d-flex align-items-center">
-                                                <div class="form-check pt-4">
-                                                    <input
-                                                        class="form-check-input"
-                                                        type="checkbox"
-                                                        value=""
-                                                        id="flexCheckChecked"
-                                                    />
-                                                    <label
-                                                        class="form-check-label"
-                                                        for="flexCheckChecked"
-                                                    >
-                                                        是否為代理商
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 mb-2">
-                                                <label for="">網站</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="col-6 mb-2">
-                                                <label for="">所屬代理商</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select"
-                                                >
-                                                    <option selected>育安文理短期補習班</option>
-                                                    <option value="1">育安文理短期補習班</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-3 mb-2">
-                                                <label for="">客戶狀態</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select"
-                                                >
-                                                    <option selected>正常經營</option>
-                                                    <option value="1">正常經營</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-3 mb-2 d-flex align-items-center">
-                                                <div class="form-check pt-4">
-                                                    <input
-                                                        class="form-check-input"
-                                                        type="checkbox"
-                                                        value=""
-                                                        id="flexCheckChecked2"
-                                                    />
-                                                    <label
-                                                        class="form-check-label"
-                                                        for="flexCheckChecked2"
-                                                    >
-                                                        不寄送DM
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 mb-2 d-flex ">
-                                                <div class="switch_box switch_box_changed">
-                                                    <div class="form-check pt-4">
-                                                        <input
-                                                            class="form-check-input switch9"
-                                                            type="checkbox"
-                                                            id="bestClient"
-                                                        />
-                                                        <label
-                                                            class="form-check-label"
-                                                            for="bestClient"
-                                                        >
-                                                            最夯客戶
-                                                        </label>
-                                                    </div>
-                                                    <select
-                                                        class="form-select turn_on9 "
-                                                        aria-label="bestClient"
-                                                    >
-                                                        <option selected>林一二</option>
-                                                        <option value="1">鄧小平</option>
-                                                    </select>
-                                                </div>
-
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="row">
-                                            <div class="col-4 mb-2">
-                                                <label for="">負責人</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="">性別</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select example"
-                                                >
-                                                    <option selected>男</option>
-                                                    <option value="1">女</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="">連絡電話</label>
-                                                <input
-                                                    type="tel"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="">成立人</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="">性別</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select example"
-                                                >
-                                                    <option selected>男</option>
-                                                    <option value="1">女</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="">連絡電話</label>
-                                                <input
-                                                    type="tel"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="">班主任</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="">性別</label>
-                                                <select
-                                                    class="form-select"
-                                                    aria-label="Default select example"
-                                                >
-                                                    <option selected>男</option>
-                                                    <option value="1">女</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-4 mb-2">
-                                                <label for="">連絡電話</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <label for="">立案字號</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <label for="">立案日期</label>
-                                                <input
-                                                    type="date"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <label for="">發票號碼</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <label for="">發票抬頭</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="col-12 mb-2">
-                                                <label for="">發票地址</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                />
-                                            </div>
-                                            <div class="bill_field">
-                                                <div class="col-6 check_box">
-                                                    <input
-                                                        class="form-check-input"
-                                                        type="checkbox"
-                                                        value=""
-                                                        id="flexCheckChecked4"
-                                                    />
-                                                    <label
-                                                        class="form-check-label"
-                                                        for="flexCheckChecked4"
-                                                    >
-                                                        開立發票
-                                                    </label>
-                                                </div>
-                                                <div class="col-6">
-                                                    <label for="">稅率</label>
+                                                <div class="col-6 mb-2">
+                                                    <label for="">網站</label>
                                                     <input
                                                         type="text"
                                                         class="form-control"
                                                     />
                                                 </div>
+                                                <div class="col-6 mb-2">
+                                                    <label for="">所屬代理商</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select"
+                                                    >
+                                                        <option selected>育安文理短期補習班</option>
+                                                        <option value="1">育安文理短期補習班</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-3 mb-2">
+                                                    <label for="">客戶狀態</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select"
+                                                    >
+                                                        <option selected>正常經營</option>
+                                                        <option value="1">正常經營</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-3 mb-2 d-flex align-items-center">
+                                                    <div class="form-check pt-4">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckChecked2"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="flexCheckChecked2"
+                                                        >
+                                                            不寄送DM
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 mb-2 d-flex ">
+                                                    <div class="switch_box switch_box_changed">
+                                                        <div class="form-check pt-4">
+                                                            <input
+                                                                class="form-check-input switch9"
+                                                                type="checkbox"
+                                                                id="bestClient"
+                                                            />
+                                                            <label
+                                                                class="form-check-label"
+                                                                for="bestClient"
+                                                            >
+                                                                最夯客戶
+                                                            </label>
+                                                        </div>
+                                                        <select
+                                                            class="form-select turn_on9 "
+                                                            aria-label="bestClient"
+                                                        >
+                                                            <option selected>林一二</option>
+                                                            <option value="1">鄧小平</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="category_list mt-2 mb-3">
+                                                <div
+                                                    class="list-group"
+                                                    id="list-tab"
+                                                    role="tablist"
+                                                >
+                                                    <a
+                                                        class="list-group-item list-group-item-action active"
+                                                        data-bs-toggle="list"
+                                                        href="#"
+                                                    >
+                                                        金鼎作文會員
+                                                    </a>
+                                                    <a
+                                                        class="list-group-item list-group-item-action"
+                                                        data-bs-toggle="list"
+                                                        href="#"
+                                                    >金鼎作文會員</a>
+                                                    <a
+                                                        class="list-group-item list-group-item-action"
+                                                        data-bs-toggle="list"
+                                                        href="#"
+                                                    >金鼎作文會員</a>
+                                                    <a
+                                                        class="list-group-item list-group-item-action"
+                                                        data-bs-toggle="list"
+                                                        href="#"
+                                                    >金鼎作文會員</a>
+
+                                                </div>
+                                            </div>
+                                            <!-- Button modal -->
+                                            <button
+                                                type="button"
+                                                class="btn btn-success me-1"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop"
+                                            >增加列別 </button>
+                                            <button class="btn btn-danger">移除列別</button>
+                                            <div class="remark mt-5">
+                                                <label
+                                                    for="exampleFormControlTextarea2"
+                                                    class="form-label"
+                                                >備註</label>
+                                                <textarea
+                                                    class="form-control"
+                                                    id="exampleFormControlTextarea2"
+                                                    rows="10"
+                                                ></textarea>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div
+                                class="tab-pane "
+                                id="basic"
+                                role="tabpanel"
+                                aria-labelledby="basic-tab"
+                            >
 
-                        <div
-                            class="tab-pane"
-                            id="situation"
-                            role="situation"
-                            aria-labelledby="situation-tab"
-                        >
-                            <div class="col-6">
-                                <div class="situation_field"><span>所在樓層</span>
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                    /> 樓
-                                </div>
-                                <div class="situation_field"><span>經營年資</span> <input
-                                        type="text"
-                                        class="form-control"
-                                    /> 年
-                                </div>
-                                <div class="situation_field"><span>學生人數</span> <input
-                                        type="text"
-                                        class="form-control"
-                                    /> 人
-                                </div>
-                                <div class="situation_field"><span>教室間數</span> <input
-                                        type="text"
-                                        class="form-control"
-                                    /> 間
-                                </div>
-                                <div class="situation_field"><span>座位總數</span> <input
-                                        type="text"
-                                        class="form-control"
-                                    /> 人
-                                </div>
-                                <div class="situation_field"><span>最大座位總數</span> <input
-                                        type="text"
-                                        class="form-control"
-                                    /> 人
-                                </div>
-                                <div class="situation_field"><span>最小座位總數</span> <input
-                                        type="text"
-                                        class="form-control"
-                                    /> 人
-                                </div>
-                                <div>
-                                    <label
-                                        for="exampleFormControlTextarea3"
-                                        class="form-label"
-                                    >備註</label>
-                                    <textarea
-                                        class="form-control"
-                                        id="exampleFormControlTextarea3"
-                                        rows="10"
-                                    ></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 預存款使用明細 -->
-                        <div
-                            class="tab-pane"
-                            id="preDepositUsehistory"
-                            role="tabpanel"
-                            aria-labelledby="preDepositUsehistory-tab"
-                        >
-                            <div class="row">
                                 <div class="col-12">
                                     <div class="row">
-                                        <table class="table table-hover ">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">#</th>
-                                                    <th scope="col">日期</th>
-                                                    <th scope="col">項目</th>
-                                                    <th scope="col">金額</th>
-                                                    <th scope="col">備註</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td scope="row">1</td>
-                                                    <td>2020/12/20</td>
-                                                    <td>簡訊花費</td>
-                                                    <td>$6000</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
+                                        <div class="col-6 border-end border-light">
+                                            <form class="row">
+                                                <div class="col-6 mb-2">
+                                                    <label for="CustomerID">
+                                                        客戶編號
+                                                    </label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="CustomerID"
+                                                        value="20081204-0001"
+                                                    />
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <label for="CustomerAbbreviation">客戶簡稱</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="CustomerAbbreviation"
+                                                        value=""
+                                                    />
+                                                </div>
+                                                <div class="col-8 mb-2">
+                                                    <label for="CustomerName">客戶名稱</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="CustomerName"
+                                                        value="動態數學短期補習班"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="SchoolDistrict">學區</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="SchoolDistrict"
+                                                        value="大勇"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="PostalCode">郵遞區號</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="PostalCode"
+                                                        value="403"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="CountyAndCity">縣市</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select"
+                                                        id="CountyAndCity"
+                                                    >
+                                                        <option
+                                                            selected
+                                                            value="Taichung"
+                                                        >台中市</option>
+                                                        <option value="Taipei">台北市</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="area">地區</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select"
+                                                        id="area"
+                                                    >
+                                                        <option
+                                                            selected
+                                                            value="WestEnd"
+                                                        >
+                                                            西區
+                                                        </option>
+                                                        <option value="CentralArea">
+                                                            中區
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <label for="houseNumber">門牌號碼</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="houseNumber"
+                                                        value="台中市西區五權西六街138號"
+                                                    />
+                                                </div>
 
-                                                    <td scope="row">2</td>
-                                                    <td>2020/12/20</td>
-                                                    <td>簡訊花費</td>
-                                                    <td>$6000</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td scope="row">3</td>
-                                                    <td>2020/12/20</td>
-                                                    <td>簡訊花費</td>
-                                                    <td>$6000</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td scope="row">4</td>
-                                                    <td>2020/12/20</td>
-                                                    <td>簡訊花費</td>
-                                                    <td>$6000</td>
-                                                    <td></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                <div class="col-4 mb-2">
+                                                    <label for="ContactNumber1">連絡電話1</label>
+                                                    <input
+                                                        type="tel"
+                                                        class="form-control"
+                                                        id="ContactNumber1"
+                                                        value="04-23724922"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="ContactNumber1">連絡電話2</label>
+                                                    <input
+                                                        type="tel"
+                                                        class="form-control"
+                                                        id="ContactNumber2"
+                                                        value=""
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="fax">傳真</label>
+                                                    <input
+                                                        type="tel"
+                                                        class="form-control"
+                                                        id="fax"
+                                                        value="""
+                                                                                        />
+                                                                                    </div>
+                                                                                    <div class="
+                                                        col-4
+                                                        mb-2"
+                                                    >
+                                                    <label for="ContactPerson">聯絡人</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="ContactPerson"
+                                                        value="陳春梅"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="jobTitle">職稱</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="jobTitle"
+                                                        value=""
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="gender">性別</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select"
+                                                        id="性別"
+                                                    >
+                                                        <option value="male">男</option>
+                                                        <option
+                                                            selected
+                                                            value="female"
+                                                        >女</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <label for="ContactPersonTelephone">電話</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="ContactPersonTelephone"
+                                                        value="0910504220"
+                                                    />
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <label for="ContactExtension">聯絡人分機</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control col-1"
+                                                        id="ContactExtension"
+                                                    />
+                                                </div>
+                                                <div class="col-8 mb-2">
+                                                    <label for="email">email</label>
+                                                    <div class="email_field">
+                                                        <input
+                                                            type="text"
+                                                            class="form-control me-1"
+                                                            id="email"
+                                                        />
+                                                        <button
+                                                            type="button"
+                                                            class="btn btn-primary"
+                                                        >發送 Mail</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 d-flex align-items-center">
+                                                    <div class="form-check pt-4">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckChecked"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="flexCheckChecked"
+                                                        >
+                                                            是否為代理商
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <label for="">網站</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="col-6 mb-2">
+                                                    <label for="">所屬代理商</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select"
+                                                    >
+                                                        <option selected>育安文理短期補習班</option>
+                                                        <option value="1">育安文理短期補習班</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-3 mb-2">
+                                                    <label for="">客戶狀態</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select"
+                                                    >
+                                                        <option selected>正常經營</option>
+                                                        <option value="1">正常經營</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-3 mb-2 d-flex align-items-center">
+                                                    <div class="form-check pt-4">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckChecked2"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="flexCheckChecked2"
+                                                        >
+                                                            不寄送DM
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 mb-2 d-flex ">
+                                                    <div class="switch_box switch_box_changed">
+                                                        <div class="form-check pt-4">
+                                                            <input
+                                                                class="form-check-input switch9"
+                                                                type="checkbox"
+                                                                id="bestClient"
+                                                            />
+                                                            <label
+                                                                class="form-check-label"
+                                                                for="bestClient"
+                                                            >
+                                                                最夯客戶
+                                                            </label>
+                                                        </div>
+                                                        <select
+                                                            class="form-select turn_on9 "
+                                                            aria-label="bestClient"
+                                                        >
+                                                            <option selected>林一二</option>
+                                                            <option value="1">鄧小平</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4 mb-2">
+                                                    <label for="">負責人</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="">性別</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select example"
+                                                    >
+                                                        <option selected>男</option>
+                                                        <option value="1">女</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="">連絡電話</label>
+                                                    <input
+                                                        type="tel"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="">成立人</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="">性別</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select example"
+                                                    >
+                                                        <option selected>男</option>
+                                                        <option value="1">女</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="">連絡電話</label>
+                                                    <input
+                                                        type="tel"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="">班主任</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="">性別</label>
+                                                    <select
+                                                        class="form-select"
+                                                        aria-label="Default select example"
+                                                    >
+                                                        <option selected>男</option>
+                                                        <option value="1">女</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4 mb-2">
+                                                    <label for="">連絡電話</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <label for="">立案字號</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <label for="">立案日期</label>
+                                                    <input
+                                                        type="date"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <label for="">發票號碼</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <label for="">發票抬頭</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="col-12 mb-2">
+                                                    <label for="">發票地址</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="bill_field">
+                                                    <div class="col-6 check_box">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckChecked4"
+                                                        />
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="flexCheckChecked4"
+                                                        >
+                                                            開立發票
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="">稅率</label>
+                                                        <input
+                                                            type="text"
+                                                            class="form-control"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
+                            <div
+                                class="tab-pane"
+                                id="situation"
+                                role="situation"
+                                aria-labelledby="situation-tab"
+                            >
+                                <div class="col-6">
+                                    <div class="situation_field"><span>所在樓層</span>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                        /> 樓
+                                    </div>
+                                    <div class="situation_field"><span>經營年資</span> <input
+                                            type="text"
+                                            class="form-control"
+                                        /> 年
+                                    </div>
+                                    <div class="situation_field"><span>學生人數</span> <input
+                                            type="text"
+                                            class="form-control"
+                                        /> 人
+                                    </div>
+                                    <div class="situation_field"><span>教室間數</span> <input
+                                            type="text"
+                                            class="form-control"
+                                        /> 間
+                                    </div>
+                                    <div class="situation_field"><span>座位總數</span> <input
+                                            type="text"
+                                            class="form-control"
+                                        /> 人
+                                    </div>
+                                    <div class="situation_field"><span>最大座位總數</span> <input
+                                            type="text"
+                                            class="form-control"
+                                        /> 人
+                                    </div>
+                                    <div class="situation_field"><span>最小座位總數</span> <input
+                                            type="text"
+                                            class="form-control"
+                                        /> 人
+                                    </div>
+                                    <div>
+                                        <label
+                                            for="exampleFormControlTextarea3"
+                                            class="form-label"
+                                        >備註</label>
+                                        <textarea
+                                            class="form-control"
+                                            id="exampleFormControlTextarea3"
+                                            rows="10"
+                                        ></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 預存款使用明細 -->
+                            <div
+                                class="tab-pane"
+                                id="preDepositUsehistory"
+                                role="tabpanel"
+                                aria-labelledby="preDepositUsehistory-tab"
+                            >
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div>
+                                                <div class="d-grid gap-2 input-group d-flex align-items-center">
+                                                    <button
+                                                        class="btn btn-outline-primary"
+                                                        type="button"
+                                                    >
+                                                        <ion-icon name="chevron-back-outline"></ion-icon>
+                                                    </button>
+                                                    <input
+                                                        id="bday-week"
+                                                        type="week"
+                                                        name="bday-week"
+                                                        class="input-date"
+                                                    >
+                                                    <button
+                                                        class="btn btn-outline-primary"
+                                                        type="button"
+                                                    >
+                                                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                    </button>
+                                                    <div class="col-xs-2">
+                                                        <input
+                                                            type="text"
+                                                            class="form-control"
+                                                            placeholder="Search company"
+                                                            aria-label="Search company"
+                                                        >
+                                                    </div>
+                                                    <button
+                                                        class="btn btn-outline-success "
+                                                        type="button"
+                                                    >
+                                                        <ion-icon name="search-outline"></ion-icon>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <table class="table table-hover ">
+                                                <thead>
+                                                    <tr>
+                                                        <th
+                                                            class="col-1"
+                                                            scope="col"
+                                                        >
+                                                            #
+                                                        </th>
+                                                        <th
+                                                            class="col-2"
+                                                            scope="col"
+                                                        >
+                                                            <span class="col-2">日期</span>
+                                                        </th>
+                                                        <th
+                                                            class="col-2"
+                                                            scope="col"
+                                                        >
+                                                            <span class="col-2">時間</span>
+                                                        </th>
+                                                        <th
+                                                            class="col-3"
+                                                            scope="col"
+                                                        >
+                                                            項目
+                                                        </th>
+                                                        <th
+                                                            class="col-1"
+                                                            scope="col"
+                                                        >
+                                                            金額
+                                                        </th>
+                                                        <th
+                                                            class="col-3"
+                                                            scope="col"
+                                                        >
+                                                            備註
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td scope="row">1</td>
+                                                        <td>2020/12/20</td>
+                                                        <td>10:00</td>
+                                                        <td>簡訊花費</td>
+                                                        <td>$600000</td>
+                                                        <td>
+                                                            <button
+                                                                type="button"
+                                                                class="btn btn-primary"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#detailsModal1"
+                                                            >
+                                                                詳細內容
+                                                            </button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+
+                                                        <td scope="row">2</td>
+                                                        <td>2020/12/20</td>
+                                                        <td>13:00</td>
+                                                        <td>簡訊花費</td>
+                                                        <td>$6000</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">3</td>
+                                                        <td>2020/12/20</td>
+                                                        <td>15:00</td>
+                                                        <td>簡訊花費</td>
+                                                        <td>$6000</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td scope="row">4</td>
+                                                        <td>2020/12/20</td>
+                                                        <td>16:00</td>
+                                                        <td>簡訊花費</td>
+                                                        <td>$6000</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <!-- </div> -->
@@ -1753,7 +1822,20 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+            <!-- 客戶資料表頭 -->
             <!-- 搜尋選項Modal -->
+            <!--  -->
+
+
+
+
+
+
             <div
                 class="modal fade"
                 id="staticBackdrop2"
@@ -2099,7 +2181,22 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+            <!-- 客戶資料表頭 -->
             <!-- 建立新訂單Modal -->
+            <!--  -->
+
+
+
+
+
+
+
             <div
                 class="modal fade"
                 id="new_order"
@@ -2501,7 +2598,20 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+            <!-- 客戶資料表頭 -->
             <!-- 查看客戶訂單Modal -->
+            <!--  -->
+
+
+
+
+
+
             <div
                 class="modal fade"
                 id="view_order"
@@ -3633,7 +3743,20 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+            <!-- 客戶資料表頭 -->
             <!-- 電訪紀錄單Modal -->
+            <!--  -->
+
+
+
+
+
             <div
                 class="modal fade"
                 id="create_order"
@@ -3896,7 +4019,16 @@
                     </div>
                 </div>
             </div>
+
+
+
+            <!-- 客戶資料表頭 -->
             <!-- 面訪紀錄Modal -->
+            <!--  -->
+
+
+
+
             <div
                 class="modal fade"
                 id="interview_record"
@@ -4194,7 +4326,16 @@
                     </div>
                 </div>
             </div>
+
+
+
+            <!-- 客戶資料表頭 -->
             <!-- 金鼎作文Modal -->
+            <!--  -->
+
+
+
+
             <div
                 class="modal fade"
                 id="composition"
@@ -4429,7 +4570,19 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+            <!-- 客戶資料表頭 -->
             <!-- 甘丹數學Modal -->
+            <!--  -->
+
+
+
+
+
+
             <div
                 class="modal fade"
                 id="math"
@@ -4662,7 +4815,20 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+            <!-- 客戶資料表頭 -->
             <!-- 商品購買資訊Modal -->
+            <!--  -->
+
+
+
+
+
             <div
                 class="modal fade"
                 id="software"
@@ -4841,7 +5007,13 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- 其他選項中的model -->
             <!-- 查詢大掌櫃到期客戶Modal -->
+            <!--  -->
+
+
             <div
                 class="modal fade"
                 id="expired_customer"
@@ -4909,6 +5081,77 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+            <!--  -->
+            <!-- 預存款使用明細 Model區域 -->
+            <!--  -->
+
+
+
+
+            <!-- 預存款使用明細 Model區域 -->
+            <!-- 詳細內容1 -->
+            <!--  -->
+            <div
+                class="modal fade"
+                id="detailsModal1"
+                tabindex="-1"
+                aria-labelledby="detailsModal1"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5
+                                class="modal-title"
+                                id="detailsModal1"
+                            >簡訊花費</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">使用者</th>
+                                        <th scope="col">電話號碼</th>
+                                        <th scope="col">花費</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>林阿三</td>
+                                        <td>0912345678</td>
+                                        <td>2塊</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-danger"
+                                data-bs-dismiss="modal"
+                            >關閉</button>
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                            >確認</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <script
             src="js/bootstrap.bundle.min.js"

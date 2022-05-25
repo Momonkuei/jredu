@@ -332,7 +332,13 @@ hover #9db8e0 (-60%)
 
     &:last-child {
         border-top: 2px solid #868e96;
+        border-bottom: 5px solid #b5cae8;
     }
+}
+
+.list_table tbody th,
+.list_table tbody td {
+    border-right: 1px solid #dee2e6;
 }
 
 /******************/
