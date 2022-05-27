@@ -12137,7 +12137,8 @@ solid #9ec5fe
 
 .brand {
   padding: 10px;
-  background: #86b7fe;
+  padding-left: 0;
+  background-color: #073e8e;
   width: 100%;
   height: 70px;
   display: -webkit-box;
@@ -12150,7 +12151,7 @@ solid #9ec5fe
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 1.4rem;
   font-weight: 600;
   border-bottom: 2px solid #6ea8fe;
@@ -12167,7 +12168,7 @@ solid #9ec5fe
 }
 
 .brand img {
-  width: 30px;
+  width: 35px;
 }
 
 .sidebar-menu {
@@ -13707,7 +13708,7 @@ hover #9db8e0 (-60%)
 /******************/
 /* 按鈕 */
 /******************/
-.btn {
+.btn-min {
   min-width: 112px;
 }
 
@@ -13837,7 +13838,7 @@ hover #9db8e0 (-60%)
 
 .list_table tbody tr:last-child {
   border-top: 2px solid #868e96;
-  border-bottom: 5px solid #b5cae8;
+  border-bottom: 5px solid #d6336c;
 }
 
 .list_table tbody th,
@@ -13899,6 +13900,87 @@ hover #9db8e0 (-60%)
 
 .list_table_dropdown:hover .list_table_dropdown_content {
   display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.table-container {
+  padding: 0 10%;
+  margin: 40px auto;
+}
+
+.predepositUserTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.predepositUserTable thead {
+  background-color: #094db1;
+  color: #fff;
+}
+
+.predepositUserTable th,
+.predepositUserTable td {
+  padding: .8rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.predepositUserTable tbody tr {
+  color: #555;
+}
+
+.predepositUserTable tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+
+@media screen and (max-width: 768px) {
+  .table-container {
+    padding: 0 10px;
+  }
+  .predepositUserTable thead {
+    display: none;
+  }
+  .predepositUserTable tbody,
+  .predepositUserTable tbody tr,
+  .predepositUserTable tbody td {
+    display: block;
+    width: 100%;
+  }
+  .predepositUserTable tbody tr {
+    margin-bottom: 30px;
+  }
+  .predepositUserTable tbody tr td:first-child {
+    text-align: center;
+    width: 100%;
+  }
+  .predepositUserTable tbody tr td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .predepositUserTable td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: 600;
+    text-align: left;
+  }
+  .predepositUserTable tbody tr th:first-child {
+    display: inline-block;
+    background-color: #094db1;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .commodity_on thead {

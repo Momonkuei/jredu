@@ -39,7 +39,7 @@
                         src="images/logo.png"
                         alt="logo"
                     >
-                    傑人公司管理系統
+                    傑人管理系統
                 </a>
                 <button class="sidebarHideBtn">
                     <ion-icon name="close-outline"></ion-icon>
@@ -728,7 +728,7 @@
                         class="form-control"
                         id="email"
                         placeholder="example@email.com"
-                    >
+                    />
                 </div>
                 <div class="form-group">
                     <label for="num">統一編號（選填）</label>
@@ -737,7 +737,7 @@
                         class="form-control"
                         id="num"
                         placeholder="12345678"
-                    >
+                    />
                 </div>
             </form>
 
@@ -761,7 +761,7 @@
                                 type="checkbox"
                                 class="form-check-input"
                                 id="exampleCheck1"
-                            >
+                            />
                             <label
                                 class="form-check-label text-size-sm"
                                 for="exampleCheck1"
@@ -780,7 +780,7 @@
                             type="text"
                             class="form-control"
                             placeholder="幸福路 520號"
-                        >
+                        />
                     </div>
                 </div>
                 <div class="form-group">
@@ -790,7 +790,7 @@
                         class="form-control"
                         id="num"
                         placeholder="12345678"
-                    >
+                    />
                 </div>
             </form>
             <!-- 4本日以處理 -->
@@ -852,15 +852,20 @@
                     <div class="modal-body">
                         <div class="container-fluid mt-4 mb-3">
                             <div class="row">
-                                <div class="col-12 mb-2">公告標題<input
+                                <div class="col-12 mb-2">
+                                    <label for="">公告標題</label>
+                                    <input
                                         type="text"
                                         class="form-control"
-                                    ></div>
+                                    />
+                                </div>
                                 <div class="col-12 mb-4">
                                     <label
                                         for="school_nameTextarea"
                                         class="form-label mb-0"
-                                    >公告內容</label>
+                                    >
+                                        公告內容
+                                    </label>
                                     <textarea
                                         class="form-control"
                                         id="school_nameTextarea"
@@ -874,7 +879,9 @@
                                     type="button"
                                     class="btn btn-secondary"
                                     data-bs-dismiss="modal"
-                                >取消</button>
+                                >
+                                    取消
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -906,11 +913,13 @@
                 <div class="modal-body">
                     <div class="container-fluid mt-4 mb-3">
                         <div class="row">
-                            <div class="col-12 mb-2">公告標題<input
+                            <div class="col-12 mb-2">
+                                公告標題
+                                <input
                                     type="text"
                                     class="form-control"
                                     value="公告標題公告標題"
-                                >
+                                />
                             </div>
                             <div class="col-12 mb-4">
                                 <label
