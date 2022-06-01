@@ -714,28 +714,25 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th scope="col">編號</th>
                                     <th scope="col">縣市</th>
                                     <th scope="col">客戶名稱</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="table-info">
-                                    <td scope="row">20081204-0001</td>
+
                                     <td>台中市</td>
                                     <td>
                                         動態數學短期補習班
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">48534</td>
                                     <td>台中市</td>
                                     <td>
                                         客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">34145</td>
                                     <td>台中市</td>
                                     <td>
                                         客戶名稱客戶名稱客戶名稱客戶名稱客戶名稱
@@ -822,6 +819,23 @@
                                     aria-selected="false"
                                 >
                                     預存款使用明細
+                                </button>
+                            </li>
+                            <li
+                                class="nav-item"
+                                role="presentation"
+                            >
+                                <button
+                                    class="nav-link"
+                                    id="preDepositUsehistory-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#manualDebit"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="manualDebit"
+                                    aria-selected="false"
+                                >
+                                    手動扣款
                                 </button>
                             </li>
                         </ul>
@@ -1144,15 +1158,77 @@
 
                                                 </div>
                                             </div>
+
+
+
+
+
                                             <!-- Button modal -->
-                                            <button
-                                                type="button"
-                                                class="btn btn-success me-1"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#staticBackdrop"
-                                            >增加列別 </button>
-                                            <button class="btn btn-danger">移除列別</button>
-                                            <div class="remark mt-5">
+
+
+                                            <div class="my-4">
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-success me-1"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop"
+                                                >增加列別 </button>
+                                                <button class="btn btn-danger">移除列別</button>
+                                            </div>
+
+                                            <!-- 客戶經營類別確認 -->
+                                            <div class="row mb-4">
+                                                <h4>客戶經營類別</h4>
+                                                <div class="col">
+                                                    <div class="form-check form-check-inline ">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            id="menu_type1"
+                                                            value="option1"
+                                                        >
+                                                        <label
+                                                            class="form-check-label "
+                                                            for="menu_type1"
+                                                        >
+                                                            補習班
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-check form-check-inline ">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            id="menu_type2"
+                                                            value="option2"
+                                                        >
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="menu_type2"
+                                                        >
+                                                            幼兒園
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-check form-check-inline">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            id="menu_type3"
+                                                            value="option3"
+                                                        >
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="menu_type3"
+                                                        >
+                                                            托嬰中心
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="remark">
                                                 <label
                                                     for="exampleFormControlTextarea2"
                                                     class="form-label"
@@ -1777,6 +1853,180 @@
                                 </div>
 
                             </div>
+
+
+                            <!-- 手動扣款 -->
+                            <div
+                                class="tab-pane"
+                                id="manualDebit"
+                                role="tabpanel"
+                                aria-labelledby="manualDebit-tab"
+                            >
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <dir class="d-flex align-items-center">
+                                                <h3>
+                                                    動態數學短期補習班
+                                                    <span class="badge bg-secondary">目前餘額</span>
+                                                    <span class="badge bg-success">$43800</span>
+                                                    <span class="badge bg-danger">$800</span>
+                                                </h3>
+                                            </dir>
+
+                                            <table class="table table-hover table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th
+                                                            class="col-1"
+                                                            scope="col"
+                                                            style="width: 80px;"
+                                                        >
+
+                                                            <input
+                                                                class="form-check-input"
+                                                                type="checkbox"
+                                                                name=""
+                                                                id=""
+                                                                value=""
+                                                            />
+
+                                                        </th>
+                                                        <th
+                                                            class="col-1"
+                                                            scope="col"
+                                                            style="width: 80px;"
+                                                        >
+                                                            #
+                                                        </th>
+                                                        <th
+                                                            class="col-3"
+                                                            scope="col"
+                                                        >
+                                                            項目
+                                                        </th>
+                                                        <th
+                                                            class="col-2"
+                                                            scope="col"
+                                                        >
+                                                            <span class="col-2">方案</span>
+                                                        </th>
+                                                        <th
+                                                            class="col-2"
+                                                            scope="col"
+                                                        >
+                                                            <span class="col-2">有效時間</span>
+                                                        </th>
+                                                        <th
+                                                            class="col-2"
+                                                            scope="col"
+                                                        >單位</th>
+                                                        <th
+                                                            class="col-1"
+                                                            scope="col"
+                                                        >
+                                                            金額
+                                                        </th>
+                                                        <th
+                                                            class="col-4"
+                                                            scope="col"
+                                                        >
+                                                            備註
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+
+                                                            <input
+                                                                class="form-check-input"
+                                                                type="checkbox"
+                                                                name=""
+                                                                id=""
+                                                                value=""
+                                                            />
+
+                                                        </td>
+                                                        <td scope="row">1</td>
+                                                        <td>網路空間使用費</td>
+                                                        <td>
+                                                            <p>存放主機資料庫
+                                                                <small class="badge bg-light text-dark">
+                                                                    100MB資料庫空間
+                                                                </small>
+                                                            </p>
+                                                            <p>主機資料庫維護</p>
+                                                        </td>
+                                                        <td>2022/05/27~2023/05/27</td>
+                                                        <td><span>1校/</span>$3000</td>
+                                                        <td>$3000</td>
+                                                        <td>
+                                                            <p>國外雲端主機
+                                                                <small class="badge bg-light text-dark">
+                                                                    由傑人公司代租
+                                                                </small>
+                                                            </p>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+
+                                                            <input
+                                                                class="form-check-input"
+                                                                type="checkbox"
+                                                                name=""
+                                                                id=""
+                                                                value=""
+                                                            />
+
+                                                        </td>
+                                                        <td scope="row">2</td>
+                                                        <td>雲端系統維護費</td>
+                                                        <td>
+                                                            <p>更新功能</p>
+                                                            <p>系統重灌</p>
+                                                            <p>授權設定</p>
+                                                            <p>分機主程式維護</p>
+                                                            <p>分機連線設定</p>
+                                                            <p>操作教學服務</p>
+                                                        </td>
+                                                        <td>2022/05/27~2023/05/27</td>
+                                                        <td><span>1臺/</span>$1000</td>
+                                                        <td>$1000</td>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>總額</td>
+                                                        <td>$4000</td>
+                                                        <td>
+                                                            <button
+                                                                type="button"
+                                                                class="btn btn-success"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#performDebitModal"
+                                                            >
+                                                                執行扣款
+                                                            </button>
+
+                                                        </td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                     <!-- </div> -->
@@ -1829,8 +2079,6 @@
             <!-- 客戶資料表頭 -->
             <!-- 搜尋選項Modal -->
             <!--  -->
-
-
 
 
 
@@ -5149,6 +5397,59 @@
                 </div>
             </div>
 
+            <!-- 執行扣款 Model區域 -->
+            <!-- 詳細內容1 -->
+            <!--  -->
+            <div
+                class="modal fade"
+                id="performDebitModal"
+                tabindex="-1"
+                aria-labelledby="performDebitModalLabel"
+                aria-hidden="true"
+            >
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5
+                                class="modal-title"
+                                id="performDebitModalLabel"
+                            >是否執行扣款</h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <p>網路空間使用費</p>
+                                    <p>雲端系統維護費</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="d-flex align-content-center me-auto">
+                                <h4>共<span class="badge bg-danger">$4000</span></h4>
+                            </div>
+                            <button
+                                type="button"
+                                class="btn btn-outline-danger "
+                                data-bs-dismiss="modal"
+                            >
+                                取消
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-outline-success"
+                            >執行扣款</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <script
             src="js/bootstrap.bundle.min.js"

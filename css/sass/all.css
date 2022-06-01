@@ -13939,6 +13939,10 @@ hover #9db8e0 (-60%)
   background-color: #eee;
 }
 
+.btn-group-margin-right-minus-one {
+  margin-right: -1px;
+}
+
 @media screen and (max-width: 768px) {
   .table-container {
     padding: 0 10px;
