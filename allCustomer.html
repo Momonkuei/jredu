@@ -12,6 +12,7 @@
         content="width=device-width, initial-scale=1.0"
     >
     <title>所有客戶資料</title>
+
     <link
         rel="stylesheet"
         href="./css/sass/all.css"
@@ -1864,17 +1865,63 @@
                             >
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="row">
-                                            <dir class="d-flex align-items-center">
-                                                <h3>
-                                                    動態數學短期補習班
-                                                    <span class="badge bg-secondary">目前餘額</span>
-                                                    <span class="badge bg-success">$43800</span>
-                                                    <span class="badge bg-danger">$800</span>
-                                                </h3>
-                                            </dir>
+                                        <div class="row my-3">
+                                            <div class="col-6">
+                                                <dir class="manualDebitCard">
+                                                    <h2 class="manualDebitCard_title">動態數學短期補習班</h2>
+                                                    <dir class="d-flex ">
+                                                        <p class="manualDebitCard_current_balance me-4">
+                                                            目前餘額
+                                                        </p>
+                                                        <p class="manualDebitCard_current_balance_number">
+                                                            <i class="fas fa-dollar-sign"></i>
+                                                            43,800
+                                                        </p>
+                                                    </dir>
+                                                </dir>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-end gap-1">
+                                                <div class="bill-dropdown-menu">
+                                                    <div class="billContent">
+                                                        <a
+                                                            href="#"
+                                                            class="billBtn"
+                                                        >$4,000</a>
+                                                    </div>
+                                                    <div class="bill-menu">
+                                                        <h3>
+                                                            帳單收款項目
+                                                        </h3>
+                                                        <ul>
+                                                            <li>網路空間使用費 <span>$3000</span></li>
+                                                            <li>雲端系統維護費 <span>$1000</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
 
-                                            <table class="table table-hover table-striped">
+                                                <!--2-->
+                                                <div class="bill-dropdown-menu">
+                                                    <div class="billContent">
+                                                        <a
+                                                            href="#"
+                                                            class="billBtn"
+                                                        >$4,000</a>
+                                                    </div>
+                                                    <div class="bill-menu ">
+                                                        <h3>
+                                                            2帳單收款項目
+                                                        </h3>
+                                                        <ul>
+                                                            <li>網路空間使用費 <span>$3000</span></li>
+                                                            <li>雲端系統維護費 <span>$1000</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-3">
+
+                                            <table class="table table-hover">
                                                 <thead>
                                                     <tr>
                                                         <th
@@ -5455,11 +5502,18 @@
             src="js/bootstrap.bundle.min.js"
             async
         ></script>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
         <script src="js/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="js/index.js"></script>
         <script src="./js/sidemenu.js"></script>
         <script src="./js/headerTab.js"></script>
+        <script src="./js/manualDebit.js"></script>
         <script
             type="module"
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

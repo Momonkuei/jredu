@@ -14058,4 +14058,145 @@ hover #9db8e0 (-60%)
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
+
+.manualDebitCard {
+  padding: 20px;
+  min-height: 200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 20px 50px 1fr 50px;
+      grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: rgba(165, 216, 255, 0.5);
+  position: relative;
+}
+
+.manualDebitCard::before, .manualDebitCard::after {
+  content: "\f81c";
+  font-family: "Font Awesome 5 Free";
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  right: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+.manualDebitCard::before {
+  color: #3498db;
+  top: -10px;
+  right: 30px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.manualDebitCard:hover {
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.manualDebitCard p {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.manualDebitCard_current_balance {
+  color: #495057;
+}
+
+.manualDebitCard_title {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+  font-weight: 400;
+}
+
+.manualDebitCard_current_balance_number {
+  font-size: 2.5rem;
+}
+
+.billBtn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fa5252;
+  font-size: 1rem;
+  color: #333333;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.billBtn:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  color: #fff;
+}
+
+.bill-dropdown-menu {
+  position: relative;
+}
+
+.bill-dropdown-menu .bill-menu {
+  background-color: #ced4da;
+  -webkit-box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+          box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 10px 20px;
+  position: absolute;
+  width: 300px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 5;
+  top: 40px;
+  visibility: hidden;
+}
+
+.bill-dropdown-menu .bill-menu.active {
+  opacity: 1;
+  top: 60px;
+  visibility: visible;
+}
+
+.bill-dropdown-menu .bill-menu::before {
+  background-color: #ced4da;
+  content: '';
+  height: 20px;
+  position: absolute;
+  left: 30px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -10px;
+  width: 20px;
+  z-index: -1;
+}
+
+.bill-dropdown-menu .bill-menu h3, .bill-dropdown-menu .bill-menu .h3 {
+  color: #222;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.bill-dropdown-menu .bill-menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  list-style: none;
+  padding: 10px 0;
+}
 /*# sourceMappingURL=all.css.map */
