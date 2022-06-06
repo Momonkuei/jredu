@@ -2,135 +2,196 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="IE=edge"
-  >
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <title>預存款使用明細</title>
-  <link
-    rel="stylesheet"
-    href="./css/sass/all.css"
-  >
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>預存款使用明細</title>
+    <link
+        rel="stylesheet"
+        href="./css/sass/all.css"
+    >
 </head>
 
 <body>
-  <div class="table-container">
-    <h1>動態數學短期補習班</h1>
-    <h2>預存款使用明細</h2>
-    <div>
-      <div class="d-grid mb-3 ">
-        <div class="btn-toolbar justify-content-between">
-          <div class="btn-group mb-2">
-            <button
-              class="btn btn-outline-primary btn-group-margin-right-minus-one"
-              type="button"
-            >
-              <ion-icon name="chevron-back-outline"></ion-icon>
-            </button>
-            <input
-              id="bday-week"
-              type="week"
-              name="bday-week"
-              class="input-date col-md-8 col-sm-6"
-            >
-            <button
-              class="btn btn-outline-primary "
-              type="button"
-            >
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-            </button>
-          </div>
+    <div class="table-container">
+        <h1>動態數學短期補習班</h1>
+        <h2>預存款使用明細</h2>
+        <ul class="nav nav-pills mb-4 justify-content-center nav-fill">
+            <li class="nav-item ">
+                <a
+                    class="nav-link active"
+                    data-bs-toggle="pill"
+                    href="#DebitRecord"
+                >
+                    扣款紀錄
+                </a>
+            </li>
+            <li class="nav-item nav-delinquent-customers">
+                <a
+                    class="nav-link "
+                    data-bs-toggle="pill"
+                    href="#PaymentRecord"
+                >
+                    繳費紀錄
+                </a>
+            </li>
 
-          <div class="btn-group ">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search company"
-              aria-label="Search company"
+        </ul>
+
+        <div class="tab-content">
+
+            <!-- 表單一 -->
+
+            <div
+                class="tab-pane active"
+                id="DebitRecord"
             >
-            <button
-              class="btn btn-outline-success "
-              type="button"
+                <div class="mb-2">
+                    <div class=" flex">
+                        <!-- 搜尋欄 -->
+                        <div>
+                            <div class="d-grid mb-3 ">
+                                <div class="btn-toolbar justify-content-between">
+                                    <div class="btn-group mb-2">
+                                        <button
+                                            class="btn btn-outline-primary btn-group-margin-right-minus-one"
+                                            type="button"
+                                        >
+                                            <ion-icon name="chevron-back-outline"></ion-icon>
+                                        </button>
+                                        <input
+                                            id="bday-week"
+                                            type="week"
+                                            name="bday-week"
+                                            class="input-date col-md-8 col-sm-6"
+                                        >
+                                        <button
+                                            class="btn btn-outline-primary "
+                                            type="button"
+                                        >
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </button>
+                                    </div>
+
+                                    <div class="btn-group ">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Search company"
+                                            aria-label="Search company"
+                                        >
+                                        <button
+                                            class="btn btn-outline-success "
+                                            type="button"
+                                        >
+                                            <ion-icon name="search-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="predepositUserTable">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>日期</th>
+                                    <th>時間</th>
+                                    <th>項目</th>
+                                    <th>支出/存入</th>
+                                    <th>餘額</th>
+                                    <th>使用者</th>
+                                    <th>電話號碼</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td data-label="日期">2020/12/20</td>
+                                    <td data-label="時間">13:30</td>
+                                    <td data-label="項目">簡訊花費</td>
+                                    <td data-label="支出/存入"> -$60</td>
+                                    <td data-label="餘額">9820</td>
+                                    <td data-label="使用者">林阿三</td>
+                                    <td data-label="電話號碼">0912345678</td>
+                                </tr>
+
+                                <tr>
+                                    <th>2</th>
+                                    <td data-label="日期">2020/12/20</td>
+                                    <td data-label="時間">11:00</td>
+                                    <td data-label="項目">簡訊花費</td>
+                                    <td data-label="支出/存入"> -$60</td>
+                                    <td data-label="餘額">9880</td>
+                                    <td data-label="使用者">林阿三</td>
+                                    <td data-label="電話號碼">0912345678</td>
+                                </tr>
+
+                                <tr>
+                                    <th>3</th>
+                                    <td data-label="日期">2020/12/20</td>
+                                    <td data-label="時間">10:00</td>
+                                    <td data-label="項目">簡訊花費</td>
+                                    <td data-label="支出/存入"> -$60</td>
+                                    <td data-label="餘額">9940</td>
+                                    <td data-label="使用者">林阿三</td>
+                                    <td data-label="電話號碼">0912345678</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- 表單二 -->
+
+            <div
+                class="tab-pane "
+                id="PaymentRecord"
             >
-              <ion-icon name="search-outline"></ion-icon>
-            </button>
-          </div>
+
+                <div class="mb-2">
+                    <div class=" flex">
+
+                        <!-- 搜尋欄 -->
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
         </div>
-      </div>
+
     </div>
-    <table class="predepositUserTable">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>日期</th>
-          <th>時間</th>
-          <th>項目</th>
-          <th>支出/存入</th>
-          <th>餘額</th>
-          <th>使用者</th>
-          <th>電話號碼</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>1</th>
-          <td data-label="日期">2020/12/20</td>
-          <td data-label="時間">13:30</td>
-          <td data-label="項目">簡訊花費</td>
-          <td data-label="支出/存入"> -$60</td>
-          <td data-label="餘額">9820</td>
-          <td data-label="使用者">林阿三</td>
-          <td data-label="電話號碼">0912345678</td>
-        </tr>
 
-        <tr>
-          <th>2</th>
-          <td data-label="日期">2020/12/20</td>
-          <td data-label="時間">11:00</td>
-          <td data-label="項目">簡訊花費</td>
-          <td data-label="支出/存入"> -$60</td>
-          <td data-label="餘額">9880</td>
-          <td data-label="使用者">林阿三</td>
-          <td data-label="電話號碼">0912345678</td>
-        </tr>
-
-        <tr>
-          <th>3</th>
-          <td data-label="日期">2020/12/20</td>
-          <td data-label="時間">10:00</td>
-          <td data-label="項目">簡訊花費</td>
-          <td data-label="支出/存入"> -$60</td>
-          <td data-label="餘額">9940</td>
-          <td data-label="使用者">林阿三</td>
-          <td data-label="電話號碼">0912345678</td>
-
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <script
-    src="./js/bootstrap.bundle.min.js"
-    async
-  ></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="./js/index.js"></script>
-  <script src="./js/sidemenu.js"></script>
-  <script src="./js/preDepositManagement.js"></script>
-  <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-  ></script>
+    <script
+        src="./js/bootstrap.bundle.min.js"
+        async
+    ></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/sidemenu.js"></script>
+    <script src="./js/preDepositManagement.js"></script>
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 </body>
 
 </html>

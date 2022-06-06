@@ -14061,7 +14061,7 @@ hover #9db8e0 (-60%)
 
 .manualDebitCard {
   padding: 20px;
-  min-height: 200px;
+  min-height: 150px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 20px 50px 1fr 50px;
