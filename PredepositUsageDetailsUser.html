@@ -67,7 +67,7 @@
                                         </button>
                                         <input
                                             id="bday-week"
-                                            type="week"
+                                            type="month"
                                             name="bday-week"
                                             class="input-date col-md-8 col-sm-6"
                                         >
@@ -106,7 +106,7 @@
                                     <th>支出/存入</th>
                                     <th>餘額</th>
                                     <th>使用者</th>
-                                    <th>電話號碼</th>
+                                    <th>備註</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -115,21 +115,30 @@
                                     <td data-label="日期">2020/12/20</td>
                                     <td data-label="時間">13:30</td>
                                     <td data-label="項目">簡訊花費</td>
-                                    <td data-label="支出/存入"> -$60</td>
+                                    <td data-label="支出/存入"> -$600</td>
                                     <td data-label="餘額">9820</td>
                                     <td data-label="使用者">林阿三</td>
-                                    <td data-label="電話號碼">0912345678</td>
+                                    <td data-label="備註">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#SMSDetails"
+                                        >
+                                            簡訊明細
+                                        </button>
+                                    </td>
                                 </tr>
 
                                 <tr>
                                     <th>2</th>
                                     <td data-label="日期">2020/12/20</td>
                                     <td data-label="時間">11:00</td>
-                                    <td data-label="項目">簡訊花費</td>
-                                    <td data-label="支出/存入"> -$60</td>
+                                    <td data-label="項目">網路空間使用費</td>
+                                    <td data-label="支出/存入"> -$3000</td>
                                     <td data-label="餘額">9880</td>
                                     <td data-label="使用者">林阿三</td>
-                                    <td data-label="電話號碼">0912345678</td>
+                                    <td data-label="備註"></td>
                                 </tr>
 
                                 <tr>
@@ -140,7 +149,7 @@
                                     <td data-label="支出/存入"> -$60</td>
                                     <td data-label="餘額">9940</td>
                                     <td data-label="使用者">林阿三</td>
-                                    <td data-label="電話號碼">0912345678</td>
+                                    <td data-label="備註"></td>
 
                                 </tr>
                             </tbody>
@@ -163,6 +172,100 @@
                     <div class=" flex">
 
                         <!-- 搜尋欄 -->
+                        <div>
+                            <div class="d-grid mb-3 ">
+                                <div class="btn-toolbar justify-content-between">
+                                    <div class="btn-group mb-2">
+                                        <button
+                                            class="btn btn-outline-primary btn-group-margin-right-minus-one"
+                                            type="button"
+                                        >
+                                            <ion-icon name="chevron-back-outline"></ion-icon>
+                                        </button>
+                                        <input
+                                            id="bday-week"
+                                            type="month"
+                                            name="bday-week"
+                                            class="input-date col-md-8 col-sm-6"
+                                        >
+                                        <button
+                                            class="btn btn-outline-primary "
+                                            type="button"
+                                        >
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </button>
+                                    </div>
+
+                                    <div class="btn-group ">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Search company"
+                                            aria-label="Search company"
+                                        >
+                                        <button
+                                            class="btn btn-outline-success "
+                                            type="button"
+                                        >
+                                            <ion-icon name="search-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="predepositUserTable">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>日期</th>
+                                    <th>時間</th>
+                                    <th>項目</th>
+                                    <th>支出/存入</th>
+                                    <th>餘額</th>
+                                    <th>使用者</th>
+                                    <th>備註</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td data-label="日期">2020/12/20</td>
+                                    <td data-label="時間">13:30</td>
+                                    <td data-label="項目">網路空間使用費</td>
+                                    <td data-label="支出/存入"> $3000</td>
+                                    <td data-label="餘額">9820</td>
+                                    <td data-label="使用者">林阿三</td>
+                                    <td data-label="備註">
+                                        <p>2022/05/27</p>
+                                        <span>~</span>
+                                        <p>2023/05/27</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>2</th>
+                                    <td data-label="日期">2020/12/20</td>
+                                    <td data-label="時間">11:00</td>
+                                    <td data-label="項目">網路空間使用費</td>
+                                    <td data-label="支出/存入"> -$3000</td>
+                                    <td data-label="餘額">9880</td>
+                                    <td data-label="使用者">林阿三</td>
+                                    <td data-label="備註"></td>
+                                </tr>
+
+                                <tr>
+                                    <th>3</th>
+                                    <td data-label="日期">2020/12/20</td>
+                                    <td data-label="時間">10:00</td>
+                                    <td data-label="項目">簡訊花費</td>
+                                    <td data-label="支出/存入"> -$60</td>
+                                    <td data-label="餘額">9940</td>
+                                    <td data-label="使用者">林阿三</td>
+                                    <td data-label="備註"></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
 
                     </div>
                 </div>
@@ -175,6 +278,114 @@
 
     </div>
 
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div
+        class="modal fade"
+        id="SMSDetails"
+        tabindex="-1"
+        aria-labelledby="SMSDetailsLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5
+                        class="modal-title"
+                        id="SMSDetailsLabel"
+                    >簡訊明細</h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 搜尋 -->
+                    <div>
+                        <div class="d-grid mb-3 ">
+                            <div class="btn-toolbar justify-content-between">
+                                <div class="btn-group ">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Search company"
+                                        aria-label="Search company"
+                                    >
+                                    <button
+                                        class="btn btn-outline-success "
+                                        type="button"
+                                    >
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="predepositUserTable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>日期</th>
+                                <th>時間</th>
+                                <th>項目</th>
+                                <th>支出/存入</th>
+                                <th>餘額</th>
+                                <th>使用者</th>
+                                <th>電話號碼</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td data-label="日期">2020/12/20</td>
+                                <td data-label="時間">13:30</td>
+                                <td data-label="項目">簡訊花費</td>
+                                <td data-label="支出/存入"> -$60</td>
+                                <td data-label="餘額">9820</td>
+                                <td data-label="使用者">林阿三</td>
+                                <td data-label="電話號碼">0912345678</td>
+                            </tr>
+
+                            <tr>
+                                <th>2</th>
+                                <td data-label="日期">2020/12/20</td>
+                                <td data-label="時間">11:00</td>
+                                <td data-label="項目">簡訊花費</td>
+                                <td data-label="支出/存入"> -$60</td>
+                                <td data-label="餘額">9880</td>
+                                <td data-label="使用者">林阿三</td>
+                                <td data-label="電話號碼">0912345678</td>
+                            </tr>
+
+                            <tr>
+                                <th>3</th>
+                                <td data-label="日期">2020/12/20</td>
+                                <td data-label="時間">10:00</td>
+                                <td data-label="項目">簡訊花費</td>
+                                <td data-label="支出/存入"> -$60</td>
+                                <td data-label="餘額">9940</td>
+                                <td data-label="使用者">林阿三</td>
+                                <td data-label="電話號碼">0912345678</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                    >Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <script
         src="./js/bootstrap.bundle.min.js"
         async

@@ -97,6 +97,7 @@ hover #9db8e0 (-60%)
 .content-table th,
 .content-table td {
     padding: 12px 15px;
+    vertical-align: middle;
 }
 
 .content-table tbody tr {
@@ -252,8 +253,30 @@ hover #9db8e0 (-60%)
     }
 }
 
-//下拉標註
 
+/*客戶增加服務按鈕*/
+
+.customer-service-added-btn {
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #40c057;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: #2b8a3e;
+    }
+}
+
+
+/*******************/
+//下拉標註
+/*******************/
 .list_table_toggle_btn {
     display: flex;
     align-items: center;
@@ -327,7 +350,7 @@ hover #9db8e0 (-60%)
 
 
     &:hover {
-        background-color: #9db8e0;
+        // background-color: #9db8e0;
     }
 
     &:last-child {
