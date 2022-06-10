@@ -255,6 +255,10 @@ hover #9db8e0 (-60%)
 
 
 /*客戶增加服務按鈕*/
+.table-btn-group {
+    display: flex;
+    gap: 10px;
+}
 
 .customer-service-added-btn {
     border: none;
@@ -262,14 +266,15 @@ hover #9db8e0 (-60%)
     height: 38px;
     border-radius: 50%;
     background-color: #40c057;
-    color: white;
-    font-size: 16px;
+    color: #dee2e6;
+    font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
 
     &:hover {
         background-color: #2b8a3e;
+        color: white;
     }
 }
 
@@ -277,6 +282,8 @@ hover #9db8e0 (-60%)
 /*******************/
 //下拉標註
 /*******************/
+
+
 .list_table_toggle_btn {
     display: flex;
     align-items: center;
@@ -297,6 +304,7 @@ hover #9db8e0 (-60%)
 //繳費提醒
 
 // 次表單
+//colspan 控制跨列程度
 
 .list_table {
     border-top: 5px solid #b5cae8;
@@ -349,13 +357,13 @@ hover #9db8e0 (-60%)
     }
 
 
-    &:hover {
-        // background-color: #9db8e0;
-    }
+    // &:hover {
+    //     // background-color: #9db8e0;
+    // }
 
     &:last-child {
         border-top: 2px solid #868e96;
-        border-bottom: 5px solid #d6336c;
+        border-bottom: 5px solid #c92a2a;
     }
 }
 
