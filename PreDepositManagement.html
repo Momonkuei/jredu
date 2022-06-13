@@ -707,6 +707,7 @@
                                     <td>2022/10/10</td>
                                     <td>學生管理系統</td>
                                     <td>
+                                       <!-- 使用 table-btn-group 幫助排列 -->
                                        <div class="table-btn-group">
                                           <button
                                              type="button"
@@ -716,15 +717,19 @@
                                           >
                                              繳費通知
                                           </button>
-                                          <!-- class="customer-service-added-btn btn btn-primary" -->
+
+                                          <!-- 增加服務按鈕 by modal to  #chargeItemsModal-->
                                           <button
                                              type="button"
-                                             class="customer-service-added-btn btn "
+                                             class="btn customer-service-added-btn  "
                                              data-bs-toggle="modal"
                                              data-bs-target="#chargeItemsModal"
                                           >
-
-                                             <ion-icon name="add"></ion-icon>
+                                             <ion-icon
+                                                size="large"
+                                                class="list_table_toggle_icon"
+                                                name="add"
+                                             ></ion-icon>
                                           </button>
 
 
@@ -765,7 +770,6 @@
                                                    <th
                                                       class="col-1"
                                                       scope="col"
-                                                      style="width: 80px;"
                                                    >
                                                       #
                                                    </th>
@@ -857,12 +861,32 @@
                                     <td>薪資管理系統</td>
                                     <td>
                                        <span>繳費期限:2022/09/30</span>
-                                       <button
-                                          type="button"
-                                          class="btn btn-warning btn-orange1 btn-min"
-                                       >
-                                          第一次通知
-                                       </button>
+                                       <div class="table-btn-group">
+                                          <button
+                                             type="button"
+                                             class="btn btn-warning btn-orange1 btn-min"
+                                          >
+                                             第一次通知
+                                          </button>
+
+                                          <!-- 增加服務按鈕 by modal to  #chargeItemsModal-->
+                                          <button
+                                             type="button"
+                                             class="btn customer-service-added-btn  "
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#chargeItemsModal"
+                                          >
+                                             <ion-icon
+                                                size="large"
+                                                class="list_table_toggle_icon"
+                                                name="add"
+                                             ></ion-icon>
+                                          </button>
+
+
+
+                                       </div>
+
                                     </td>
                                     <td>
                                        <button class="list_table_toggle_btn">
@@ -895,7 +919,6 @@
                                                    <th
                                                       class="col-1"
                                                       scope="col"
-                                                      style="width: 80px;"
                                                    >
                                                       #
                                                    </th>
@@ -1026,7 +1049,6 @@
                                                    <th
                                                       class="col-1"
                                                       scope="col"
-                                                      style="width: 80px;"
                                                    >
                                                       #
                                                    </th>
@@ -1154,7 +1176,6 @@
                                                    <th
                                                       class="col-1"
                                                       scope="col"
-                                                      style="width: 80px;"
                                                    >
                                                       #
                                                    </th>
@@ -1276,7 +1297,6 @@
                                                    <th
                                                       class="col-1"
                                                       scope="col"
-                                                      style="width: 80px;"
                                                    >
                                                       #
                                                    </th>
@@ -1345,9 +1365,6 @@
                                        </div>
                                     </div>
                                  </td>
-
-
-
                               </tbody>
                            </table>
                         </div>
@@ -1475,7 +1492,7 @@
                                     </td>
                                     <td>
                                        <button class="list_table_toggle_btn">
-                                          <ion-icon name="chevron-down-outline"></ion-icon>
+                                          <ion-ico name="chevron-down-outline"></ion-ico>
                                        </button>
                                     </td>
 
@@ -2272,7 +2289,7 @@
                                     class="form-select"
                                     aria-label="Default select example"
                                  >
-                                    <option selected>請選擇客戶服務時間</option>
+                                    <option selected>請選擇客戶版本</option>
                                     <option>旗艦版</option>
                                     <option>多機版</option>
                                     <option>專業版</option>
@@ -2299,7 +2316,7 @@
                                     class="form-select"
                                     aria-label="Default select example"
                                  >
-                                    <option selected>請選擇客戶版本</option>
+                                    <option selected>請選擇客戶服務時間</option>
                                     <option>一年</option>
                                     <option>三年</option>
                                     <option>五年</option>
@@ -2341,9 +2358,9 @@
                                           id="inputGroupSelect02"
                                        >
                                           <option selected>請選擇臺數</option>
-                                          <option value="1">One</option>
-                                          <option value="2">Two</option>
-                                          <option value="3">Three</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
                                        </select>
                                        <label
                                           class="input-group-text"

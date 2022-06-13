@@ -12239,20 +12239,21 @@ div.openHideSideBar {
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
+  color: #fff;
   display: none;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  -webkit-transform-origin: center 50%;
+          transform-origin: center 50%;
 }
 
 .sidebarHideBtn ion-icon {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .sidebarHideBtn ion-icon:active {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
-}
-
-.sidebarHideBtn:hover {
-  color: #fff;
 }
 
 /* 打开和关闭手风琴面板的样式 */
@@ -12422,7 +12423,6 @@ div.openHideSideBar {
   }
 }
 
-/*舊版本=>顯示方式 鼠標觸發右邊連結顯示_更改日期2022/05/06*/
 .header .employer_dropdown {
   margin-left: 12px;
   text-decoration: none;
@@ -13776,6 +13776,10 @@ hover #9db8e0 (-60%)
   gap: 10px;
 }
 
+.list_table_toggle_icon {
+  font-size: 1.5rem;
+}
+
 .customer-service-added-btn {
   border: none;
   width: 38px;
@@ -13783,7 +13787,6 @@ hover #9db8e0 (-60%)
   border-radius: 50%;
   background-color: #40c057;
   color: #dee2e6;
-  font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13793,11 +13796,18 @@ hover #9db8e0 (-60%)
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 1.5rem;
+  padding: 0;
 }
 
 .customer-service-added-btn:hover {
   background-color: #2b8a3e;
   color: white;
+}
+
+.customer-service-added-btn:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(67, 215, 96, 0.2);
+          box-shadow: 0 0 0 0.25rem rgba(67, 215, 96, 0.2);
 }
 
 /*******************/
@@ -13857,6 +13867,10 @@ hover #9db8e0 (-60%)
 .list_table thead tr {
   background-color: #5382c8;
   text-align: center;
+}
+
+.list_table thead tr th:first-child {
+  width: 80px;
 }
 
 .list_table tbody tr {
