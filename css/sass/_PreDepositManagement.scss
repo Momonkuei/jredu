@@ -96,8 +96,12 @@ hover #9db8e0 (-60%)
 
 .content-table th,
 .content-table td {
-    padding: 12px 15px;
+    padding: 12px 10px;
     vertical-align: middle;
+}
+
+.content-table td{
+    padding: 10px ;
 }
 
 .content-table tbody tr {
@@ -141,6 +145,8 @@ hover #9db8e0 (-60%)
 }
 
 // 繳費提醒
+
+//原型
 
 @mixin payment-reminder($property) {
     text-align: center;
@@ -257,7 +263,7 @@ hover #9db8e0 (-60%)
 /*客戶增加服務按鈕*/
 .table-btn-group {
     display: flex;
-    gap: 10px;
+    gap: 0.6rem
 }
 
 .list_table_toggle_icon {
@@ -266,8 +272,8 @@ hover #9db8e0 (-60%)
 
 .customer-service-added-btn {
     border: none;
-    width: 38px;
-    height: 38px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     background-color: #40c057;
     color: #dee2e6;
@@ -298,8 +304,8 @@ hover #9db8e0 (-60%)
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
     border: 0;
     outline: 0;
     background-color: transparent;
@@ -309,6 +315,58 @@ hover #9db8e0 (-60%)
     &:hover {
         color: #ffffff;
     }
+}
+
+
+/******************/
+/* 下拉選單 */
+/******************/
+
+
+.list_table_dropdown {
+    position: relative;
+}
+
+.list_table_dropdown_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+
+    &:hover {
+        color: #ffffff;
+    }
+
+}
+
+.list_table_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    top: 1rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.list_table_dropdown_content a {
+    float: none;
+    color: black;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: #ddd;
+    }
+}
+
+.list_table_dropdown:hover .list_table_dropdown_content {
+    display: block;
 }
 
 //繳費提醒
@@ -386,53 +444,8 @@ hover #9db8e0 (-60%)
     border-right: 1px solid #dee2e6;
 }
 
-/******************/
-/* 下拉選單 */
-/******************/
-
-
-.list_table_dropdown {
-    position: relative;
-}
-
-.list_table_dropdown_btn {
+.td_list_table_btn_group{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    outline: 0;
-    background-color: transparent;
-
-    &:hover {
-        color: #ffffff;
-    }
-
-}
-
-.list_table_dropdown_content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    top: 15px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.list_table_dropdown_content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    transition: all 0.2s ease;
-
-    &:hover {
-        background-color: #ddd;
-    }
-}
-
-.list_table_dropdown:hover .list_table_dropdown_content {
-    display: block;
+    flex-direction: column;
+    gap: 0.5rem;
 }

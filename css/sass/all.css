@@ -13640,8 +13640,12 @@ hover #9db8e0 (-60%)
 
 .content-table th,
 .content-table td {
-  padding: 12px 15px;
+  padding: 12px 10px;
   vertical-align: middle;
+}
+
+.content-table td {
+  padding: 10px;
 }
 
 .content-table tbody tr {
@@ -13773,7 +13777,7 @@ hover #9db8e0 (-60%)
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 0.6rem;
 }
 
 .list_table_toggle_icon {
@@ -13782,8 +13786,8 @@ hover #9db8e0 (-60%)
 
 .customer-service-added-btn {
   border: none;
-  width: 38px;
-  height: 38px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   background-color: #40c057;
   color: #dee2e6;
@@ -13822,8 +13826,8 @@ hover #9db8e0 (-60%)
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
   border: 0;
   outline: 0;
   background-color: transparent;
@@ -13833,6 +13837,62 @@ hover #9db8e0 (-60%)
 
 .list_table_toggle_btn:hover {
   color: #ffffff;
+}
+
+/******************/
+/* 下拉選單 */
+/******************/
+.list_table_dropdown {
+  position: relative;
+}
+
+.list_table_dropdown_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+.list_table_dropdown_btn:hover {
+  color: #ffffff;
+}
+
+.list_table_dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  top: 1rem;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.list_table_dropdown_content a {
+  float: none;
+  color: black;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.list_table_dropdown_content a:hover {
+  background-color: #ddd;
+}
+
+.list_table_dropdown:hover .list_table_dropdown_content {
+  display: block;
 }
 
 .list_table {
@@ -13891,60 +13951,15 @@ hover #9db8e0 (-60%)
   border-right: 1px solid #dee2e6;
 }
 
-/******************/
-/* 下拉選單 */
-/******************/
-.list_table_dropdown {
-  position: relative;
-}
-
-.list_table_dropdown_btn {
+.td_list_table_btn_group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 0;
-  outline: 0;
-  background-color: transparent;
-}
-
-.list_table_dropdown_btn:hover {
-  color: #ffffff;
-}
-
-.list_table_dropdown_content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  top: 15px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.list_table_dropdown_content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.list_table_dropdown_content a:hover {
-  background-color: #ddd;
-}
-
-.list_table_dropdown:hover .list_table_dropdown_content {
-  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
 }
 
 * {
@@ -13978,6 +13993,15 @@ hover #9db8e0 (-60%)
 
 .predepositUserTable tbody tr {
   color: #555;
+  border: 1px solid #dee2e6;
+}
+
+.predepositUserTable tbody tr th:first-child {
+  border-right: 1px solid #dee2e6;
+}
+
+.predepositUserTable tbody tr td {
+  border-right: 1px solid #dee2e6;
 }
 
 .predepositUserTable tbody tr:nth-child(even) {
@@ -13988,49 +14012,11 @@ hover #9db8e0 (-60%)
   margin-right: -1px;
 }
 
-@media screen and (max-width: 820px) {
-  .table-container {
-    padding: 0 10px;
-  }
-  .predepositUserTable thead {
-    display: none;
-  }
-  .predepositUserTable tbody,
-  .predepositUserTable tbody tr,
-  .predepositUserTable tbody td {
-    display: block;
-    width: 100%;
-  }
-  .predepositUserTable tbody tr {
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-  }
-  .predepositUserTable tbody tr td:first-child {
-    text-align: center;
-    width: 100%;
-  }
-  .predepositUserTable tbody tr td {
-    text-align: right;
-    padding-left: 50%;
-    position: relative;
-  }
-  .predepositUserTable td:before {
-    content: attr(data-label);
-    position: absolute;
-    left: 0;
-    width: 50%;
-    padding-left: 15px;
-    font-weight: 600;
-    text-align: left;
-  }
-  .predepositUserTable tbody tr th:first-child {
-    display: inline-block;
-    background-color: #094db1;
-    color: #fff;
-    font-size: 1.5rem;
-    width: 100%;
-    text-align: center;
-  }
+.predepositUserTable-btngroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .commodity_on thead {
@@ -14292,5 +14278,60 @@ hover #9db8e0 (-60%)
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+@media screen and (max-width: 62em) {
+  .table-container {
+    padding: 0 10px;
+  }
+  .predepositUserTable thead {
+    display: none;
+  }
+  .predepositUserTable tbody,
+  .predepositUserTable tbody tr,
+  .predepositUserTable tbody td {
+    display: block;
+    width: 100%;
+  }
+  .predepositUserTable tbody tr {
+    margin-bottom: 30px;
+  }
+  .predepositUserTable tbody tr td:first-child {
+    text-align: center;
+    width: 100%;
+  }
+  .predepositUserTable tbody tr td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .predepositUserTable tbody tr td:last-child {
+    padding-bottom: 40px;
+    vertical-align: middle;
+  }
+  .predepositUserTable td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: 600;
+    text-align: left;
+  }
+  .predepositUserTable tbody tr th:first-child {
+    display: inline-block;
+    background-color: #094db1;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .predepositUserTable-btngroup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=all.css.map */
