@@ -669,7 +669,7 @@
                                     <th>序號</th>
                                     <th>縣市</th>
                                     <th>客戶名稱</th>
-                                    <th>總額</th>
+                                    <th>應繳總額</th>
                                     <th>預存餘額</th>
                                     <th>應扣不足款</th>
                                     <th>應扣日期</th>
@@ -679,9 +679,11 @@
 
                                  </tr>
                               </thead>
+
+
                               <tbody>
 
-                                 <!-- 編號1 -告知顧客繳費 -->
+                                 <!-- 編號1 -未發通知單 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -695,6 +697,192 @@
                                     <td class="payment-reminder-red">1</td>
                                     <td>台中市</td>
                                     <td>徐威英語-XX分校</td>
+                                    <td>0</td>
+                                    <td>1,000</td>
+                                    <td>0</td>
+                                    <td>2022/10/10</td>
+                                    <td>網路空間使用費</td>
+                                    <td>
+                                       <!-- 使用 table-btn-group 幫助排列 -->
+                                       <button
+                                          type="button"
+                                          class="btn btn-danger btn-min"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#paymentNotice"
+                                       >
+                                          未發通知單
+                                       </button>
+
+
+                                    </td>
+                                    <td>
+
+                                       <div class="table-btn-group">
+                                          <!-- 增加服務按鈕 by modal to  #chargeItemsModal-->
+                                          <button
+                                             type="button"
+                                             class="btn customer-service-added-btn  "
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#chargeItemsModal"
+                                          >
+                                             <ion-icon
+                                                size="large"
+                                                class="list_table_toggle_icon"
+                                                name="add"
+                                             ></ion-icon>
+                                          </button>
+
+                                          <button class="list_table_toggle_btn">
+                                             <ion-icon
+                                                name="chevron-down-outline"
+                                                aria-label="chevron down outline"
+                                             ></ion-icon>
+                                          </button>
+                                          <button
+                                             type="button"
+                                             class="btn btn-primary"
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#purchaseItemHistory"
+                                          >
+                                             歷史紀錄
+                                          </button>
+                                       </div>
+
+
+
+
+                                    </td>
+                                 </tr>
+                                 <td
+                                    class="td_list_table"
+                                    colspan="12"
+                                 >
+                                    <div class="panel_group">
+                                       <div>
+                                          <table class="list_table">
+                                             <thead>
+                                                <tr>
+                                                   <th
+                                                      class="col-1"
+                                                      scope=""
+                                                   >
+                                                      #
+                                                   </th>
+                                                   <th
+                                                      class="col-3"
+                                                      scope="col"
+                                                   >
+                                                      項目
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      <span class="">方案</span>
+                                                   </th>
+                                                   <th
+                                                      class="col-2"
+                                                      scope="col"
+                                                   >
+                                                      <span class="">有效時間</span>
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >單位</th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      金額
+                                                   </th>
+                                                   <th
+                                                      class="col-2"
+                                                      scope="col"
+                                                   >
+                                                      備註
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      操作
+                                                   </th>
+                                                </tr>
+                                                <tr></tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td scope="row">1</td>
+                                                   <td>網路空間使用費</td>
+                                                   <td>
+                                                      <p>存放主機資料庫
+                                                         <small class="badge bg-light text-dark">
+                                                            100MB資料庫空間
+                                                         </small>
+                                                      </p>
+                                                      <p>主機資料庫維護</p>
+                                                   </td>
+                                                   <td>
+
+                                                   </td>
+                                                   <td><span>1校/</span>$3,000</td>
+                                                   <td></td>
+                                                   <td>
+                                                      <p>國外雲端主機
+                                                         <small class="badge bg-light text-dark">
+                                                            由傑人公司代租
+                                                         </small>
+                                                      </p>
+                                                   </td>
+                                                   <td class="td_list_table_btn_group">
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-success"
+                                                      >
+                                                         扣款
+                                                      </button>
+
+
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-danger"
+                                                      >
+                                                         刪除
+
+                                                      </button>
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-success"
+                                                      >
+                                                         入賬
+                                                      </button>
+                                                   </td>
+
+                                                </tr>
+
+
+
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </td>
+
+                                 <!-- 編號2 -告知顧客繳費 -->
+
+                                 <tr class="content_table_tbody_tr">
+                                    <th>
+                                       <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id=""
+                                       >
+                                    </th>
+                                    <td class="payment-reminder-red2">2</td>
+                                    <td>台中市</td>
+                                    <td>徐威英語-XX分校</td>
                                     <td>5,000</td>
                                     <td>1,000</td>
                                     <td>4,000</td>
@@ -704,7 +892,7 @@
                                        <!-- 使用 table-btn-group 幫助排列 -->
                                        <button
                                           type="button"
-                                          class="btn btn-danger btn-min"
+                                          class="btn btn-danger btn-red2 btn-min"
                                           data-bs-toggle="modal"
                                           data-bs-target="#paymentNotice"
                                        >
@@ -909,7 +1097,7 @@
                                     </div>
                                  </td>
 
-                                 <!-- 編號2 -->
+                                 <!-- 編號3 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -920,7 +1108,7 @@
                                           id=""
                                        >
                                     </th>
-                                    <td class="payment-reminder-orange1">2</td>
+                                    <td class="payment-reminder-orange1">3</td>
                                     <td>台中市</td>
                                     <td>徐威英語-南屯分校</td>
                                     <td>32,000</td>
@@ -1089,7 +1277,7 @@
                                     </div>
                                  </td>
 
-                                 <!-- 編號3 -->
+                                 <!-- 編號4 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -1100,7 +1288,7 @@
                                           id=""
                                        >
                                     </th>
-                                    <td class="payment-reminder-orange2">3</td>
+                                    <td class="payment-reminder-orange2">4</td>
                                     <td>台中市</td>
                                     <td>徐威英語-北屯分校</td>
                                     <td>32,000</td>
@@ -1268,7 +1456,7 @@
                                     </div>
                                  </td>
 
-                                 <!-- 編號4 -->
+                                 <!-- 編號5 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -1279,7 +1467,7 @@
                                           id=""
                                        >
                                     </th>
-                                    <td class="payment-reminder-orange3">4</td>
+                                    <td class="payment-reminder-orange3">5</td>
                                     <td>台中市</td>
                                     <td>徐威英語-北屯分校</td>
                                     <td>32,000</td>
@@ -1446,7 +1634,7 @@
                                     </div>
                                  </td>
 
-                                 <!-- 編號5 -->
+                                 <!-- 編號6 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -1457,7 +1645,7 @@
                                           id=""
                                        >
                                     </th>
-                                    <td class="payment-reminder-green">5</td>
+                                    <td class="payment-reminder-green">6</td>
                                     <td>台中市</td>
                                     <td>徐威英語-北屯分校</td>
                                     <td>32,000</td>
@@ -1695,7 +1883,7 @@
                                     <th>序號</th>
                                     <th>縣市</th>
                                     <th>客戶名稱</th>
-                                    <th>總額</th>
+                                    <th>應繳總額</th>
                                     <th>預存餘額</th>
                                     <th>應扣不足款</th>
                                     <th>應扣日期</th>
@@ -1706,6 +1894,8 @@
                                  </tr>
                               </thead>
                               <tbody>
+
+
 
                                  <!-- 編號1 -告知顧客繳費 -->
 
@@ -1728,6 +1918,7 @@
                                     <td>網路空間使用費</td>
                                     <td>
                                        <!-- 使用 table-btn-group 幫助排列 -->
+
                                        <button
                                           type="button"
                                           class="btn btn-danger btn-min"
@@ -2008,7 +2199,7 @@
                                     <th>序號</th>
                                     <th>縣市</th>
                                     <th>客戶名稱</th>
-                                    <th>總額</th>
+                                    <th>應繳總額</th>
                                     <th>預存餘額</th>
                                     <th>應扣不足款</th>
                                     <th>應扣日期</th>
@@ -2043,14 +2234,14 @@
                                     <td>薪資管理系統</td>
                                     <td>
                                        <span>繳費期限:2022/09/30</span>
-                                       <div class="table-btn-group">
-                                          <button
-                                             type="button"
-                                             class="btn btn-warning btn-orange1 btn-min"
-                                          >
-                                             第一次通知
-                                          </button>
-                                       </div>
+
+                                       <button
+                                          type="button"
+                                          class="btn btn-warning btn-orange1 btn-min"
+                                       >
+                                          第一次通知
+                                       </button>
+
 
                                     </td>
                                     <td>
@@ -2223,6 +2414,7 @@
                                     <td>學生管理系統</td>
                                     <td>
                                        <span>繳費期限:2022/09/30</span>
+
                                        <button
                                           type="button"
                                           class="btn btn-warning btn-orange2 btn-min"
@@ -2638,7 +2830,7 @@
                            </div>
                            <table class="table table-hover">
                               <caption>
-                                 <h4>本次查詢總合計: $<span class="">5,000</span></h4>
+                                 <h4 class="text-end pe-5">本次查詢總合計: $<span class="">5,000</span></h4>
                               </caption>
                               <thead>
                                  <tr>

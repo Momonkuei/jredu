@@ -24,10 +24,14 @@ hover #9db8e0 (-60%)
 /*********************/
 /* 顏色區分
 
+//未發通知單
+
+// #dc3545
 
 //尚未通知，尚未繳費
 
-#dc3545
+// #dc3545 =>轉為第二嚴重 修改顏色 #faa2c1 20220617
+
 
 //已通知，尚未繳費
 第一次通知
@@ -36,8 +40,8 @@ hover #9db8e0 (-60%)
 第二次通知
 #fd7e14
 
-第三次通知
-#b1580e
+// 停止服務
+#ced4da
 
 //合約順利進行的客戶
 
@@ -77,6 +81,8 @@ hover #9db8e0 (-60%)
     font-size: 1rem;
     min-width: 800px;
     border-radius: 5px 5px 0 0;
+
+    width: 100%;
     // overflow: hidden;
     //彈出視窗在使用  position: absolute; 一樣會被遮蓋掉
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -92,6 +98,9 @@ hover #9db8e0 (-60%)
     font-weight: bold;
 }
 
+.content-table th{
+    text-align: center;
+}
 
 
 .content-table th,
@@ -168,6 +177,12 @@ hover #9db8e0 (-60%)
     @include payment-reminder(rgba(220, 53, 69, 0.7))
 }
 
+.payment-reminder-red2 {
+   
+
+    @include payment-reminder(rgba(240, 101, 149,0.7))
+}
+
 .payment-reminder-orange1 {
     // border-left: 4px solid rgba(254, 164, 91, 0.7);
 
@@ -209,6 +224,23 @@ hover #9db8e0 (-60%)
     stroke: #0d6efd;
 }
 
+.btn-danger.btn-red2 {
+    color: #333;
+    background-color: #faa2c1;
+    border-color: #faa2c1;
+
+    &:active,
+    &:hover {
+        //深20%
+        background-color: #f06595;
+        border-color: #f06595;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(255, 168, 168,0.7);
+    }
+}
+
 .btn-warning.btn-orange1 {
     color: #333;
     background-color: #fea55b;
@@ -245,17 +277,17 @@ hover #9db8e0 (-60%)
 
 .btn-warning.btn-orange3 {
     color: #fff;
-    background-color: #b1580e;
-    border-color: #b1580e;
+    background-color: #868e96;
+    border-color: #868e96;
 
     &:active,
     &:hover {
-        background-color: #7f3f0a;
-        border-color: #7f3f0a;
+        background-color: #343a40;
+        border-color: #343a40;
     }
 
     &:focus {
-        box-shadow: 0 0 0 0.25rem rgba(127, 63, 10, 0.5);
+        box-shadow: 0 0 0 0.25rem rgba(206, 212, 218,0.5);
     }
 }
 
@@ -263,7 +295,7 @@ hover #9db8e0 (-60%)
 /*客戶增加服務按鈕*/
 .table-btn-group {
     display: flex;
-    gap: 0.6rem
+    gap: 0.6rem;
 }
 
 .list_table_toggle_icon {
