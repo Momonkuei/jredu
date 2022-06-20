@@ -571,27 +571,36 @@
                   <a
                      class="nav-link active"
                      data-bs-toggle="pill"
-                     href="#all"
+                     href="#payableCustomers"
                   >
-                     所有客戶
+                     應付款客戶
                   </a>
                </li>
                <li class="nav-item nav-delinquent-customers">
                   <a
                      class="nav-link "
                      data-bs-toggle="pill"
-                     href="#menu1"
+                     href="#arrearsNotNotified"
                   >
-                     欠款客戶
+                     欠款未通知
                   </a>
                </li>
                <li class="nav-item">
                   <a
                      class="nav-link"
                      data-bs-toggle="pill"
-                     href="#menu2"
+                     href="#arrearsHaveBeenNotified"
                   >
                      欠款已通知
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a
+                     class="nav-link"
+                     data-bs-toggle="pill"
+                     href="#writeOffProcessing"
+                  >
+                     銷帳處理
                   </a>
                </li>
             </ul>
@@ -603,7 +612,7 @@
 
                <div
                   class="tab-pane active"
-                  id="all"
+                  id="payableCustomers"
                >
 
 
@@ -631,12 +640,31 @@
                               >
                                  <ion-icon name="chevron-forward-outline"></ion-icon>
                               </button>
+                              <div class="input-group-addon">to</div>
+                              <button
+                                 class="btn btn-outline-primary"
+                                 type="button"
+                              >
+                                 <ion-icon name="chevron-back-outline"></ion-icon>
+                              </button>
+                              <input
+                                 id="bday-month"
+                                 type="month"
+                                 name="bday-month"
+                                 class="input-date"
+                              >
+                              <button
+                                 class="btn btn-outline-primary"
+                                 type="button"
+                              >
+                                 <ion-icon name="chevron-forward-outline"></ion-icon>
+                              </button>
                               <div class="col-xs-2">
                                  <input
                                     type="text"
                                     class="form-control"
-                                    placeholder="Search company"
-                                    aria-label="Search company"
+                                    placeholder="搜尋"
+                                    aria-label="搜尋"
                                  >
                               </div>
                               <button
@@ -683,7 +711,7 @@
 
                               <tbody>
 
-                                 <!-- 編號1 -未發通知單 -->
+                                 <!-- 表單一-編號1 -未發通知單 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -700,7 +728,7 @@
                                     <td>0</td>
                                     <td>1,000</td>
                                     <td>0</td>
-                                    <td>2022/10/10</td>
+                                    <td>2022/07/01</td>
                                     <td>網路空間使用費</td>
                                     <td>
                                        <!-- 使用 table-btn-group 幫助排列 -->
@@ -752,6 +780,7 @@
 
 
                                     </td>
+
                                  </tr>
                                  <td
                                     class="td_list_table"
@@ -861,16 +890,13 @@
 
                                                 </tr>
 
-
-
                                              </tbody>
                                           </table>
                                        </div>
                                     </div>
                                  </td>
 
-                                 <!-- 編號2 -告知顧客繳費 -->
-
+                                 <!-- 表單一-編號2 -繳費通知 -->
                                  <tr class="content_table_tbody_tr">
                                     <th>
                                        <input
@@ -886,7 +912,7 @@
                                     <td>5,000</td>
                                     <td>1,000</td>
                                     <td>4,000</td>
-                                    <td>2022/10/10</td>
+                                    <td>2022/07/01</td>
                                     <td>網路空間使用費</td>
                                     <td>
                                        <!-- 使用 table-btn-group 幫助排列 -->
@@ -1010,9 +1036,9 @@
                                                       <p>主機資料庫維護</p>
                                                    </td>
                                                    <td>
-                                                      <p class="">2022/06/01</p>
+                                                      <p class="">2022/07/01</p>
                                                       <span class=" mb-3">~</span>
-                                                      <p class="">2023/05/31</p>
+                                                      <p class="">2023/06/30</p>
                                                    </td>
                                                    <td><span>1校/</span>$3,000</td>
                                                    <td>$3,000</td>
@@ -1097,7 +1123,7 @@
                                     </div>
                                  </td>
 
-                                 <!-- 編號3 -->
+                                 <!-- 表單一-編號3 -第一次通知 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -1114,18 +1140,18 @@
                                     <td>32,000</td>
                                     <td>22,000</td>
                                     <td>10,000</td>
-                                    <td>2022/10/10</td>
+                                    <td>2022/07/01</td>
                                     <td>薪資管理系統</td>
                                     <td>
-                                       <span>繳費期限:2022/09/30</span>
-                                       <div class="table-btn-group">
-                                          <button
-                                             type="button"
-                                             class="btn btn-warning btn-orange1 btn-min"
-                                          >
-                                             第一次通知
-                                          </button>
-                                       </div>
+                                       <span>繳費期限:2022/06/10</span>
+
+                                       <button
+                                          type="button"
+                                          class="btn btn-warning btn-orange1 btn-min"
+                                       >
+                                          第一次通知
+                                       </button>
+
 
                                     </td>
                                     <td>
@@ -1232,9 +1258,9 @@
                                                       <p>主機資料庫維護</p>
                                                    </td>
                                                    <td>
-                                                      <p class="">2022/06/01</p>
-                                                      <span class="r mb-3">~</span>
-                                                      <p class="">2023/05/31</p>
+                                                      <p class="">2022/07/01</p>
+                                                      <span class=" mb-3">~</span>
+                                                      <p class="">2023/06/30</p>
                                                    </td>
                                                    <td><span>1校/</span>$3000</td>
                                                    <td>$3000</td>
@@ -1277,7 +1303,7 @@
                                     </div>
                                  </td>
 
-                                 <!-- 編號4 -->
+                                 <!-- 表單一-編號4 -第二次通知 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -1294,10 +1320,11 @@
                                     <td>32,000</td>
                                     <td>22,000</td>
                                     <td>10,000</td>
-                                    <td>2022/10/10</td>
+                                    <td>2022/07/01</td>
                                     <td>學生管理系統</td>
                                     <td>
-                                       <span>繳費期限:2022/09/30</span>
+                                       <span>繳費期限:2022/06/17</span>
+
                                        <button
                                           type="button"
                                           class="btn btn-warning btn-orange2 btn-min"
@@ -1411,9 +1438,9 @@
                                                       <p>主機資料庫維護</p>
                                                    </td>
                                                    <td>
-                                                      <p class="">2022/06/01</p>
-                                                      <span class="r mb-3">~</span>
-                                                      <p class="">2023/05/31</p>
+                                                      <p class="">2022/07/01</p>
+                                                      <span class=" mb-3">~</span>
+                                                      <p class="">2023/06/30</p>
                                                    </td>
                                                    <td><span>1校/</span>$3000</td>
                                                    <td>$3000</td>
@@ -1456,7 +1483,7 @@
                                     </div>
                                  </td>
 
-                                 <!-- 編號5 -->
+                                 <!-- 表單一-編號5 -停止服務 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -1473,10 +1500,10 @@
                                     <td>32,000</td>
                                     <td>22,000</td>
                                     <td>10,000</td>
-                                    <td>2022/10/10</td>
+                                    <td>2022/07/01</td>
                                     <td>學生管理系統</td>
                                     <td>
-                                       <span>繳費期限:2022/09/30</span>
+                                       <span>繳費期限:2022/06/30</span>
                                        <button
                                           type="button"
                                           class="btn btn-warning btn-orange3 btn-min"
@@ -1589,9 +1616,9 @@
                                                       <p>主機資料庫維護</p>
                                                    </td>
                                                    <td>
-                                                      <p class="">2022/06/01</p>
-                                                      <span class="r mb-3">~</span>
-                                                      <p class="">2023/05/31</p>
+                                                      <p class="">2022/07/01</p>
+                                                      <span class=" mb-3">~</span>
+                                                      <p class="">2023/06/30</p>
                                                    </td>
                                                    <td><span>1校/</span>$3000</td>
                                                    <td>$3000</td>
@@ -1634,7 +1661,7 @@
                                     </div>
                                  </td>
 
-                                 <!-- 編號6 -->
+                                 <!-- 表單一-編號6 -良好 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -1651,7 +1678,7 @@
                                     <td>32,000</td>
                                     <td>22,000</td>
                                     <td>10,000</td>
-                                    <td>2022/10/10</td>
+                                    <td>2022/07/01</td>
                                     <td>學生管理系統</td>
                                     <td>
                                        良好
@@ -1761,9 +1788,9 @@
                                                       <p>主機資料庫維護</p>
                                                    </td>
                                                    <td>
-                                                      <p class="">2022/06/01</p>
-                                                      <span class="r mb-3">~</span>
-                                                      <p class="">2023/05/31</p>
+                                                      <p class="">2022/07/01</p>
+                                                      <span class=" mb-3">~</span>
+                                                      <p class="">2023/06/30</p>
                                                    </td>
                                                    <td><span>1校/</span>$3000</td>
                                                    <td>$3000</td>
@@ -1805,6 +1832,8 @@
                                        </div>
                                     </div>
                                  </td>
+
+
                               </tbody>
                            </table>
                         </div>
@@ -1819,7 +1848,7 @@
 
                <div
                   class="tab-pane "
-                  id="menu1"
+                  id="arrearsNotNotified"
                >
 
                   <div class="mb-2">
@@ -1846,12 +1875,31 @@
                               >
                                  <ion-icon name="chevron-forward-outline"></ion-icon>
                               </button>
+                              <div class="input-group-addon">to</div>
+                              <button
+                                 class="btn btn-outline-primary"
+                                 type="button"
+                              >
+                                 <ion-icon name="chevron-back-outline"></ion-icon>
+                              </button>
+                              <input
+                                 id="bday-month"
+                                 type="month"
+                                 name="bday-month"
+                                 class="input-date"
+                              >
+                              <button
+                                 class="btn btn-outline-primary"
+                                 type="button"
+                              >
+                                 <ion-icon name="chevron-forward-outline"></ion-icon>
+                              </button>
                               <div class="col-xs-2">
                                  <input
                                     type="text"
                                     class="form-control"
-                                    placeholder="Search company"
-                                    aria-label="Search company"
+                                    placeholder="搜尋"
+                                    aria-label="搜尋"
                                  >
                               </div>
                               <button
@@ -1860,7 +1908,6 @@
                               >
                                  <ion-icon name="search-outline"></ion-icon>
                               </button>
-
 
 
                            </div>
@@ -1897,7 +1944,7 @@
 
 
 
-                                 <!-- 編號1 -告知顧客繳費 -->
+                                 <!-- 表單二-編號1 -未發通知單 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -1911,17 +1958,200 @@
                                     <td class="payment-reminder-red">1</td>
                                     <td>台中市</td>
                                     <td>徐威英語-XX分校</td>
-                                    <td>3,000</td>
+                                    <td>0</td>
                                     <td>1,000</td>
-                                    <td>2,000</td>
-                                    <td>2022/10/10</td>
+                                    <td>0</td>
+                                    <td>2022/07/01</td>
                                     <td>網路空間使用費</td>
                                     <td>
                                        <!-- 使用 table-btn-group 幫助排列 -->
-
                                        <button
                                           type="button"
                                           class="btn btn-danger btn-min"
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#paymentNotice"
+                                       >
+                                          未發通知單
+                                       </button>
+
+
+                                    </td>
+                                    <td>
+
+                                       <div class="table-btn-group">
+                                          <!-- 增加服務按鈕 by modal to  #chargeItemsModal-->
+                                          <button
+                                             type="button"
+                                             class="btn customer-service-added-btn  "
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#chargeItemsModal"
+                                          >
+                                             <ion-icon
+                                                size="large"
+                                                class="list_table_toggle_icon"
+                                                name="add"
+                                             ></ion-icon>
+                                          </button>
+
+                                          <button class="list_table_toggle_btn">
+                                             <ion-icon
+                                                name="chevron-down-outline"
+                                                aria-label="chevron down outline"
+                                             ></ion-icon>
+                                          </button>
+                                          <button
+                                             type="button"
+                                             class="btn btn-primary"
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#purchaseItemHistory"
+                                          >
+                                             歷史紀錄
+                                          </button>
+                                       </div>
+
+
+
+
+                                    </td>
+
+                                 </tr>
+                                 <td
+                                    class="td_list_table"
+                                    colspan="12"
+                                 >
+                                    <div class="panel_group">
+                                       <div>
+                                          <table class="list_table">
+                                             <thead>
+                                                <tr>
+                                                   <th
+                                                      class="col-1"
+                                                      scope=""
+                                                   >
+                                                      #
+                                                   </th>
+                                                   <th
+                                                      class="col-3"
+                                                      scope="col"
+                                                   >
+                                                      項目
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      <span class="">方案</span>
+                                                   </th>
+                                                   <th
+                                                      class="col-2"
+                                                      scope="col"
+                                                   >
+                                                      <span class="">有效時間</span>
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >單位</th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      金額
+                                                   </th>
+                                                   <th
+                                                      class="col-2"
+                                                      scope="col"
+                                                   >
+                                                      備註
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      操作
+                                                   </th>
+                                                </tr>
+                                                <tr></tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td scope="row">1</td>
+                                                   <td>網路空間使用費</td>
+                                                   <td>
+                                                      <p>存放主機資料庫
+                                                         <small class="badge bg-light text-dark">
+                                                            100MB資料庫空間
+                                                         </small>
+                                                      </p>
+                                                      <p>主機資料庫維護</p>
+                                                   </td>
+                                                   <td>
+
+                                                   </td>
+                                                   <td><span>1校/</span>$3,000</td>
+                                                   <td></td>
+                                                   <td>
+                                                      <p>國外雲端主機
+                                                         <small class="badge bg-light text-dark">
+                                                            由傑人公司代租
+                                                         </small>
+                                                      </p>
+                                                   </td>
+                                                   <td class="td_list_table_btn_group">
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-success"
+                                                      >
+                                                         扣款
+                                                      </button>
+
+
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-danger"
+                                                      >
+                                                         刪除
+
+                                                      </button>
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-success"
+                                                      >
+                                                         入賬
+                                                      </button>
+                                                   </td>
+
+                                                </tr>
+
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </td>
+
+                                 <!-- 表單二-編號2 -繳費通知 -->
+                                 <tr class="content_table_tbody_tr">
+                                    <th>
+                                       <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id=""
+                                       >
+                                    </th>
+                                    <td class="payment-reminder-red2">2</td>
+                                    <td>台中市</td>
+                                    <td>徐威英語-XX分校</td>
+                                    <td>5,000</td>
+                                    <td>1,000</td>
+                                    <td>4,000</td>
+                                    <td>2022/07/01</td>
+                                    <td>網路空間使用費</td>
+                                    <td>
+                                       <!-- 使用 table-btn-group 幫助排列 -->
+                                       <button
+                                          type="button"
+                                          class="btn btn-danger btn-red2 btn-min"
                                           data-bs-toggle="modal"
                                           data-bs-target="#paymentNotice"
                                        >
@@ -2039,9 +2269,9 @@
                                                       <p>主機資料庫維護</p>
                                                    </td>
                                                    <td>
-                                                      <p class="">2022/06/01</p>
+                                                      <p class="">2022/07/01</p>
                                                       <span class=" mb-3">~</span>
-                                                      <p class="">2023/05/31</p>
+                                                      <p class="">2023/06/30</p>
                                                    </td>
                                                    <td><span>1校/</span>$3,000</td>
                                                    <td>$3,000</td>
@@ -2140,7 +2370,7 @@
 
                <div
                   class="tab-pane "
-                  id="menu2"
+                  id="arrearsHaveBeenNotified"
                >
                   <div class="mb-2">
                      <div class=" flex">
@@ -2165,12 +2395,31 @@
                               >
                                  <ion-icon name="chevron-forward-outline"></ion-icon>
                               </button>
+                              <div class="input-group-addon">to</div>
+                              <button
+                                 class="btn btn-outline-primary"
+                                 type="button"
+                              >
+                                 <ion-icon name="chevron-back-outline"></ion-icon>
+                              </button>
+                              <input
+                                 id="bday-month"
+                                 type="month"
+                                 name="bday-month"
+                                 class="input-date"
+                              >
+                              <button
+                                 class="btn btn-outline-primary"
+                                 type="button"
+                              >
+                                 <ion-icon name="chevron-forward-outline"></ion-icon>
+                              </button>
                               <div class="col-xs-2">
                                  <input
                                     type="text"
                                     class="form-control"
-                                    placeholder="Search company"
-                                    aria-label="Search company"
+                                    placeholder="搜尋"
+                                    aria-label="搜尋"
                                  >
                               </div>
                               <button
@@ -2179,6 +2428,7 @@
                               >
                                  <ion-icon name="search-outline"></ion-icon>
                               </button>
+
 
                            </div>
                         </div>
@@ -2213,7 +2463,7 @@
 
 
 
-                                 <!-- 編號1-->
+                                 <!-- 表單三-編號1 -第一次通知 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -2230,10 +2480,10 @@
                                     <td>32,000</td>
                                     <td>22,000</td>
                                     <td>10,000</td>
-                                    <td>2022/10/10</td>
+                                    <td>2022/07/01</td>
                                     <td>薪資管理系統</td>
                                     <td>
-                                       <span>繳費期限:2022/09/30</span>
+                                       <span>繳費期限:2022/06/10</span>
 
                                        <button
                                           type="button"
@@ -2348,9 +2598,9 @@
                                                       <p>主機資料庫維護</p>
                                                    </td>
                                                    <td>
-                                                      <p class="">2022/06/01</p>
-                                                      <span class="r mb-3">~</span>
-                                                      <p class="">2023/05/31</p>
+                                                      <p class="">2022/07/01</p>
+                                                      <span class=" mb-3">~</span>
+                                                      <p class="">2023/06/30</p>
                                                    </td>
                                                    <td><span>1校/</span>$3000</td>
                                                    <td>$3000</td>
@@ -2393,7 +2643,7 @@
                                     </div>
                                  </td>
 
-                                 <!-- 編號2 -->
+                                 <!-- 表單三-編號2 -第二次通知 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -2410,10 +2660,10 @@
                                     <td>32,000</td>
                                     <td>22,000</td>
                                     <td>10,000</td>
-                                    <td>2022/10/10</td>
+                                    <td>2022/07/01</td>
                                     <td>學生管理系統</td>
                                     <td>
-                                       <span>繳費期限:2022/09/30</span>
+                                       <span>繳費期限:2022/06/17</span>
 
                                        <button
                                           type="button"
@@ -2528,9 +2778,9 @@
                                                       <p>主機資料庫維護</p>
                                                    </td>
                                                    <td>
-                                                      <p class="">2022/06/01</p>
-                                                      <span class="r mb-3">~</span>
-                                                      <p class="">2023/05/31</p>
+                                                      <p class="">2022/07/01</p>
+                                                      <span class=" mb-3">~</span>
+                                                      <p class="">2023/06/30</p>
                                                    </td>
                                                    <td><span>1校/</span>$3000</td>
                                                    <td>$3000</td>
@@ -2573,7 +2823,7 @@
                                     </div>
                                  </td>
 
-                                 <!-- 編號3 -->
+                                 <!-- 表單三-編號3 -停止服務 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -2584,16 +2834,16 @@
                                           id=""
                                        >
                                     </th>
-                                    <td class="payment-reminder-orange3">3</td>
+                                    <td class="payment-reminder-orange3">6</td>
                                     <td>台中市</td>
                                     <td>徐威英語-北屯分校</td>
                                     <td>32,000</td>
                                     <td>22,000</td>
                                     <td>10,000</td>
-                                    <td>2022/10/10</td>
+                                    <td>2022/07/01</td>
                                     <td>學生管理系統</td>
                                     <td>
-                                       <span>繳費期限:2022/09/30</span>
+                                       <span>繳費期限:2022/06/30</span>
                                        <button
                                           type="button"
                                           class="btn btn-warning btn-orange3 btn-min"
@@ -2706,9 +2956,9 @@
                                                       <p>主機資料庫維護</p>
                                                    </td>
                                                    <td>
-                                                      <p class="">2022/06/01</p>
-                                                      <span class="r mb-3">~</span>
-                                                      <p class="">2023/05/31</p>
+                                                      <p class="">2022/07/01</p>
+                                                      <span class=" mb-3">~</span>
+                                                      <p class="">2023/06/30</p>
                                                    </td>
                                                    <td><span>1校/</span>$3000</td>
                                                    <td>$3000</td>
@@ -2759,6 +3009,288 @@
                   </div>
 
                </div>
+
+
+               <!-- 表單四 -->
+
+               <div
+                  class="tab-pane "
+                  id="writeOffProcessing"
+               >
+                  <div class="
+                  mb-2">
+                     <div class=" flex">
+                        <!-- 搜尋欄 -->
+                        <div>
+                           <div class="d-grid gap-2 input-group d-flex align-items-center">
+                              <button
+                                 class="btn btn-outline-primary"
+                                 type="button"
+                              >
+                                 <ion-icon name="chevron-back-outline"></ion-icon>
+                              </button>
+                              <input
+                                 id="bday-month"
+                                 type="month"
+                                 name="bday-month"
+                                 class="input-date"
+                              >
+                              <button
+                                 class="btn btn-outline-primary"
+                                 type="button"
+                              >
+                                 <ion-icon name="chevron-forward-outline"></ion-icon>
+                              </button>
+                              <div class="input-group-addon">to</div>
+                              <button
+                                 class="btn btn-outline-primary"
+                                 type="button"
+                              >
+                                 <ion-icon name="chevron-back-outline"></ion-icon>
+                              </button>
+                              <input
+                                 id="bday-month"
+                                 type="month"
+                                 name="bday-month"
+                                 class="input-date"
+                              >
+                              <button
+                                 class="btn btn-outline-primary"
+                                 type="button"
+                              >
+                                 <ion-icon name="chevron-forward-outline"></ion-icon>
+                              </button>
+                              <div class="col-xs-2">
+                                 <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="搜尋"
+                                    aria-label="搜尋"
+                                 >
+                              </div>
+                              <button
+                                 class="btn btn-outline-primary"
+                                 type="button"
+                              >
+                                 <ion-icon name="search-outline"></ion-icon>
+                              </button>
+
+
+                           </div>
+                        </div>
+
+                        <div>
+
+                           <table class="content-table">
+                              <thead>
+                                 <tr>
+                                    <th>
+                                       <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id=""
+                                       >
+                                    </th>
+                                    <th>序號</th>
+                                    <th>縣市</th>
+                                    <th>客戶名稱</th>
+                                    <th>應繳總額</th>
+                                    <th>預存餘額</th>
+                                    <th>應扣不足款</th>
+                                    <th>應扣日期</th>
+                                    <th>應扣名稱</th>
+                                    <th>充值狀況</th>
+                                    <th>操作</th>
+
+                                 </tr>
+                              </thead>
+                              <tbody>
+
+
+
+                                 <!-- 表單四 編號1 -良好 -->
+
+
+                                 <tr class="content_table_tbody_tr">
+                                    <th>
+                                       <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id=""
+                                       >
+                                    </th>
+                                    <td class="payment-reminder-green">1</td>
+                                    <td>台中市</td>
+                                    <td>徐威英語-北屯分校</td>
+                                    <td>32,000</td>
+                                    <td>22,000</td>
+                                    <td>10,000</td>
+                                    <td>2022/07/01</td>
+                                    <td>學生管理系統</td>
+                                    <td>
+                                       良好
+
+                                    </td>
+                                    <td>
+                                       <div class="table-btn-group">
+                                          <!-- 增加服務按鈕 by modal to  #chargeItemsModal-->
+                                          <button
+                                             type="button"
+                                             class="btn customer-service-added-btn  "
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#chargeItemsModal"
+                                          >
+                                             <ion-icon
+                                                size="large"
+                                                class="list_table_toggle_icon"
+                                                name="add"
+                                             ></ion-icon>
+                                          </button>
+
+                                          <button class="list_table_toggle_btn">
+                                             <ion-icon name="chevron-down-outline"></ion-icon>
+                                          </button>
+
+                                          <button
+                                             type="button"
+                                             class="btn btn-primary"
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#purchaseItemHistory"
+                                          >
+                                             歷史紀錄
+                                          </button>
+
+                                       </div>
+                                    </td>
+
+                                 </tr>
+                                 <td
+                                    class="td_list_table"
+                                    colspan="12"
+                                 >
+                                    <div class="panel_group">
+                                       <div>
+                                          <table class="list_table">
+                                             <thead>
+                                                <tr>
+                                                   <th
+                                                      class="col-1"
+                                                      scope=""
+                                                   >
+                                                      #
+                                                   </th>
+                                                   <th
+                                                      class="col-3"
+                                                      scope="col"
+                                                   >
+                                                      項目
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      <span class="">方案</span>
+                                                   </th>
+                                                   <th
+                                                      class="col-2"
+                                                      scope="col"
+                                                   >
+                                                      <span class="">有效時間</span>
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >單位</th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      金額
+                                                   </th>
+                                                   <th
+                                                      class="col-2"
+                                                      scope="col"
+                                                   >
+                                                      備註
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      操作
+                                                   </th>
+                                                </tr>
+                                                <tr></tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td scope="row">1</td>
+                                                   <td>網路空間使用費</td>
+                                                   <td>
+                                                      <p>存放主機資料庫
+                                                         <small class="badge bg-light text-dark">
+                                                            100MB資料庫空間
+                                                         </small>
+                                                      </p>
+                                                      <p>主機資料庫維護</p>
+                                                   </td>
+                                                   <td>
+                                                      <p class="">2022/07/01</p>
+                                                      <span class=" mb-3">~</span>
+                                                      <p class="">2023/06/30</p>
+                                                   </td>
+                                                   <td><span>1校/</span>$3000</td>
+                                                   <td>$3000</td>
+                                                   <td>
+                                                      <p>國外雲端主機
+                                                         <small class="badge bg-light text-dark">
+                                                            由傑人公司代租
+                                                         </small>
+                                                      </p>
+                                                   </td>
+                                                   <td class="td_list_table_btn_group">
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-success"
+                                                      >
+                                                         扣款
+                                                      </button>
+
+
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-danger"
+                                                      >
+                                                         刪除
+
+                                                      </button>
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-success"
+                                                      >
+                                                         入賬
+                                                      </button>
+                                                   </td>
+
+                                                </tr>
+
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </td>
+
+
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+
             </div>
 
             <!--  -->
@@ -2801,7 +3333,7 @@
                                        name="bday-month"
                                        class="input-date"
                                     >
-                                    <p>~</p>
+                                    <div class="input-group-addon">to</div>
                                     <input
                                        id="bday-month"
                                        type="month"
@@ -2813,8 +3345,8 @@
                                        <input
                                           type="text"
                                           class="form-control"
-                                          placeholder="Search company"
-                                          aria-label="Search company"
+                                          placeholder="搜尋"
+                                          aria-label="搜尋"
                                        >
                                     </div>
                                     <button
@@ -2977,7 +3509,7 @@
       </div>
 
       <!--  -->
-      <!-- 增加服務Modal -->
+      <!-- 新增客戶儲值預存款通知單Modal -->
       <!--  -->
       <div
          class="modal fade"
@@ -2988,133 +3520,96 @@
       >
          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
-               <div class="modal-header">
+               <div class="modal-header d-flex">
                   <h5
                      class="modal-title"
                      id="exampleModalLabel"
                   >
-                     增加繳費
+                     新增客戶儲值 預存款通知單
                   </h5>
-                  <button
-                     type="button"
-                     class="btn-close"
-                     data-bs-dismiss="modal"
-                     aria-label="Close"
-                  ></button>
+
+
+
+                  <div>
+                     <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                     ></button>
+                  </div>
+
                </div>
                <div class="modal-body">
                   <form action="#">
                      <div class="container-fluid">
 
-                        <div class="row ">
-                           <h6>客戶訂閱服務</h6>
-                           <div class="row mb-3">
-                              <div class="form-check form-switch col-6">
-                                 <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    role="switch"
-                                    id="flexSwitchCheckDefault"
-                                 >
+                        <div class="row  mb-3">
+
+                           <div class="mb-3">
+                              <div class="mb-3 ">
                                  <label
                                     class="form-check-label"
-                                    for="flexSwitchCheckDefault"
+                                    for="flexCheckDefault"
                                  >
-                                    簡訊服務費/1500通/2000$
+                                    校掌雲雲端學校版系統服務費
                                  </label>
-                                 <div class="input-group">
-                                    <span class="input-group-text">$</span>
+                                 <div class="input-group mb-5">
+                                    <select
+                                       class="form-select"
+                                       aria-label="Default select example"
+                                    >
+                                       <option selected>請選擇客戶服務時間</option>
+                                       <option>月繳 $980</option>
+                                       <option>一年</option>
+                                       <option>三年</option>
+                                       <option>五年</option>
+                                    </select>
                                     <input
                                        type="text"
                                        class="form-control"
                                        aria-label="Amount (to the nearest dollar)"
-                                       value="2000"
                                     >
-                                 </div>
-                              </div>
-                              <div class="form-check form-switch col-6">
-                                 <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    role="switch"
-                                    id="flexSwitchCheckDefault"
-                                 >
-                                 <label
-                                    class="form-check-label"
-                                    for="flexSwitchCheckDefault"
-                                 >
-                                    教學平台/月/980$
-                                 </label>
-                                 <div class="input-group">
                                     <span class="input-group-text">$</span>
-                                    <input
-                                       type="text"
-                                       class="form-control"
-                                       aria-label="Amount (to the nearest dollar)"
-                                       value="980"
-                                    >
                                  </div>
                               </div>
-                           </div>
 
-                           <div class="row mb-3">
-                              <div class="form-check form-switch col-6">
+                              <div class="d-flex gap-2 mb-3 justify-content-center">
                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    role="switch"
-                                    id="flexSwitchCheckDefault"
+                                    id="bday-month"
+                                    type="date"
+                                    name="bday-month"
+                                    class="input-date w-100 border-secondary text-secondary"
                                  >
+
+                                 <div class="input-group-addon">to</div>
+
+                                 <input
+                                    id="bday-month"
+                                    type="date"
+                                    name="bday-month"
+                                    class="input-date w-100 border-secondary text-secondary"
+                                 >
+                              </div>
+
+
+
+                              <div class="mb-3">
                                  <label
-                                    class="form-check-label"
-                                    for="flexSwitchCheckDefault"
-                                 >
-                                    MCall/年/2000$
-                                 </label>
-                                 <div class="input-group">
-                                    <span class="input-group-text">$</span>
-                                    <input
-                                       type="text"
-                                       class="form-control"
-                                       aria-label="Amount (to the nearest dollar)"
-                                       value="2000"
-                                    >
-                                 </div>
-                              </div>
-
-                           </div>
-
-                           <hr />
-
-                           <div>
-                              <label
-                                 class="form-check-label"
-                                 for="flexCheckDefault"
-                              >
-                                 校掌雲雲端學校版系統服務費
-                              </label>
-                              <div class="input-group mb-3">
-                                 <select
-                                    class="form-select"
-                                    aria-label="Default select example"
-                                 >
-                                    <option selected>請選擇客戶服務時間</option>
-                                    <option>月繳 $980</option>
-                                    <option>一年</option>
-                                    <option>三年</option>
-                                    <option>五年</option>
-                                 </select>
-                                 <input
-                                    type="text"
+                                    for="exampleFormControlTextarea1"
+                                    class="form-label"
+                                 >備註</label>
+                                 <textarea
                                     class="form-control"
-                                    aria-label="Amount (to the nearest dollar)"
-                                 >
-                                 <span class="input-group-text">$</span>
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                 ></textarea>
                               </div>
                            </div>
 
 
-                           <hr />
+                           <!-- <hr />
+行政管理版 
                            <div>
                               <label
                                  class="form-check-label"
@@ -3141,28 +3636,33 @@
 
                               </div>
 
-                              <div class="row mb-5">
+                              <div class="row mb-3">
                                  <div class="ms-autp col-6">
                                     <label
                                        for="validationCustomUsername"
                                        class="form-label"
                                     >網路空間費</label>
-                                    <div class="input-group has-validation">
-                                       <label
+                                    <div class="input-group mb-3">
+                                       <input
+                                          type="text"
+                                          class="form-control"
+                                          placeholder="3000"
+                                          aria-label="3000"
+                                          aria-describedby="basic-addon2"
+                                       >
+                                       <span
                                           class="input-group-text"
-                                          for="inputGroupSelect02"
-                                       >3000</label>
-                                       <span class="input-group-text">$</span>
-
+                                          id="basic-addon2"
+                                       >$</span>
                                     </div>
                                  </div>
 
-                                 <div class="col-6">
+                                 <div class="col-6 mb-4">
 
                                     <label
                                        for="validationCustomUsername"
                                        class="form-label"
-                                    >系統維護費/臺/1000$</label>
+                                    >系統維護費/臺</label>
                                     <div class="input-group has-validation">
                                        <select
                                           class="form-select"
@@ -3180,22 +3680,277 @@
                                        <span class="input-group-text">$</span>
                                     </div>
                                  </div>
+
+                                 <div class="d-flex gap-2 mb-3 justify-content-center ">
+                                    <input
+                                       id="bday-month"
+                                       type="date"
+                                       name="bday-month"
+                                       class="input-date w-100 border-secondary text-secondary"
+                                    >
+
+                                    <div class="input-group-addon">to</div>
+
+                                    <input
+                                       id="bday-month"
+                                       type="date"
+                                       name="bday-month"
+                                       class="input-date w-100 border-secondary text-secondary"
+                                    >
+                                 </div>
+
+                                 <div class="mb-3">
+                                    <label
+                                       for="exampleFormControlTextarea1"
+                                       class="form-label"
+                                    >備註</label>
+                                    <textarea
+                                       class="form-control"
+                                       id="exampleFormControlTextarea1"
+                                       rows="3"
+                                    ></textarea>
+                                 </div>
+                              </div>
+                           </div> -->
+
+                           <hr>
+
+                           <!-- WBaby系統服務費 -->
+
+                           <div class="mb-3">
+                              <div class="mb-3 ">
+                                 <label
+                                    class="form-check-label"
+                                    for="flexCheckDefault"
+                                 >
+                                    WBaby系統服務費
+                                 </label>
+                                 <div class="input-group mb-5">
+                                    <select
+                                       class="form-select"
+                                       aria-label="Default select example"
+                                    >
+                                       <option selected>請選擇客戶服務時間</option>
+                                       <option>月繳 $980</option>
+                                       <option>一年</option>
+                                       <option>三年</option>
+                                       <option>五年</option>
+                                    </select>
+                                    <input
+                                       type="text"
+                                       class="form-control"
+                                       aria-label="Amount (to the nearest dollar)"
+                                    >
+                                    <span class="input-group-text">$</span>
+                                 </div>
+                              </div>
+
+                              <div class="d-flex gap-2 mb-3 justify-content-center">
+                                 <input
+                                    id="bday-month"
+                                    type="date"
+                                    name="bday-month"
+                                    class="input-date w-100 border-secondary text-secondary"
+                                 >
+
+                                 <div class="input-group-addon">to</div>
+
+                                 <input
+                                    id="bday-month"
+                                    type="date"
+                                    name="bday-month"
+                                    class="input-date w-100 border-secondary text-secondary"
+                                 >
                               </div>
 
 
+
+                              <div class="mb-3">
+                                 <label
+                                    for="exampleFormControlTextarea1"
+                                    class="form-label"
+                                 >備註</label>
+                                 <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                 ></textarea>
+                              </div>
+                           </div>
+                           <hr>
+
+                           <div>
+                              <h6>客戶訂閱服務</h6>
+                              <div class="row mb-3">
+
+                                 <div class="row mb-3">
+                                    <div class="form-check form-switch col-6">
+                                       <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          role="switch"
+                                          id="flexSwitchCheckDefault"
+                                       >
+                                       <label
+                                          class="form-check-label"
+                                          for="flexSwitchCheckDefault"
+                                       >
+                                          簡訊服務費/1500通/
+                                       </label>
+                                       <div class="input-group">
+                                          <span class="input-group-text">$</span>
+                                          <input
+                                             type="text"
+                                             class="form-control"
+                                             aria-label="Amount (to the nearest dollar)"
+                                             value="2000"
+                                          >
+                                       </div>
+                                    </div>
+
+
+                                    <div class="form-check form-switch col-6">
+                                       <div class="mb-3">
+                                          <input
+                                             class="form-check-input"
+                                             type="checkbox"
+                                             role="switch"
+                                             id="flexSwitchCheckDefault"
+                                          >
+                                          <label
+                                             class="form-check-label"
+                                             for="flexSwitchCheckDefault"
+                                          >
+                                             教學平台/月
+                                          </label>
+                                          <div class="input-group">
+                                             <span class="input-group-text">$</span>
+                                             <input
+                                                type="text"
+                                                class="form-control"
+                                                aria-label="Amount (to the nearest dollar)"
+                                                value="980"
+                                             >
+                                          </div>
+                                       </div>
+
+                                       <div class="d-flex gap-2">
+                                          <input
+                                             id="bday-month"
+                                             type="date"
+                                             name="bday-month"
+                                             class="input-date border-secondary text-secondary"
+                                          >
+
+                                          <div class="input-group-addon">to</div>
+
+                                          <input
+                                             id="bday-month"
+                                             type="date"
+                                             name="bday-month"
+                                             class="input-date border-secondary text-secondary"
+                                          >
+                                       </div>
+
+                                    </div>
+                                 </div>
+
+                                 <div class="row mb-3">
+                                    <div class="form-check form-switch col-6">
+                                       <div class="mb-3">
+                                          <input
+                                             class="form-check-input"
+                                             type="checkbox"
+                                             role="switch"
+                                             id="flexSwitchCheckDefault"
+                                          >
+                                          <label
+                                             class="form-check-label"
+                                             for="flexSwitchCheckDefault"
+                                          >
+                                             MCall/年
+                                          </label>
+                                          <div class="input-group">
+                                             <span class="input-group-text">$</span>
+                                             <input
+                                                type="text"
+                                                class="form-control"
+                                                aria-label="Amount (to the nearest dollar)"
+                                                value="2000"
+                                             >
+                                          </div>
+                                       </div>
+
+                                       <div class="d-flex gap-2">
+                                          <input
+                                             id="bday-month"
+                                             type="date"
+                                             name="bday-month"
+                                             class="input-date border-secondary text-secondary"
+                                          >
+
+                                          <div class="input-group-addon">to</div>
+
+                                          <input
+                                             id="bday-month"
+                                             type="date"
+                                             name="bday-month "
+                                             class="input-date border-secondary text-secondary"
+                                          >
+                                       </div>
+
+
+                                    </div>
+
+                                    <div class="form-check form-switch col-6">
+                                       <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          role="switch"
+                                          id="flexSwitchCheckDefault"
+                                       >
+                                       <label
+                                          class="form-check-label"
+                                          for="flexSwitchCheckDefault"
+                                       >
+                                          上架費
+                                       </label>
+                                       <div class="input-group">
+                                          <span class="input-group-text">$</span>
+                                          <input
+                                             type="text"
+                                             class="form-control"
+                                             aria-label="Amount (to the nearest dollar)"
+                                             value="6000"
+                                          >
+                                       </div>
+                                    </div>
+
+
+                                 </div>
+                              </div>
+                           </div>
+
+                        </div>
+
                   </form>
+                  <div class="modal-footer d-flex justify-content-between align-items-end">
+
+                     <h4 class="d-flex flex-column gap-3">本次應繳總額 <span class="badge bg-danger">$12,000</span></h4>
+
+
+
+
+                     <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-dismiss="modal"
+                     >確認送出</button>
+                  </div>
                </div>
             </div>
          </div>
-         <div class="modal-footer d-flex justify-content-between">
-            <h3><span class="badge bg-danger">$12,000</span></h3>
 
-            <button
-               type="button"
-               class="btn btn-primary"
-               data-bs-dismiss="modal"
-            >確認送出</button>
-         </div>
       </div>
 
 

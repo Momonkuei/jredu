@@ -38,7 +38,7 @@
                     data-bs-toggle="pill"
                     href="#paymentRecord"
                 >
-                    繳費紀錄
+                    繳費記錄
                 </a>
             </li>
             <li class="nav-item ">
@@ -47,7 +47,17 @@
                     data-bs-toggle="pill"
                     href="#debitRecord"
                 >
-                    扣款紀錄
+                    支出記錄
+                </a>
+            </li>
+
+            <li class="nav-item ">
+                <a
+                    class="nav-link "
+                    data-bs-toggle="pill"
+                    href="#smsUsageDetails"
+                >
+                    簡訊使用明細
                 </a>
             </li>
 
@@ -56,7 +66,7 @@
         <div class="tab-content">
 
 
-            <!-- 表單一 -->
+            <!-- 繳費通知 表單一 -->
 
             <div
                 class="tab-pane active"
@@ -95,8 +105,8 @@
                                         <input
                                             type="text"
                                             class="form-control"
-                                            placeholder="Search company"
-                                            aria-label="Search company"
+                                            placeholder="搜尋"
+                                            aria-label="搜尋"
                                         >
                                         <button
                                             class="btn btn-outline-success "
@@ -115,7 +125,7 @@
                                     <th>訂單日期</th>
                                     <th>項目</th>
                                     <th>方案</th>
-                                    <th>有效時間</th>
+                                    <th>有效日期</th>
                                     <th>繳費期間</th>
                                     <th>金額</th>
 
@@ -136,7 +146,7 @@
                                         </p>
                                         <p>主機資料庫維護</p>
                                     </td>
-                                    <td data-label="有效時間">
+                                    <td data-label="有效日期">
                                         <p class="">2022/06/01</p>
                                         <span class="mb-3">~</span>
                                         <p class="">2023/05/31</p>
@@ -148,7 +158,7 @@
                                     </td>
 
                                     <td data-label="金額">
-                                        <span>$</span>
+
                                         5,000
                                     </td>
                                     <td data-label="操作">
@@ -188,7 +198,7 @@
 
                                         系統維護費
                                     </td>
-                                    <td data-label="有效時間">
+                                    <td data-label="有效日期">
 
                                     </td>
                                     <td data-label="繳費期間">
@@ -198,7 +208,7 @@
                                     </td>
 
                                     <td data-label="金額">
-                                        <span>$</span>
+
                                         2,000
                                     </td>
                                     <td data-label="操作">
@@ -225,7 +235,7 @@
 
             </div>
 
-            <!-- 表單二 -->
+            <!--繳費記錄 表單二 -->
             <div
                 class="tab-pane "
                 id="paymentRecord"
@@ -263,8 +273,8 @@
                                         <input
                                             type="text"
                                             class="form-control"
-                                            placeholder="Search company"
-                                            aria-label="Search company"
+                                            placeholder="搜尋"
+                                            aria-label="搜尋"
                                         >
                                         <button
                                             class="btn btn-outline-success "
@@ -283,10 +293,10 @@
                                     <th>訂單日期</th>
                                     <th>項目</th>
                                     <th>方案</th>
-                                    <th>有效時間</th>
+                                    <th>有效日期</th>
                                     <th>繳費期間</th>
                                     <th>金額</th>
-                                    <th>入款時間</th>
+                                    <th>入款日期</th>
                                     <th>操作</th>
 
                                 </tr>
@@ -306,7 +316,7 @@
                                     </td>
                                     <td
                                         class=""
-                                        data-label="有效時間"
+                                        data-label="有效日期"
                                     >
                                         <p class="">2022/06/01</p>
                                         <span class="r mb-3">~</span>
@@ -318,10 +328,10 @@
                                         <p class="">2023/06/02</p>
                                     </td>
                                     <td data-label="金額">
-                                        <span>$</span>
+
                                         5,000
                                     </td>
-                                    <td data-label="入款時間">
+                                    <td data-label="入款日期">
                                         2022/05/25
                                     </td>
                                     <td data-label="操作">
@@ -348,7 +358,7 @@
                                         </p>
 
                                     </td>
-                                    <td data-label="有效時間">
+                                    <td data-label="有效日期">
 
                                     </td>
                                     <td data-label="繳費期間">
@@ -358,10 +368,10 @@
                                     </td>
 
                                     <td data-label="金額">
-                                        <span>$</span>
+
                                         2,000
                                     </td>
-                                    <td data-label="入款時間">
+                                    <td data-label="入款日期">
                                         2022/05/25
                                     </td>
                                     <td data-label="操作">
@@ -381,7 +391,7 @@
 
 
 
-            <!-- 表單三 -->
+            <!--支出記錄 表單三 -->
 
             <div
                 class="tab-pane "
@@ -418,8 +428,8 @@
                                         <input
                                             type="text"
                                             class="form-control"
-                                            placeholder="Search company"
-                                            aria-label="Search company"
+                                            placeholder="搜尋"
+                                            aria-label="搜尋"
                                         >
                                         <button
                                             class="btn btn-outline-success "
@@ -434,13 +444,12 @@
                         <table class="predepositUserTable">
                             <thead>
                                 <tr>
-                                    <th>#</th>
+                                    <th></th>
                                     <th>日期</th>
                                     <th>時間</th>
                                     <th>項目</th>
-                                    <th>支出/存入</th>
+                                    <th>支出</th>
                                     <th>餘額</th>
-                                    <th>使用者</th>
                                     <th>備註</th>
                                 </tr>
                             </thead>
@@ -450,9 +459,8 @@
                                     <td data-label="日期">2020/12/20</td>
                                     <td data-label="時間">13:30</td>
                                     <td data-label="項目">簡訊費</td>
-                                    <td data-label="支出/存入"> -$600</td>
+                                    <td data-label="支出"> -600</td>
                                     <td data-label="餘額">9,820</td>
-                                    <td data-label="使用者">林阿三</td>
                                     <td data-label="備註">
                                         <button
                                             type="button"
@@ -470,9 +478,8 @@
                                     <td data-label="日期">2020/12/20</td>
                                     <td data-label="時間">11:00</td>
                                     <td data-label="項目">網路空間使用費</td>
-                                    <td data-label="支出/存入"> -$3,000</td>
+                                    <td data-label="支出"> -3,000</td>
                                     <td data-label="餘額">9,880</td>
-                                    <td data-label="使用者">林阿三</td>
                                     <td data-label="備註"></td>
                                 </tr>
 
@@ -481,9 +488,8 @@
                                     <td data-label="日期">2020/12/20</td>
                                     <td data-label="時間">10:00</td>
                                     <td data-label="項目">簡訊費</td>
-                                    <td data-label="支出/存入"> -$60</td>
+                                    <td data-label="支出"> -60</td>
                                     <td data-label="餘額">9,940</td>
-                                    <td data-label="使用者">林阿三</td>
                                     <td data-label="備註"></td>
 
                                 </tr>
@@ -528,8 +534,8 @@
                                         <input
                                             type="text"
                                             class="form-control"
-                                            placeholder="Search company"
-                                            aria-label="Search company"
+                                            placeholder="搜尋"
+                                            aria-label="搜尋"
                                         >
                                         <button
                                             class="btn btn-outline-success "
@@ -548,9 +554,8 @@
                                     <th>日期</th>
                                     <th>時間</th>
                                     <th>項目</th>
-                                    <th>支出/存入</th>
+                                    <th>支出</th>
                                     <th>餘額</th>
-                                    <th>使用者</th>
                                     <th>備註</th>
                                 </tr>
                             </thead>
@@ -560,9 +565,9 @@
                                     <td data-label="日期">2020/12/20</td>
                                     <td data-label="時間">13:30</td>
                                     <td data-label="項目">簡訊費</td>
-                                    <td data-label="支出/存入"> -$600</td>
+                                    <td data-label="支出"> -$600</td>
                                     <td data-label="餘額">9,820</td>
-                                    <td data-label="使用者">林阿三</td>
+
                                     <td data-label="備註">
                                         <button
                                             type="button"
@@ -580,9 +585,8 @@
                                     <td data-label="日期">2020/12/20</td>
                                     <td data-label="時間">11:00</td>
                                     <td data-label="項目">網路空間使用費</td>
-                                    <td data-label="支出/存入"> -$3,000</td>
+                                    <td data-label="支出"> -3,000</td>
                                     <td data-label="餘額">9,880</td>
-                                    <td data-label="使用者">林阿三</td>
                                     <td data-label="備註"></td>
                                 </tr>
 
@@ -591,9 +595,8 @@
                                     <td data-label="日期">2020/12/20</td>
                                     <td data-label="時間">10:00</td>
                                     <td data-label="項目">簡訊費</td>
-                                    <td data-label="支出/存入"> -$60</td>
+                                    <td data-label="支出"> -60</td>
                                     <td data-label="餘額">9,940</td>
-                                    <td data-label="使用者">林阿三</td>
                                     <td data-label="備註"></td>
 
                                 </tr>
@@ -604,6 +607,100 @@
 
             </div>
 
+            <!--簡訊使用明細 表單四 -->
+
+            <div
+                class="tab-pane "
+                id="smsUsageDetails"
+            >
+
+                <div class="mb-2">
+                    <div class=" flex">
+
+                        <!-- 搜尋欄 -->
+                        <div>
+                            <div class="d-grid mb-3 ">
+                                <div class="btn-toolbar justify-content-between">
+                                    <div class="btn-group mb-2">
+                                        <button
+                                            class="btn btn-outline-primary btn-group-margin-right-minus-one"
+                                            type="button"
+                                        >
+                                            <ion-icon name="chevron-back-outline"></ion-icon>
+                                        </button>
+                                        <input
+                                            id="bday-week"
+                                            type="month"
+                                            name="bday-week"
+                                            class="input-date col-md-8 col-sm-6"
+                                        >
+                                        <button
+                                            class="btn btn-outline-primary "
+                                            type="button"
+                                        >
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </button>
+                                    </div>
+
+                                    <div class="btn-group ">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="搜尋"
+                                            aria-label="搜尋"
+                                        >
+                                        <button
+                                            class="btn btn-outline-success "
+                                            type="button"
+                                        >
+                                            <ion-icon name="search-outline"></ion-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="predepositUserTable">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>日期</th>
+                                    <th>時間</th>
+                                    <th>存入</th>
+                                    <th>使用者</th>
+                                    <th>通數</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td data-label="日期">2022/06/20</td>
+                                    <td data-label="時間">11:30</td>
+                                    <td data-label="存入"></td>
+                                    <td data-label="使用者">孫中山</td>
+                                    <td data-label="通數">1499</td>
+
+                                </tr>
+
+                                <tr>
+                                    <th>2</th>
+                                    <td data-label="日期">2022/06/20</td>
+                                    <td data-label="時間">8:30</td>
+                                    <td data-label="存入">2,000</td>
+                                    <td data-label="使用者"></td>
+                                    <td data-label="通數">1500</td>
+
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
@@ -643,8 +740,8 @@
                                     <input
                                         type="text"
                                         class="form-control"
-                                        placeholder="Search company"
-                                        aria-label="Search company"
+                                        placeholder="搜尋"
+                                        aria-label="搜尋"
                                     >
                                     <button
                                         class="btn btn-outline-success "
@@ -856,7 +953,7 @@
                                 <th class="col-1">序號</th>
                                 <th class="col-3">項目</th>
                                 <th class="col-2">方案</th>
-                                <th class="col-2">有效時間</th>
+                                <th class="col-2">有效日期</th>
                                 <th class="col-2">單位</th>
                                 <th class="col-2">金額</th>
 
@@ -876,7 +973,7 @@
                                     </p>
                                     <p>主機資料庫維護</p>
                                 </td>
-                                <td data-label="有效時間">
+                                <td data-label="有效日期">
                                     <p class="">2022/06/01</p>
                                     <span class="mb-3">~</span>
                                     <p class="">2023/05/31</p>
@@ -899,7 +996,7 @@
                                     </p>
 
                                 </td>
-                                <td data-label="有效時間">
+                                <td data-label="有效日期">
 
                                 </td>
                                 <td data-label="單位">
