@@ -1,6 +1,14 @@
-
-
-
+@media screen and (max-width:75em) {
+  .table-container {
+    padding: 0 2%;
+  }
+  .predepositUserTable th{
+    padding: 0.4rem;
+  }
+  .predepositUserTable-btngroup{
+    flex-direction: column;
+  }
+}
 @media screen and (max-width:62em) {
 
   .table-container {

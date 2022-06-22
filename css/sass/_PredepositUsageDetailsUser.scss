@@ -4,9 +4,30 @@
   box-sizing: border-box;
 }
 
+/********************************/
+/* header */
+/********************************/
+
+.pre-deposit-usage-details-header{
+  h1{
+    margin-bottom: 0.2rem;
+  }
+}
+
+
+/********************************/
+/* table */
+/********************************/
+
 .table-container {
   padding: 0 10%;
   margin: 40px auto;
+}
+
+.table-container-h1{
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+  color: #555;
 }
 
 

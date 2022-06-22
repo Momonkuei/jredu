@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -13694,6 +13695,23 @@ hover #9db8e0 (-60%)
   display: block;
 }
 
+.recharge-status-td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.2rem;
+}
+
 .payment-reminder-red {
   text-align: center;
   border-left: 4px solid rgba(220, 53, 69, 0.7);
@@ -13727,8 +13745,8 @@ hover #9db8e0 (-60%)
 /******************/
 /* 按鈕 */
 /******************/
-.btn-min {
-  min-width: 112px;
+.btn-w112 {
+  width: 112px;
 }
 
 .input-date {
@@ -13992,6 +14010,20 @@ hover #9db8e0 (-60%)
   gap: 0.5rem;
 }
 
+/******************/
+/* modal部分 */
+/******************/
+.modal-title-purchaseItemHistoryLabel {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+  color: #555;
+  font-size: 1.5rem;
+}
+
+.purchase-history-table tbody tr:last-child {
+  border-bottom: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13999,9 +14031,25 @@ hover #9db8e0 (-60%)
           box-sizing: border-box;
 }
 
+/********************************/
+/* header */
+/********************************/
+.pre-deposit-usage-details-header h1, .pre-deposit-usage-details-header .h1 {
+  margin-bottom: 0.2rem;
+}
+
+/********************************/
+/* table */
+/********************************/
 .table-container {
   padding: 0 10%;
   margin: 40px auto;
+}
+
+.table-container-h1 {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+  color: #555;
 }
 
 .predepositUserTable {
@@ -14308,6 +14356,21 @@ hover #9db8e0 (-60%)
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+@media screen and (max-width: 75em) {
+  .table-container {
+    padding: 0 2%;
+  }
+  .predepositUserTable th {
+    padding: 0.4rem;
+  }
+  .predepositUserTable-btngroup {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 62em) {
