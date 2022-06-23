@@ -47,6 +47,15 @@ hover #9db8e0 (-60%)
 
 #198754
 
+//停止服務客戶
+背景 #dee2e6
+
+字體顏色 #868e96
+
+//線條 rgba(134, 142, 150,1)
+
+//按鈕
+
 */
 /***************************/
 
@@ -117,10 +126,31 @@ hover #9db8e0 (-60%)
     border-bottom: 1px solid #dddddd;
 }
 
+//主標單分行識別
 .content-table tbody tr:nth-of-type(4n+3) {
     background-color: #f3f3f3;
 }
 
+//服務取消狀態
+ .service-cancellation-state-tr{
+    opacity: 0.8;
+     background-color: #adb5bd;
+    color: #aaa;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.service-cancellation-state-td{
+    opacity: 0.7;
+    background-color: #adb5bd;
+    color: #aaa;
+
+    &:hover{
+        opacity: 1;
+    }
+}
 
 
 .content-table tbody tr:last-of-type {
@@ -145,7 +175,7 @@ hover #9db8e0 (-60%)
     //選轉標註圖示
     .list_table_toggle_btn {
         transform: rotate(180deg);
-        @include transitionData(0.2s, ease-out)
+        @include transitionData(0.2s, ease-out);
     }
 }
 
@@ -186,26 +216,21 @@ hover #9db8e0 (-60%)
 }
 
 .payment-reminder-red2 {
-   
-
     @include payment-reminder(rgba(240, 101, 149,0.7))
 }
 
 .payment-reminder-orange1 {
     // border-left: 4px solid rgba(254, 164, 91, 0.7);
-
     @include payment-reminder(rgba(254, 164, 91, 0.7));
 }
 
 .payment-reminder-orange2 {
     // border-left: 4px solid rgba(253, 126, 20, 0.7);
-
     @include payment-reminder(rgba(253, 126, 20, 0.7));
 }
 
 .payment-reminder-orange3 {
     // border-left: 4px solid rgba(177, 87, 14, 0.7);
-
     @include payment-reminder(rgba(177, 87, 14, 0.7));
 }
 
@@ -215,7 +240,15 @@ hover #9db8e0 (-60%)
     @include payment-reminder(rgba(25, 135, 84, 0.7))
 }
 
+.payment-reminder-gray {
+    @include payment-reminder(rgba(134, 142, 150,1));
 
+}
+
+//提示文字 span 不換行
+.recharge-status-td-span{
+    white-space:nowrap;
+}
 
 /******************/
 /* 按鈕 */
@@ -287,7 +320,7 @@ hover #9db8e0 (-60%)
     }
 }
 
-.btn-warning.btn-orange3 {
+.btn-gray {
     color: #fff;
     background-color: #868e96;
     border-color: #868e96;
@@ -303,11 +336,28 @@ hover #9db8e0 (-60%)
     }
 }
 
+.btn-start{
+    color: #fff;
+    background-color: #40c057;
+    border-color: #40c057;
+
+    &:active,
+    &:hover {
+        background-color: #2b8a3e;
+        border-color: #2b8a3e
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba(67, 215, 96, 0.2);
+    }
+}
+
 
 /*客戶增加服務按鈕*/
 .table-btn-group {
     display: flex;
     gap: 0.6rem;
+    align-items: center;
 }
 
 .list_table_toggle_icon {
@@ -336,6 +386,13 @@ hover #9db8e0 (-60%)
     &:focus {
         box-shadow: 0 0 0 0.25rem rgba(67, 215, 96, 0.2);
     }
+}
+
+//歷史記錄按鈕
+
+.history-record-btn{
+    white-space:nowrap;
+    
 }
 
 
@@ -500,7 +557,7 @@ hover #9db8e0 (-60%)
 /******************/
 
 .modal-title-purchaseItemHistoryLabel{
-    font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   font-weight: 700;
   color: #555;
   font-size: 1.5rem;

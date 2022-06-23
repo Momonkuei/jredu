@@ -13613,6 +13613,15 @@ hover #9db8e0 (-60%)
 
 #198754
 
+//停止服務客戶
+背景 #dee2e6
+
+字體顏色 #868e96
+
+//線條 rgba(134, 142, 150,1)
+
+//按鈕
+
 */
 /***************************/
 /********************************/
@@ -13664,6 +13673,26 @@ hover #9db8e0 (-60%)
 
 .content-table tbody tr:nth-of-type(4n+3) {
   background-color: #f3f3f3;
+}
+
+.service-cancellation-state-tr {
+  opacity: 0.8;
+  background-color: #adb5bd;
+  color: #aaa;
+}
+
+.service-cancellation-state-tr:hover {
+  opacity: 1;
+}
+
+.service-cancellation-state-td {
+  opacity: 0.7;
+  background-color: #adb5bd;
+  color: #aaa;
+}
+
+.service-cancellation-state-td:hover {
+  opacity: 1;
 }
 
 .content-table tbody tr:last-of-type {
@@ -13742,6 +13771,15 @@ hover #9db8e0 (-60%)
   border-left: 4px solid rgba(25, 135, 84, 0.7);
 }
 
+.payment-reminder-gray {
+  text-align: center;
+  border-left: 4px solid #868e96;
+}
+
+.recharge-status-td-span {
+  white-space: nowrap;
+}
+
 /******************/
 /* 按鈕 */
 /******************/
@@ -13804,20 +13842,36 @@ hover #9db8e0 (-60%)
           box-shadow: 0 0 0 0.25rem rgba(253, 125, 20, 0.5);
 }
 
-.btn-warning.btn-orange3 {
+.btn-gray {
   color: #fff;
   background-color: #868e96;
   border-color: #868e96;
 }
 
-.btn-warning.btn-orange3:active, .btn-warning.btn-orange3:hover {
+.btn-gray:active, .btn-gray:hover {
   background-color: #343a40;
   border-color: #343a40;
 }
 
-.btn-warning.btn-orange3:focus {
+.btn-gray:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(206, 212, 218, 0.5);
           box-shadow: 0 0 0 0.25rem rgba(206, 212, 218, 0.5);
+}
+
+.btn-start {
+  color: #fff;
+  background-color: #40c057;
+  border-color: #40c057;
+}
+
+.btn-start:active, .btn-start:hover {
+  background-color: #2b8a3e;
+  border-color: #2b8a3e;
+}
+
+.btn-start:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(67, 215, 96, 0.2);
+          box-shadow: 0 0 0 0.25rem rgba(67, 215, 96, 0.2);
 }
 
 /*客戶增加服務按鈕*/
@@ -13826,6 +13880,9 @@ hover #9db8e0 (-60%)
   display: -ms-flexbox;
   display: flex;
   gap: 0.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .list_table_toggle_icon {
@@ -13860,6 +13917,10 @@ hover #9db8e0 (-60%)
 .customer-service-added-btn:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(67, 215, 96, 0.2);
           box-shadow: 0 0 0 0.25rem rgba(67, 215, 96, 0.2);
+}
+
+.history-record-btn {
+  white-space: nowrap;
 }
 
 /*******************/

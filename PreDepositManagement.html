@@ -591,7 +591,7 @@
                      data-bs-toggle="pill"
                      href="#arrearsHaveBeenNotified"
                   >
-                     欠款已通知
+                     已通知繳費
                   </a>
                </li>
                <li class="nav-item">
@@ -703,6 +703,7 @@
                                     <th>應扣日期</th>
                                     <th>應扣名稱</th>
                                     <th>充值狀況</th>
+                                    <th>已匯款<br />金額</th>
                                     <th>操作</th>
 
                                  </tr>
@@ -737,13 +738,14 @@
                                              type="button"
                                              class="btn btn-danger btn-w112"
                                              data-bs-toggle="modal"
-                                             data-bs-target="#paymentNotice"
+                                             data-bs-target="#noticeNotIssued"
                                           >
                                              未發通知單
                                           </button>
                                        </div>
 
                                     </td>
+                                    <td>0</td>
                                     <td>
 
                                        <div class="table-btn-group">
@@ -769,11 +771,11 @@
                                           </button>
                                           <button
                                              type="button"
-                                             class="btn btn-primary"
+                                             class="btn btn-primary history-record-btn"
                                              data-bs-toggle="modal"
                                              data-bs-target="#purchaseItemHistory"
                                           >
-                                             歷史紀錄
+                                             歷史<br>記錄
                                           </button>
                                        </div>
 
@@ -781,6 +783,7 @@
 
 
                                     </td>
+
 
                                  </tr>
                                  <td
@@ -856,7 +859,7 @@
                                                    <td>
 
                                                    </td>
-                                                   <td><span>1校/</span>$3,000</td>
+                                                   <td><span>1校/</span>3,000</td>
                                                    <td></td>
                                                    <td>
                                                       <p>國外雲端主機
@@ -878,7 +881,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -897,7 +900,8 @@
                                     </div>
                                  </td>
 
-                                 <!-- 表單一-編號2 -繳費通知 -->
+                                 <!-- 表單一-編號2 -未發通知單 已按下回收-->
+
                                  <tr class="content_table_tbody_tr">
                                     <th>
                                        <input
@@ -907,30 +911,29 @@
                                           id=""
                                        />
                                     </th>
-                                    <td class="payment-reminder-red2">2</td>
+                                    <td class="payment-reminder-red">2</td>
                                     <td>台中市</td>
                                     <td>徐威英語-XX分校</td>
-                                    <td>5,000</td>
+                                    <td>0</td>
                                     <td>1,000</td>
-                                    <td>4,000</td>
+                                    <td>0</td>
                                     <td>2022/07/01</td>
-                                    <td>網路空間使用費</td>
+                                    <td>網路空間使用費(還原)</td>
                                     <td>
-
                                        <div class="recharge-status-td">
                                           <!-- 使用 table-btn-group 幫助排列 -->
                                           <button
                                              type="button"
-                                             class="btn btn-danger btn-red2 btn-w112"
+                                             class="btn btn-danger btn-w112"
                                              data-bs-toggle="modal"
-                                             data-bs-target="#paymentNotice"
+                                             data-bs-target="#noticeNotIssued"
                                           >
-                                             繳費通知
+                                             未發通知單
                                           </button>
                                        </div>
 
-
                                     </td>
+                                    <td>0</td>
                                     <td>
 
                                        <div class="table-btn-group">
@@ -956,11 +959,200 @@
                                           </button>
                                           <button
                                              type="button"
-                                             class="btn btn-primary"
+                                             class="btn btn-primary history-record-btn"
                                              data-bs-toggle="modal"
                                              data-bs-target="#purchaseItemHistory"
                                           >
-                                             歷史紀錄
+                                             歷史<br>記錄
+                                          </button>
+                                       </div>
+
+
+
+
+                                    </td>
+
+
+                                 </tr>
+                                 <td
+                                    class="td_list_table service-cancellation-state-td"
+                                    colspan="12"
+                                 >
+                                    <div class="panel_group">
+                                       <div>
+                                          <table class="list_table">
+                                             <thead>
+                                                <tr>
+                                                   <th
+                                                      class="col-1"
+                                                      scope=""
+                                                   >
+                                                      #
+                                                   </th>
+                                                   <th
+                                                      class="col-3"
+                                                      scope="col"
+                                                   >
+                                                      項目
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      <span class="">方案</span>
+                                                   </th>
+                                                   <th
+                                                      class="col-2"
+                                                      scope="col"
+                                                   >
+                                                      <span class="">有效時間</span>
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >單位</th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      金額
+                                                   </th>
+                                                   <th
+                                                      class="col-2"
+                                                      scope="col"
+                                                   >
+                                                      備註
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      操作
+                                                   </th>
+                                                </tr>
+                                                <tr></tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td scope="row">1</td>
+                                                   <td>網路空間使用費</td>
+                                                   <td>
+                                                      <p>存放主機資料庫
+                                                         <small class="badge bg-light text-dark">
+                                                            100MB資料庫空間
+                                                         </small>
+                                                      </p>
+                                                      <p>主機資料庫維護</p>
+                                                   </td>
+                                                   <td>
+
+                                                   </td>
+                                                   <td><span>1校/</span>3,000</td>
+                                                   <td></td>
+                                                   <td>
+                                                      <p>國外雲端主機
+                                                         <small class="badge bg-light text-dark">
+                                                            由傑人公司代租
+                                                         </small>
+                                                      </p>
+                                                   </td>
+                                                   <td class="td_list_table_btn_group">
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-success"
+                                                      >
+                                                         扣款
+                                                      </button>
+
+
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-success"
+                                                      >
+                                                         還原
+
+                                                      </button>
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-success"
+                                                      >
+                                                         入賬
+                                                      </button>
+                                                   </td>
+
+                                                </tr>
+
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </td>
+
+                                 <!-- 表單一-編號3 -兩個項目 已通知繳費 -->
+                                 <tr class="content_table_tbody_tr">
+                                    <th>
+                                       <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id=""
+                                       />
+                                    </th>
+                                    <td class="payment-reminder-red2">3</td>
+                                    <td>台中市</td>
+                                    <td>徐威英語-XX分校</td>
+                                    <td>0</td>
+                                    <td>1,000</td>
+                                    <td>0</td>
+                                    <td>2022/07/01</td>
+                                    <td>網路空間使用費</td>
+                                    <td>
+
+                                       <div class="recharge-status-td">
+                                          <!-- 使用 table-btn-group 幫助排列 -->
+                                          <button
+                                             type="button"
+                                             class="btn btn-danger btn-red2 btn-w112"
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#paymentNotice"
+                                          >
+                                             已通知繳費
+                                          </button>
+                                       </div>
+
+
+                                    </td>
+                                    <td>0</td>
+                                    <td>
+
+                                       <div class="table-btn-group">
+                                          <!-- 增加服務按鈕 by modal to  #chargeItemsModal-->
+                                          <button
+                                             type="button"
+                                             class="btn customer-service-added-btn  "
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#chargeItemsModal"
+                                          >
+                                             <ion-icon
+                                                size="large"
+                                                class="list_table_toggle_icon"
+                                                name="add"
+                                             ></ion-icon>
+                                          </button>
+
+                                          <button class="list_table_toggle_btn">
+                                             <ion-icon
+                                                name="chevron-down-outline"
+                                                aria-label="chevron down outline"
+                                             ></ion-icon>
+                                          </button>
+                                          <button
+                                             type="button"
+                                             class="btn btn-primary history-record-btn"
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#purchaseItemHistory"
+                                          >
+                                             歷史<br>記錄
                                           </button>
                                        </div>
 
@@ -1044,8 +1236,8 @@
                                                       <span class=" mb-3">~</span>
                                                       <p class="">2023/06/30</p>
                                                    </td>
-                                                   <td><span>1校/</span>$3,000</td>
-                                                   <td>$3,000</td>
+                                                   <td><span>1校/</span>3,000</td>
+                                                   <td>3,000</td>
                                                    <td>
                                                       <p>國外雲端主機
                                                          <small class="badge bg-light text-dark">
@@ -1066,7 +1258,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -1091,7 +1283,7 @@
                                                    <td>
 
                                                    </td>
-                                                   <td>$2,000</td>
+                                                   <td>2,000</td>
                                                    <td>
 
                                                    </td>
@@ -1108,7 +1300,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -1127,7 +1319,7 @@
                                     </div>
                                  </td>
 
-                                 <!-- 表單一-編號3 -第一次通知 -->
+                                 <!-- 表單一-編號4 -催促繳費中 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -1138,28 +1330,29 @@
                                           id=""
                                        />
                                     </th>
-                                    <td class="payment-reminder-orange1">3</td>
+                                    <td class="payment-reminder-orange1">4</td>
                                     <td>台中市</td>
-                                    <td>徐威英語-南屯分校</td>
-                                    <td>32,000</td>
-                                    <td>22,000</td>
-                                    <td>10,000</td>
+                                    <td>徐威英語-XX分校</td>
+                                    <td>3,000</td>
+                                    <td>1,000</td>
+                                    <td>2,000</td>
                                     <td>2022/07/01</td>
-                                    <td>薪資管理系統</td>
+                                    <td>網路空間使用費</td>
                                     <td>
 
                                        <div class="recharge-status-td">
-                                          <span>繳費期限:2022/06/10</span>
+                                          <span class="recharge-status-td-span">繳費期限:2022/06/10</span>
 
                                           <button
                                              type="button"
                                              class="btn btn-warning btn-orange1 btn-w112"
                                           >
-                                             第一次通知
+                                             催促繳費中
                                           </button>
                                        </div>
 
                                     </td>
+                                    <td>0</td>
                                     <td>
                                        <div class="table-btn-group">
                                           <!-- 增加服務按鈕 by modal to  #chargeItemsModal-->
@@ -1182,11 +1375,11 @@
 
                                           <button
                                              type="button"
-                                             class="btn btn-primary"
+                                             class="btn btn-primary history-record-btn"
                                              data-bs-toggle="modal"
                                              data-bs-target="#purchaseItemHistory"
                                           >
-                                             歷史紀錄
+                                             歷史<br>記錄
                                           </button>
 
                                        </div>
@@ -1268,8 +1461,8 @@
                                                       <span class=" mb-3">~</span>
                                                       <p class="">2023/06/30</p>
                                                    </td>
-                                                   <td><span>1校/</span>$3000</td>
-                                                   <td>$3000</td>
+                                                   <td><span>1校/</span>3000</td>
+                                                   <td>3000</td>
                                                    <td>
                                                       <p>國外雲端主機
                                                          <small class="badge bg-light text-dark">
@@ -1290,7 +1483,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -1322,15 +1515,15 @@
                                     </th>
                                     <td class="payment-reminder-orange2">4</td>
                                     <td>台中市</td>
-                                    <td>徐威英語-北屯分校</td>
-                                    <td>32,000</td>
-                                    <td>22,000</td>
-                                    <td>10,000</td>
+                                    <td>徐威英語-XX分校</td>
+                                    <td>0</td>
+                                    <td>1,000</td>
+                                    <td>0</td>
                                     <td>2022/07/01</td>
-                                    <td>學生管理系統</td>
+                                    <td>網路空間使用費</td>
                                     <td>
                                        <div class="recharge-status-td">
-                                          <span>繳費期限:2022/06/17</span>
+                                          <span class="recharge-status-td-span">繳費期限:2022/06/17</span>
                                           <button
                                              type="button"
                                              class="btn btn-warning btn-orange2 btn-w112"
@@ -1339,6 +1532,7 @@
                                           </button>
                                        </div>
                                     </td>
+                                    <td>0</td>
                                     <td>
                                        <div class="table-btn-group">
                                           <!-- 增加服務按鈕 by modal to  #chargeItemsModal-->
@@ -1361,11 +1555,11 @@
 
                                           <button
                                              type="button"
-                                             class="btn btn-primary"
+                                             class="btn btn-primary history-record-btn"
                                              data-bs-toggle="modal"
                                              data-bs-target="#purchaseItemHistory"
                                           >
-                                             歷史紀錄
+                                             歷史<br>記錄
 
                                        </div>
 
@@ -1447,8 +1641,8 @@
                                                       <span class=" mb-3">~</span>
                                                       <p class="">2023/06/30</p>
                                                    </td>
-                                                   <td><span>1校/</span>$3000</td>
-                                                   <td>$3000</td>
+                                                   <td><span>1校/</span>3000</td>
+                                                   <td>3000</td>
                                                    <td>
                                                       <p>國外雲端主機
                                                          <small class="badge bg-light text-dark">
@@ -1469,7 +1663,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -1501,23 +1695,24 @@
                                     </th>
                                     <td class="payment-reminder-orange3">5</td>
                                     <td>台中市</td>
-                                    <td>徐威英語-北屯分校</td>
-                                    <td>32,000</td>
-                                    <td>22,000</td>
-                                    <td>10,000</td>
+                                    <td>徐威英語-XX分校</td>
+                                    <td>0</td>
+                                    <td>1,000</td>
+                                    <td>0</td>
                                     <td>2022/07/01</td>
-                                    <td>學生管理系統</td>
+                                    <td>網路空間使用費</td>
                                     <td>
                                        <div class="recharge-status-td">
                                           <span>繳費期限:2022/06/30</span>
                                           <button
                                              type="button"
-                                             class="btn btn-warning btn-orange3 btn-w112"
+                                             class="btn btn-gray btn-w112"
                                           >
                                              停止服務
                                           </button>
                                        </div>
                                     </td>
+                                    <td>0</td>
                                     <td>
                                        <div class="table-btn-group">
                                           <!-- 增加服務按鈕 by modal to  #chargeItemsModal-->
@@ -1540,11 +1735,11 @@
 
                                           <button
                                              type="button"
-                                             class="btn btn-primary"
+                                             class="btn btn-primary history-record-btn"
                                              data-bs-toggle="modal"
                                              data-bs-target="#purchaseItemHistory"
                                           >
-                                             歷史紀錄
+                                             歷史<br>記錄
                                           </button>
 
                                        </div>
@@ -1627,8 +1822,8 @@
                                                       <span class=" mb-3">~</span>
                                                       <p class="">2023/06/30</p>
                                                    </td>
-                                                   <td><span>1校/</span>$3000</td>
-                                                   <td>$3000</td>
+                                                   <td><span>1校/</span>3000</td>
+                                                   <td>3000</td>
                                                    <td>
                                                       <p>國外雲端主機
                                                          <small class="badge bg-light text-dark">
@@ -1649,7 +1844,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -1681,18 +1876,19 @@
                                     </th>
                                     <td class="payment-reminder-green">6</td>
                                     <td>台中市</td>
-                                    <td>徐威英語-北屯分校</td>
-                                    <td>32,000</td>
-                                    <td>22,000</td>
-                                    <td>10,000</td>
+                                    <td>徐威英語-XX分校</td>
+                                    <td>0</td>
+                                    <td>1,000</td>
+                                    <td>0</td>
                                     <td>2022/07/01</td>
-                                    <td>學生管理系統</td>
+                                    <td>網路空間使用費</td>
                                     <td>
                                        <div class="recharge-status-td">
                                           良好
                                        </div>
 
                                     </td>
+                                    <td>0</td>
                                     <td>
                                        <div class="table-btn-group">
                                           <!-- 增加服務按鈕 by modal to  #chargeItemsModal-->
@@ -1715,11 +1911,11 @@
 
                                           <button
                                              type="button"
-                                             class="btn btn-primary"
+                                             class="btn btn-primary history-record-btn"
                                              data-bs-toggle="modal"
                                              data-bs-target="#purchaseItemHistory"
                                           >
-                                             歷史紀錄
+                                             歷史<br>記錄
                                           </button>
 
                                        </div>
@@ -1801,8 +1997,8 @@
                                                       <span class=" mb-3">~</span>
                                                       <p class="">2023/06/30</p>
                                                    </td>
-                                                   <td><span>1校/</span>$3000</td>
-                                                   <td>$3000</td>
+                                                   <td><span>1校/</span>3000</td>
+                                                   <td>3000</td>
                                                    <td>
                                                       <p>國外雲端主機
                                                          <small class="badge bg-light text-dark">
@@ -1823,7 +2019,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -1842,6 +2038,184 @@
                                     </div>
                                  </td>
 
+                                 <!-- 表單一-編號7 -停止服務 需重設服務 -->
+
+                                 <tr class="content_table_tbody_tr service-cancellation-state-tr">
+                                    <th>
+                                       <input
+                                          class="form-check-input"
+                                          type="checkbox"
+                                          value=""
+                                          id=""
+                                       />
+                                    </th>
+                                    <td class="payment-reminder-gray">7</td>
+                                    <td>台中市</td>
+                                    <td>徐威英語-XX分校</td>
+                                    <td>0</td>
+                                    <td>1,000</td>
+                                    <td>0</td>
+                                    <td>2022/07/01</td>
+                                    <td>網路空間使用費</td>
+                                    <td>
+                                       <div class="recharge-status-td">
+                                          <span class="recharge-status-td-span">停止服務:2022/06/01</span>
+                                          <button
+                                             type="button"
+                                             class="btn btn-start btn-w112"
+                                          >
+                                             啟動服務
+                                          </button>
+                                       </div>
+
+                                    </td>
+                                    <td>0</td>
+                                    <td>
+                                       <div class="table-btn-group">
+                                          <!-- 增加服務按鈕 by modal to  #chargeItemsModal-->
+                                          <button
+                                             type="button"
+                                             class="btn customer-service-added-btn  "
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#chargeItemsModal"
+                                          >
+                                             <ion-icon
+                                                size="large"
+                                                class="list_table_toggle_icon"
+                                                name="add"
+                                             ></ion-icon>
+                                          </button>
+
+                                          <button class="list_table_toggle_btn">
+                                             <ion-icon name="chevron-down-outline"></ion-icon>
+                                          </button>
+
+                                          <button
+                                             type="button"
+                                             class="btn btn-primary history-record-btn"
+                                             data-bs-toggle="modal"
+                                             data-bs-target="#purchaseItemHistory"
+                                          >
+                                             歷史<br>記錄
+                                          </button>
+
+                                       </div>
+                                    </td>
+
+                                 </tr>
+                                 <td
+                                    class="td_list_table service-cancellation-state-td"
+                                    colspan="12"
+                                 >
+                                    <div class="panel_group">
+                                       <div>
+                                          <table class="list_table">
+                                             <thead>
+                                                <tr>
+                                                   <th
+                                                      class="col-1"
+                                                      scope=""
+                                                   >
+                                                      #
+                                                   </th>
+                                                   <th
+                                                      class="col-3"
+                                                      scope="col"
+                                                   >
+                                                      項目
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      <span class="">方案</span>
+                                                   </th>
+                                                   <th
+                                                      class="col-2"
+                                                      scope="col"
+                                                   >
+                                                      <span class="">有效時間</span>
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >單位</th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      金額
+                                                   </th>
+                                                   <th
+                                                      class="col-2"
+                                                      scope="col"
+                                                   >
+                                                      備註
+                                                   </th>
+                                                   <th
+                                                      class="col-1"
+                                                      scope="col"
+                                                   >
+                                                      操作
+                                                   </th>
+                                                </tr>
+                                                <tr></tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr>
+                                                   <td scope="row">1</td>
+                                                   <td>網路空間使用費</td>
+                                                   <td>
+                                                      <p>存放主機資料庫
+                                                         <small class="badge bg-light text-dark">
+                                                            100MB資料庫空間
+                                                         </small>
+                                                      </p>
+                                                      <p>主機資料庫維護</p>
+                                                   </td>
+                                                   <td>
+
+                                                   </td>
+                                                   <td><span>1校/</span>3000</td>
+                                                   <td></td>
+                                                   <td>
+                                                      <p>國外雲端主機
+                                                         <small class="badge bg-light text-dark">
+                                                            由傑人公司代租
+                                                         </small>
+                                                      </p>
+                                                   </td>
+                                                   <td class="td_list_table_btn_group">
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-success"
+                                                      >
+                                                         扣款
+                                                      </button>
+
+
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-danger"
+                                                      >
+                                                         回收
+
+                                                      </button>
+                                                      <button
+                                                         type="button"
+                                                         class="btn btn-outline-success"
+                                                      >
+                                                         入賬
+                                                      </button>
+                                                   </td>
+
+                                                </tr>
+
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </td>
 
                               </tbody>
                            </table>
@@ -2013,11 +2387,11 @@
                                           </button>
                                           <button
                                              type="button"
-                                             class="btn btn-primary"
+                                             class="btn btn-primary history-record-btn"
                                              data-bs-toggle="modal"
                                              data-bs-target="#purchaseItemHistory"
                                           >
-                                             歷史紀錄
+                                             歷史<br>記錄
                                           </button>
                                        </div>
 
@@ -2100,7 +2474,7 @@
                                                    <td>
 
                                                    </td>
-                                                   <td><span>1校/</span>$3,000</td>
+                                                   <td><span>1校/</span>3,000</td>
                                                    <td></td>
                                                    <td>
                                                       <p>國外雲端主機
@@ -2122,7 +2496,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -2197,11 +2571,11 @@
                                           </button>
                                           <button
                                              type="button"
-                                             class="btn btn-primary"
+                                             class="btn btn-primary history-record-btn"
                                              data-bs-toggle="modal"
                                              data-bs-target="#purchaseItemHistory"
                                           >
-                                             歷史紀錄
+                                             歷史<br>記錄
                                           </button>
                                        </div>
 
@@ -2285,8 +2659,8 @@
                                                       <span class=" mb-3">~</span>
                                                       <p class="">2023/06/30</p>
                                                    </td>
-                                                   <td><span>1校/</span>$3,000</td>
-                                                   <td>$3,000</td>
+                                                   <td><span>1校/</span>3,000</td>
+                                                   <td>3,000</td>
                                                    <td>
                                                       <p>國外雲端主機
                                                          <small class="badge bg-light text-dark">
@@ -2307,7 +2681,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -2332,7 +2706,7 @@
                                                    <td>
 
                                                    </td>
-                                                   <td>$2,000</td>
+                                                   <td>2,000</td>
                                                    <td>
 
                                                    </td>
@@ -2349,7 +2723,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -2475,7 +2849,7 @@
 
 
 
-                                 <!-- 表單三-編號1 -第一次通知 -->
+                                 <!-- 表單三-編號1 -催促繳費中 -->
 
                                  <tr class="content_table_tbody_tr">
                                     <th>
@@ -2496,13 +2870,13 @@
                                     <td>薪資管理系統</td>
                                     <td>
                                        <div class="recharge-status-td">
-                                          <span>繳費期限:2022/06/10</span>
+                                          <span class="recharge-status-td-span">繳費期限:2022/06/10</span>
 
                                           <button
                                              type="button"
                                              class="btn btn-warning btn-orange1 btn-w112"
                                           >
-                                             第一次通知
+                                             催促繳費中
                                           </button>
                                        </div>
 
@@ -2530,11 +2904,11 @@
 
                                           <button
                                              type="button"
-                                             class="btn btn-primary"
+                                             class="btn btn-primary history-record-btn"
                                              data-bs-toggle="modal"
                                              data-bs-target="#purchaseItemHistory"
                                           >
-                                             歷史紀錄
+                                             歷史<br>記錄
                                           </button>
 
                                        </div>
@@ -2616,8 +2990,8 @@
                                                       <span class=" mb-3">~</span>
                                                       <p class="">2023/06/30</p>
                                                    </td>
-                                                   <td><span>1校/</span>$3000</td>
-                                                   <td>$3000</td>
+                                                   <td><span>1校/</span>3000</td>
+                                                   <td>3000</td>
                                                    <td>
                                                       <p>國外雲端主機
                                                          <small class="badge bg-light text-dark">
@@ -2638,7 +3012,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -2679,7 +3053,7 @@
                                     <td>
                                        <div class="recharge-status-td">
 
-                                          <span>繳費期限:2022/06/17</span>
+                                          <span class="recharge-status-td-span">繳費期限:2022/06/17</span>
 
                                           <button
                                              type="button"
@@ -2714,11 +3088,11 @@
 
                                           <button
                                              type="button"
-                                             class="btn btn-primary"
+                                             class="btn btn-primary history-record-btn"
                                              data-bs-toggle="modal"
                                              data-bs-target="#purchaseItemHistory"
                                           >
-                                             歷史紀錄
+                                             歷史<br>記錄
 
                                        </div>
 
@@ -2800,8 +3174,8 @@
                                                       <span class=" mb-3">~</span>
                                                       <p class="">2023/06/30</p>
                                                    </td>
-                                                   <td><span>1校/</span>$3000</td>
-                                                   <td>$3000</td>
+                                                   <td><span>1校/</span>3000</td>
+                                                   <td>3000</td>
                                                    <td>
                                                       <p>國外雲端主機
                                                          <small class="badge bg-light text-dark">
@@ -2822,7 +3196,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -2863,7 +3237,7 @@
                                     <td>
                                        <div class="recharge-status-td">
 
-                                          <span>繳費期限:2022/06/30</span>
+                                          <span class="recharge-status-td-span">繳費期限:2022/06/30</span>
                                           <button
                                              type="button"
                                              class="btn btn-warning btn-orange3 btn-w112"
@@ -2895,11 +3269,11 @@
 
                                           <button
                                              type="button"
-                                             class="btn btn-primary"
+                                             class="btn btn-primary history-record-btn"
                                              data-bs-toggle="modal"
                                              data-bs-target="#purchaseItemHistory"
                                           >
-                                             歷史紀錄
+                                             歷史<br>記錄
                                           </button>
 
                                        </div>
@@ -2982,8 +3356,8 @@
                                                       <span class=" mb-3">~</span>
                                                       <p class="">2023/06/30</p>
                                                    </td>
-                                                   <td><span>1校/</span>$3000</td>
-                                                   <td>$3000</td>
+                                                   <td><span>1校/</span>3000</td>
+                                                   <td>3000</td>
                                                    <td>
                                                       <p>國外雲端主機
                                                          <small class="badge bg-light text-dark">
@@ -3004,7 +3378,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -3180,11 +3554,11 @@
 
                                           <button
                                              type="button"
-                                             class="btn btn-primary"
+                                             class="btn btn-primary history-record-btn"
                                              data-bs-toggle="modal"
                                              data-bs-target="#purchaseItemHistory"
                                           >
-                                             歷史紀錄
+                                             歷史<br>記錄
                                           </button>
 
                                        </div>
@@ -3266,8 +3640,8 @@
                                                       <span class=" mb-3">~</span>
                                                       <p class="">2023/06/30</p>
                                                    </td>
-                                                   <td><span>1校/</span>$3000</td>
-                                                   <td><span>$3000</span></td>
+                                                   <td><span>1校/</span>3000</td>
+                                                   <td><span>3000</span></td>
                                                    <td>
                                                       <p>國外雲端主機
                                                          <small class="badge bg-light text-dark">
@@ -3288,7 +3662,7 @@
                                                          type="button"
                                                          class="btn btn-outline-danger"
                                                       >
-                                                         刪除
+                                                         回收
 
                                                       </button>
                                                       <button
@@ -3319,7 +3693,7 @@
             </div>
 
             <!--  -->
-            <!-- 購買歷史紀錄Modal -->
+            <!-- 購買歷史記錄Modal -->
             <!--  -->
             <div
                class="modal fade "
@@ -3336,7 +3710,7 @@
                         <h5
                            class="modal-title modal-title-purchaseItemHistoryLabel"
                            id="purchaseItemHistoryLabel"
-                        >客戶名稱 購買歷史紀錄</h5>
+                        >客戶名稱 購買歷史記錄</h5>
                         <button
                            type="button"
                            class="btn-close"
@@ -3500,7 +3874,71 @@
          </div>
       </div>
 
+      <!--  -->
+      <!-- 未發通知單Modal -->
+      <!--  -->
+      <div
+         class="modal fade"
+         id="noticeNotIssued"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5
+                     class="modal-title"
+                     id="exampleModalLabel"
+                  >
+                     未發通知單
+                  </h5>
+                  <button
+                     type="button"
+                     class="btn-close"
+                     data-bs-dismiss="modal"
+                     aria-label="Close"
+                  ></button>
+               </div>
+               <div class="modal-body">
+                  <div class="input-group mb-3">
+
+                     <span class="input-group-text">應充值金額</span>
+                     <input
+                        type="text"
+                        class="form-control"
+                        aria-label="Dollar amount (with dot and two decimal places)"
+                        value="0"
+                     />
+                     <span class="input-group-text">$</span>
+                  </div>
+               </div>
+               <div class="modal-footer justify-content-between">
+
+                  <button
+                     type="button"
+                     class="btn btn-gray"
+                     data-bs-dismiss="modal"
+                  >停止服務
+                  </button>
+
+                  <button
+                     type="button"
+                     class="btn btn-danger btn-red2"
+                     data-bs-dismiss="modal"
+                  >繳費通知
+                  </button>
+
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+
+      <!--  -->
       <!-- 繳費通知Modal -->
+      <!--  -->
       <div
          class="modal fade"
          id="paymentNotice"
@@ -3877,7 +4315,7 @@
 
 
                                           </div>
-                                          <div class="form-check form-switch col-6">
+                                          <div class="form-check form-switch col-6 mb-3">
                                              <div class="mb-3">
                                                 <input
                                                    class="form-check-input"
@@ -3920,6 +4358,7 @@
                                                 />
                                              </div>
                                           </div>
+
 
                                        </div>
                                     </div>
@@ -3976,33 +4415,65 @@
                </div>
                <div class="modal-footer d-flex justify-content-between align-items-end">
 
-                  <h4 class="d-flex flex-column gap-3">本次應繳總額 <span class="badge bg-danger">$12,000</span></h4>
+                  <div
+                     class="tab-content"
+                     id="pills-tabContent"
+                  >
+                     <div
+                        class="tab-pane fade show active"
+                        id="pillsAddCustomerStoredValue"
+                        role="tabpanel"
+                        aria-labelledby="pillsAddCustomerStoredValue-tab"
+                     >
 
-                  <button
-                     type="button"
-                     class="btn btn-primary"
-                     data-bs-dismiss="modal"
-                  >確認送出</button>
+
+                        <div class="d-flex gap-3 align-items-end">
+                           <div>
+                              <h4 class="d-flex flex-column gap-3">本次應繳總額 <span class="badge bg-danger">$12,000</span>
+                              </h4>
+                           </div>
+                           <div class="form-check mb-2">
+                              <input
+                                 class="form-check-input"
+                                 type="checkbox"
+                                 value=""
+                                 id="flexCheckDisabled"
+                              >
+                              <label
+                                 class="form-check-label"
+                                 for="flexCheckDisabled"
+                              >
+                                 是否需要營業稅
+                              </label>
+                           </div>
+                        </div>
+
+
+                        <button
+                           type="button"
+                           class="btn btn-primary"
+                           data-bs-dismiss="modal"
+                        >確認送出</button>
+                     </div>
+                  </div>
                </div>
+
             </div>
+
+
+
+
+
          </div>
 
-      </div>
 
 
+         <div>
+
+         </div>
 
 
-
-   </div>
-
-
-
-   <div>
-
-   </div>
-
-
-   <!-- 下拉選單
+         <!-- 下拉選單
 
    <div class="list_table_dropdown">
       <button class="list_table_dropdown_btn">
@@ -4015,24 +4486,24 @@
       </div>
    </div> -->
 
-   <script
-      src="./js/bootstrap.bundle.min.js"
-      async
-   ></script>
-   <script src="./js/bootstrap.min.js"></script>
-   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-   <script src="./js/index.js"></script>
-   <script src="./js/sidemenu.js"></script>
-   <script src="./js/preDepositManagement.js"></script>
-   <script src="./js/offcanvas.js"></script>
-   <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-   ></script>
-   <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-   ></script>
+         <script
+            src="./js/bootstrap.bundle.min.js"
+            async
+         ></script>
+         <script src="./js/bootstrap.min.js"></script>
+         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+         <script src="./js/index.js"></script>
+         <script src="./js/sidemenu.js"></script>
+         <script src="./js/preDepositManagement.js"></script>
+         <script src="./js/offcanvas.js"></script>
+         <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+         ></script>
+         <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+         ></script>
 </body>
 
 </html>
