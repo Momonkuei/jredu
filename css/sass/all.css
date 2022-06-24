@@ -13675,9 +13675,13 @@ hover #9db8e0 (-60%)
   background-color: #f3f3f3;
 }
 
+/********************/
+/************ .service-cancellation-state-tr *******/
+/************.service-cancellation-state-td  ********/
+/********************/
 .service-cancellation-state-tr {
   opacity: 0.8;
-  background-color: #adb5bd;
+  background-color: #dee2e6;
   color: #aaa;
 }
 
@@ -14006,7 +14010,6 @@ hover #9db8e0 (-60%)
 
 .list_table {
   border-top: 5px solid #b5cae8;
-  background-color: #5382c8;
   width: 100%;
   text-align: center;
   border-collapse: collapse;
@@ -14051,7 +14054,7 @@ hover #9db8e0 (-60%)
 }
 
 .list_table tbody tr:last-child {
-  border-top: 2px solid #868e96;
+  border-top: 1px solid #868e96;
   border-bottom: 5px solid #c92a2a;
 }
 
@@ -14083,6 +14086,32 @@ hover #9db8e0 (-60%)
 
 .purchase-history-table tbody tr:last-child {
   border-bottom: 0;
+}
+
+/********************/
+/************ .service-cancellation-state-tr *******/
+/************.service-cancellation-state-td  ********/
+/********************/
+.service-cancellation-state-tr,
+tr.service-cancellation-state-tr {
+  opacity: 0.8;
+  background-color: #dee2e6;
+  color: #aaa;
+}
+
+.service-cancellation-state-tr:hover,
+tr.service-cancellation-state-tr:hover {
+  opacity: 1;
+}
+
+.service-cancellation-state-td {
+  opacity: 0.7;
+  background-color: #adb5bd;
+  color: #aaa;
+}
+
+.service-cancellation-state-td:hover {
+  opacity: 1;
 }
 
 * {

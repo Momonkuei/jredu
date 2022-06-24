@@ -130,11 +130,17 @@ hover #9db8e0 (-60%)
 .content-table tbody tr:nth-of-type(4n+3) {
     background-color: #f3f3f3;
 }
-
+/********************/
 //服務取消狀態
+
+/************ .service-cancellation-state-tr *******/
+/************.service-cancellation-state-td  ********/
+/********************/
+
+
  .service-cancellation-state-tr{
     opacity: 0.8;
-     background-color: #adb5bd;
+    background-color: #dee2e6;
     color: #aaa;
 
     &:hover{
@@ -477,7 +483,7 @@ hover #9db8e0 (-60%)
 
 .list_table {
     border-top: 5px solid #b5cae8;
-    background-color: #5382c8;
+    // background-color: #5382c8;
     width: 100%;
     text-align: center;
     border-collapse: collapse;
@@ -535,7 +541,7 @@ hover #9db8e0 (-60%)
     // }
 
     &:last-child {
-        border-top: 2px solid #868e96;
+        border-top: 1px solid #868e96;
         border-bottom: 5px solid #c92a2a;
     }
 }
@@ -570,3 +576,32 @@ hover #9db8e0 (-60%)
     border-bottom: 0;
 }
 
+/********************/
+//服務取消狀態
+
+/************ .service-cancellation-state-tr *******/
+/************.service-cancellation-state-td  ********/
+/********************/
+
+
+ .service-cancellation-state-tr,
+ tr.service-cancellation-state-tr
+ {
+    opacity: 0.8;
+    background-color: #dee2e6;
+    color: #aaa;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.service-cancellation-state-td{
+    opacity: 0.7;
+    background-color: #adb5bd;
+    color: #aaa;
+
+    &:hover{
+        opacity: 1;
+    }
+}
