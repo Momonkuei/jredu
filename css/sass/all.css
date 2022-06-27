@@ -13671,10 +13671,6 @@ hover #9db8e0 (-60%)
   border-bottom: 1px solid #dddddd;
 }
 
-.content-table tbody tr:nth-of-type(4n+3) {
-  background-color: #f3f3f3;
-}
-
 /********************/
 /************ .service-cancellation-state-tr *******/
 /************.service-cancellation-state-td  ********/
@@ -13778,6 +13774,11 @@ hover #9db8e0 (-60%)
 .payment-reminder-gray {
   text-align: center;
   border-left: 4px solid #868e96;
+}
+
+.payment-reminder-yellow {
+  text-align: center;
+  border-left: 4px solid rgba(255, 193, 7, 0.7);
 }
 
 .recharge-status-td-span {
@@ -13923,7 +13924,8 @@ hover #9db8e0 (-60%)
           box-shadow: 0 0 0 0.25rem rgba(67, 215, 96, 0.2);
 }
 
-.history-record-btn {
+.history-record-btn,
+.case-closed-state-btn {
   white-space: nowrap;
 }
 
@@ -14049,13 +14051,13 @@ hover #9db8e0 (-60%)
   background-color: #fff;
 }
 
-.list_table tbody tr:nth-of-type(odd) {
-  background-color: #f3f3f3;
-}
-
 .list_table tbody tr:last-child {
   border-top: 1px solid #868e96;
   border-bottom: 5px solid #c92a2a;
+}
+
+.list-table-another-order {
+  background-color: rgba(172, 200, 229, 0.7);
 }
 
 .list_table tbody th,
@@ -14078,7 +14080,7 @@ hover #9db8e0 (-60%)
 /* modal部分 */
 /******************/
 .modal-title-purchaseItemHistoryLabel {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: 700;
   color: #555;
   font-size: 1.5rem;
