@@ -14051,13 +14051,17 @@ hover #9db8e0 (-60%)
   background-color: #fff;
 }
 
-.list_table tbody tr:last-child {
-  border-top: 1px solid #868e96;
-  border-bottom: 5px solid #c92a2a;
+.list_table tbody .list-table-another-order {
+  background-color: rgba(177, 208, 252, 0.3);
 }
 
-.list-table-another-order {
-  background-color: rgba(172, 200, 229, 0.7);
+.list_table tbody .finished-deduction-stated {
+  background-color: rgba(211, 249, 216, 0.6);
+}
+
+.list_table tbody:last-child {
+  border-top: 1px solid #868e96;
+  border-bottom: 5px solid #c92a2a;
 }
 
 .list_table tbody th,
