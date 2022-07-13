@@ -30,7 +30,7 @@
     <ul class="nav nav-pills mb-4 justify-content-center nav-fill">
       <li class="nav-item ">
         <a
-          class="nav-link "
+          class="nav-link active"
           data-bs-toggle="pill"
           href="#commonProblem"
         >
@@ -57,7 +57,7 @@
         </a>
       </li>
 
-      <li class="nav-item active">
+      <li class="nav-item ">
         <a
           class="nav-link "
           data-bs-toggle="pill"
@@ -71,7 +71,7 @@
         <a
           class="nav-link "
           data-bs-toggle="pill"
-          href="#smsUsageDetails"
+          href="#QuestionsAnswered"
         >
           已回答之問題
         </a>
@@ -80,7 +80,7 @@
         <a
           class="nav-link "
           data-bs-toggle="pill"
-          href="#smsUsageDetails"
+          href="#ClosedCases"
         >
           已結案
         </a>
@@ -365,10 +365,10 @@
               </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-12 d-flex justify-content-center">
               <button
                 type="submit"
-                class="btn btn-primary"
+                class="btn btn-primary w-25"
               >
                 送出
               </button>
@@ -381,7 +381,7 @@
       <!-- 需要老師補充說明 表單三 -->
 
       <div
-        class="tab-pane"
+        class="tab-pane active"
         id="needsMoreIllustrateStateFromTheTeacher"
       >
 
@@ -458,7 +458,7 @@
 
                   <div class="">
 
-                    <table class="content-table container">
+                    <table class="content-table container text-center">
                       <thead>
                         <tr>
                           <th>
@@ -472,6 +472,7 @@
                           <th>單號</th>
                           <th>提問時間</th>
                           <th>提問老師</th>
+                          <th>聯絡電話</th>
                           <th>問題說明</th>
                           <th>處理進度</th>
                           <th>處理客服人員</th>
@@ -499,19 +500,20 @@
                             <div>12:00</div>
                           </td>
                           <td>Helen</td>
+                          <td>0912111333</td>
                           <td>忘記密碼怎麼辦，快救救我!</td>
                           <td>待提問人回覆</td>
                           <td>Wayne</td>
                         </tr>
 
                         <td
-                          class="td_list_table"
+                          class="td_list_table text-start"
                           colspan="12"
                         >
                           <div class="panel_group">
-                            <div class="container mt-5">
+                            <div class="container my-4">
 
-                              <div class="mb-3">
+                              <div class="mb-4">
                                 <label
                                   for="exampleFormControlInput1"
                                   class="form-label"
@@ -527,7 +529,7 @@
                                 />
                               </div>
 
-                              <div class="mb-3">
+                              <div class="mb-4">
                                 <label
                                   for="exampleFormControlInput1"
                                   class="form-label"
@@ -543,7 +545,7 @@
                                 />
                               </div>
 
-                              <div class="input-group mb-3">
+                              <div class="input-group mb-4">
                                 <input
                                   type="file"
                                   class="form-control"
@@ -564,13 +566,14 @@
                                   aria-label="With textarea"
                                 ></textarea>
                               </div>
-
-                              <button
-                                type="button "
-                                class="btn btn-success mb-3"
-                              >
-                                送出
-                              </button>
+                              <div class="col-12 d-flex justify-content-center">
+                                <button
+                                  type="button "
+                                  class="btn btn-success mb-3 w-25 "
+                                >
+                                  送出
+                                </button>
+                              </div>
                             </div>
                           </div>
                         </td>
@@ -591,7 +594,7 @@
       <!-- 客服處理中 表單四 -->
 
       <div
-        class="tab-pane active"
+        class="tab-pane "
         id="CustomerＳerviceProcessing"
       >
 
@@ -665,7 +668,7 @@
 
                   <div class="">
 
-                    <table class="content-table container">
+                    <table class="content-table container text-center">
                       <thead>
                         <tr>
                           <th>
@@ -691,7 +694,7 @@
 
                         <!-- 表單三-編號1 -已通知繳費轉為催促繳費中的狀態顯示 -->
 
-                        <tr class="content_table_tbody_tr">
+                        <tr class="content_table_tbody_tr ">
                           <th>
                             <input
                               class="form-check-input"
@@ -712,7 +715,7 @@
                         </tr>
 
                         <td
-                          class="td_list_table"
+                          class="td_list_table text-start"
                           colspan="12"
                         >
                           <div class="panel_group">
@@ -836,6 +839,472 @@
 
       </div>
 
+      <!-- 已回答之問題 表單五 -->
+
+      <div
+        class="tab-pane "
+        id="QuestionsAnswered"
+      >
+
+        <div class="mb-2">
+          <div class=" flex">
+            <!-- 內容 -->
+            <div
+              class="accordion"
+              id="accordionExample"
+            >
+              <div class="mb-2">
+                <div class=" flex container">
+                  <!-- 搜尋欄 -->
+                  <div>
+                    <div class="d-grid gap-2 input-group d-flex align-items-center">
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                      </button>
+                      <input
+                        id="bday-month"
+                        type="month"
+                        name="bday-month"
+                        class="input-date"
+                      />
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                      </button>
+                      <div class="input-group-addon">to</div>
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                      </button>
+                      <input
+                        id="bday-month"
+                        type="month"
+                        name="bday-month"
+                        class="input-date"
+                      />
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                      </button>
+                      <div class="col-xs-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="搜尋"
+                          aria-label="搜尋"
+                        />
+                      </div>
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="search-outline"></ion-icon>
+                      </button>
+
+
+                    </div>
+                  </div>
+
+                  <div class="">
+
+                    <table class="content-table container text-center">
+                      <thead>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id=""
+                            />
+                          </th>
+                          <th>單號</th>
+                          <th>提問時間</th>
+                          <th>提問老師</th>
+                          <th>問題說明</th>
+                          <th>處理進度</th>
+                          <th>處理客服人員</th>
+
+
+                        </tr>
+                      </thead>
+
+                      <tbody>
+
+
+
+                        <tr class="content_table_tbody_tr ">
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id=""
+                            />
+                          </th>
+                          <td>J220501001</td>
+                          <td>
+                            <div>2022/05/01</div>
+                            <div>12:00</div>
+                          </td>
+                          <td>Helen</td>
+                          <td>忘記密碼怎麼辦，快救救我!</td>
+                          <td>待提問人回覆</td>
+                          <td>Wayne</td>
+                        </tr>
+
+                        <td
+                          class="td_list_table text-start"
+                          colspan="12"
+                        >
+                          <div class="panel_group">
+                            <div class="container my-5">
+
+                              <div class=" mb-3">
+                                <label
+                                  for="exampleFormControlInput1"
+                                  class="form-label"
+                                >
+                                  問題說明:
+                                </label>
+                                <div class="input-group">
+                                  <span class="input-group-text d-flex">忘記密碼怎麼辦，快救救我!</span>
+                                  <span class="input-group-text d-flex">2022/05/01 12:00</span>
+                                  <textarea
+                                    class="form-control"
+                                    aria-label="With textarea"
+                                  ></textarea>
+                                  <button
+                                    class="btn btn-outline-secondary"
+                                    type="button"
+                                    id="button-addon2"
+                                  >
+                                    附檔
+                                  </button>
+                                </div>
+
+                              </div>
+
+                              <div class=" mb-3">
+                                <label
+                                  for="exampleFormControlInput1"
+                                  class="form-label"
+                                >
+                                  客服人員回覆:
+                                </label>
+                                <div class="input-group">
+                                  <span class="input-group-text d-flex">忘記密碼怎麼辦，快救救我!</span>
+                                  <span class="input-group-text d-flex">2022/05/01 12:00</span>
+                                  <textarea
+                                    class="form-control"
+                                    aria-label="With textarea"
+                                  ></textarea>
+                                  <button
+                                    class="btn btn-outline-secondary"
+                                    type="button"
+                                    id="button-addon2"
+                                  >
+                                    附檔
+                                  </button>
+                                </div>
+
+                              </div>
+
+                              <div class=" mb-3">
+                                <label
+                                  for="exampleFormControlInput1"
+                                  class="form-label"
+                                >
+                                  老師補充說明:
+                                </label>
+                                <div class="input-group">
+                                  <span class="input-group-text d-flex">忘記密碼怎麼辦，快救救我!</span>
+                                  <span class="input-group-text d-flex">2022/05/01 12:00</span>
+                                  <textarea
+                                    class="form-control"
+                                    aria-label="With textarea"
+                                  ></textarea>
+                                  <button
+                                    class="btn btn-outline-secondary"
+                                    type="button"
+                                    id="button-addon2"
+                                  >
+                                    附檔
+                                  </button>
+                                </div>
+
+                              </div>
+
+                              <div class=" mb-5">
+                                <label
+                                  for="exampleFormControlInput1"
+                                  class="form-label"
+                                >
+                                  客服人員回覆:
+                                </label>
+                                <div class="input-group">
+                                  <span class="input-group-text d-flex">忘記密碼怎麼辦，快救救我!</span>
+                                  <span class="input-group-text d-flex">2022/05/01 12:00</span>
+                                  <textarea
+                                    class="form-control"
+                                    aria-label="With textarea"
+                                  ></textarea>
+                                  <button
+                                    class="btn btn-outline-secondary"
+                                    type="button"
+                                    id="button-addon2"
+                                  >
+                                    附檔
+                                  </button>
+                                </div>
+                              </div>
+
+                              <div class="col-12 d-flex justify-content-around">
+                                <button
+                                  type="button "
+                                  class="btn btn-success mb-3 w-25 "
+                                >
+                                  問題已解決
+                                </button>
+
+                                <button
+                                  type="button "
+                                  class="btn btn-danger mb-3 w-25 "
+                                >
+                                  還要再發問
+                                </button>
+                              </div>
+
+
+                            </div>
+                          </div>
+                        </td>
+
+
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 已結案 表單六 -->
+
+      <div
+        class="tab-pane"
+        id="ClosedCases"
+      >
+
+        <div class="mb-2">
+          <div class=" flex">
+
+            <!-- 搜尋欄 -->
+
+            <!-- 內容 -->
+            <div
+              class="accordion"
+              id="accordionExample"
+            >
+              <div class="mb-2">
+                <div class=" flex container">
+                  <!-- 搜尋欄 -->
+                  <div>
+                    <div class="d-grid gap-2 input-group d-flex align-items-center">
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                      </button>
+                      <input
+                        id="bday-month"
+                        type="month"
+                        name="bday-month"
+                        class="input-date"
+                      />
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                      </button>
+                      <div class="input-group-addon">to</div>
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                      </button>
+                      <input
+                        id="bday-month"
+                        type="month"
+                        name="bday-month"
+                        class="input-date"
+                      />
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                      </button>
+                      <div class="col-xs-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="搜尋"
+                          aria-label="搜尋"
+                        />
+                      </div>
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="search-outline"></ion-icon>
+                      </button>
+
+
+                    </div>
+                  </div>
+
+                  <div class="">
+
+                    <table class="content-table container text-center">
+                      <thead>
+                        <tr>
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id=""
+                            />
+                          </th>
+                          <th>單號</th>
+                          <th>提問時間</th>
+                          <th>提問老師</th>
+                          <th>問題說明</th>
+                          <th>處理進度</th>
+                          <th>處理客服人員</th>
+
+
+                        </tr>
+                      </thead>
+
+                      <tbody>
+
+                        <!-- 表單三-編號1 -已通知繳費轉為催促繳費中的狀態顯示 -->
+
+                        <tr class="content_table_tbody_tr">
+                          <th>
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id=""
+                            />
+                          </th>
+                          <td>J220501001</td>
+                          <td>
+                            <div>2022/05/01</div>
+                            <div>12:00</div>
+                          </td>
+                          <td>Helen</td>
+                          <td>忘記密碼怎麼辦，快救救我!</td>
+                          <td>待提問人回覆</td>
+                          <td>Wayne</td>
+                        </tr>
+
+                        <td
+                          class="td_list_table text-start"
+                          colspan="12"
+                        >
+                          <div class="panel_group">
+                            <div class="container my-4">
+
+                              <div class="mb-4">
+                                <label
+                                  for="exampleFormControlInput1"
+                                  class="form-label"
+                                >
+                                  老師問題:
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="exampleFormControlInput1"
+                                  placeholder="忘記密碼怎麼辦，快救救我!"
+                                  disabled
+                                />
+                              </div>
+
+                              <div class="mb-4">
+                                <label
+                                  for="exampleFormControlInput1"
+                                  class="form-label"
+                                >
+                                  客戶人員回覆:
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="exampleFormControlInput1"
+                                  placeholder="123456"
+                                  disabled
+                                />
+                              </div>
+
+                              <div class="input-group mb-4">
+                                <input
+                                  type="file"
+                                  class="form-control"
+                                  id="inputGroupFile02"
+                                />
+                                <label
+                                  class="input-group-text"
+                                  for="inputGroupFile02"
+                                >
+                                  更新
+                                </label>
+                              </div>
+
+                              <div class="input-group mb-3">
+                                <span class="input-group-text d-flex">老師請補充說明</span>
+                                <textarea
+                                  class="form-control"
+                                  aria-label="With textarea"
+                                ></textarea>
+                              </div>
+
+                            </div>
+                          </div>
+                        </td>
+
+
+
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
 
 
