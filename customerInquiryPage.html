@@ -61,7 +61,7 @@
         <a
           class="nav-link "
           data-bs-toggle="pill"
-          href="#CustomerＳerviceProcessing"
+          href="#CustomerServiceProcessing"
         >
           客服處理中
         </a>
@@ -256,7 +256,7 @@
                 for="teacherAskedQuestion"
                 class="form-label"
               >
-                提問老師
+                提問老師:
               </label>
               <input
                 type="text"
@@ -269,7 +269,7 @@
                 for="inputNumber"
                 class="form-label"
               >
-                聯絡電話
+                聯絡電話:
               </label>
               <input
                 type="phone"
@@ -282,7 +282,7 @@
                 for="inputState"
                 class="form-label"
               >
-                產品類型
+                產品類型:
               </label>
               <select
                 id="inputState"
@@ -292,19 +292,7 @@
                 <option>...</option>
               </select>
             </div>
-            <div class="col-md-6">
-              <label
-                for="teacherAskedQuestion"
-                class="form-label"
-              >
-                其他說明
-              </label>
-              <input
-                type="text"
-                class="form-control"
-                id="teacherAskedQuestion"
-              />
-            </div>
+
 
             <div class="col-md-6">
               <label
@@ -321,26 +309,14 @@
                 <option>...</option>
               </select>
             </div>
-            <div class="col-md-6">
-              <label
-                for="teacherAskedQuestion"
-                class="form-label"
-              >
-                其他說明
-              </label>
-              <input
-                type="text"
-                class="form-control"
-                id="teacherAskedQuestion"
-              />
-            </div>
+
             <div class="col-12">
               <div>
                 <label
                   for="exampleFormControlTextarea3"
                   class="form-label"
                 >
-                  備註
+                  問題說明:
                 </label>
                 <textarea
                   class="form-control"
@@ -368,7 +344,7 @@
             <div class="col-12 d-flex justify-content-center">
               <button
                 type="submit"
-                class="btn btn-primary w-25"
+                class="btn btn-success w-25"
               >
                 送出
               </button>
@@ -473,7 +449,8 @@
                           <th>提問時間</th>
                           <th>提問老師</th>
                           <th>聯絡電話</th>
-                          <th>問題說明</th>
+                          <th>產品類型</th>
+                          <th>問題類型</th>
                           <th>處理進度</th>
                           <th>處理客服人員</th>
 
@@ -494,16 +471,17 @@
                               id=""
                             />
                           </th>
-                          <td>J220501001</td>
-                          <td>
+                          <td data-label="單號">J220501001</td>
+                          <td data-label="提問時間">
                             <div>2022/05/01</div>
                             <div>12:00</div>
                           </td>
-                          <td>Helen</td>
-                          <td>0912111333</td>
-                          <td>忘記密碼怎麼辦，快救救我!</td>
-                          <td>待提問人回覆</td>
-                          <td>Wayne</td>
+                          <td data-label="提問老師">Helen</td>
+                          <td data-label="聯絡電話">0912111333</td>
+                          <td data-label="產品類型">產品APP</td>
+                          <td data-label="問題類型">忘記密碼</td>
+                          <td data-label="處理進度">待提問人回覆</td>
+                          <td data-label="處理客服人員">Wayne</td>
                         </tr>
 
                         <td
@@ -518,15 +496,13 @@
                                   for="exampleFormControlInput1"
                                   class="form-label"
                                 >
-                                  老師問題:
+                                  問題內容:
                                 </label>
-                                <input
-                                  type="text"
+                                <textarea
                                   class="form-control"
-                                  id="exampleFormControlInput1"
-                                  placeholder="忘記密碼怎麼辦，快救救我!"
+                                  aria-label="With textarea"
                                   disabled
-                                />
+                                >忘記密碼怎麼辦，快救救我!</textarea>
                               </div>
 
                               <div class="mb-4">
@@ -536,13 +512,19 @@
                                 >
                                   客戶人員回覆:
                                 </label>
-                                <input
-                                  type="text"
+                                <textarea
                                   class="form-control"
-                                  id="exampleFormControlInput1"
-                                  placeholder="123456"
+                                  aria-label="With textarea"
                                   disabled
-                                />
+                                >123456</textarea>
+                              </div>
+
+                              <div class="input-group mb-4">
+                                <span class="input-group-text d-flex">老師請補充說明</span>
+                                <textarea
+                                  class="form-control"
+                                  aria-label="With textarea"
+                                ></textarea>
                               </div>
 
                               <div class="input-group mb-4">
@@ -559,13 +541,6 @@
                                 </label>
                               </div>
 
-                              <div class="input-group mb-3">
-                                <span class="input-group-text d-flex">老師請補充說明</span>
-                                <textarea
-                                  class="form-control"
-                                  aria-label="With textarea"
-                                ></textarea>
-                              </div>
                               <div class="col-12 d-flex justify-content-center">
                                 <button
                                   type="button "
@@ -595,7 +570,7 @@
 
       <div
         class="tab-pane "
-        id="CustomerＳerviceProcessing"
+        id="CustomerServiceProcessing"
       >
 
         <div class="mb-2">
@@ -682,7 +657,9 @@
                           <th>單號</th>
                           <th>提問時間</th>
                           <th>提問老師</th>
-                          <th>問題說明</th>
+                          <th>聯絡電話</th>
+                          <th>產品類型</th>
+                          <th>問題類型</th>
                           <th>處理進度</th>
                           <th>處理客服人員</th>
 
@@ -692,9 +669,9 @@
 
                       <tbody>
 
-                        <!-- 表單三-編號1 -已通知繳費轉為催促繳費中的狀態顯示 -->
+                        <!-- 客服處理中 表單四 -編號1 --->
 
-                        <tr class="content_table_tbody_tr ">
+                        <tr class="content_table_tbody_tr">
                           <th>
                             <input
                               class="form-check-input"
@@ -703,15 +680,17 @@
                               id=""
                             />
                           </th>
-                          <td>J220501001</td>
-                          <td>
+                          <td data-label="單號">J220501001</td>
+                          <td data-label="提問時間">
                             <div>2022/05/01</div>
                             <div>12:00</div>
                           </td>
-                          <td>Helen</td>
-                          <td>忘記密碼怎麼辦，快救救我!</td>
-                          <td>待提問人回覆</td>
-                          <td>Wayne</td>
+                          <td data-label="提問老師">Helen</td>
+                          <td data-label="聯絡電話">0912111333</td>
+                          <td data-label="產品類型">產品APP</td>
+                          <td data-label="問題類型">忘記密碼</td>
+                          <td data-label="處理進度">待提問人回覆</td>
+                          <td data-label="處理客服人員">Wayne</td>
                         </tr>
 
                         <td
@@ -721,7 +700,7 @@
                           <div class="panel_group">
                             <div class="container my-5">
 
-                              <div class=" mb-3">
+                              <div class=" mb-4">
                                 <label
                                   for="exampleFormControlInput1"
                                   class="form-label"
@@ -729,12 +708,11 @@
                                   問題說明:
                                 </label>
                                 <div class="input-group">
-                                  <span class="input-group-text d-flex">忘記密碼怎麼辦，快救救我!</span>
                                   <span class="input-group-text d-flex">2022/05/01 12:00</span>
                                   <textarea
                                     class="form-control"
                                     aria-label="With textarea"
-                                  ></textarea>
+                                  >忘記密碼怎麼辦，快救救我!</textarea>
                                   <button
                                     class="btn btn-outline-secondary"
                                     type="button"
@@ -746,7 +724,7 @@
 
                               </div>
 
-                              <div class=" mb-3">
+                              <div class=" mb-4">
                                 <label
                                   for="exampleFormControlInput1"
                                   class="form-label"
@@ -754,12 +732,11 @@
                                   客服人員回覆:
                                 </label>
                                 <div class="input-group">
-                                  <span class="input-group-text d-flex">忘記密碼怎麼辦，快救救我!</span>
                                   <span class="input-group-text d-flex">2022/05/01 12:00</span>
                                   <textarea
                                     class="form-control"
                                     aria-label="With textarea"
-                                  ></textarea>
+                                  >忘記密碼怎麼辦，快救救我!</textarea>
                                   <button
                                     class="btn btn-outline-secondary"
                                     type="button"
@@ -771,7 +748,7 @@
 
                               </div>
 
-                              <div class=" mb-3">
+                              <div class=" mb-4">
                                 <label
                                   for="exampleFormControlInput1"
                                   class="form-label"
@@ -779,12 +756,11 @@
                                   老師補充說明:
                                 </label>
                                 <div class="input-group">
-                                  <span class="input-group-text d-flex">忘記密碼怎麼辦，快救救我!</span>
                                   <span class="input-group-text d-flex">2022/05/01 12:00</span>
                                   <textarea
                                     class="form-control"
                                     aria-label="With textarea"
-                                  ></textarea>
+                                  >忘記密碼怎麼辦，快救救我!</textarea>
                                   <button
                                     class="btn btn-outline-secondary"
                                     type="button"
@@ -796,7 +772,7 @@
 
                               </div>
 
-                              <div class=" mb-3">
+                              <div class=" mb-4">
                                 <label
                                   for="exampleFormControlInput1"
                                   class="form-label"
@@ -804,12 +780,11 @@
                                   客服人員回覆:
                                 </label>
                                 <div class="input-group">
-                                  <span class="input-group-text d-flex">忘記密碼怎麼辦，快救救我!</span>
                                   <span class="input-group-text d-flex">2022/05/01 12:00</span>
                                   <textarea
                                     class="form-control"
                                     aria-label="With textarea"
-                                  ></textarea>
+                                  >忘記密碼怎麼辦，快救救我!</textarea>
                                   <button
                                     class="btn btn-outline-secondary"
                                     type="button"
@@ -930,7 +905,9 @@
                           <th>單號</th>
                           <th>提問時間</th>
                           <th>提問老師</th>
-                          <th>問題說明</th>
+                          <th>聯絡電話</th>
+                          <th>產品類型</th>
+                          <th>問題類型</th>
                           <th>處理進度</th>
                           <th>處理客服人員</th>
 
@@ -940,9 +917,7 @@
 
                       <tbody>
 
-
-
-                        <tr class="content_table_tbody_tr ">
+                        <tr class="content_table_tbody_tr">
                           <th>
                             <input
                               class="form-check-input"
@@ -951,15 +926,17 @@
                               id=""
                             />
                           </th>
-                          <td>J220501001</td>
-                          <td>
+                          <td data-label="單號">J220501001</td>
+                          <td data-label="提問時間">
                             <div>2022/05/01</div>
                             <div>12:00</div>
                           </td>
-                          <td>Helen</td>
-                          <td>忘記密碼怎麼辦，快救救我!</td>
-                          <td>待提問人回覆</td>
-                          <td>Wayne</td>
+                          <td data-label="提問老師">Helen</td>
+                          <td data-label="聯絡電話">0912111333</td>
+                          <td data-label="產品類型">產品APP</td>
+                          <td data-label="問題類型">忘記密碼</td>
+                          <td data-label="處理進度">待提問人回覆</td>
+                          <td data-label="處理客服人員">Wayne</td>
                         </tr>
 
                         <td
@@ -969,7 +946,7 @@
                           <div class="panel_group">
                             <div class="container my-5">
 
-                              <div class=" mb-3">
+                              <div class=" mb-4">
                                 <label
                                   for="exampleFormControlInput1"
                                   class="form-label"
@@ -977,12 +954,11 @@
                                   問題說明:
                                 </label>
                                 <div class="input-group">
-                                  <span class="input-group-text d-flex">忘記密碼怎麼辦，快救救我!</span>
                                   <span class="input-group-text d-flex">2022/05/01 12:00</span>
                                   <textarea
                                     class="form-control"
                                     aria-label="With textarea"
-                                  ></textarea>
+                                  >忘記密碼怎麼辦，快救救我!</textarea>
                                   <button
                                     class="btn btn-outline-secondary"
                                     type="button"
@@ -994,7 +970,7 @@
 
                               </div>
 
-                              <div class=" mb-3">
+                              <div class=" mb-4">
                                 <label
                                   for="exampleFormControlInput1"
                                   class="form-label"
@@ -1002,12 +978,11 @@
                                   客服人員回覆:
                                 </label>
                                 <div class="input-group">
-                                  <span class="input-group-text d-flex">忘記密碼怎麼辦，快救救我!</span>
                                   <span class="input-group-text d-flex">2022/05/01 12:00</span>
                                   <textarea
                                     class="form-control"
                                     aria-label="With textarea"
-                                  ></textarea>
+                                  >忘記密碼怎麼辦，快救救我!</textarea>
                                   <button
                                     class="btn btn-outline-secondary"
                                     type="button"
@@ -1019,7 +994,7 @@
 
                               </div>
 
-                              <div class=" mb-3">
+                              <div class=" mb-4">
                                 <label
                                   for="exampleFormControlInput1"
                                   class="form-label"
@@ -1027,12 +1002,11 @@
                                   老師補充說明:
                                 </label>
                                 <div class="input-group">
-                                  <span class="input-group-text d-flex">忘記密碼怎麼辦，快救救我!</span>
                                   <span class="input-group-text d-flex">2022/05/01 12:00</span>
                                   <textarea
                                     class="form-control"
                                     aria-label="With textarea"
-                                  ></textarea>
+                                  >忘記密碼怎麼辦，快救救我!</textarea>
                                   <button
                                     class="btn btn-outline-secondary"
                                     type="button"
@@ -1044,7 +1018,7 @@
 
                               </div>
 
-                              <div class=" mb-5">
+                              <div class=" mb-4">
                                 <label
                                   for="exampleFormControlInput1"
                                   class="form-label"
@@ -1052,12 +1026,11 @@
                                   客服人員回覆:
                                 </label>
                                 <div class="input-group">
-                                  <span class="input-group-text d-flex">忘記密碼怎麼辦，快救救我!</span>
                                   <span class="input-group-text d-flex">2022/05/01 12:00</span>
                                   <textarea
                                     class="form-control"
                                     aria-label="With textarea"
-                                  ></textarea>
+                                  >忘記密碼怎麼辦，快救救我!</textarea>
                                   <button
                                     class="btn btn-outline-secondary"
                                     type="button"
@@ -1066,6 +1039,7 @@
                                     附檔
                                   </button>
                                 </div>
+
                               </div>
 
                               <div class="col-12 d-flex justify-content-around">
@@ -1079,6 +1053,8 @@
                                 <button
                                   type="button "
                                   class="btn btn-danger mb-3 w-25 "
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#staticBackdrop"
                                 >
                                   還要再發問
                                 </button>
@@ -1196,7 +1172,9 @@
                           <th>單號</th>
                           <th>提問時間</th>
                           <th>提問老師</th>
-                          <th>問題說明</th>
+                          <th>聯絡電話</th>
+                          <th>產品類型</th>
+                          <th>問題類型</th>
                           <th>處理進度</th>
                           <th>處理客服人員</th>
 
@@ -1217,15 +1195,17 @@
                               id=""
                             />
                           </th>
-                          <td>J220501001</td>
-                          <td>
+                          <td data-label="單號">J220501001</td>
+                          <td data-label="提問時間">
                             <div>2022/05/01</div>
                             <div>12:00</div>
                           </td>
-                          <td>Helen</td>
-                          <td>忘記密碼怎麼辦，快救救我!</td>
-                          <td>待提問人回覆</td>
-                          <td>Wayne</td>
+                          <td data-label="提問老師">Helen</td>
+                          <td data-label="聯絡電話">0912111333</td>
+                          <td data-label="產品類型">產品APP</td>
+                          <td data-label="問題類型">忘記密碼</td>
+                          <td data-label="處理進度">待提問人回覆</td>
+                          <td data-label="處理客服人員">Wayne</td>
                         </tr>
 
                         <td
@@ -1311,6 +1291,70 @@
 
 
 
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title"
+              id="staticBackdropLabel"
+            >還要再發問</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body ">
+            <div class="input-group mb-3">
+              <span class="input-group-text d-flex">老師請補充說明</span>
+              <textarea
+                class="form-control"
+                aria-label="With textarea"
+              ></textarea>
+            </div>
+
+            <div class="input-group mb-4">
+              <input
+                type="file"
+                class="form-control"
+                id="inputGroupFile02"
+              />
+
+              <label
+                class="input-group-text"
+                for="inputGroupFile02"
+              >
+                更新
+              </label>
+            </div>
+
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >Close</button>
+            <button
+              type="button"
+              class="btn btn-success"
+            >發送</button>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
