@@ -14128,6 +14128,51 @@ tr.service-cancellation-state-tr:hover {
 }
 
 /********************************/
+/* btn */
+/********************************/
+.btn.btn-outline-success.btn-custom-green {
+  color: #5c940d;
+  border-color: #5c940d;
+}
+
+.btn.btn-outline-success.btn-custom-green:hover {
+  color: #fff;
+  background-color: #5c940d;
+}
+
+.btn.btn-outline-success.btn-custom-green:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(92, 148, 13, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(92, 148, 13, 0.5);
+}
+
+/********************************/
+/* nav-link */
+/********************************/
+.btn-custom-green .predeposit-usage-details-user {
+  margin-bottom: 0;
+}
+
+.nav-link-custom-orange {
+  color: #f76707;
+}
+
+.nav-link.active.nav-link-custom-orange {
+  background: #f76707;
+}
+
+.nav-link-custom-green {
+  color: #5c940d;
+}
+
+.nav-link.active.nav-link-custom-green {
+  background: #5c940d;
+}
+
+.predeposit-usage-details-user {
+  margin-bottom: 0;
+}
+
+/********************************/
 /* header */
 /********************************/
 .pre-deposit-usage-details-header h1, .pre-deposit-usage-details-header .h1 {
@@ -14143,7 +14188,7 @@ tr.service-cancellation-state-tr:hover {
 }
 
 .table-container-h1 {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
   font-weight: 700;
   color: #555;
 }
@@ -14160,7 +14205,7 @@ tr.service-cancellation-state-tr:hover {
 
 .predepositUserTable th,
 .predepositUserTable td {
-  padding: .8rem;
+  padding: 0.8rem;
   font-size: 1.4rem;
   text-align: center;
 }

@@ -586,6 +586,14 @@
             type="button"
             class="btn btn-primary"
             data-bs-toggle="modal"
+            data-bs-target="#interview_record1"
+          >訪談記錄調整版
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
             data-bs-target="#composition"
           >金鼎作文</button>
           <button
@@ -4463,7 +4471,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xxl">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">電訪紀錄</h4>
+              <h4 class="modal-title">訪談紀錄</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -5003,6 +5011,312 @@
                     </tbody>
                   </table>
                 </div>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary me-2">確認</button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  取消
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 客戶資料表頭 -->
+      <!-- 面訪紀錄Modal  調整版-->
+      <!--  -->
+
+
+
+
+      <div
+        class="modal fade"
+        id="interview_record1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-xxl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">面訪紀錄 調整版</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-5 mb-3">
+                  <div class="col-12 mb-3 d-flex">
+                    <button class="btn btn-primary me-2">新增</button>
+                    <button class="btn btn-danger me-2">刪除</button>
+                    <button class="btn btn-primary me-2">儲存</button>
+                    <select
+                      class="form-select w-25 me-2"
+                      aria-label="Default select"
+                    >
+                      <option selected>待訪記錄</option>
+                      <option value="1">全部記錄</option>
+                    </select>
+                    <button class="btn btn-primary">搜尋</button>
+                  </div>
+                  <div class="interview_record">
+                    <div class="row">
+                      <div class="col-4 mb-2">
+                        <label for="">訪談日期</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                        />
+                      </div>
+                      <div class="col-4 mb-2">
+                        <label for="">時間</label>
+                        <input
+                          type="time"
+                          class="form-control"
+                        />
+                      </div>
+                      <div class="col-4 mb-2 d-flex align-items-center">
+                        <input
+                          class="form-check-input me-2 mt-0"
+                          type="checkbox"
+                          value=""
+                          id="modal_check20"
+                        />
+                        <label
+                          class="form-check-label"
+                          for="modal_check20"
+                        >已完成訪談，不再修改</label>
+                      </div>
+                      <div class="col-4 mb-2">
+                        <label for="">聯絡人</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        />
+                      </div>
+
+                      <!-- 繼續 -->
+                      <div class="col-4">
+                        <label for="">拜訪人</label>
+                        <select
+                          class="form-select"
+                          aria-label="Default select"
+                        >
+                          <option selected>林員工</option>
+                          <option value="1">大員工</option>
+                        </select>
+                      </div>
+                      <div class="col-4 d-flex align-items-center">
+                        <button class="btn btn-primary make_appointment">
+                          約面訪
+                        </button>
+                      </div>
+                      <div class="col-8 mb-2">
+                        <label for="">訪談目的</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        />
+                      </div>
+                      <div class="col-12 mb-2">
+                        <label
+                          for="exampleFormControlTextarea4"
+                          class="form-label"
+                        >
+                          訪談紀錄
+                        </label>
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea4"
+                          rows="4"
+                        ></textarea>
+                      </div>
+                      <div class="col-12">
+                        <label
+                          for="exampleFormControlTextarea2"
+                          class="form-label"
+                        >
+                          備註
+                        </label>
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea2"
+                          rows="2"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="on_appointment">
+                    <div class="row ">
+                      <h6>實地約訪</h6>
+                      <div class="col-6 mb-2">
+                        <label for="">訪談日期</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                        />
+                      </div>
+                      <div class="col-6 mb-2">
+                        <label for="">時間</label>
+                        <input
+                          type="time"
+                          class="form-control"
+                        />
+                      </div>
+                      <div class="col-6 mb-2">
+                        <label for="">聯絡人</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                        />
+                      </div>
+                      <div class="col-6 mb-2">
+                        <label for="">拜訪人</label>
+                        <select
+                          class="form-select me-2 mb-2"
+                          aria-label="Default select"
+                        >
+                          <option selected>林員工</option>
+                          <option value="1">大員工</option>
+                        </select>
+                      </div>
+                      <div class="col-12 mb-2">
+                        <label for="">訪談目的</label>
+                        <input
+                          type="text"
+                          class="form-control mb-2"
+                        />
+                        <div class="border border-primary interview_purpose text-center p-2">
+                          <select
+                            class="form-select me-2 mb-2"
+                            aria-label="Default select"
+                          >
+                            <option selected>訪談目的</option>
+                            <option value="1">電話中</option>
+                          </select>
+                          <button class="btn btn-primary me-2">確認</button>
+                          <button class="btn btn-primary me-2 interview_purpose_closebtn">取消</button>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button class="btn btn-primary me-2">儲存</button>
+                        <button class="btn btn-primary me-2 on_appointment_closebtn">取消</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">日期</th>
+                        <th scope="col">時間</th>
+                        <th scope="col">訪談目的</th>
+                        <th scope="col">訪談人</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">18/05/05(週三)</th>
+                        <td>14:20</td>
+                        <td>訪談目的訪談目的訪談目的訪談目的訪談目的訪談目</td>
+                        <td>林員工</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">18/05/05(週三)</th>
+                        <td>14:20</td>
+                        <td>訪談目的訪談目的訪談目的訪談目的訪談目的訪談目</td>
+                        <td>林員工</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="col-2">
+                  <h5>本次訪談產品意願</h5>
+                  <div class="product_interview">
+                    <table class="table table-bordered table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">產品名稱</th>
+                          <th scope="col">意願</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">資優數學</th>
+                          <td>非常有意願</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">金鼎作文</th>
+                          <td>非常有意願</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">金鼎作文</th>
+                          <td>非常有意願</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">金鼎作文</th>
+                          <td>非常有意願</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">金鼎作文</th>
+                          <td>非常有意願</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">金鼎作文</th>
+                          <td>非常有意願</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">金鼎作文</th>
+                          <td>非常有意願</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">金鼎作文</th>
+                          <td>非常有意願</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">金鼎作文</th>
+                          <td>非常有意願</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <button class="btn btn-primary ms-2 me-2 interview_addbtn">新增</button>
+                  <button class="btn btn-danger me-2">刪除</button>
+                  <div class="border border-primary product_interview_add">
+                    <select
+                      class="form-select mb-4"
+                      aria-label="Default select"
+                    >
+                      <option selected>補教大掌櫃</option>
+                      <option value="1">資優數學</option>
+                    </select>
+                    <select
+                      class="form-select mb-4"
+                      aria-label="Default select"
+                    >
+                      <option selected>非常有意願</option>
+                      <option value="1">非常有意願</option>
+                    </select>
+                    <div class="text-center">
+                      <button class="btn btn-primary me-2">確認</button>
+                      <button class="btn btn-primary me-2 interview_closebtn">關閉</button>
+                    </div>
+                  </div>
+                </div>
+
               </div>
               <div class="text-center">
                 <button class="btn btn-primary me-2">確認</button>
