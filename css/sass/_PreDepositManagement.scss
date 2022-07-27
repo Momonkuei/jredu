@@ -76,6 +76,14 @@ hover #9db8e0 (-60%)
 }
 
 /**********************************/
+/*視窗寬度*/
+/***********************************/
+
+.container.customize-max-width-1440 {
+    max-width: 1440px;
+}
+
+/**********************************/
 /*表單*/
 /***********************************/
 
@@ -106,6 +114,10 @@ hover #9db8e0 (-60%)
 
 .content-table th {
     text-align: center;
+}
+
+.content-table-client-name-th {
+    max-width: 160px;
 }
 
 .content-table th,

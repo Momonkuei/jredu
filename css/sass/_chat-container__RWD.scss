@@ -5,8 +5,16 @@
             background-color: transparent;
         }
         .content-table thead,
-        .content-table tbody th {
+        .content-table tbody th,
+        .web-search-group,
+        .content_table_tbody_tr td:nth-child(7),
+        .content_table_tbody_tr td:nth-child(8),
+        .content_table_tbody_tr td:nth-child(9) {
             display: none;
+        }
+
+        .phone-search-group {
+            display: block;
         }
 
         .content-table tbody,
@@ -50,5 +58,11 @@
             font-size: 1.5rem;
             width: 100%;
         }
+    }
+}
+
+@media screen and (max-width: 36em) {
+    .customer-inquiry-page {
+        font-size: 62.5%;
     }
 }

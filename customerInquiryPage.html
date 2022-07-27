@@ -23,1522 +23,1697 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+
+
 </head>
 
 <body>
-  <div class="table-container mt-4">
+  <div class="container customer-inquiry-page">
+    <div class=" mt-4">
+      <div class="pre-deposit-usage-details-header mb-3 d-flex justify-content-between">
+        <div>
+          <h1 class="table-container-h1 ms-4">我要發問</h1>
+          <!-- <h3 class="text-decoration-underline">預存款使用明細</h3> -->
+        </div>
 
-    <div class="pre-deposit-usage-details-header mb-3">
-      <h1 class="table-container-h1">我要發問 </h1>
+        <div class="d-flex gap-4">
+          <div class="d-flex align-items-center gap-1">
+            操作人:
+            <h4 class="predeposit-usage-details-user">張三豐</h4>
+          </div>
+          <button
+            type="button"
+            class="btn btn-outline-success btn-custom-green"
+          >關閉</button>
+        </div>
+      </div>
 
-    </div>
 
 
-    <ul class="nav nav-pills mb-4 justify-content-center nav-fill">
-      <li class="nav-item ">
-        <a
-          class="nav-link active"
-          data-bs-toggle="pill"
-          href="#commonProblem"
+
+      <ul class="nav nav-pills mb-4 mb-md-4 justify-content-center nav-fill shadow-sm p-1 bg-body rounded">
+        <li class="nav-item  ">
+          <a
+            class="nav-link  active"
+            data-bs-toggle="pill"
+            href="#contactCustomerService"
+          >
+            與客服聯繫
+            <span class="badge bg-danger">02</span>
+          </a>
+        </li>
+
+        <li class="nav-item nav-delinquent-customers">
+          <a
+            class="nav-link "
+            data-bs-toggle="pill"
+            href="#addNewQuestion"
+          >
+            新增提問
+          </a>
+        </li>
+
+
+        <li class="nav-item ">
+          <a
+            class="nav-link "
+            data-bs-toggle="pill"
+            href="#ClosedCases"
+          >
+            已結案
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a
+            class="nav-link "
+            data-bs-toggle="pill"
+            href="#commonProblem"
+          >
+            常見問題
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="tab-content">
+
+
+        <!-- 與客服聯繫 表單一 -->
+        <div
+          class="tab-pane active"
+          id="contactCustomerService"
         >
-          常見問題
-        </a>
-      </li>
-      <li class="nav-item nav-delinquent-customers">
-        <a
-          class="nav-link "
-          data-bs-toggle="pill"
-          href="#addNewQuestion"
-        >
-          新增提問
-        </a>
-      </li>
-      <li class="nav-item ">
-        <a
-          class="nav-link   "
-          data-bs-toggle="pill"
-          href="#contactCustomerService"
-        >
-          與客服聯繫
-          <span class="badge bg-danger">02</span>
-        </a>
-      </li>
 
-      <li class="nav-item ">
-        <a
-          class="nav-link "
-          data-bs-toggle="pill"
-          href="#ClosedCases"
-        >
-          已結案
-        </a>
-      </li>
+          <div class="mb-2">
+            <div class=" flex">
 
-    </ul>
+              <!-- 搜尋欄 -->
 
-    <div class="tab-content">
+              <!-- 內容 -->
+              <div
+                class="accordion"
+                id="accordionExample"
+              >
+                <div class="mb-2">
+                  <div class=" flex container">
+
+                    <!-- 搜尋欄 -->
+                    <div class="web-search-group">
+                      <div class="d-grid gap-2 input-group d-flex align-items-center">
+                        <div class="btn-group">
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                          </button>
+                          <input
+                            id="bday-month"
+                            type="date"
+                            name="bday-month"
+                            class="input-date"
+                            value="2022-07-27"
+                          />
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                          </button>
+                        </div>
+
+                        <div class="col-xs-2">
+                          <div class="btn-group">
+                            <button
+                              class="btn btn-outline-primary dropdown-toggle w-75"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >ALL</button>
+                            <ul class="dropdown-menu">
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >張大千</a></li>
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >Helen</a></li>
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >Jesse</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >Separated link</a></li>
+                            </ul>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="搜尋"
+                              aria-label="搜尋"
+                            />
+                            <button
+                              class="btn btn-outline-primary"
+                              type="button"
+                            >
+                              <ion-icon name="search-outline"></ion-icon>
+                            </button>
+                          </div>
+
+                        </div>
 
 
-      <!-- 常見問題 表單一 -->
 
-      <div
-        class="tab-pane active"
-        id="commonProblem"
-      >
+                      </div>
+                    </div>
 
-        <div class="mb-2">
-          <div class=" flex">
+                    <div class="phone-search-group">
+                      <div class="d-grid gap-2 input-group d-flex align-items-center">
+                        <div class="btn-group btn-group-sm">
 
-            <!-- 搜尋欄 -->
-            <div>
-              <div class="d-grid mb-3 ">
-                <div class="btn-toolbar justify-content-between">
+                          <input
+                            id="bday-month"
+                            type="date"
+                            name="bday-month"
+                            class="input-date"
+                            value="2022-07-27"
+                          />
+                          <div class="btn-group btn-group-sm">
+                            <button
+                              class="btn btn-outline-primary dropdown-toggle w-75"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >ALL</button>
+                            <ul class="dropdown-menu">
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >張大千</a></li>
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >Helen</a></li>
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >Jesse</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >Separated link</a></li>
+                            </ul>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="搜尋"
+                              aria-label="搜尋"
+                            />
+                            <button
+                              class="btn btn-outline-primary"
+                              type="button"
+                            >
+                              <ion-icon name="search-outline"></ion-icon>
+                            </button>
+                          </div>
+                        </div>
 
-                  <div class="btn-group ">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="搜尋"
-                      aria-label="搜尋"
-                    />
-                    <button
-                      class="btn btn-outline-success "
-                      type="button"
-                    >
-                      <ion-icon name="search-outline"></ion-icon>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <!-- 內容 -->
-            <div
-              class="accordion"
-              id="accordionExample"
-            >
-              <div class="accordion-item">
-                <h2
-                  class="accordion-header"
-                  id="headingOne"
-                >
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    校掌雲Windows版本問題
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by
-                    default, until the collapse
-                    plugin adds the appropriate classes that we use to style each element. These
-                    classes control the overall
-                    appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with
-                    custom CSS or overriding our default variables. It's also worth noting that just
-                    about any HTML can go
-                    within the <code>.accordion-body</code>, though the transition does limit
-                    overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2
-                  class="accordion-header"
-                  id="headingTwo"
-                >
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    APP問題
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by
-                    default, until the collapse
-                    plugin adds the appropriate classes that we use to style each element. These
-                    classes control the overall
-                    appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with
-                    custom CSS or overriding our default variables. It's also worth noting that just
-                    about any HTML can go
-                    within the <code>.accordion-body</code>, though the transition does limit
-                    overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2
-                  class="accordion-header"
-                  id="headingThree"
-                >
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    WEB問題
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by
-                    default, until the collapse
-                    plugin adds the appropriate classes that we use to style each element. These
-                    classes control the overall
-                    appearance, as well as the showing and hiding via CSS transitions. You can
-                    modify any of this with
-                    custom CSS or overriding our default variables. It's also worth noting that just
-                    about any HTML can go
-                    within the <code>.accordion-body</code>, though the transition does limit
-                    overflow.
+
+
+
+                      </div>
+                    </div>
+
+                    <!-- 表單內容 -->
+
+                    <div class="customer-inquiry-page">
+
+                      <table class="content-table container text-center">
+                        <thead>
+                          <tr>
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <th>單號</th>
+                            <th>提問老師</th>
+                            <th>聯絡電話</th>
+                            <th>產品類型</th>
+                            <th>問題類型</th>
+                            <th>處理進度</th>
+                            <th>處理客服人員</th>
+                            <th>提問時間</th>
+                            <th>操作</th>
+
+                          </tr>
+                        </thead>
+
+                        <tbody>
+
+                          <!-- 表單三-編號1 -已通知繳費轉為催促繳費中的狀態顯示 -->
+
+                          <tr class="content_table_tbody_tr">
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <td data-label="單號:">J220501001</td>
+                            <td data-label="提問老師:">Helen</td>
+                            <td data-label="聯絡電話:">0912111333</td>
+                            <td data-label="產品類型:">產品APP</td>
+                            <td data-label="問題類型:">忘記密碼</td>
+                            <td data-label="處理進度:">待提問人回覆</td>
+                            <td data-label="處理客服人員:">Wayne</td>
+                            <td data-label="提問時間:">
+                              <div>2022/05/01</div>
+                              <div>12:00</div>
+                            </td>
+                            <td data-label="操作:">
+                              <div
+                                class="btn-group"
+                                role="group"
+                                aria-label="Basic outlined example"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-success btn-custom-nowrap"
+                                >完成<br>結案</button>
+
+                              </div>
+                            </td>
+                          </tr>
+
+                          <td
+                            class="td_list_table text-start"
+                            colspan="12"
+                          >
+                            <div class="panel_group">
+
+                              <!-- 新的內容 -->
+                              <div class="container my-4">
+                                <div class="chat-app">
+                                  <div class="chat-app-header">
+                                    <div class="user-settings">
+                                      <img
+                                        class="user-profile"
+                                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                        alt=""
+                                        class="account-profile"
+                                        alt=""
+                                      >
+                                      <div class="chat-area-title">客服名稱</div>
+                                    </div>
+                                    <div class="search-bar">
+                                      <input
+                                        type="text"
+                                        placeholder="搜尋..."
+                                      />
+                                    </div>
+
+                                  </div>
+                                  <div class="wrapper">
+                                    <div class="chat-area">
+                                      <div class="chat-area-header">
+
+
+                                      </div>
+
+                                      <div class="chat-area-main">
+                                        <!-- 
+                                          對話內容
+                                          chat-msg 對方
+                                          chat-msg owner 我方
+  
+                                          
+                                        
+                                        -->
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 1.22pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
+                                            <div class="chat-msg-text">
+                                              <img
+                                                src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              />
+                                            </div>
+                                            <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac
+                                              orci
+                                              phasellus egestas. Pretium
+                                              lectus quam id leo.</div>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat-msg ">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 1.22pm</div>
+                                          </div>
+
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Luctus et ultrices posuere cubilia curae.</div>
+                                            <div class="chat-msg-text">
+                                              <img
+                                                src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              />
+                                            </div>
+                                            <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac
+                                              orci
+                                              phasellus egestas. Pretium
+                                              lectus quam id leo.</div>
+                                            <div class="chat-msg-text">Sit amet risus nullam eget felis eget. Dolor sed
+                                              viverra ipsum😂😂😂</div>
+                                            <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 2.45pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Aenean tristique maximus tortor non tincidunt.
+                                              Vestibulum ante ipsum primis in
+                                              faucibus orci luctus et ultrices posuere cubilia curae😊</div>
+                                            <div class="chat-msg-text">Ut faucibus pulvinar elementum integer enim neque
+                                              volutpat.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 2.50pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">posuere eget augue sodales, aliquet posuere eros.
+                                            </div>
+                                            <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Egestas tellus rutrum tellus pellentesque</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                              class="account-profile"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant
+                                              morbi tristique senectus et.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 2.50pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Tincidunt arcu non sodales😂</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant
+                                              morbi tristique senectus et🥰
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <!-- 聊天室底部 -->
+                                      <div class="chat-area-footer">
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="feather feather-image"
+                                        >
+                                          <rect
+                                            x="3"
+                                            y="3"
+                                            width="18"
+                                            height="18"
+                                            rx="2"
+                                            ry="2"
+                                          />
+                                          <circle
+                                            cx="8.5"
+                                            cy="8.5"
+                                            r="1.5"
+                                          />
+                                          <path d="M21 15l-5-5L5 21" />
+                                        </svg>
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="feather feather-paperclip"
+                                        >
+                                          <path
+                                            d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
+                                          />
+                                        </svg>
+                                        <input
+                                          type="text"
+                                          placeholder="輸入訊息..."
+                                        />
+
+                                        <div
+                                          class="btn-group"
+                                          role="group"
+                                          aria-label="Basic outlined example"
+                                        >
+                                          <button
+                                            type="button"
+                                            class="btn btn-outline-primary btn-custom-nowrap"
+                                          >發送</button>
+
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </td>
+
+
+
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
 
-      </div>
 
-      <!--新增提問 表單二 -->
-      <div
-        class="tab-pane "
-        id="addNewQuestion"
-      >
+        <!--新增提問 表單二 -->
+        <div
+          class="tab-pane "
+          id="addNewQuestion"
+        >
 
-        <div class="mb-2">
-          <form class="row g-3">
-            <div class="col-md-6">
-              <label
-                for="teacherAskedQuestion"
-                class="form-label"
-              >
-                提問老師:
-              </label>
-              <input
-                type="text"
-                class="form-control"
-                id="teacherAskedQuestion"
-              />
-            </div>
-            <div class="col-md-6">
-              <label
-                for="inputNumber"
-                class="form-label"
-              >
-                聯絡電話:
-              </label>
-              <input
-                type="phone"
-                class="form-control"
-                id="inputNumber"
-              />
-            </div>
-            <div class="col-md-6">
-              <label
-                for="inputState"
-                class="form-label"
-              >
-                產品類型:
-              </label>
-              <select
-                id="inputState"
-                class="form-select"
-              >
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-
-
-            <div class="col-md-6">
-              <label
-                for="inputState"
-                class="form-label"
-              >
-                問題類型
-              </label>
-              <select
-                id="inputState"
-                class="form-select"
-              >
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-
-            <div class="col-12">
-              <div>
+          <div class="mb-2">
+            <form class="row g-3">
+              <div class="col-md-6">
                 <label
-                  for="exampleFormControlTextarea3"
+                  for="teacherAskedQuestion"
                   class="form-label"
                 >
-                  問題說明:
-                </label>
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea3"
-                  rows="3"
-                ></textarea>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="mb-3">
-                <label
-                  for="formFile"
-                  class="form-label"
-                >
-                  檔案或影片上傳
+                  提問老師:
                 </label>
                 <input
+                  type="text"
                   class="form-control"
-                  type="file"
-                  id="formFile"
+                  id="teacherAskedQuestion"
                 />
               </div>
-            </div>
-
-            <div class="col-12 d-flex justify-content-center">
-              <button
-                type="submit"
-                class="btn btn-success w-25"
-              >
-                送出
-              </button>
-            </div>
-          </form>
-        </div>
-
-      </div>
-
-      <!-- 與客服聯繫 表單三 -->
-
-      <div
-        class="tab-pane "
-        id="contactCustomerService"
-      >
-
-        <div class="mb-2">
-          <div class=" flex">
-
-            <!-- 搜尋欄 -->
-
-            <!-- 內容 -->
-            <div
-              class="accordion"
-              id="accordionExample"
-            >
-              <div class="mb-2">
-                <div class=" flex container">
-                  <!-- 搜尋欄 -->
-                  <div>
-                    <div class="d-grid gap-2 input-group d-flex align-items-center">
-                      <div class="btn-group">
-                        <button
-                          class="btn btn-outline-primary"
-                          type="button"
-                        >
-                          <ion-icon name="chevron-back-outline"></ion-icon>
-                        </button>
-                        <input
-                          id="bday-month"
-                          type="month"
-                          name="bday-month"
-                          class="input-date"
-                        />
-                        <button
-                          class="btn btn-outline-primary"
-                          type="button"
-                        >
-                          <ion-icon name="chevron-forward-outline"></ion-icon>
-                        </button>
-                      </div>
-                      <div class="input-group-addon">to</div>
-                      <div class="btn-group">
-                        <button
-                          class="btn btn-outline-primary"
-                          type="button"
-                        >
-                          <ion-icon name="chevron-back-outline"></ion-icon>
-                        </button>
-                        <input
-                          id="bday-month"
-                          type="month"
-                          name="bday-month"
-                          class="input-date"
-                        />
-                        <button
-                          class="btn btn-outline-primary"
-                          type="button"
-                        >
-                          <ion-icon name="chevron-forward-outline"></ion-icon>
-                        </button>
-                      </div>
-                      <div class="col-xs-2">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="搜尋"
-                          aria-label="搜尋"
-                        />
-                      </div>
-                      <button
-                        class="btn btn-outline-primary"
-                        type="button"
-                      >
-                        <ion-icon name="search-outline"></ion-icon>
-                      </button>
+              <div class="col-md-6">
+                <label
+                  for="inputNumber"
+                  class="form-label"
+                >
+                  聯絡電話:
+                </label>
+                <input
+                  type="phone"
+                  class="form-control"
+                  id="inputNumber"
+                />
+              </div>
+              <div class="col-md-6">
+                <label
+                  for="inputState"
+                  class="form-label"
+                >
+                  產品類型:
+                </label>
+                <select
+                  id="inputState"
+                  class="form-select"
+                >
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
 
 
-                    </div>
-                  </div>
+              <div class="col-md-6">
+                <label
+                  for="inputState"
+                  class="form-label"
+                >
+                  問題類型
+                </label>
+                <select
+                  id="inputState"
+                  class="form-select"
+                >
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
 
-                  <div class="customer-inquiry-page">
-
-                    <table class="content-table container text-center">
-                      <thead>
-                        <tr>
-                          <th>
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id=""
-                            />
-                          </th>
-                          <th>單號</th>
-                          <th>提問時間</th>
-                          <th>提問老師</th>
-                          <th>聯絡電話</th>
-                          <th>產品類型</th>
-                          <th>問題類型</th>
-                          <th>處理進度</th>
-                          <th>處理客服人員</th>
-                          <th>操作</th>
-
-                        </tr>
-                      </thead>
-
-                      <tbody>
-
-                        <!-- 表單三-編號1 -已通知繳費轉為催促繳費中的狀態顯示 -->
-
-                        <tr class="content_table_tbody_tr">
-                          <th>
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id=""
-                            />
-                          </th>
-                          <td data-label="單號:">J220501001</td>
-                          <td data-label="提問時間:">
-                            <div>2022/05/01</div>
-                            <div>12:00</div>
-                          </td>
-                          <td data-label="提問老師:">Helen</td>
-                          <td data-label="聯絡電話:">0912111333</td>
-                          <td data-label="產品類型:">產品APP</td>
-                          <td data-label="問題類型:">忘記密碼</td>
-                          <td data-label="處理進度:">待提問人回覆</td>
-                          <td data-label="處理客服人員:">Wayne</td>
-                          <td data-label="操作:">
-                            <div
-                              class="btn-group"
-                              role="group"
-                              aria-label="Basic outlined example"
-                            >
-                              <button
-                                type="button"
-                                class="btn btn-outline-success btn-custom-nowrap"
-                              >結案</button>
-
-                            </div>
-                          </td>
-                        </tr>
-
-                        <td
-                          class="td_list_table text-start"
-                          colspan="12"
-                        >
-                          <div class="panel_group">
-
-                            <!-- 新的內容 -->
-                            <div class="container my-4">
-                              <div class="app">
-                                <div class="app-header">
-                                  <div class="user-settings">
-                                    <img
-                                      class="user-profile"
-                                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                      alt=""
-                                      class="account-profile"
-                                      alt=""
-                                    >
-                                    <div class="chat-area-title">客服名稱</div>
-                                  </div>
-                                  <div class="search-bar">
-                                    <input
-                                      type="text"
-                                      placeholder="搜尋..."
-                                    />
-                                  </div>
-
-                                </div>
-                                <div class="wrapper">
-                                  <div class="chat-area">
-                                    <div class="chat-area-header">
-
-
-                                    </div>
-
-                                    <div class="chat-area-main">
-                                      <!-- 
-                                        對話內容
-                                        chat-msg 對方
-                                        chat-msg owner 我方
-
-                                        
-                                      
-                                      -->
-                                      <div class="chat-msg owner">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
-                                            alt=""
-                                          />
-                                          <div class="chat-msg-date">Message seen 1.22pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
-                                          <div class="chat-msg-text">
-                                            <img
-                                              src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
-                                            />
-                                          </div>
-                                          <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac orci
-                                            phasellus egestas. Pretium
-                                            lectus quam id leo.</div>
-                                        </div>
-                                      </div>
-
-                                      <div class="chat-msg ">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                          />
-                                          <div class="chat-msg-date">Message seen 1.22pm</div>
-                                        </div>
-
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Luctus et ultrices posuere cubilia curae.</div>
-                                          <div class="chat-msg-text">
-                                            <img
-                                              src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
-                                            />
-                                          </div>
-                                          <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac orci
-                                            phasellus egestas. Pretium
-                                            lectus quam id leo.</div>
-                                          <div class="chat-msg-text">Sit amet risus nullam eget felis eget. Dolor sed
-                                            viverra ipsum😂😂😂</div>
-                                          <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                          >
-                                          <div class="chat-msg-date">Message seen 2.45pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Aenean tristique maximus tortor non tincidunt.
-                                            Vestibulum ante ipsum primis in
-                                            faucibus orci luctus et ultrices posuere cubilia curae😊</div>
-                                          <div class="chat-msg-text">Ut faucibus pulvinar elementum integer enim neque
-                                            volutpat.</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg owner">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
-                                            alt=""
-                                          />
-                                          <div class="chat-msg-date">Message seen 2.50pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">posuere eget augue sodales, aliquet posuere eros.
-                                          </div>
-                                          <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                          />
-                                          <div class="chat-msg-date">Message seen 3.16pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Egestas tellus rutrum tellus pellentesque</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                            class="account-profile"
-                                            alt=""
-                                          >
-                                          <div class="chat-msg-date">Message seen 3.16pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant
-                                            morbi tristique senectus et.
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg owner">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
-                                            alt=""
-                                          />
-                                          <div class="chat-msg-date">Message seen 2.50pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Tincidunt arcu non sodales😂</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                          >
-                                          <div class="chat-msg-date">Message seen 3.16pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant
-                                            morbi tristique senectus et🥰
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <!-- 聊天室底部 -->
-                                    <div class="chat-area-footer">
-
-                                      <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-image"
-                                      >
-                                        <rect
-                                          x="3"
-                                          y="3"
-                                          width="18"
-                                          height="18"
-                                          rx="2"
-                                          ry="2"
-                                        />
-                                        <circle
-                                          cx="8.5"
-                                          cy="8.5"
-                                          r="1.5"
-                                        />
-                                        <path d="M21 15l-5-5L5 21" />
-                                      </svg>
-
-                                      <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-paperclip"
-                                      >
-                                        <path
-                                          d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
-                                        />
-                                      </svg>
-                                      <input
-                                        type="text"
-                                        placeholder="輸入訊息..."
-                                      />
-
-                                      <div
-                                        class="btn-group"
-                                        role="group"
-                                        aria-label="Basic outlined example"
-                                      >
-                                        <button
-                                          type="button"
-                                          class="btn btn-outline-primary btn-custom-nowrap"
-                                        >發送</button>
-
-
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                            </div>
-                          </div>
-
-                        </td>
-
-
-
-                      </tbody>
-                    </table>
-                  </div>
+              <div class="col-12">
+                <div>
+                  <label
+                    for="exampleFormControlTextarea3"
+                    class="form-label"
+                  >
+                    問題說明:
+                  </label>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea3"
+                    rows="3"
+                  ></textarea>
                 </div>
               </div>
-            </div>
+              <div class="col-12">
+                <div class="mb-3">
+                  <label
+                    for="formFile"
+                    class="form-label"
+                  >
+                    檔案或影片上傳
+                  </label>
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="formFile"
+                  />
+                </div>
+              </div>
+
+              <div class="col-12 d-flex justify-content-center">
+                <button
+                  type="submit"
+                  class="btn btn-success w-25"
+                >
+                  送出
+                </button>
+              </div>
+            </form>
           </div>
+
         </div>
 
-      </div>
+        <!-- 已結案 表單三 -->
 
+        <div
+          class="tab-pane"
+          id="ClosedCases"
+        >
 
+          <div class="mb-2">
+            <div class=" flex">
+              <!-- 內容 -->
+              <div
+                class="accordion"
+                id="accordionExample"
+              >
+                <div class="mb-2">
+                  <div class=" flex container">
+                    <!-- 搜尋欄 -->
+                    <div class="web-search-group">
+                      <div class="d-grid gap-2 input-group d-flex align-items-center">
+                        <div class="btn-group">
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                          </button>
+                          <input
+                            id="bday-month"
+                            type="date"
+                            name="bday-month"
+                            class="input-date"
+                            value="2022-07-27"
+                          />
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                          </button>
+                        </div>
 
-
-
-      <!-- 已結案 表單四 -->
-
-      <div
-        class="tab-pane"
-        id="ClosedCases"
-      >
-
-        <div class="mb-2">
-          <div class=" flex">
-
-            <!-- 搜尋欄 -->
-
-            <!-- 內容 -->
-            <div
-              class="accordion"
-              id="accordionExample"
-            >
-              <div class="mb-2">
-                <div class=" flex container">
-                  <!-- 搜尋欄 -->
-                  <div>
-                    <div class="d-grid gap-2 input-group d-flex align-items-center">
-                      <div class="btn-group">
-                        <button
-                          class="btn btn-outline-primary"
-                          type="button"
-                        >
-                          <ion-icon name="chevron-back-outline"></ion-icon>
-                        </button>
-                        <input
-                          id="bday-month"
-                          type="month"
-                          name="bday-month"
-                          class="input-date"
-                        />
-                        <button
-                          class="btn btn-outline-primary"
-                          type="button"
-                        >
-                          <ion-icon name="chevron-forward-outline"></ion-icon>
-                        </button>
-                      </div>
-                      <div class="input-group-addon">to</div>
-                      <div class="btn-group">
-                        <button
-                          class="btn btn-outline-primary"
-                          type="button"
-                        >
-                          <ion-icon name="chevron-back-outline"></ion-icon>
-                        </button>
-                        <input
-                          id="bday-month"
-                          type="month"
-                          name="bday-month"
-                          class="input-date"
-                        />
-                        <button
-                          class="btn btn-outline-primary"
-                          type="button"
-                        >
-                          <ion-icon name="chevron-forward-outline"></ion-icon>
-                        </button>
-                      </div>
-                      <div class="col-xs-2">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="搜尋"
-                          aria-label="搜尋"
-                        />
-                      </div>
-                      <button
-                        class="btn btn-outline-primary"
-                        type="button"
-                      >
-                        <ion-icon name="search-outline"></ion-icon>
-                      </button>
-
-
-                    </div>
-                  </div>
-
-                  <div class="customer-inquiry-page">
-
-                    <table class="content-table container text-center">
-                      <thead>
-                        <tr>
-                          <th>
+                        <div class="col-xs-2">
+                          <div class="btn-group">
+                            <button
+                              class="btn btn-outline-primary dropdown-toggle w-75"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >ALL</button>
+                            <ul class="dropdown-menu">
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >張大千</a></li>
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >Helen</a></li>
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >Jesse</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >Separated link</a></li>
+                            </ul>
                             <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id=""
+                              type="text"
+                              class="form-control"
+                              placeholder="搜尋"
+                              aria-label="搜尋"
                             />
-                          </th>
-                          <th>單號</th>
-                          <th>提問時間</th>
-                          <th>提問老師</th>
-                          <th>聯絡電話</th>
-                          <th>產品類型</th>
-                          <th>問題類型</th>
-                          <th>處理進度</th>
-                          <th>處理客服人員</th>
-                          <th>操作</th>
-
-                        </tr>
-                      </thead>
-
-                      <tbody>
-
-                        <!-- 表單四 -客戶自主完成結案-->
-
-                        <tr class="content_table_tbody_tr clients-close-case-by-own-tr">
-                          <th>
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id=""
-                            />
-                          </th>
-                          <td data-label="單號:">J220501001</td>
-                          <td data-label="提問時間:">
-                            <div>2022/05/01</div>
-                            <div>12:00</div>
-                          </td>
-                          <td data-label="提問老師:">Helen</td>
-                          <td data-label="聯絡電話:">0912111333</td>
-                          <td data-label="產品類型:">產品APP</td>
-                          <td data-label="問題類型:">忘記密碼</td>
-                          <td data-label="處理進度:">待提問人回覆</td>
-                          <td data-label="處理客服人員:">Wayne</td>
-                          <td data-label="操作:">
-                            <div
-                              class="btn-group"
-                              role="group"
-                              aria-label="Basic outlined example"
+                            <button
+                              class="btn btn-outline-primary"
+                              type="button"
                             >
-                              <button
-                                type="button"
-                                class="btn btn-secondary"
-                              >已完成<br>結案</button>
-                              <button
-                                type="button"
-                                class="btn btn-outline-primary"
-                              >再次<br>發問</button>
-                            </div>
+                              <ion-icon name="search-outline"></ion-icon>
+                            </button>
+                          </div>
 
-                          </td>
-                        </tr>
-
-                        <td
-                          class="td_list_table text-start"
-                          colspan="12"
-                        >
-                          <div class="panel_group">
-
-                            <!-- 新的內容 -->
-                            <div class="container my-4">
-                              <div class="app">
-                                <div class="app-header">
-                                  <div class="user-settings">
-                                    <img
-                                      class="user-profile"
-                                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                      alt=""
-                                      class="account-profile"
-                                      alt=""
-                                    >
-                                    <div class="chat-area-title">客服名稱</div>
-                                  </div>
-                                  <div class="search-bar">
-                                    <input
-                                      type="text"
-                                      placeholder="搜尋..."
-                                    />
-                                  </div>
-
-                                </div>
-                                <div class="wrapper">
-                                  <div class="chat-area">
-                                    <div class="chat-area-header">
+                        </div>
 
 
+
+                      </div>
+                    </div>
+
+                    <div class="phone-search-group">
+                      <div class="d-grid gap-2 input-group d-flex align-items-center">
+                        <div class="btn-group btn-group-sm">
+
+                          <input
+                            id="bday-month"
+                            type="date"
+                            name="bday-month"
+                            class="input-date"
+                            value="2022-07-27"
+                          />
+                          <div class="btn-group btn-group-sm">
+                            <button
+                              class="btn btn-outline-primary dropdown-toggle w-75"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >ALL</button>
+                            <ul class="dropdown-menu">
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >張大千</a></li>
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >Helen</a></li>
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >Jesse</a></li>
+                              <li>
+                                <hr class="dropdown-divider">
+                              </li>
+                              <li><a
+                                  class="dropdown-item"
+                                  href="#"
+                                >Separated link</a></li>
+                            </ul>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="搜尋"
+                              aria-label="搜尋"
+                            />
+                            <button
+                              class="btn btn-outline-primary"
+                              type="button"
+                            >
+                              <ion-icon name="search-outline"></ion-icon>
+                            </button>
+                          </div>
+                        </div>
+
+
+
+
+
+                      </div>
+                    </div>
+
+                    <!-- 表單內容 -->
+
+
+                    <div class="customer-inquiry-page">
+
+                      <table class="content-table container text-center">
+                        <thead>
+                          <tr>
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <th>單號</th>
+                            <th>提問老師</th>
+                            <th>聯絡電話</th>
+                            <th>產品類型</th>
+                            <th>問題類型</th>
+                            <th>處理進度</th>
+                            <th>處理客服人員</th>
+                            <th>提問時間</th>
+                            <th>操作</th>
+
+                          </tr>
+                        </thead>
+
+                        <tbody>
+
+                          <!-- 表單四 -客戶自主完成結案-->
+
+                          <tr class="content_table_tbody_tr clients-close-case-by-own-tr">
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <td data-label="單號:">J220501001</td>
+                            <td data-label="提問老師:">Helen</td>
+                            <td data-label="聯絡電話:">0912111333</td>
+                            <td data-label="產品類型:">產品APP</td>
+                            <td data-label="問題類型:">忘記密碼</td>
+                            <td data-label="處理進度:">待提問人回覆</td>
+                            <td data-label="處理客服人員:">Wayne</td>
+                            <td data-label="提問時間:">
+                              <div>2022/05/01</div>
+                              <div>12:00</div>
+                            </td>
+                            <td data-label="操作:">
+                              <div
+                                class="btn-group"
+                                role="group"
+                                aria-label="Basic outlined example"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                >已完成<br>結案</button>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-primary"
+                                >再次<br>發問</button>
+                              </div>
+
+                            </td>
+                          </tr>
+
+                          <td
+                            class="td_list_table text-start"
+                            colspan="12"
+                          >
+                            <div class="panel_group">
+
+                              <!-- 新的內容 -->
+                              <div class="container my-4">
+                                <div class="chat-app">
+                                  <div class="chat-app-header">
+                                    <div class="user-settings">
+                                      <img
+                                        class="user-profile"
+                                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                        alt=""
+                                        class="account-profile"
+                                        alt=""
+                                      >
+                                      <div class="chat-area-title">客服名稱</div>
+                                    </div>
+                                    <div class="search-bar">
+                                      <input
+                                        type="text"
+                                        placeholder="搜尋..."
+                                      />
                                     </div>
 
-                                    <div class="chat-area-main">
-                                      <!-- 
-                                                            對話內容
-                                                            chat-msg 對方
-                                                            chat-msg owner 我方
-                    
+                                  </div>
+                                  <div class="wrapper">
+                                    <div class="chat-area">
+                                      <div class="chat-area-header">
+
+
+                                      </div>
+
+                                      <div class="chat-area-main">
+                                        <!-- 
+                                                              對話內容
+                                                              chat-msg 對方
+                                                              chat-msg owner 我方
+                      
+                                                              
                                                             
-                                                          
-                                                          -->
-                                      <div class="chat-msg owner">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
-                                            alt=""
-                                          />
-                                          <div class="chat-msg-date">Message seen 1.22pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
-                                          <div class="chat-msg-text">
+                                                            -->
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
                                             <img
-                                              src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
                                             />
+                                            <div class="chat-msg-date">Message seen 1.22pm</div>
                                           </div>
-                                          <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac orci
-                                            phasellus egestas. Pretium
-                                            lectus quam id leo.</div>
-                                        </div>
-                                      </div>
-
-                                      <div class="chat-msg ">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                          />
-                                          <div class="chat-msg-date">Message seen 1.22pm</div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
+                                            <div class="chat-msg-text">
+                                              <img
+                                                src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              />
+                                            </div>
+                                            <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac
+                                              orci
+                                              phasellus egestas. Pretium
+                                              lectus quam id leo.</div>
+                                          </div>
                                         </div>
 
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Luctus et ultrices posuere cubilia curae.</div>
-                                          <div class="chat-msg-text">
+                                        <div class="chat-msg ">
+                                          <div class="chat-msg-profile">
                                             <img
-                                              src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
                                             />
+                                            <div class="chat-msg-date">Message seen 1.22pm</div>
                                           </div>
-                                          <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac orci
-                                            phasellus egestas. Pretium
-                                            lectus quam id leo.</div>
-                                          <div class="chat-msg-text">Sit amet risus nullam eget felis eget. Dolor sed
-                                            viverra ipsum😂😂😂</div>
-                                          <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
+
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Luctus et ultrices posuere cubilia curae.</div>
+                                            <div class="chat-msg-text">
+                                              <img
+                                                src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              />
+                                            </div>
+                                            <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac
+                                              orci
+                                              phasellus egestas. Pretium
+                                              lectus quam id leo.</div>
+                                            <div class="chat-msg-text">Sit amet risus nullam eget felis eget. Dolor sed
+                                              viverra ipsum😂😂😂</div>
+                                            <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 2.45pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Aenean tristique maximus tortor non tincidunt.
+                                              Vestibulum ante ipsum primis in
+                                              faucibus orci luctus et ultrices posuere cubilia curae😊</div>
+                                            <div class="chat-msg-text">Ut faucibus pulvinar elementum integer enim neque
+                                              volutpat.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 2.50pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">posuere eget augue sodales, aliquet posuere eros.
+                                            </div>
+                                            <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Egestas tellus rutrum tellus pellentesque</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                              class="account-profile"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant
+                                              morbi tristique senectus et.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 2.50pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Tincidunt arcu non sodales😂</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant
+                                              morbi tristique senectus et🥰
+                                            </div>
+                                          </div>
                                         </div>
                                       </div>
-                                      <div class="chat-msg">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                          >
-                                          <div class="chat-msg-date">Message seen 2.45pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Aenean tristique maximus tortor non tincidunt.
-                                            Vestibulum ante ipsum primis in
-                                            faucibus orci luctus et ultrices posuere cubilia curae😊</div>
-                                          <div class="chat-msg-text">Ut faucibus pulvinar elementum integer enim neque
-                                            volutpat.</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg owner">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
-                                            alt=""
+
+                                      <!-- 聊天室底部 -->
+                                      <div class="chat-area-footer">
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="feather feather-image"
+                                        >
+                                          <rect
+                                            x="3"
+                                            y="3"
+                                            width="18"
+                                            height="18"
+                                            rx="2"
+                                            ry="2"
                                           />
-                                          <div class="chat-msg-date">Message seen 2.50pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">posuere eget augue sodales, aliquet posuere eros.
-                                          </div>
-                                          <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
+                                          <circle
+                                            cx="8.5"
+                                            cy="8.5"
+                                            r="1.5"
                                           />
-                                          <div class="chat-msg-date">Message seen 3.16pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Egestas tellus rutrum tellus pellentesque</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                            class="account-profile"
-                                            alt=""
-                                          >
-                                          <div class="chat-msg-date">Message seen 3.16pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant
-                                            morbi tristique senectus et.
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg owner">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
-                                            alt=""
+                                          <path d="M21 15l-5-5L5 21" />
+                                        </svg>
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="feather feather-paperclip"
+                                        >
+                                          <path
+                                            d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
                                           />
-                                          <div class="chat-msg-date">Message seen 2.50pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Tincidunt arcu non sodales😂</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                          >
-                                          <div class="chat-msg-date">Message seen 3.16pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant
-                                            morbi tristique senectus et🥰
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <!-- 聊天室底部 -->
-                                    <div class="chat-area-footer">
-
-                                      <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-image"
-                                      >
-                                        <rect
-                                          x="3"
-                                          y="3"
-                                          width="18"
-                                          height="18"
-                                          rx="2"
-                                          ry="2"
+                                        </svg>
+                                        <input
+                                          type="text"
+                                          placeholder="輸入訊息..."
                                         />
-                                        <circle
-                                          cx="8.5"
-                                          cy="8.5"
-                                          r="1.5"
-                                        />
-                                        <path d="M21 15l-5-5L5 21" />
-                                      </svg>
 
-                                      <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-paperclip"
-                                      >
-                                        <path
-                                          d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
-                                        />
-                                      </svg>
-                                      <input
-                                        type="text"
-                                        placeholder="輸入訊息..."
-                                      />
-
-                                      <div
-                                        class="btn-group"
-                                        role="group"
-                                        aria-label="Basic outlined example"
-                                      >
-                                        <button
-                                          type="button"
-                                          class="btn btn-outline-primary btn-custom-nowrap"
-                                        >發送</button>
+                                        <div
+                                          class="btn-group"
+                                          role="group"
+                                          aria-label="Basic outlined example"
+                                        >
+                                          <button
+                                            type="button"
+                                            class="btn btn-outline-primary btn-custom-nowrap"
+                                          >發送</button>
 
 
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
+
+                              </div>
+                            </div>
+
+                          </td>
+
+                          <tr class="content_table_tbody_tr customer-service-closed-tr">
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <td data-label="單號:">J220501001</td>
+                            <td data-label="提問老師:">Helen</td>
+                            <td data-label="聯絡電話:">0912111333</td>
+                            <td data-label="產品類型:">產品APP</td>
+                            <td data-label="問題類型:">忘記密碼</td>
+                            <td data-label="處理進度:">待提問人回覆</td>
+                            <td data-label="處理客服人員:">Wayne</td>
+                            <td data-label="提問時間:">
+                              <div>2022/05/01</div>
+                              <div>12:00</div>
+                            </td>
+                            <td data-label="操作:">
+                              <div
+                                class="btn-group"
+                                role="group"
+                                aria-label="Basic outlined example"
+                              >
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                >已完成<br>結案</button>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-primary"
+                                >再次<br>發問</button>
                               </div>
 
-                            </div>
-                          </div>
+                            </td>
+                          </tr>
 
-                        </td>
+                          <td
+                            class="td_list_table text-start "
+                            colspan="12"
+                          >
+                            <div class="panel_group">
 
-                        <tr class="content_table_tbody_tr customer-service-closed-tr">
-                          <th>
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id=""
-                            />
-                          </th>
-                          <td data-label="單號:">J220501001</td>
-                          <td data-label="提問時間:">
-                            <div>2022/05/01</div>
-                            <div>12:00</div>
-                          </td>
-                          <td data-label="提問老師:">Helen</td>
-                          <td data-label="聯絡電話:">0912111333</td>
-                          <td data-label="產品類型:">產品APP</td>
-                          <td data-label="問題類型:">忘記密碼</td>
-                          <td data-label="處理進度:">待提問人回覆</td>
-                          <td data-label="處理客服人員:">Wayne</td>
-                          <td data-label="操作:">
-                            <div
-                              class="btn-group"
-                              role="group"
-                              aria-label="Basic outlined example"
-                            >
-                              <button
-                                type="button"
-                                class="btn btn-secondary"
-                              >已完成<br>結案</button>
-                              <button
-                                type="button"
-                                class="btn btn-outline-primary"
-                              >再次<br>發問</button>
-                            </div>
-
-                          </td>
-                        </tr>
-
-                        <td
-                          class="td_list_table text-start "
-                          colspan="12"
-                        >
-                          <div class="panel_group">
-
-                            <!-- 新的內容 -->
-                            <div class="container my-4">
-                              <div class="app">
-                                <div class="app-header">
-                                  <div class="user-settings">
-                                    <img
-                                      class="user-profile"
-                                      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                      alt=""
-                                      class="account-profile"
-                                      alt=""
-                                    >
-                                    <div class="chat-area-title">客服名稱</div>
-                                  </div>
-                                  <div class="search-bar">
-                                    <input
-                                      type="text"
-                                      placeholder="搜尋..."
-                                    />
-                                  </div>
-
-                                </div>
-                                <div class="wrapper">
-                                  <div class="chat-area">
-                                    <div class="chat-area-header">
-
-
+                              <!-- 新的內容 -->
+                              <div class="container my-4">
+                                <div class="chat-app">
+                                  <div class="chat-app-header">
+                                    <div class="user-settings">
+                                      <img
+                                        class="user-profile"
+                                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                        alt=""
+                                        class="account-profile"
+                                        alt=""
+                                      >
+                                      <div class="chat-area-title">客服名稱</div>
+                                    </div>
+                                    <div class="search-bar">
+                                      <input
+                                        type="text"
+                                        placeholder="搜尋..."
+                                      />
                                     </div>
 
-                                    <div class="chat-area-main">
-                                      <!-- 
-                                                                                    對話內容
-                                                                                    chat-msg 對方
-                                                                                    chat-msg owner 我方
-                                            
+                                  </div>
+                                  <div class="wrapper">
+                                    <div class="chat-area">
+                                      <div class="chat-area-header">
+
+
+                                      </div>
+
+                                      <div class="chat-area-main">
+                                        <!-- 
+                                                                                      對話內容
+                                                                                      chat-msg 對方
+                                                                                      chat-msg owner 我方
+                                              
+                                                                                      
                                                                                     
-                                                                                  
-                                                                                  -->
-                                      <div class="chat-msg owner">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
-                                            alt=""
-                                          />
-                                          <div class="chat-msg-date">Message seen 1.22pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
-                                          <div class="chat-msg-text">
+                                                                                    -->
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
                                             <img
-                                              src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
                                             />
+                                            <div class="chat-msg-date">Message seen 1.22pm</div>
                                           </div>
-                                          <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac orci
-                                            phasellus egestas. Pretium
-                                            lectus quam id leo.</div>
-                                        </div>
-                                      </div>
-
-                                      <div class="chat-msg ">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                          />
-                                          <div class="chat-msg-date">Message seen 1.22pm</div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
+                                            <div class="chat-msg-text">
+                                              <img
+                                                src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              />
+                                            </div>
+                                            <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac
+                                              orci
+                                              phasellus egestas. Pretium
+                                              lectus quam id leo.</div>
+                                          </div>
                                         </div>
 
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Luctus et ultrices posuere cubilia curae.</div>
-                                          <div class="chat-msg-text">
+                                        <div class="chat-msg ">
+                                          <div class="chat-msg-profile">
                                             <img
-                                              src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
                                             />
+                                            <div class="chat-msg-date">Message seen 1.22pm</div>
                                           </div>
-                                          <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac orci
-                                            phasellus egestas. Pretium
-                                            lectus quam id leo.</div>
-                                          <div class="chat-msg-text">Sit amet risus nullam eget felis eget. Dolor sed
-                                            viverra ipsum😂😂😂</div>
-                                          <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
+
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Luctus et ultrices posuere cubilia curae.</div>
+                                            <div class="chat-msg-text">
+                                              <img
+                                                src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              />
+                                            </div>
+                                            <div class="chat-msg-text">Neque gravida in fermentum et sollicitudin ac
+                                              orci
+                                              phasellus egestas. Pretium
+                                              lectus quam id leo.</div>
+                                            <div class="chat-msg-text">Sit amet risus nullam eget felis eget. Dolor sed
+                                              viverra ipsum😂😂😂</div>
+                                            <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 2.45pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Aenean tristique maximus tortor non tincidunt.
+                                              Vestibulum ante ipsum primis in
+                                              faucibus orci luctus et ultrices posuere cubilia curae😊</div>
+                                            <div class="chat-msg-text">Ut faucibus pulvinar elementum integer enim neque
+                                              volutpat.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 2.50pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">posuere eget augue sodales, aliquet posuere eros.
+                                            </div>
+                                            <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Egestas tellus rutrum tellus pellentesque</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                              class="account-profile"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant
+                                              morbi tristique senectus et.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 2.50pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Tincidunt arcu non sodales😂</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant
+                                              morbi tristique senectus et🥰
+                                            </div>
+                                          </div>
                                         </div>
                                       </div>
-                                      <div class="chat-msg">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                          >
-                                          <div class="chat-msg-date">Message seen 2.45pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Aenean tristique maximus tortor non tincidunt.
-                                            Vestibulum ante ipsum primis in
-                                            faucibus orci luctus et ultrices posuere cubilia curae😊</div>
-                                          <div class="chat-msg-text">Ut faucibus pulvinar elementum integer enim neque
-                                            volutpat.</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg owner">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
-                                            alt=""
+
+                                      <!-- 聊天室底部 -->
+                                      <div class="chat-area-footer">
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="feather feather-image"
+                                        >
+                                          <rect
+                                            x="3"
+                                            y="3"
+                                            width="18"
+                                            height="18"
+                                            rx="2"
+                                            ry="2"
                                           />
-                                          <div class="chat-msg-date">Message seen 2.50pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">posuere eget augue sodales, aliquet posuere eros.
-                                          </div>
-                                          <div class="chat-msg-text">Cras mollis nec arcu malesuada tincidunt.</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
+                                          <circle
+                                            cx="8.5"
+                                            cy="8.5"
+                                            r="1.5"
                                           />
-                                          <div class="chat-msg-date">Message seen 3.16pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Egestas tellus rutrum tellus pellentesque</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                            class="account-profile"
-                                            alt=""
-                                          >
-                                          <div class="chat-msg-date">Message seen 3.16pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant
-                                            morbi tristique senectus et.
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg owner">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
-                                            alt=""
+                                          <path d="M21 15l-5-5L5 21" />
+                                        </svg>
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="feather feather-paperclip"
+                                        >
+                                          <path
+                                            d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
                                           />
-                                          <div class="chat-msg-date">Message seen 2.50pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Tincidunt arcu non sodales😂</div>
-                                        </div>
-                                      </div>
-                                      <div class="chat-msg">
-                                        <div class="chat-msg-profile">
-                                          <img
-                                            class="chat-msg-img"
-                                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
-                                            alt=""
-                                          >
-                                          <div class="chat-msg-date">Message seen 3.16pm</div>
-                                        </div>
-                                        <div class="chat-msg-content">
-                                          <div class="chat-msg-text">Consectetur adipiscing elit pellentesque habitant
-                                            morbi tristique senectus et🥰
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <!-- 聊天室底部 -->
-                                    <div class="chat-area-footer">
-
-                                      <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-image"
-                                      >
-                                        <rect
-                                          x="3"
-                                          y="3"
-                                          width="18"
-                                          height="18"
-                                          rx="2"
-                                          ry="2"
+                                        </svg>
+                                        <input
+                                          type="text"
+                                          placeholder="輸入訊息..."
                                         />
-                                        <circle
-                                          cx="8.5"
-                                          cy="8.5"
-                                          r="1.5"
-                                        />
-                                        <path d="M21 15l-5-5L5 21" />
-                                      </svg>
 
-                                      <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="feather feather-paperclip"
-                                      >
-                                        <path
-                                          d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
-                                        />
-                                      </svg>
-                                      <input
-                                        type="text"
-                                        placeholder="輸入訊息..."
-                                      />
-
-                                      <div
-                                        class="btn-group"
-                                        role="group"
-                                        aria-label="Basic outlined example"
-                                      >
-                                        <button
-                                          type="button"
-                                          class="btn btn-outline-primary btn-custom-nowrap"
-                                        >發送</button>
+                                        <div
+                                          class="btn-group"
+                                          role="group"
+                                          aria-label="Basic outlined example"
+                                        >
+                                          <button
+                                            type="button"
+                                            class="btn btn-outline-primary btn-custom-nowrap"
+                                          >發送</button>
 
 
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
+
                               </div>
-
                             </div>
-                          </div>
 
-                        </td>
-
+                          </td>
 
 
-                      </tbody>
-                    </table>
+
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
 
-      </div>
+
+
+
+        <!-- 常見問題 表單四 -->
 
 
 
 
+        <div
+          class="tab-pane "
+          id="commonProblem"
+        >
 
+          <div class="mb-2">
+            <div class=" flex">
 
-    </div>
+              <!-- 搜尋欄 -->
+              <div>
+                <div class="d-grid mb-3 ">
+                  <div class="btn-toolbar justify-content-between">
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="staticBackdrop"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5
-              class="modal-title"
-              id="staticBackdropLabel"
-            >還要再發問</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body ">
-            <div class="input-group mb-3">
-              <span class="input-group-text d-flex">老師請補充說明</span>
-              <textarea
-                class="form-control"
-                aria-label="With textarea"
-              ></textarea>
-            </div>
+                    <div class="btn-group ">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="搜尋"
+                        aria-label="搜尋"
+                      />
+                      <button
+                        class="btn btn-outline-success "
+                        type="button"
+                      >
+                        <ion-icon name="search-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-            <div class="input-group mb-4">
-              <input
-                type="file"
-                class="form-control"
-                id="inputGroupFile02"
-              />
-
-              <label
-                class="input-group-text"
-                for="inputGroupFile02"
+              <!-- 內容 -->
+              <div
+                class="accordion"
+                id="accordionExample"
               >
-                更新
-              </label>
+                <div class="accordion-item">
+                  <h2
+                    class="accordion-header"
+                    id="headingOne"
+                  >
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      校掌雲Windows版本問題
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by
+                      default, until the collapse
+                      plugin adds the appropriate classes that we use to style each element. These
+                      classes control the overall
+                      appearance, as well as the showing and hiding via CSS transitions. You can
+                      modify any of this with
+                      custom CSS or overriding our default variables. It's also worth noting that just
+                      about any HTML can go
+                      within the <code>.accordion-body</code>, though the transition does limit
+                      overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2
+                    class="accordion-header"
+                    id="headingTwo"
+                  >
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      APP問題
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by
+                      default, until the collapse
+                      plugin adds the appropriate classes that we use to style each element. These
+                      classes control the overall
+                      appearance, as well as the showing and hiding via CSS transitions. You can
+                      modify any of this with
+                      custom CSS or overriding our default variables. It's also worth noting that just
+                      about any HTML can go
+                      within the <code>.accordion-body</code>, though the transition does limit
+                      overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2
+                    class="accordion-header"
+                    id="headingThree"
+                  >
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      WEB問題
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by
+                      default, until the collapse
+                      plugin adds the appropriate classes that we use to style each element. These
+                      classes control the overall
+                      appearance, as well as the showing and hiding via CSS transitions. You can
+                      modify any of this with
+                      custom CSS or overriding our default variables. It's also worth noting that just
+                      about any HTML can go
+                      within the <code>.accordion-body</code>, though the transition does limit
+                      overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
           </div>
-          <div class="modal-footer justify-content-between">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >Close</button>
-            <button
-              type="button"
-              class="btn btn-success"
-            >發送</button>
+
+        </div>
+
+
+
+
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5
+                class="modal-title"
+                id="staticBackdropLabel"
+              >還要再發問</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body ">
+              <div class="input-group mb-3">
+                <span class="input-group-text d-flex">老師請補充說明</span>
+                <textarea
+                  class="form-control"
+                  aria-label="With textarea"
+                ></textarea>
+              </div>
+
+              <div class="input-group mb-4">
+                <input
+                  type="file"
+                  class="form-control"
+                  id="inputGroupFile02"
+                />
+
+                <label
+                  class="input-group-text"
+                  for="inputGroupFile02"
+                >
+                  更新
+                </label>
+              </div>
+
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >Close</button>
+              <button
+                type="button"
+                class="btn btn-success"
+              >發送</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
   </div>
 
   <!-- Button trigger modal -->
@@ -1568,6 +1743,10 @@
     nomodule
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
   ></script>
+
+
+
+
 </body>
 
 </html>
