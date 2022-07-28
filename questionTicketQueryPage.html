@@ -20,6 +20,8 @@
 
 <body>
 
+  <!-- 側邊欄位 -->
+
   <div class="sidebar_box">
     <div class="sidebar-menu me-2">
       <div class="openHideSideBar">
@@ -452,7 +454,7 @@
 
 
   <!--/#navbar-->
-
+  <!-- 右邊欄位 -->
 
   <div class="right_content home">
 
@@ -460,7 +462,7 @@
     <div class="container-fluid header mb-md-5  d-flex justify-content-between nav_shadow">
 
       <!-- 導覽列 -->
-      <!-- 測試版本 -->
+
 
       <div class="nav_container">
         <h2 class="header_title">問題單查詢</h2>
@@ -530,9 +532,6 @@
           </ul>
         </nav>
 
-
-
-
       </div>
 
 
@@ -577,10 +576,6 @@
     </div>
 
     <!-- Nav pills -->
-
-
-
-
 
 
     <div class=" col">
@@ -660,10 +655,11 @@
                   </button>
                 </li>
 
-
-
-
               </ul>
+
+
+              <!-- 表單一 問題單查詢-尚未處理 -->
+
               <div
                 class="tab-content pt-2"
                 id="myTabContent"
@@ -678,7 +674,7 @@
                   <div class=" flex">
 
                     <!-- 搜尋欄 -->
-                    <div class="">
+                    <div class="shadow p-3  bg-body rounded-3">
                       <div class="d-grid gap-2 input-group d-flex align-items-center">
                         <button
                           class="btn btn-outline-primary"
@@ -710,7 +706,17 @@
                             <option value="Tainan">台南市</option>
                           </select>
                         </div>
-
+                        <div class="col-xs-2">
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>補習班名稱</option>
+                            <option value="小牛津幼兒園">小牛津幼兒園</option>
+                            <option value="孫老師育人補習班">孫老師育人補習班</option>
+                            <option value="高標語文數理資優班">高標語文數理資優班</option>
+                          </select>
+                        </div>
                         <div class="col-xs-2">
 
                           <input
@@ -747,15 +753,15 @@
                               />
                             </th>
                             <th>單號</th>
-                            <th>提問時間</th>
-                            <th>公司別</th>
                             <th>客戶編號</th>
+                            <th>公司別</th>
                             <th>客戶名稱</th>
                             <th>提問人</th>
                             <th>電話</th>
                             <th>提問產品</th>
                             <th>問題類別</th>
                             <th>操作</th>
+                            <th>提問時間</th>
                             <th>案件狀態</th>
 
                           </tr>
@@ -764,7 +770,7 @@
 
 
 
-                          <!-- 表單一-編號1 -良好 -->
+                          <!-- 表單一 問題單查詢-尚未處理-編號1 -尚未完成 -->
 
 
 
@@ -777,18 +783,14 @@
                                 id=""
                               />
                             </th>
-                            <td data-label="單號">J220501001</td>
-                            <td data-label="提問時間">
-                              <div>
-                                2022/05/01
-                                <br />
-                                12:00
-                              </div>
-                            </td>
-                            <td data-label="公司別">傑人</td>
+                            <td
+                              data-label="單號"
+                              class="payment-reminder-red2"
+                            >J220501001</td>
                             <td data-label="客戶編號">
                               123456789
                             </td>
+                            <td data-label="公司別">傑人</td>
                             <td data-label="客戶名稱">
                               長頸路
                             </td>
@@ -810,8 +812,15 @@
                                 class="btn btn-outline-success"
                               >完成<br>結案</button>
                             </td>
+                            <td data-label="提問時間">
+                              <div>
+                                2022/05/01
+                                <br />
+                                12:00
+                              </div>
+                            </td>
                             <td data-label="案件狀態">
-                              已結案
+                              尚未完成
                             </td>
 
                           </tr>
@@ -1077,9 +1086,6 @@
                             </div>
                           </td>
 
-
-
-
                         </tbody>
                       </table>
 
@@ -1089,12 +1095,752 @@
                   </div>
                 </div>
 
+                <!--  -->
+                <!-- 表單一 問題單查詢-已結案 -->
+                <!--  -->
+
                 <div
                   class="tab-pane "
                   id="closedIssue"
                   role="tabpanel"
                   aria-labelledby="closedIssue-tab"
-                >123</div>
+                >
+                  <div class=" flex">
+
+                    <!-- 搜尋欄 -->
+                    <div class="shadow p-3  bg-body rounded-3">
+                      <div class="d-grid gap-2 input-group d-flex align-items-center">
+                        <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                        >
+                          <ion-icon name="chevron-back-outline"></ion-icon>
+                        </button>
+                        <input
+                          id="bday-month"
+                          type="date"
+                          name="bday-month"
+                          class="input-date"
+                          value="2022-05"
+                        />
+                        <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                        >
+                          <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </button>
+                        <div class="col-xs-2">
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>縣市選擇</option>
+                            <option value="Taichung">台中市</option>
+                            <option value="Taipei">台北市</option>
+                            <option value="Tainan">台南市</option>
+                          </select>
+                        </div>
+                        <div class="col-xs-2">
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>補習班名稱</option>
+                            <option value="小牛津幼兒園">小牛津幼兒園</option>
+                            <option value="孫老師育人補習班">孫老師育人補習班</option>
+                            <option value="高標語文數理資優班">高標語文數理資優班</option>
+                          </select>
+                        </div>
+                        <div class="col-xs-2">
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="搜尋"
+                            aria-label="搜尋"
+                          />
+                        </div>
+                        <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                        >
+                          <ion-icon name="search-outline"></ion-icon>
+                        </button>
+
+
+                      </div>
+
+
+
+                    </div>
+
+                    <div>
+                      <table class="content-table text-center">
+                        <thead>
+                          <tr>
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <th>單號</th>
+                            <th>客戶編號</th>
+                            <th>公司別</th>
+                            <th>客戶名稱</th>
+                            <th>提問人</th>
+                            <th>電話</th>
+                            <th>提問產品</th>
+                            <th>問題類別</th>
+                            <th>操作</th>
+                            <th>提問時間</th>
+                            <th>案件狀態</th>
+
+                          </tr>
+                        </thead>
+                        <tbody>
+
+
+
+                          <!-- 表單一 問題單查詢-已結案 -客戶自行結案 -->
+
+
+
+                          <tr class="content_table_tbody_tr clients-close-case-by-own-tr">
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <td
+                              data-label="單號"
+                              class="payment-reminder-green"
+                            >J220501001</td>
+                            <td data-label="客戶編號">
+                              123456789
+                            </td>
+                            <td data-label="公司別">傑人</td>
+                            <td data-label="客戶名稱">
+                              長頸路
+                            </td>
+                            <td data-label="提問人">
+                              Helen
+                            </td>
+                            <td data-label="電話">
+                              04-12345678
+                            </td>
+                            <td data-label="提問產品">
+                              手機APP
+                            </td>
+                            <td data-label="問題類別">
+                              密碼問題
+                            </td>
+                            <td data-label="操作">
+                              <button
+                                type="button"
+                                class="btn btn-success"
+                              >已完成<br>結案</button>
+                            </td>
+                            <td data-label="提問時間">
+                              <div>
+                                2022/05/01
+                                <br />
+                                12:00
+                              </div>
+                            </td>
+                            <td data-label="案件狀態">
+                              客戶自行結案
+                            </td>
+
+                          </tr>
+                          <td
+                            class="td_list_table"
+                            colspan="12"
+                          >
+                            <div class="panel_group">
+                              <div class="container my-4">
+                                <div class="chat-app">
+                                  <div class="chat-app-header">
+                                    <div class="user-settings">
+                                      <img
+                                        class="chat-msg-img"
+                                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                        alt=""
+                                      />
+                                      <div class="chat-area-title">客戶名稱</div>
+                                    </div>
+                                    <div class="search-bar">
+                                      <input
+                                        type="text"
+                                        placeholder="搜尋..."
+                                      />
+                                    </div>
+
+                                  </div>
+                                  <div class="wrapper">
+                                    <div class="chat-area">
+                                      <div class="chat-area-header">
+
+
+                                      </div>
+
+                                      <div class="chat-area-main">
+                                        <!-- 對話內容
+                                          chat-msg 對方
+                                          chat-msg owner 我方
+                                        -->
+                                        <div class="chat-msg ">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 1.22pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
+                                            <div class="chat-msg-text">
+                                              <img
+                                                src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              />
+                                            </div>
+                                            <div class="chat-msg-text">Neque gravida in fermentum et
+                                              sollicitudin ac orci
+                                              phasellus egestas. Pretium
+                                              lectus quam id leo.</div>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 1.22pm</div>
+                                          </div>
+
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Luctus et ultrices posuere
+                                              cubilia curae.</div>
+                                            <div class="chat-msg-text">
+                                              <img
+                                                src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              />
+                                            </div>
+                                            <div class="chat-msg-text">Neque gravida in fermentum et
+                                              sollicitudin ac orci
+                                              phasellus egestas. Pretium
+                                              lectus quam id leo.</div>
+                                            <div class="chat-msg-text">Sit amet risus nullam eget felis
+                                              eget. Dolor sed
+                                              viverra ipsum😂😂😂</div>
+                                            <div class="chat-msg-text">Cras mollis nec arcu malesuada
+                                              tincidunt.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 2.45pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Aenean tristique maximus tortor
+                                              non tincidunt.
+                                              Vestibulum ante ipsum primis in
+                                              faucibus orci luctus et ultrices posuere cubilia curae😊
+                                            </div>
+                                            <div class="chat-msg-text">Ut faucibus pulvinar elementum
+                                              integer enim neque
+                                              volutpat.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg ">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 2.50pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">posuere eget augue sodales,
+                                              aliquet posuere eros.
+                                            </div>
+                                            <div class="chat-msg-text">Cras mollis nec arcu malesuada
+                                              tincidunt.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Egestas tellus rutrum tellus
+                                              pellentesque</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                              class="account-profile"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Consectetur adipiscing elit
+                                              pellentesque habitant
+                                              morbi tristique senectus et.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg ">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 2.50pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Tincidunt arcu non sodales😂
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Consectetur adipiscing elit
+                                              pellentesque habitant
+                                              morbi tristique senectus et🥰
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <!-- 聊天室底部 -->
+                                      <div class="chat-area-footer">
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="feather feather-image"
+                                        >
+                                          <rect
+                                            x="3"
+                                            y="3"
+                                            width="18"
+                                            height="18"
+                                            rx="2"
+                                            ry="2"
+                                          />
+                                          <circle
+                                            cx="8.5"
+                                            cy="8.5"
+                                            r="1.5"
+                                          />
+                                          <path d="M21 15l-5-5L5 21" />
+                                        </svg>
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="feather feather-paperclip"
+                                        >
+                                          <path
+                                            d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
+                                          />
+                                        </svg>
+                                        <input
+                                          type="text"
+                                          placeholder="輸入訊息..."
+                                        />
+
+                                        <div
+                                          class="btn-group"
+                                          role="group"
+                                          aria-label="Basic outlined example"
+                                        >
+                                          <button
+                                            type="button"
+                                            class="btn btn-outline-primary btn-custom-nowrap"
+                                          >發送</button>
+
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </td>
+
+
+                          <!-- 表單一 問題單查詢-已結案 -客服方結案 -->
+
+
+
+                          <tr class="content_table_tbody_tr customer-service-closed-tr">
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <td
+                              data-label="單號"
+                              class="payment-reminder-gray"
+                            >J220501001</td>
+                            <td data-label="客戶編號">
+                              123456789
+                            </td>
+                            <td data-label="公司別">傑人</td>
+                            <td data-label="客戶名稱">
+                              長頸路
+                            </td>
+                            <td data-label="提問人">
+                              Helen
+                            </td>
+                            <td data-label="電話">
+                              04-12345678
+                            </td>
+                            <td data-label="提問產品">
+                              手機APP
+                            </td>
+                            <td data-label="問題類別">
+                              密碼問題
+                            </td>
+                            <td data-label="操作">
+
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                              >已完成<br>結案</button>
+
+
+                            </td>
+                            <td data-label="提問時間">
+                              <div>
+                                2022/05/01
+                                <br />
+                                12:00
+                              </div>
+                            </td>
+                            <td data-label="案件狀態">
+                              客服方結案
+                            </td>
+
+                          </tr>
+                          <td
+                            class="td_list_table"
+                            colspan="12"
+                          >
+                            <div class="panel_group">
+                              <div class="container my-4">
+                                <div class="chat-app">
+                                  <div class="chat-app-header">
+                                    <div class="user-settings">
+                                      <img
+                                        class="chat-msg-img"
+                                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                        alt=""
+                                      />
+                                      <div class="chat-area-title">客戶名稱</div>
+                                    </div>
+                                    <div class="search-bar">
+                                      <input
+                                        type="text"
+                                        placeholder="搜尋..."
+                                      />
+                                    </div>
+
+                                  </div>
+                                  <div class="wrapper">
+                                    <div class="chat-area">
+                                      <div class="chat-area-header">
+
+
+                                      </div>
+
+                                      <div class="chat-area-main">
+                                        <!-- 對話內容
+                                                                    chat-msg 對方
+                                                                    chat-msg owner 我方
+                                                                  -->
+                                        <div class="chat-msg ">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 1.22pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
+                                            <div class="chat-msg-text">
+                                              <img
+                                                src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              />
+                                            </div>
+                                            <div class="chat-msg-text">Neque gravida in fermentum et
+                                              sollicitudin ac orci
+                                              phasellus egestas. Pretium
+                                              lectus quam id leo.</div>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 1.22pm</div>
+                                          </div>
+
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Luctus et ultrices posuere
+                                              cubilia curae.</div>
+                                            <div class="chat-msg-text">
+                                              <img
+                                                src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              />
+                                            </div>
+                                            <div class="chat-msg-text">Neque gravida in fermentum et
+                                              sollicitudin ac orci
+                                              phasellus egestas. Pretium
+                                              lectus quam id leo.</div>
+                                            <div class="chat-msg-text">Sit amet risus nullam eget felis
+                                              eget. Dolor sed
+                                              viverra ipsum😂😂😂</div>
+                                            <div class="chat-msg-text">Cras mollis nec arcu malesuada
+                                              tincidunt.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 2.45pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Aenean tristique maximus tortor
+                                              non tincidunt.
+                                              Vestibulum ante ipsum primis in
+                                              faucibus orci luctus et ultrices posuere cubilia curae😊
+                                            </div>
+                                            <div class="chat-msg-text">Ut faucibus pulvinar elementum
+                                              integer enim neque
+                                              volutpat.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg ">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 2.50pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">posuere eget augue sodales,
+                                              aliquet posuere eros.
+                                            </div>
+                                            <div class="chat-msg-text">Cras mollis nec arcu malesuada
+                                              tincidunt.</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Egestas tellus rutrum tellus
+                                              pellentesque</div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                              class="account-profile"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Consectetur adipiscing elit
+                                              pellentesque habitant
+                                              morbi tristique senectus et.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg ">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">Message seen 2.50pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Tincidunt arcu non sodales😂
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            >
+                                            <div class="chat-msg-date">Message seen 3.16pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">Consectetur adipiscing elit
+                                              pellentesque habitant
+                                              morbi tristique senectus et🥰
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <!-- 聊天室底部 -->
+                                      <div class="chat-area-footer">
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="feather feather-image"
+                                        >
+                                          <rect
+                                            x="3"
+                                            y="3"
+                                            width="18"
+                                            height="18"
+                                            rx="2"
+                                            ry="2"
+                                          />
+                                          <circle
+                                            cx="8.5"
+                                            cy="8.5"
+                                            r="1.5"
+                                          />
+                                          <path d="M21 15l-5-5L5 21" />
+                                        </svg>
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="feather feather-paperclip"
+                                        >
+                                          <path
+                                            d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
+                                          />
+                                        </svg>
+                                        <input
+                                          type="text"
+                                          placeholder="輸入訊息..."
+                                        />
+
+                                        <div
+                                          class="btn-group"
+                                          role="group"
+                                          aria-label="Basic outlined example"
+                                        >
+                                          <button
+                                            type="button"
+                                            class="btn btn-outline-primary btn-custom-nowrap"
+                                          >發送</button>
+
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </td>
+                        </tbody>
+
+                      </table>
+
+
+                    </div>
+
+                  </div>
+
+                </div>
 
               </div>
             </div>
@@ -1107,208 +1853,642 @@
             class="tab-pane"
             id="CallRecordQueryTab"
           >
+
             <div class="mb-2">
+              <ul
+                class="nav nav-tabs mb-4"
+                id="myTab"
+                role="tablist"
+              >
+                <li
+                  class="nav-item"
+                  role="presentation"
+                >
+                  <button
+                    class="nav-link active"
+                    id="notProcessedCalllogQuery-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#notProcessedCalllogQuery "
+                    type="button"
+                    role="tab"
+                    aria-controls="notProcessedCalllogQuery "
+                    aria-selected="true"
+                  >
+                    尚未處理
+                  </button>
+                </li>
+                <li
+                  class="nav-item"
+                  role="presentation"
+                >
+                  <button
+                    class="nav-link "
+                    id="closedProcessedCalllogQuery-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#closedProcessedCalllogQuery"
+                    type="button"
+                    role="tab"
+                    aria-controls="closedProcessedCalllogQuery"
+                    aria-selected="false"
+                  >
+                    已結案
+                  </button>
+                </li>
 
-              <div class=" flex">
+              </ul>
 
-                <!-- 搜尋欄 -->
-                <div class="">
-                  <div class="d-grid gap-2 input-group d-flex align-items-center">
-                    <button
-                      class="btn btn-outline-primary"
-                      type="button"
-                    >
-                      <ion-icon name="chevron-back-outline"></ion-icon>
-                    </button>
-                    <input
-                      id="bday-month"
-                      type="month"
-                      name="bday-month"
-                      class="input-date"
-                    />
-                    <button
-                      class="btn btn-outline-primary"
-                      type="button"
-                    >
-                      <ion-icon name="chevron-forward-outline"></ion-icon>
-                    </button>
-                    <div class="input-group-addon">to</div>
-                    <button
-                      class="btn btn-outline-primary"
-                      type="button"
-                    >
-                      <ion-icon name="chevron-back-outline"></ion-icon>
-                    </button>
-                    <input
-                      id="bday-month"
-                      type="month"
-                      name="bday-month"
-                      class="input-date"
-                      value="2022-05"
-                    />
-                    <button
-                      class="btn btn-outline-primary"
-                      type="button"
-                    >
-                      <ion-icon name="chevron-forward-outline"></ion-icon>
-                    </button>
-                    <div class="col-xs-2">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="搜尋"
-                        aria-label="搜尋"
-                      />
+
+              <!-- 表單二 來電紀錄查詢-尚未處理 -->
+
+              <div
+                class="tab-content pt-2"
+                id="myTabContent"
+              >
+                <div
+                  class="tab-pane show active"
+                  id="notProcessedCalllogQuery"
+                  role="tabpanel"
+                  aria-labelledby="notProcessedCalllogQuery-tab"
+                >
+
+                  <div class=" flex">
+
+                    <!-- 搜尋欄 -->
+                    <div class="shadow p-3  bg-body rounded-3 d-flex justify-content-between">
+                      <div class="gap-2 input-group d-flex align-items-center">
+                        <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                        >
+                          <ion-icon name="chevron-back-outline"></ion-icon>
+                        </button>
+                        <input
+                          id="bday-month"
+                          type="date"
+                          name="bday-month"
+                          class="input-date"
+                          value="2022-05"
+                        />
+                        <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                        >
+                          <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </button>
+                        <div class="col-xs-2">
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>縣市選擇</option>
+                            <option value="Taichung">台中市</option>
+                            <option value="Taipei">台北市</option>
+                            <option value="Tainan">台南市</option>
+                          </select>
+                        </div>
+                        <div class="col-xs-2">
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>補習班名稱</option>
+                            <option value="小牛津幼兒園">小牛津幼兒園</option>
+                            <option value="孫老師育人補習班">孫老師育人補習班</option>
+                            <option value="高標語文數理資優班">高標語文數理資優班</option>
+                          </select>
+                        </div>
+                        <div class="col-xs-2">
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="搜尋"
+                            aria-label="搜尋"
+                          />
+                        </div>
+                        <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop"
+                        >
+                          <ion-icon name="search-outline"></ion-icon>
+                        </button>
+
+                      </div>
+
+                      <div class="col-xs-2">
+
+
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop"
+                        >
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
                     </div>
-                    <button
-                      class="btn btn-outline-primary"
-                      type="button"
-                    >
-                      <ion-icon name="search-outline"></ion-icon>
-                    </button>
 
+                    <div>
+
+                      <table class="content-table text-center">
+                        <thead>
+                          <tr>
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <th>來電時間</th>
+                            <th>公司別</th>
+                            <th>客戶編號</th>
+                            <th>客戶名稱</th>
+                            <th>提問人</th>
+                            <th>電話</th>
+                            <th>提問產品</th>
+                            <th>問題類別</th>
+                            <th>接聽人員</th>
+
+
+                          </tr>
+                        </thead>
+                        <tbody>
+
+
+
+                          <!-- 表單二 來電紀錄查詢 -編號1 -良好 -->
+
+
+
+                          <tr class="content_table_tbody_tr">
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <td data-label="來電時間">
+                              <div>
+                                2022/05/01
+                                <br />
+                                12:00
+                              </div>
+                            </td>
+                            <td data-label="公司別">傑人</td>
+                            <td data-label="客戶編號">
+                              123456789
+                            </td>
+                            <td data-label="客戶名稱">
+                              長頸路
+                            </td>
+                            <td data-label="提問人">
+                              Helen
+                            </td>
+                            <td data-label="電話">
+                              04-12345678
+                            </td>
+                            <td data-label="提問產品">
+                              手機APP
+                            </td>
+                            <td data-label="問題類別">
+                              密碼問題
+                            </td>
+
+                            <td data-label="接聽人員">
+                              HANNAH
+                            </td>
+
+                          </tr>
+                          <td
+                            class="td_list_table"
+                            colspan="12"
+                          >
+                            <div class="panel_group">
+                              <div class="container  text-start my-3">
+                                <div class="mb-3">
+                                  <label
+                                    for="exampleFormControlTextarea1"
+                                    class="form-label"
+                                  >問題說明:
+                                  </label>
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                  >密碼鎖住了,不會解鎖,不會還原</textarea>
+                                </div>
+
+                                <div class="mb-3">
+                                  <label
+                                    for="exampleFormControlTextarea1"
+                                    class="form-label"
+                                  >客服說明:
+                                  </label>
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                  ></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+
+
+
+
+                        </tbody>
+                      </table>
+
+
+                    </div>
 
                   </div>
-
-
-
                 </div>
 
-                <div>
-                  <table class="content-table text-center">
-                    <thead>
-                      <tr>
-                        <th>
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id=""
-                          />
-                        </th>
-                        <th>來電時間</th>
-                        <th>公司別</th>
-                        <th>客戶編號</th>
-                        <th>客戶名稱</th>
-                        <th>提問人</th>
-                        <th>電話</th>
-                        <th>提問產品</th>
-                        <th>問題類別</th>
-                        <th>接聽人員</th>
+                <!--  -->
+                <!-- 表單二 來電紀錄查詢-已結案 -->
+                <!--  -->
 
+                <div
+                  class="tab-pane "
+                  id="closedProcessedCalllogQuery"
+                  role="tabpanel"
+                  aria-labelledby="closedProcessedCalllogQuery-tab"
+                >
+                  <div class=" flex">
 
-                      </tr>
-                    </thead>
-                    <tbody>
-
-
-
-                      <!-- 表單二 來電紀錄查詢 -編號1 -良好 -->
-
-
-
-                      <tr class="content_table_tbody_tr">
-                        <th>
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            value=""
-                            id=""
-                          />
-                        </th>
-                        <td data-label="來電時間">
-                          <div>
-                            2022/05/01
-                            <br />
-                            12:00
-                          </div>
-                        </td>
-                        <td data-label="公司別">傑人</td>
-                        <td data-label="客戶編號">
-                          123456789
-                        </td>
-                        <td data-label="客戶名稱">
-                          長頸路
-                        </td>
-                        <td data-label="提問人">
-                          Helen
-                        </td>
-                        <td data-label="電話">
-                          04-12345678
-                        </td>
-                        <td data-label="提問產品">
-                          手機APP
-                        </td>
-                        <td data-label="問題類別">
-                          密碼問題
-                        </td>
-
-                        <td data-label="接聽人員">
-                          HANNAH
-                        </td>
-
-                      </tr>
-                      <td
-                        class="td_list_table"
-                        colspan="12"
-                      >
-                        <div class="panel_group">
-                          <div class="container  text-start my-3">
-                            <div class="mb-3">
-                              <label
-                                for="exampleFormControlTextarea1"
-                                class="form-label"
-                              >問題說明:
-                              </label>
-                              <textarea
-                                class="form-control"
-                                id="exampleFormControlTextarea1"
-                                rows="3"
-                              >密碼鎖住了,不會解鎖,不會還原</textarea>
-                            </div>
-
-                            <div class="mb-3">
-                              <label
-                                for="exampleFormControlTextarea1"
-                                class="form-label"
-                              >客服說明:
-                              </label>
-                              <textarea
-                                class="form-control"
-                                id="exampleFormControlTextarea1"
-                                rows="3"
-                              ></textarea>
-                            </div>
-                          </div>
+                    <!-- 搜尋欄 -->
+                    <div class="shadow p-3  bg-body rounded-3">
+                      <div class="gap-2 input-group d-flex align-items-center">
+                        <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                        >
+                          <ion-icon name="chevron-back-outline"></ion-icon>
+                        </button>
+                        <input
+                          id="bday-month"
+                          type="date"
+                          name="bday-month"
+                          class="input-date"
+                          value="2022-05"
+                        />
+                        <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                        >
+                          <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </button>
+                        <div class="col-xs-2">
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>縣市選擇</option>
+                            <option value="Taichung">台中市</option>
+                            <option value="Taipei">台北市</option>
+                            <option value="Tainan">台南市</option>
+                          </select>
                         </div>
-                      </td>
+                        <div class="col-xs-2">
+                          <select
+                            class="form-select"
+                            aria-label="Default select example"
+                          >
+                            <option selected>補習班名稱</option>
+                            <option value="小牛津幼兒園">小牛津幼兒園</option>
+                            <option value="孫老師育人補習班">孫老師育人補習班</option>
+                            <option value="高標語文數理資優班">高標語文數理資優班</option>
+                          </select>
+                        </div>
+                        <div class="col-xs-2">
+
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="搜尋"
+                            aria-label="搜尋"
+                          />
+                        </div>
+                        <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                        >
+                          <ion-icon name="search-outline"></ion-icon>
+                        </button>
 
 
 
 
-                    </tbody>
-                  </table>
+                      </div>
 
+
+
+                    </div>
+
+                    <div>
+
+                      <table class="content-table text-center">
+                        <thead>
+                          <tr>
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <th>來電時間</th>
+                            <th>公司別</th>
+                            <th>客戶編號</th>
+                            <th>客戶名稱</th>
+                            <th>提問人</th>
+                            <th>電話</th>
+                            <th>提問產品</th>
+                            <th>問題類別</th>
+                            <th>接聽人員</th>
+
+
+                          </tr>
+                        </thead>
+                        <tbody>
+
+
+
+                          <!-- 表單二 來電紀錄查詢 -編號1 -良好 -->
+
+
+
+                          <tr class="content_table_tbody_tr">
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <td data-label="來電時間">
+                              <div>
+                                2022/05/01
+                                <br />
+                                12:00
+                              </div>
+                            </td>
+                            <td data-label="公司別">傑人</td>
+                            <td data-label="客戶編號">
+                              123456789
+                            </td>
+                            <td data-label="客戶名稱">
+                              長頸路
+                            </td>
+                            <td data-label="提問人">
+                              Helen
+                            </td>
+                            <td data-label="電話">
+                              04-12345678
+                            </td>
+                            <td data-label="提問產品">
+                              手機APP
+                            </td>
+                            <td data-label="問題類別">
+                              密碼問題
+                            </td>
+
+                            <td data-label="接聽人員">
+                              HANNAH
+                            </td>
+
+                          </tr>
+                          <td
+                            class="td_list_table"
+                            colspan="12"
+                          >
+                            <div class="panel_group">
+                              <div class="container  text-start my-3">
+                                <div class="mb-3">
+                                  <label
+                                    for="exampleFormControlTextarea1"
+                                    class="form-label"
+                                  >問題說明:
+                                  </label>
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                  >密碼鎖住了,不會解鎖,不會還原</textarea>
+                                </div>
+
+                                <div class="mb-3">
+                                  <label
+                                    for="exampleFormControlTextarea1"
+                                    class="form-label"
+                                  >客服說明:
+                                  </label>
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                  ></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+
+
+
+
+                        </tbody>
+                      </table>
+
+
+                    </div>
+
+                  </div>
 
                 </div>
 
               </div>
             </div>
 
+
           </div>
-
-
-
 
 
 
         </div>
 
 
-
-        <!-- modal結束 -->
       </div>
     </div>
+
+
+    <!--  -->
+    <!-- 新增來電紀錄Modal -->
+    <!--  -->
+    <div
+      class="modal fade "
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title"
+              id="staticBackdropLabel"
+            >新增來電紀錄</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label
+                  for="inputEmail4"
+                  class="form-label"
+                >來電者姓名</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail4"
+                />
+              </div>
+              <div class="col-md-6">
+                <label
+                  for="inputPassword4"
+                  class="form-label"
+                >電話號碼</label>
+                <input
+                  type="phone"
+                  class="form-control"
+                  id="inputPassword4"
+                  placeholder=""
+                />
+              </div>
+
+              <div class="col-5">
+                <label
+                  for="inputAddress"
+                  class="form-label"
+                >客戶名稱</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress"
+                  placeholder=""
+                />
+              </div>
+              <div class="col-4">
+                <label
+                  for="inputAddress2"
+                  class="form-label"
+                >客戶編號</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress2"
+                  placeholder=""
+                />
+              </div>
+              <div class="col-3">
+                <label
+                  for="inputPassword4"
+                  class="form-label"
+                >公司別</label>
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                >
+                  <option selected>請選擇公司別</option>
+                  <option value="傑人">傑人</option>
+                  <option value="華奇">華奇</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label
+                  for="inputAddress2"
+                  class="form-label"
+                >接聽人員</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputAddress2"
+                  placeholder=""
+                />
+              </div>
+              <div class="col-3">
+                <label
+                  for="inputAddress2"
+                  class="form-label"
+                >來電日期</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="inputAddress2"
+                  placeholder=""
+                />
+              </div>
+              <div class="col-3">
+                <label
+                  for="inputAddress2"
+                  class="form-label"
+                >來電時間</label>
+                <input
+                  type="time"
+                  class="form-control"
+                  id="inputAddress2"
+                  placeholder=""
+                />
+              </div>
+              <div class="col-12">
+                <label
+                  for="exampleFormControlTextarea2"
+                  class="form-label"
+                >問題說明</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea2"
+                  rows="3"
+                ></textarea>
+              </div>
+
+
+            </form>
+
+
+          </div>
+          <div class="modal-footer justify-content-center">
+
+            <button
+              type="button"
+              class="btn btn-success btn-w112"
+            >送出</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 
     <!--  -->
     <!-- 未發通知單Modal -->
@@ -1376,18 +2556,93 @@
 
 
 
-    <!-- 下拉選單
+    <!--  -->
+    <!-- 動態訊息offcanvas -->
+    <!--  -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="comprehensiveInformationOffcanvas"
+      aria-labelledby="comprehensiveInformationOffcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <h4
+          class="offcanvas-title"
+          id="comprehensiveInformationOffcanvasLabel"
+        >通知</h4>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <a
+            href="#"
+            class="offcanvas-news-group"
+          >
+            <h5>動態數學短期補習班:</h5>
+            <div>2022/06/28 13:00</div>
+            <div>已匯款3,000元</div>
+            <!-- HTML !-->
+            <button
+              class="button-80 offcanvas-news-group-btn"
+              role="button"
+            >
+              <ion-icon
+                class="offcanvas-news-group-btn-icon"
+                name="close-outline"
+              ></ion-icon>
+            </button>
+          </a>
+        </div>
 
-  <div class="list_table_dropdown">
-    <button class="list_table_dropdown_btn">
-        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
-    </button>
-    <div class="list_table_dropdown_content">
-        <a href="#">取消應存</a>
-        <a href="#">設定應存款</a>
-        <a href="#">送出設定</a>
+        <div>
+          <a
+            href="#"
+            class="offcanvas-news-group"
+          >
+            <h5>動態數學短期補習班:</h5>
+            <div>2022/06/28 13:00</div>
+            <div>已匯款3,000元</div>
+            <!-- HTML !-->
+            <button
+              class="button-80 offcanvas-news-group-btn"
+              role="button"
+            >
+              <ion-icon
+                class="offcanvas-news-group-btn-icon"
+                name="close-outline"
+              ></ion-icon>
+            </button>
+          </a>
+        </div>
+
+        <div>
+          <a
+            href="#"
+            class="offcanvas-news-group"
+          >
+            <h5>動態數學短期補習班:</h5>
+            <div>2022/06/28 13:00</div>
+            <div>已匯款3,000元</div>
+            <!-- HTML !-->
+            <button
+              class="button-80 offcanvas-news-group-btn"
+              role="button"
+            >
+              <ion-icon
+                class="offcanvas-news-group-btn-icon"
+                name="close-outline"
+              ></ion-icon>
+            </button>
+          </a>
+        </div>
+
+      </div>
     </div>
-  </div> -->
 
     <script
       src="./js/bootstrap.bundle.min.js"
@@ -1407,6 +2662,12 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    >
 </body>
 
 </html>

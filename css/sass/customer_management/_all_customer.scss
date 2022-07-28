@@ -128,7 +128,6 @@
     select.form-select.turn_on9 {
         display: none;
     }
-
 }
 
 .search_address {
@@ -212,7 +211,7 @@
 
 .product_interview {
     overflow-y: auto;
-    max-height: 340px;
+    // max-height: 340px;
     margin-bottom: 20px;
 
     table {
