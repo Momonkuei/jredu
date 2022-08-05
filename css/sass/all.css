@@ -12492,10 +12492,6 @@ div.openHideSideBar {
   color: #6b94d0;
 }
 
-.header_title_contant {
-  text-overflow: ellipsis;
-}
-
 .header_navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12506,7 +12502,7 @@ div.openHideSideBar {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
-  gap: 0.4rem;
+  gap: 1.5rem;
 }
 
 .header_navbar ul li .active span {
@@ -12519,7 +12515,7 @@ div.openHideSideBar {
 }
 
 .header_navbar ul li a {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   display: inline-black;
   padding: 0.25rem 0.5rem;
@@ -13634,6 +13630,11 @@ hover #9db8e0 (-60%)
 /**********************************/
 /*視窗寬度*/
 /***********************************/
+.container.customize-widthMax {
+  max-width: 100%;
+  padding: 0 0.75rem;
+}
+
 .container.customize-max-width-1440 {
   max-width: 1440px;
 }
@@ -13715,9 +13716,14 @@ hover #9db8e0 (-60%)
   vertical-align: middle;
 }
 
+.content-table tbody .content_table_tbody_tr {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
 .content-table tbody .content_table_tbody_tr:hover {
-  background-color: #6b94d0;
-  color: #fff;
+  background-color: rgba(107, 148, 208, 0.4);
+  color: #333;
 }
 
 .content-table tbody .content_table_tbody_tr.active_row {
@@ -13900,6 +13906,10 @@ hover #9db8e0 (-60%)
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.table-btn-group-h62 {
+  height: 62px;
 }
 
 .list_table_toggle_icon {
@@ -14718,12 +14728,19 @@ img {
   display: none;
 }
 
+/* 客戶結案*/
 .clients-close-case-by-own-tr {
   background-color: rgba(25, 135, 84, 0.2);
 }
 
+/*客服結案*/
 .customer-service-closed-tr {
   background-color: rgba(222, 226, 230, 0.8);
+}
+
+/* 客戶結案*/
+.clients--case-by-turnedIT-tr {
+  background-color: rgba(215, 97, 0, 0.2);
 }
 
 .chat-app {

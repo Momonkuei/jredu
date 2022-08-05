@@ -1,0 +1,509 @@
+<div
+    class="tab-pane"
+    id="CallRecordQueryTab"
+>
+
+    <div class="mb-2">
+        <ul
+            class="nav nav-tabs mb-4"
+            id="myTab"
+            role="tablist"
+        >
+            <li
+                class="nav-item"
+                role="presentation"
+            >
+                <button
+                    class="nav-link active"
+                    id="notProcessedCalllogQuery-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#notProcessedCalllogQuery "
+                    type="button"
+                    role="tab"
+                    aria-controls="notProcessedCalllogQuery "
+                    aria-selected="true"
+                >
+                    尚未處理
+                </button>
+            </li>
+            <li
+                class="nav-item"
+                role="presentation"
+            >
+                <button
+                    class="nav-link "
+                    id="closedProcessedCalllogQuery-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#closedProcessedCalllogQuery"
+                    type="button"
+                    role="tab"
+                    aria-controls="closedProcessedCalllogQuery"
+                    aria-selected="false"
+                >
+                    已結案
+                </button>
+            </li>
+
+        </ul>
+
+
+        <!-- 表單二 來電紀錄查詢-尚未處理 -->
+
+        <div
+            class="tab-content pt-2"
+            id="myTabContent"
+        >
+            <div
+                class="tab-pane show active"
+                id="notProcessedCalllogQuery"
+                role="tabpanel"
+                aria-labelledby="notProcessedCalllogQuery-tab"
+            >
+
+                <div class=" flex">
+
+                    <!-- 搜尋欄 -->
+                    <div class="shadow p-3  bg-body rounded-3 d-flex justify-content-between">
+                        <div class="gap-2 input-group d-flex align-items-center">
+                            <button
+                                class="btn btn-outline-primary"
+                                type="button"
+                            >
+                                <ion-icon name="chevron-back-outline"></ion-icon>
+                            </button>
+                            <input
+                                id="bday-month"
+                                type="date"
+                                name="bday-month"
+                                class="input-date"
+                                value="2022-07-01"
+                            />
+                            <button
+                                class="btn btn-outline-primary"
+                                type="button"
+                            >
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </button>
+                            <div class="col-xs-2">
+                                <select
+                                    class="form-select"
+                                    aria-label="Default select example"
+                                >
+                                    <option selected>縣市選擇</option>
+                                    <option value="Taichung">台中市</option>
+                                    <option value="Taipei">台北市</option>
+                                    <option value="Tainan">台南市</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-2">
+                                <select
+                                    class="form-select"
+                                    aria-label="Default select example"
+                                >
+                                    <option selected>補習班名稱</option>
+                                    <option value="小牛津幼兒園">小牛津幼兒園</option>
+                                    <option value="孫老師育人補習班">孫老師育人補習班</option>
+                                    <option value="高標語文數理資優班">高標語文數理資優班</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-2">
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="搜尋"
+                                    aria-label="搜尋"
+                                />
+                            </div>
+                            <button
+                                class="btn btn-outline-primary"
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"
+                            >
+                                <ion-icon name="search-outline"></ion-icon>
+                            </button>
+
+                        </div>
+
+                        <div class="col-xs-2">
+
+
+                            <button
+                                type="button"
+                                class="btn btn-outline-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"
+                            >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <table class="content-table text-center">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id=""
+                                        />
+                                    </th>
+                                    <th>來電時間</th>
+                                    <th>公司別</th>
+                                    <th>客戶編號</th>
+                                    <th>客戶名稱</th>
+                                    <th>來電者姓名</th>
+                                    <th>電話</th>
+                                    <th>提問產品</th>
+                                    <th>問題類別</th>
+                                    <th>接聽人員</th>
+                                    <th>操作</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+
+                                <!-- 表單二 來電紀錄查詢 -編號1 -良好 -->
+
+
+
+                                <tr class="content_table_tbody_tr">
+                                    <th>
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id=""
+                                        />
+                                    </th>
+                                    <td
+                                        data-label="來電時間"
+                                        class="payment-reminder-red2"
+                                    >
+                                        <div>
+                                            2022/05/01
+                                            <br />
+                                            12:00
+                                        </div>
+                                    </td>
+                                    <td data-label="公司別">傑人</td>
+                                    <td data-label="客戶編號">
+                                        123456789
+                                    </td>
+                                    <td data-label="客戶名稱">
+                                        長頸路
+                                    </td>
+                                    <td data-label="來電者姓名">
+                                        Helen
+                                    </td>
+                                    <td data-label="電話">
+                                        04-12345678
+                                    </td>
+                                    <td data-label="提問產品">
+                                        手機APP
+                                    </td>
+                                    <td data-label="問題類別">
+                                        密碼問題
+                                    </td>
+
+                                    <td data-label="接聽人員">
+                                        HANNAH
+                                    </td>
+                                    <td data-label="操作">
+                                        <button
+                                            type="button"
+                                            class="btn btn-outline-success"
+                                        >完成<br>結案</button>
+                                    </td>
+
+                                </tr>
+                                <td
+                                    class="td_list_table"
+                                    colspan="12"
+                                >
+                                    <div class="panel_group">
+                                        <div class="container  text-start my-3">
+                                            <div class="mb-3">
+                                                <label
+                                                    for="exampleFormControlTextarea1"
+                                                    class="form-label"
+                                                >問題說明:
+                                                </label>
+                                                <textarea
+                                                    class="form-control"
+                                                    id="exampleFormControlTextarea1"
+                                                    rows="3"
+                                                >密碼鎖住了,不會解鎖,不會還原</textarea>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label
+                                                    for="exampleFormControlTextarea1"
+                                                    class="form-label"
+                                                >客服說明:
+                                                </label>
+                                                <textarea
+                                                    class="form-control"
+                                                    id="exampleFormControlTextarea1"
+                                                    rows="3"
+                                                ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+
+
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--  -->
+            <!-- 表單二 來電紀錄查詢-已結案 -->
+            <!--  -->
+
+            <div
+                class="tab-pane "
+                id="closedProcessedCalllogQuery"
+                role="tabpanel"
+                aria-labelledby="closedProcessedCalllogQuery-tab"
+            >
+                <div class=" flex">
+
+                    <!-- 搜尋欄 -->
+                    <div class="shadow p-3  bg-body rounded-3 d-flex justify-content-between">
+                        <div class="gap-2 input-group d-flex align-items-center">
+                            <button
+                                class="btn btn-outline-primary"
+                                type="button"
+                            >
+                                <ion-icon name="chevron-back-outline"></ion-icon>
+                            </button>
+                            <input
+                                id="bday-month"
+                                type="date"
+                                name="bday-month"
+                                class="input-date"
+                                value="2022-07-01"
+                            />
+                            <button
+                                class="btn btn-outline-primary"
+                                type="button"
+                            >
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </button>
+                            <div class="col-xs-2">
+                                <select
+                                    class="form-select"
+                                    aria-label="Default select example"
+                                >
+                                    <option selected>縣市選擇</option>
+                                    <option value="Taichung">台中市</option>
+                                    <option value="Taipei">台北市</option>
+                                    <option value="Tainan">台南市</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-2">
+                                <select
+                                    class="form-select"
+                                    aria-label="Default select example"
+                                >
+                                    <option selected>補習班名稱</option>
+                                    <option value="小牛津幼兒園">小牛津幼兒園</option>
+                                    <option value="孫老師育人補習班">孫老師育人補習班</option>
+                                    <option value="高標語文數理資優班">高標語文數理資優班</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-2">
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="搜尋"
+                                    aria-label="搜尋"
+                                />
+                            </div>
+                            <button
+                                class="btn btn-outline-primary"
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"
+                            >
+                                <ion-icon name="search-outline"></ion-icon>
+                            </button>
+
+                        </div>
+
+                        <div class="col-xs-2">
+
+
+                            <button
+                                type="button"
+                                class="btn btn-outline-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"
+                            >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <table class="content-table text-center">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id=""
+                                        />
+                                    </th>
+                                    <th>來電時間</th>
+                                    <th>公司別</th>
+                                    <th>客戶編號</th>
+                                    <th>客戶名稱</th>
+                                    <th>來電者姓名</th>
+                                    <th>電話</th>
+                                    <th>提問產品</th>
+                                    <th>問題類別</th>
+                                    <th>接聽人員</th>
+                                    <th>操作</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+
+
+                                <!-- 表單二 來電紀錄查詢 -編號1 -良好 -->
+
+
+
+                                <tr class="content_table_tbody_tr">
+                                    <th>
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id=""
+                                        />
+                                    </th>
+                                    <td data-label="來電時間">
+                                        <div>
+                                            2022/05/01
+                                            <br />
+                                            12:00
+                                        </div>
+                                    </td>
+                                    <td data-label="公司別">傑人</td>
+                                    <td data-label="客戶編號">
+                                        123456789
+                                    </td>
+                                    <td data-label="客戶名稱">
+                                        長頸路
+                                    </td>
+                                    <td data-label="提問人">
+                                        Helen
+                                    </td>
+                                    <td data-label="電話">
+                                        04-12345678
+                                    </td>
+                                    <td data-label="提問產品">
+                                        手機APP
+                                    </td>
+                                    <td data-label="問題類別">
+                                        密碼問題
+                                    </td>
+
+                                    <td data-label="接聽人員">
+                                        HANNAH
+                                    </td>
+                                    <td data-label="操作">
+                                        <div
+                                            class="btn-group"
+                                            role="group"
+                                            aria-label="Basic outlined example"
+                                        >
+                                            <button
+                                                type="button"
+                                                class="btn btn-secondary"
+                                            >已完成<br>結案</button>
+                                            <button
+                                                type="button"
+                                                class="btn btn-outline-primary"
+                                            >再次<br>更新</button>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <td
+                                    class="td_list_table"
+                                    colspan="12"
+                                >
+                                    <div class="panel_group">
+                                        <div class="container  text-start my-3">
+                                            <div class="mb-3">
+                                                <label
+                                                    for="exampleFormControlTextarea1"
+                                                    class="form-label"
+                                                >問題說明:
+                                                </label>
+                                                <textarea
+                                                    class="form-control"
+                                                    id="exampleFormControlTextarea1"
+                                                    rows="3"
+                                                >密碼鎖住了,不會解鎖,不會還原</textarea>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label
+                                                    for="exampleFormControlTextarea1"
+                                                    class="form-label"
+                                                >客服說明:
+                                                </label>
+                                                <textarea
+                                                    class="form-control"
+                                                    id="exampleFormControlTextarea1"
+                                                    rows="3"
+                                                ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+
+
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

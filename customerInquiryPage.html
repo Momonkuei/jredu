@@ -39,7 +39,7 @@
         <div class="d-flex gap-4">
           <div class="d-flex align-items-center gap-1">
             操作人:
-            <h4 class="predeposit-usage-details-user">張三豐</h4>
+            <h4 class="predeposit-usage-details-user">Helen</h4>
           </div>
           <button
             type="button"
@@ -63,15 +63,7 @@
           </a>
         </li>
 
-        <li class="nav-item nav-delinquent-customers">
-          <a
-            class="nav-link "
-            data-bs-toggle="pill"
-            href="#addNewQuestion"
-          >
-            新增提問
-          </a>
-        </li>
+
 
 
         <li class="nav-item ">
@@ -120,6 +112,7 @@
                     <!-- 搜尋欄 -->
                     <div class="web-search-group">
                       <div class="d-grid gap-2 input-group d-flex align-items-center">
+
                         <div class="btn-group">
                           <button
                             class="btn btn-outline-primary"
@@ -132,7 +125,32 @@
                             type="date"
                             name="bday-month"
                             class="input-date"
-                            value="2022-07-27"
+                          />
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                          </button>
+
+
+                        </div>
+
+                        <div class="input-group-addon">to</div>
+
+                        <div class="btn-group">
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                          </button>
+                          <input
+                            id="bday-month"
+                            type="date"
+                            name="bday-month"
+                            class="input-date"
+                            value="2022-08-01"
                           />
                           <button
                             class="btn btn-outline-primary"
@@ -184,7 +202,19 @@
                               <ion-icon name="search-outline"></ion-icon>
                             </button>
                           </div>
+                        </div>
 
+                        <div class="col-xs-2 ms-auto">
+
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#addNewCustomerQuestion"
+                          >
+                            <i class="fas fa-plus"></i>
+                          </button>
                         </div>
 
 
@@ -194,61 +224,48 @@
 
                     <div class="phone-search-group">
                       <div class="d-grid gap-2 input-group d-flex align-items-center">
+
                         <div class="btn-group btn-group-sm">
-
+                          <button
+                            class="btn btn-outline-primary dropdown-toggle w-75"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >ALL</button>
+                          <ul class="dropdown-menu">
+                            <li><a
+                                class="dropdown-item"
+                                href="#"
+                              >張大千</a></li>
+                            <li><a
+                                class="dropdown-item"
+                                href="#"
+                              >Helen</a></li>
+                            <li><a
+                                class="dropdown-item"
+                                href="#"
+                              >Jesse</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a
+                                class="dropdown-item"
+                                href="#"
+                              >Separated link</a></li>
+                          </ul>
                           <input
-                            id="bday-month"
-                            type="date"
-                            name="bday-month"
-                            class="input-date"
-                            value="2022-07-27"
+                            type="text"
+                            class="form-control"
+                            placeholder="搜尋"
+                            aria-label="搜尋"
                           />
-                          <div class="btn-group btn-group-sm">
-                            <button
-                              class="btn btn-outline-primary dropdown-toggle w-75"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >ALL</button>
-                            <ul class="dropdown-menu">
-                              <li><a
-                                  class="dropdown-item"
-                                  href="#"
-                                >張大千</a></li>
-                              <li><a
-                                  class="dropdown-item"
-                                  href="#"
-                                >Helen</a></li>
-                              <li><a
-                                  class="dropdown-item"
-                                  href="#"
-                                >Jesse</a></li>
-                              <li>
-                                <hr class="dropdown-divider">
-                              </li>
-                              <li><a
-                                  class="dropdown-item"
-                                  href="#"
-                                >Separated link</a></li>
-                            </ul>
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="搜尋"
-                              aria-label="搜尋"
-                            />
-                            <button
-                              class="btn btn-outline-primary"
-                              type="button"
-                            >
-                              <ion-icon name="search-outline"></ion-icon>
-                            </button>
-                          </div>
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="search-outline"></ion-icon>
+                          </button>
                         </div>
-
-
-
-
 
                       </div>
                     </div>
@@ -268,14 +285,15 @@
                                 id=""
                               />
                             </th>
-                            <th>單號</th>
-                            <th>提問老師</th>
-                            <th>聯絡電話</th>
-                            <th>產品類型</th>
-                            <th>問題類型</th>
-                            <th>處理進度</th>
-                            <th>處理客服人員</th>
                             <th>提問時間</th>
+                            <th>產品名稱</th>
+                            <th>客戶名稱</th>
+                            <th>提問人</th>
+                            <th>聯絡電話</th>
+                            <th>提問主題</th>
+                            <th>問題內容</th>
+                            <th>客服人員</th>
+                            <th>案件狀態</th>
                             <th>操作</th>
 
                           </tr>
@@ -294,17 +312,19 @@
                                 id=""
                               />
                             </th>
-                            <td data-label="單號:">J220501001</td>
-                            <td data-label="提問老師:">Helen</td>
-                            <td data-label="聯絡電話:">0912111333</td>
-                            <td data-label="產品類型:">產品APP</td>
-                            <td data-label="問題類型:">忘記密碼</td>
-                            <td data-label="處理進度:">待提問人回覆</td>
-                            <td data-label="處理客服人員:">Wayne</td>
                             <td data-label="提問時間:">
                               <div>2022/05/01</div>
                               <div>12:00</div>
                             </td>
+
+                            <td data-label="產品名稱:">校掌雲</td>
+                            <td data-label="客戶名稱:">客戶名稱123</td>
+                            <td data-label="提問人:">Helen</td>
+                            <td data-label="聯絡電話:">0912111333</td>
+                            <td data-label="提問主題:">忘記密碼</td>
+                            <td data-label="問題內容:">校掌雲密碼忘記了</td>
+                            <td data-label="客服人員:">Wayne</td>
+                            <td data-label="案件狀態:">處理中</td>
                             <td data-label="操作:">
                               <div
                                 class="btn-group"
@@ -575,8 +595,6 @@
 
                           </td>
 
-
-
                         </tbody>
                       </table>
                     </div>
@@ -589,118 +607,7 @@
         </div>
 
 
-        <!--新增提問 表單二 -->
-        <div
-          class="tab-pane "
-          id="addNewQuestion"
-        >
-
-          <div class="mb-2">
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label
-                  for="teacherAskedQuestion"
-                  class="form-label"
-                >
-                  提問老師:
-                </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="teacherAskedQuestion"
-                />
-              </div>
-              <div class="col-md-6">
-                <label
-                  for="inputNumber"
-                  class="form-label"
-                >
-                  聯絡電話:
-                </label>
-                <input
-                  type="phone"
-                  class="form-control"
-                  id="inputNumber"
-                />
-              </div>
-              <div class="col-md-6">
-                <label
-                  for="inputState"
-                  class="form-label"
-                >
-                  產品類型:
-                </label>
-                <select
-                  id="inputState"
-                  class="form-select"
-                >
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-
-
-              <div class="col-md-6">
-                <label
-                  for="inputState"
-                  class="form-label"
-                >
-                  問題類型
-                </label>
-                <select
-                  id="inputState"
-                  class="form-select"
-                >
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-
-              <div class="col-12">
-                <div>
-                  <label
-                    for="exampleFormControlTextarea3"
-                    class="form-label"
-                  >
-                    問題說明:
-                  </label>
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea3"
-                    rows="3"
-                  ></textarea>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="mb-3">
-                  <label
-                    for="formFile"
-                    class="form-label"
-                  >
-                    檔案或影片上傳
-                  </label>
-                  <input
-                    class="form-control"
-                    type="file"
-                    id="formFile"
-                  />
-                </div>
-              </div>
-
-              <div class="col-12 d-flex justify-content-center">
-                <button
-                  type="submit"
-                  class="btn btn-success w-25"
-                >
-                  送出
-                </button>
-              </div>
-            </form>
-          </div>
-
-        </div>
-
-        <!-- 已結案 表單三 -->
+        <!-- 已結案 表單二 -->
 
         <div
           class="tab-pane"
@@ -716,9 +623,11 @@
               >
                 <div class="mb-2">
                   <div class=" flex container">
+
                     <!-- 搜尋欄 -->
                     <div class="web-search-group">
                       <div class="d-grid gap-2 input-group d-flex align-items-center">
+
                         <div class="btn-group">
                           <button
                             class="btn btn-outline-primary"
@@ -731,7 +640,32 @@
                             type="date"
                             name="bday-month"
                             class="input-date"
-                            value="2022-07-27"
+                          />
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                          </button>
+
+
+                        </div>
+
+                        <div class="input-group-addon">to</div>
+
+                        <div class="btn-group">
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                          </button>
+                          <input
+                            id="bday-month"
+                            type="date"
+                            name="bday-month"
+                            class="input-date"
+                            value="2022-08-01"
                           />
                           <button
                             class="btn btn-outline-primary"
@@ -783,7 +717,19 @@
                               <ion-icon name="search-outline"></ion-icon>
                             </button>
                           </div>
+                        </div>
 
+                        <div class="col-xs-2 ms-auto">
+
+
+                          <button
+                            type="button"
+                            class="btn btn-outline-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#addNewCustomerQuestion"
+                          >
+                            <i class="fas fa-plus"></i>
+                          </button>
                         </div>
 
 
@@ -793,65 +739,51 @@
 
                     <div class="phone-search-group">
                       <div class="d-grid gap-2 input-group d-flex align-items-center">
+
                         <div class="btn-group btn-group-sm">
-
+                          <button
+                            class="btn btn-outline-primary dropdown-toggle w-75"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >ALL</button>
+                          <ul class="dropdown-menu">
+                            <li><a
+                                class="dropdown-item"
+                                href="#"
+                              >張大千</a></li>
+                            <li><a
+                                class="dropdown-item"
+                                href="#"
+                              >Helen</a></li>
+                            <li><a
+                                class="dropdown-item"
+                                href="#"
+                              >Jesse</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a
+                                class="dropdown-item"
+                                href="#"
+                              >Separated link</a></li>
+                          </ul>
                           <input
-                            id="bday-month"
-                            type="date"
-                            name="bday-month"
-                            class="input-date"
-                            value="2022-07-27"
+                            type="text"
+                            class="form-control"
+                            placeholder="搜尋"
+                            aria-label="搜尋"
                           />
-                          <div class="btn-group btn-group-sm">
-                            <button
-                              class="btn btn-outline-primary dropdown-toggle w-75"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >ALL</button>
-                            <ul class="dropdown-menu">
-                              <li><a
-                                  class="dropdown-item"
-                                  href="#"
-                                >張大千</a></li>
-                              <li><a
-                                  class="dropdown-item"
-                                  href="#"
-                                >Helen</a></li>
-                              <li><a
-                                  class="dropdown-item"
-                                  href="#"
-                                >Jesse</a></li>
-                              <li>
-                                <hr class="dropdown-divider">
-                              </li>
-                              <li><a
-                                  class="dropdown-item"
-                                  href="#"
-                                >Separated link</a></li>
-                            </ul>
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="搜尋"
-                              aria-label="搜尋"
-                            />
-                            <button
-                              class="btn btn-outline-primary"
-                              type="button"
-                            >
-                              <ion-icon name="search-outline"></ion-icon>
-                            </button>
-                          </div>
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="search-outline"></ion-icon>
+                          </button>
                         </div>
-
-
-
-
 
                       </div>
                     </div>
-
                     <!-- 表單內容 -->
 
 
@@ -868,14 +800,15 @@
                                 id=""
                               />
                             </th>
-                            <th>單號</th>
-                            <th>提問老師</th>
-                            <th>聯絡電話</th>
-                            <th>產品類型</th>
-                            <th>問題類型</th>
-                            <th>處理進度</th>
-                            <th>處理客服人員</th>
                             <th>提問時間</th>
+                            <th>產品名稱</th>
+                            <th>客戶名稱</th>
+                            <th>提問人</th>
+                            <th>聯絡電話</th>
+                            <th>提問主題</th>
+                            <th>問題內容</th>
+                            <th>客服人員</th>
+                            <th>案件狀態</th>
                             <th>操作</th>
 
                           </tr>
@@ -894,16 +827,22 @@
                                 id=""
                               />
                             </th>
-                            <td data-label="單號:">J220501001</td>
-                            <td data-label="提問老師:">Helen</td>
-                            <td data-label="聯絡電話:">0912111333</td>
-                            <td data-label="產品類型:">產品APP</td>
-                            <td data-label="問題類型:">忘記密碼</td>
-                            <td data-label="處理進度:">待提問人回覆</td>
-                            <td data-label="處理客服人員:">Wayne</td>
                             <td data-label="提問時間:">
                               <div>2022/05/01</div>
                               <div>12:00</div>
+                            </td>
+                            <td data-label="產品名稱:">校掌雲</td>
+                            <td data-label="客戶名稱:">客戶名稱123</td>
+                            <td data-label="提問人:">Helen</td>
+                            <td data-label="聯絡電話:">0912111333</td>
+                            <td data-label="提問主題:">忘記密碼</td>
+                            <td data-label="問題內容:">校掌雲密碼忘記了</td>
+                            <td data-label="客服人員:">Wayne</td>
+                            <td data-label="案件狀態:">
+                              <div>2022/05/01 14:00 已結案</div>
+                              <div>
+                                結案人員：Helen
+                              </div>
                             </td>
                             <td data-label="操作:">
                               <div
@@ -915,10 +854,12 @@
                                   type="button"
                                   class="btn btn-success"
                                 >已完成<br>結案</button>
-                                <button
+
+                                <!-- <button
                                   type="button"
                                   class="btn btn-outline-primary"
-                                >再次<br>發問</button>
+                                >再次<br>發問</button> -->
+
                               </div>
 
                             </td>
@@ -1188,16 +1129,23 @@
                                 id=""
                               />
                             </th>
-                            <td data-label="單號:">J220501001</td>
-                            <td data-label="提問老師:">Helen</td>
-                            <td data-label="聯絡電話:">0912111333</td>
-                            <td data-label="產品類型:">產品APP</td>
-                            <td data-label="問題類型:">忘記密碼</td>
-                            <td data-label="處理進度:">待提問人回覆</td>
-                            <td data-label="處理客服人員:">Wayne</td>
                             <td data-label="提問時間:">
                               <div>2022/05/01</div>
                               <div>12:00</div>
+                            </td>
+                            <td data-label="產品名稱:">校掌雲</td>
+                            <td data-label="客戶名稱:">客戶名稱123</td>
+                            <td data-label="提問人:">Helen</td>
+                            <td data-label="聯絡電話:">0912111333</td>
+                            <td data-label="提問主題:">忘記密碼</td>
+                            <td data-label="問題內容:">校掌雲密碼忘記了</td>
+                            <td data-label="客服人員:">Wayne</td>
+                            <td data-label="案件狀態:">
+                              <div>2022/05/01 14:00 已結案</div>
+                              <div>
+                                結案人員：客服Wayne
+                              </div>
+
                             </td>
                             <td data-label="操作:">
                               <div
@@ -1209,10 +1157,12 @@
                                   type="button"
                                   class="btn btn-secondary"
                                 >已完成<br>結案</button>
-                                <button
+
+                                <!-- <button
                                   type="button"
                                   class="btn btn-outline-primary"
-                                >再次<br>發問</button>
+                                >再次<br>發問</button> -->
+
                               </div>
 
                             </td>
@@ -1482,7 +1432,7 @@
 
 
 
-        <!-- 常見問題 表單四 -->
+        <!-- 常見問題 表單三 -->
 
 
 
@@ -1645,7 +1595,7 @@
       <!-- Modal -->
       <div
         class="modal fade"
-        id="staticBackdrop"
+        id="addNewCustomerQuestion"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
         tabindex="-1"
@@ -1655,10 +1605,10 @@
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h5
+              <h4
                 class="modal-title"
                 id="staticBackdropLabel"
-              >還要再發問</h5>
+              >新增提問</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -1667,40 +1617,125 @@
               ></button>
             </div>
             <div class="modal-body ">
-              <div class="input-group mb-3">
-                <span class="input-group-text d-flex">老師請補充說明</span>
-                <textarea
-                  class="form-control"
-                  aria-label="With textarea"
-                ></textarea>
-              </div>
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label
+                    for="teacherAskedQuestion"
+                    class="form-label"
+                  >
+                    提問人:
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="teacherAskedQuestion"
+                    value="Helen"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label
+                    for="inputNumber"
+                    class="form-label"
+                  >
+                    聯絡電話:
+                  </label>
+                  <input
+                    type="phone"
+                    class="form-control"
+                    id="inputNumber"
+                    value="0912111333"
+                  />
+                </div>
+                <div class="col-md-2">
+                  <label
+                    for="inputNumber"
+                    class="form-label"
+                  >
+                    分機:
+                  </label>
+                  <input
+                    type="phone"
+                    class="form-control"
+                    id="inputNumber"
+                    value=""
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label
+                    for="inputState"
+                    class="form-label"
+                  >
+                    產品名稱:
+                  </label>
+                  <select
+                    id="inputState"
+                    class="form-select"
+                  >
+                    <option selected>請選擇產品</option>
+                    <option>校掌雲</option>
+                    <option>WBaby</option>
+                    <option>感應機</option>
+                    <option>其他</option>
+                  </select>
+                </div>
 
-              <div class="input-group mb-4">
-                <input
-                  type="file"
-                  class="form-control"
-                  id="inputGroupFile02"
-                />
 
-                <label
-                  class="input-group-text"
-                  for="inputGroupFile02"
-                >
-                  更新
-                </label>
-              </div>
+                <div class="col-md-6">
+                  <label
+                    for="inputState"
+                    class="form-label"
+                  >
+                    問題類型
+                  </label>
+                  <select
+                    id="inputState"
+                    class="form-select"
+                  >
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <div>
+                    <label
+                      for="exampleFormControlTextarea3"
+                      class="form-label"
+                    >
+                      問題說明:
+                    </label>
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea3"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label
+                      for="formFile"
+                      class="form-label"
+                    >
+                      檔案或影片上傳
+                    </label>
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="formFile"
+                    />
+                  </div>
+                </div>
+
+
+              </form>
 
             </div>
-            <div class="modal-footer justify-content-between">
+            <div class="modal-footer justify-content-center">
               <button
                 type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >Close</button>
-              <button
-                type="button"
-                class="btn btn-success"
-              >發送</button>
+                class="btn btn-success w-25"
+              >送出</button>
             </div>
           </div>
         </div>

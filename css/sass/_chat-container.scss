@@ -35,11 +35,19 @@ img {
     display: none;
 }
 
+/* 客戶結案*/
 .clients-close-case-by-own-tr {
     background-color: rgba(25, 135, 84, 0.2);
 }
+
+/*客服結案*/
 .customer-service-closed-tr {
     background-color: rgba(222, 226, 230, 0.8);
+}
+
+/* 客戶結案*/
+.clients--case-by-turnedIT-tr {
+    background-color: rgba(215, 97, 0, 0.2);
 }
 
 .chat-app {
