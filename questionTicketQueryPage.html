@@ -470,7 +470,10 @@
           <ul class="navbar_list">
 
             <li>
-              <a href="#">
+              <a
+                class="active"
+                href=""
+              >
                 客戶提問
                 <span class="red">01</span>
               </a>
@@ -478,7 +481,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="./questionTicketQueryITPage.html">
                 資訊部處理
 
               </a>
@@ -646,14 +649,14 @@
 
               </ul>
 
-
-              <!--  -->
-              <!-- 表單一 問題單查詢-未處理 -->
-              <!--  -->
               <div
                 class="tab-content pt-2"
                 id="myTabContent"
               >
+
+                <!--  -->
+                <!-- 表單一 問題單查詢-未處理 -->
+                <!--  -->
                 <div
                   class="tab-pane show active"
                   id="clientIssueNotResolved"
@@ -843,7 +846,10 @@
                             <td data-label="問題內容">
                               密碼忘記了
                             </td>
-                            <td data-label="處理人員">
+                            <td
+                              class="text-danger"
+                              data-label="處理人員"
+                            >
                               尚無處理人員
                             </td>
                             <td
@@ -914,10 +920,24 @@
                                           </div>
                                           <div class="chat-msg-content">
                                             <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
-                                            <div class="chat-msg-text">
+                                            <div class="chat-msg-text chat-msg-content-img">
                                               <img
                                                 src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
                                               />
+                                              <ul class='chat-msg-text-img-list'>
+                                                <li>
+                                                  <a>另存新檔</a>
+                                                </li>
+                                                <li>
+                                                  <a
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#chatMsgContentImgModal"
+                                                  >
+                                                    分享
+                                                  </a>
+                                                </li>
+                                              </ul>
                                             </div>
                                             <div class="chat-msg-text">Neque gravida in fermentum et
                                               sollicitudin ac orci
@@ -939,10 +959,22 @@
                                           <div class="chat-msg-content">
                                             <div class="chat-msg-text">Luctus et ultrices posuere
                                               cubilia curae.</div>
-                                            <div class="chat-msg-text">
+                                            <div class="chat-msg-text chat-msg-content-img">
                                               <img
                                                 src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
                                               />
+                                              <ul class='chat-msg-text-img-list'>
+                                                <li>
+                                                  <a>另存新檔</a>
+                                                </li>
+                                                <li>
+                                                  <a
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#chatMsgContentImgModal"
+                                                  >分享</a>
+                                                </li>
+                                              </ul>
                                             </div>
                                             <div class="chat-msg-text">Neque gravida in fermentum et
                                               sollicitudin ac orci
@@ -1399,10 +1431,24 @@
                                           </div>
                                           <div class="chat-msg-content">
                                             <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
-                                            <div class="chat-msg-text">
+                                            <div class="chat-msg-text chat-msg-content-img">
                                               <img
                                                 src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
                                               />
+                                              <ul class='chat-msg-text-img-list'>
+                                                <li>
+                                                  <a>另存新檔</a>
+                                                </li>
+                                                <li>
+                                                  <a
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#chatMsgContentImgModal"
+                                                  >
+                                                    分享
+                                                  </a>
+                                                </li>
+                                              </ul>
                                             </div>
                                             <div class="chat-msg-text">Neque gravida in fermentum et
                                               sollicitudin ac orci
@@ -1424,10 +1470,24 @@
                                           <div class="chat-msg-content">
                                             <div class="chat-msg-text">Luctus et ultrices posuere
                                               cubilia curae.</div>
-                                            <div class="chat-msg-text">
+                                            <div class="chat-msg-text chat-msg-content-img">
                                               <img
                                                 src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
                                               />
+                                              <ul class='chat-msg-text-img-list'>
+                                                <li>
+                                                  <a>另存新檔</a>
+                                                </li>
+                                                <li>
+                                                  <a
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#chatMsgContentImgModal"
+                                                  >
+                                                    分享
+                                                  </a>
+                                                </li>
+                                              </ul>
                                             </div>
                                             <div class="chat-msg-text">Neque gravida in fermentum et
                                               sollicitudin ac orci
@@ -1822,9 +1882,10 @@
                             >
                               <div>2022/05/01 14:00 </div>
                               <div>處理中 林員工</div>
-
+                              <div>2022/05/01 14:30 </div>
+                              <div>轉交資訊部 林員工</div>
                               <div>2022/05/02 08:00 </div>
-                              <div>資訊部 處理中 林員工</div>
+                              <div>資訊部 處理中 陳員工</div>
                             </td>
                             <td data-label="操作">
                               <div class="table-btn-group">
@@ -1856,10 +1917,10 @@
                                     <div class="user-settings">
                                       <img
                                         class="chat-msg-img"
-                                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
                                         alt=""
                                       />
-                                      <div class="chat-area-title">客戶名稱</div>
+                                      <div class="chat-area-title">資訊部 陳員工</div>
                                     </div>
                                     <div class="search-bar">
                                       <input
@@ -1876,8 +1937,9 @@
 
                                       </div>
 
-                                      <div class="chat-area-main">
-                                        <div class="chat-msg ">
+                                      <div class="chat-area-main ">
+
+                                        <div class="chat-msg owner">
                                           <div class="chat-msg-profile">
                                             <img
                                               class="chat-msg-img"
@@ -1887,11 +1949,25 @@
                                             <div class="chat-msg-date">Message seen 1.22pm</div>
                                           </div>
                                           <div class="chat-msg-content">
-                                            <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
-                                            <div class="chat-msg-text">
+                                            <div class="chat-msg-text">客戶的APP無法登入，跳出訊息如附件</div>
+                                            <div class="chat-msg-text chat-msg-content-img">
                                               <img
                                                 src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
                                               />
+                                              <ul class='chat-msg-text-img-list'>
+                                                <li>
+                                                  <a>另存新檔</a>
+                                                </li>
+                                                <li>
+                                                  <a
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#chatMsgContentImgModal"
+                                                  >
+                                                    分享
+                                                  </a>
+                                                </li>
+                                              </ul>
                                             </div>
                                             <div class="chat-msg-text">Neque gravida in fermentum et
                                               sollicitudin ac orci
@@ -1900,7 +1976,7 @@
                                           </div>
                                         </div>
 
-                                        <div class="chat-msg owner">
+                                        <div class="chat-msg ">
                                           <div class="chat-msg-profile">
                                             <img
                                               class="chat-msg-img"
@@ -1913,10 +1989,24 @@
                                           <div class="chat-msg-content">
                                             <div class="chat-msg-text">Luctus et ultrices posuere
                                               cubilia curae.</div>
-                                            <div class="chat-msg-text">
+                                            <div class="chat-msg-text chat-msg-content-img">
                                               <img
                                                 src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
                                               />
+                                              <ul class='chat-msg-text-img-list'>
+                                                <li>
+                                                  <a>另存新檔</a>
+                                                </li>
+                                                <li>
+                                                  <a
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#chatMsgContentImgModal"
+                                                  >
+                                                    分享
+                                                  </a>
+                                                </li>
+                                              </ul>
                                             </div>
                                             <div class="chat-msg-text">Neque gravida in fermentum et
                                               sollicitudin ac orci
@@ -1929,7 +2019,7 @@
                                               tincidunt.</div>
                                           </div>
                                         </div>
-                                        <div class="chat-msg owner">
+                                        <div class="chat-msg ">
                                           <div class="chat-msg-profile">
                                             <img
                                               class="chat-msg-img"
@@ -1949,7 +2039,7 @@
                                               volutpat.</div>
                                           </div>
                                         </div>
-                                        <div class="chat-msg ">
+                                        <div class="chat-msg owner">
                                           <div class="chat-msg-profile">
                                             <img
                                               class="chat-msg-img"
@@ -1966,7 +2056,7 @@
                                               tincidunt.</div>
                                           </div>
                                         </div>
-                                        <div class="chat-msg owner">
+                                        <div class="chat-msg ">
                                           <div class="chat-msg-profile">
                                             <img
                                               class="chat-msg-img"
@@ -1980,7 +2070,7 @@
                                               pellentesque</div>
                                           </div>
                                         </div>
-                                        <div class="chat-msg owner">
+                                        <div class="chat-msg ">
                                           <div class="chat-msg-profile">
                                             <img
                                               class="chat-msg-img"
@@ -1998,7 +2088,7 @@
                                             </div>
                                           </div>
                                         </div>
-                                        <div class="chat-msg ">
+                                        <div class="chat-msg owner">
                                           <div class="chat-msg-profile">
                                             <img
                                               class="chat-msg-img"
@@ -2012,7 +2102,7 @@
                                             </div>
                                           </div>
                                         </div>
-                                        <div class="chat-msg owner">
+                                        <div class="chat-msg ">
                                           <div class="chat-msg-profile">
                                             <img
                                               class="chat-msg-img"
@@ -2325,10 +2415,24 @@
                                           </div>
                                           <div class="chat-msg-content">
                                             <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
-                                            <div class="chat-msg-text">
+                                            <div class="chat-msg-text chat-msg-content-img">
                                               <img
                                                 src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
                                               />
+                                              <ul class='chat-msg-text-img-list'>
+                                                <li>
+                                                  <a>另存新檔</a>
+                                                </li>
+                                                <li>
+                                                  <a
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#chatMsgContentImgModal"
+                                                  >
+                                                    分享
+                                                  </a>
+                                                </li>
+                                              </ul>
                                             </div>
                                             <div class="chat-msg-text">Neque gravida in fermentum et
                                               sollicitudin ac orci
@@ -2350,10 +2454,18 @@
                                           <div class="chat-msg-content">
                                             <div class="chat-msg-text">Luctus et ultrices posuere
                                               cubilia curae.</div>
-                                            <div class="chat-msg-text">
+                                            <div class="chat-msg-text chat-msg-content-img">
                                               <img
                                                 src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
                                               />
+                                              <ul class='chat-msg-text-img-list'>
+                                                <li>
+                                                  <a>另存新檔</a>
+                                                </li>
+                                                <li>
+                                                  <a>分享</a>
+                                                </li>
+                                              </ul>
                                             </div>
                                             <div class="chat-msg-text">Neque gravida in fermentum et
                                               sollicitudin ac orci
@@ -2657,10 +2769,24 @@
                                           </div>
                                           <div class="chat-msg-content">
                                             <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
-                                            <div class="chat-msg-text">
+                                            <div class="chat-msg-text chat-msg-content-img">
                                               <img
                                                 src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
                                               />
+                                              <ul class='chat-msg-text-img-list'>
+                                                <li>
+                                                  <a>另存新檔</a>
+                                                </li>
+                                                <li>
+                                                  <a
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#chatMsgContentImgModal"
+                                                  >
+                                                    分享
+                                                  </a>
+                                                </li>
+                                              </ul>
                                             </div>
                                             <div class="chat-msg-text">Neque gravida in fermentum et
                                               sollicitudin ac orci
@@ -2682,10 +2808,18 @@
                                           <div class="chat-msg-content">
                                             <div class="chat-msg-text">Luctus et ultrices posuere
                                               cubilia curae.</div>
-                                            <div class="chat-msg-text">
+                                            <div class="chat-msg-text chat-msg-content-img">
                                               <img
                                                 src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
                                               />
+                                              <ul class='chat-msg-text-img-list'>
+                                                <li>
+                                                  <a>另存新檔</a>
+                                                </li>
+                                                <li>
+                                                  <a>分享</a>
+                                                </li>
+                                              </ul>
                                             </div>
                                             <div class="chat-msg-text">Neque gravida in fermentum et
                                               sollicitudin ac orci
@@ -3050,75 +3184,6 @@
       </div>
     </div>
 
-
-
-
-    <!--  -->
-    <!-- 未發通知單Modal -->
-    <!--  -->
-    <div
-      class="modal fade"
-      id="noticeNotIssued"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5
-              class="modal-title"
-              id="exampleModalLabel"
-            >
-              未發通知單
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="input-group mb-3">
-
-              <span class="input-group-text">應充值金額</span>
-              <input
-                type="text"
-                class="form-control"
-                aria-label="Dollar amount (with dot and two decimal places)"
-                value="0"
-              />
-              <span class="input-group-text">$</span>
-            </div>
-          </div>
-          <div class="modal-footer justify-content-between">
-
-            <button
-              type="button"
-              class="btn btn-gray"
-            >停止服務
-            </button>
-
-            <button
-              type="button"
-              class="btn btn-danger btn-red2"
-            >繳費通知
-            </button>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-
-
-
-
-
-
     <!--  -->
     <!-- 動態訊息offcanvas -->
     <!--  -->
@@ -3361,7 +3426,106 @@
       </div>
     </div>
 
-  </div>
+
+    <!--  -->
+    <!-- 聊天視窗分享Modal -->
+    <!--  -->
+
+    <div
+      class="modal fade"
+      id="chatMsgContentImgModal"
+      tabindex="-1"
+      aria-labelledby="chatMsgContentImgModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title"
+              id="chatMsgContentImgModalLabel"
+            >選擇傳送對象</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control col-9"
+                placeholder="搜尋"
+                aria-label="搜尋"
+              />
+              <button
+                class="btn btn-outline-primary col-2"
+                type="button"
+              >
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
+            <hr>
+
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              >
+              <label
+                class="form-check-label"
+                for="flexCheckDefault"
+              >
+                員工一
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+              >
+              <label
+                class="form-check-label"
+                for="flexCheckChecked"
+              >
+                員工二
+              </label>
+            </div>
+
+          </div>
+          <div class="modal-footer justify-content-center">
+
+            <button
+              type="button"
+              class="btn btn-outline-success"
+            >傳送</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--  -->
+    <!-- 聊天視窗右鍵選單 -->
+    <!--  -->
+
+    <div class="context-menu">
+      <ul>
+        <li><a
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#chatMsgContentImgModal"
+          >分享</a></li>
+      </ul>
+    </div>
+
   </div>
 
 
@@ -3375,6 +3539,9 @@
   <script src="./js/sidemenu.js"></script>
   <script src="./js/preDepositManagement.js"></script>
   <script src="./js/offcanvas.js"></script>
+  <script src="./js/headerTab.js"></script>
+  <!-- 載入右鍵選單function -->
+  <script src="./js/rightClickMenu.js"></script>
   <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

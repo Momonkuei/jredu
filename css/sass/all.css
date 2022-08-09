@@ -13727,7 +13727,11 @@ hover #9db8e0 (-60%)
 }
 
 .content-table tbody .content_table_tbody_tr.active_row {
-  background-color: #3a71c1;
+  background-color: rgba(58, 113, 193, 0.6);
+  color: #fff;
+}
+
+.content-table tbody .content_table_tbody_tr.active_row a {
   color: #fff;
 }
 
@@ -15153,13 +15157,63 @@ img {
 
 .owner .chat-msg-text {
   background-color: var(--theme-color);
-  color: #fff;
+  color: #333;
   border-radius: 20px 20px 0 20px;
 }
 
 .owner .chat-msg-date {
   left: auto;
   right: calc(100% + 12px);
+}
+
+.owner .chat-msg-text-img-list {
+  left: auto;
+  right: 0;
+  padding-right: 20px;
+}
+
+.chat-msg-content-img {
+  position: relative;
+  margin-top: 30px;
+}
+
+.chat-msg-text-img-list {
+  color: var(--msg-date);
+  left: 0;
+  margin-top: 18px;
+  padding-left: 10px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.7rem;
+  list-style: none;
+  line-height: 0.8;
+}
+
+.chat-msg-text-img-list li {
+  padding-left: 0.5rem;
+  padding-right: 0;
+  cursor: pointer;
+  border-left: 1px solid var(--msg-date);
+}
+
+.chat-msg-text-img-list li a:hover {
+  border-bottom: 1px solid var(--msg-date);
+}
+
+.chat-msg-text-img-list li:first-child {
+  padding-left: none;
+  border-left: none;
+}
+
+.chat-msg-text.chat-msg-content-img {
+  margin-bottom: 20px;
+}
+
+.chat-msg-text.chat-msg-img img {
+  max-width: 300px;
+  width: 100%;
 }
 
 .chat-msg-text img {
@@ -15552,6 +15606,50 @@ img {
           align-items: center;
   font-size: 14px;
   font-weight: 500;
+}
+
+/* 右鍵選單 */
+div.context-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+div.context-menu {
+  width: 60px;
+  height: 30px;
+  background-color: #fff;
+  display: none;
+  -webkit-box-shadow: 0 12px 15px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 12px 15px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  text-align: center;
+}
+
+div.context-menu ul li {
+  min-width: 80px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ecf0f1;
+  border-radius: 5px;
+}
+
+div.context-menu ul li a {
+  text-decoration: none;
+  color: #8e8e8e;
+  text-align: left;
+  line-height: 30px;
+  padding: 0 20px;
+  height: 100%;
+  display: block;
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+div.context-menu ul li:hover a {
+  background-color: #ecf0f1;
 }
 
 @media (max-width: 780px) {

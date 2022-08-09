@@ -189,8 +189,12 @@ hover #9db8e0 (-60%)
 
 // 點擊下拉主選單顯示
 .content-table tbody .content_table_tbody_tr.active_row {
-    background-color: #3a71c1;
+    background-color: rgba(58, 113, 193, 0.6);
     color: #fff;
+
+    a {
+        color: #fff;
+    }
 
     //選轉標註圖示
     .list_table_toggle_btn {
