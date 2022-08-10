@@ -280,6 +280,10 @@ hover #9db8e0 (-60%)
     @include payment-reminder(rgba(255, 193, 7, 0.7));
 }
 
+.payment-reminder-cyan {
+    @include payment-reminder(rgba(13, 202, 240, 0.7));
+}
+
 //提示文字 span 不換行
 .recharge-status-td-span {
     white-space: nowrap;
@@ -392,6 +396,7 @@ hover #9db8e0 (-60%)
     display: flex;
     gap: 0.6rem;
     align-items: center;
+    justify-content: center;
 }
 
 .table-btn-group-h62 {

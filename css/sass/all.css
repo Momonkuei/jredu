@@ -13803,6 +13803,11 @@ hover #9db8e0 (-60%)
   border-left: 4px solid rgba(255, 193, 7, 0.7);
 }
 
+.payment-reminder-cyan {
+  text-align: center;
+  border-left: 4px solid rgba(13, 202, 240, 0.7);
+}
+
 .recharge-status-td-span {
   white-space: nowrap;
 }
@@ -13910,6 +13915,9 @@ hover #9db8e0 (-60%)
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .table-btn-group-h62 {
@@ -15728,5 +15736,13 @@ div.context-menu ul li:hover a {
   .customer-inquiry-page {
     font-size: 62.5%;
   }
+}
+
+.tab-content.tab-content-custom .nav-link.active {
+  font-size: 1.5rem;
+}
+
+.tab-content.tab-content-custom .nav-link:hover {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=all.css.map */

@@ -1,0 +1,10 @@
+.tab-content.tab-content-custom {
+    .nav-link {
+        &.active {
+            font-size: 1.5rem;
+        }
+        &:hover {
+            font-size: 1.5rem;
+        }
+    }
+}
