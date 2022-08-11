@@ -459,7 +459,7 @@
   <div class="right_content home">
 
 
-    <div class="container-fluid header mb-md-5  d-flex justify-content-between nav_shadow">
+    <div class="container-fluid header mb-3  d-flex justify-content-between nav_shadow">
 
       <!-- 導覽列 -->
 
@@ -543,19 +543,6 @@
     <div class=" col">
       <div class="container customize-widthMax">
 
-
-        <ul class="nav nav-pills mb-4">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              data-bs-toggle="pill"
-              href="#QuestionTicketQueryTab"
-            >
-              問題單查詢
-            </a>
-          </li>
-        </ul>
-
         <!-- Tab panes -->
         <div class="tab-content tab-content-custom">
 
@@ -623,7 +610,7 @@
                     aria-controls="appointmentProcessing"
                     aria-selected="true"
                   >
-                    預約處理
+                    預約案件
                     <span class="badge bg-info text-dark">04</span>
                   </button>
                 </li>
@@ -782,7 +769,7 @@
                               />
                             </th>
                             <th>提問時間</th>
-                            <th>結案時間</th>
+                            <th>預約起訖時間</th>
                             <th>產品名稱</th>
                             <th>客戶名稱</th>
                             <th>提問人</th>
@@ -822,7 +809,7 @@
                                 12:00
                               </div>
                             </td>
-                            <td data-label="結案時間">
+                            <td data-label="預約起訖時間">
 
                             </td>
                             <td data-label="產品名稱">
@@ -882,7 +869,7 @@
                                   class="btn btn-outline-info"
                                   data-bs-toggle="modal"
                                   data-bs-target="#questionTicketAppointmentClosingDate"
-                                >預約<br>結案</button>
+                                >預約<br>案件</button>
                               </div>
                             </td>
 
@@ -1170,7 +1157,7 @@
                               />
                             </th>
                             <th>提問時間</th>
-                            <th>結案時間</th>
+                            <th>預約起訖時間</th>
                             <th>產品名稱</th>
                             <th>客戶名稱</th>
                             <th>提問人</th>
@@ -1210,7 +1197,7 @@
                                 12:00
                               </div>
                             </td>
-                            <td data-label="結案時間">
+                            <td data-label="預約起訖時間">
 
                             </td>
                             <td data-label="產品名稱">
@@ -1269,7 +1256,7 @@
                                   class="btn btn-outline-info"
                                   data-bs-toggle="modal"
                                   data-bs-target="#questionTicketAppointmentClosingDate"
-                                >預約<br>結案</button>
+                                >預約<br>案件</button>
                               </div>
                             </td>
 
@@ -1577,7 +1564,7 @@
                               />
                             </th>
                             <th>提問時間</th>
-                            <th>結案時間</th>
+                            <th>預約起訖時間</th>
                             <th>產品名稱</th>
                             <th>客戶名稱</th>
                             <th>提問人</th>
@@ -1612,9 +1599,15 @@
                               </div>
                             </td>
                             <td
-                              data-label="結案時間"
+                              data-label="預約起訖時間"
                               class=""
                             >
+                              <div>
+                                2022/07/05
+                                <br />
+                                13:00
+                              </div>
+                              <span class=" mb-3">~</span>
                               <div>
                                 2022/08/05
                                 <br />
@@ -1680,7 +1673,7 @@
                                   class="btn btn-outline-info"
                                   data-bs-toggle="modal"
                                   data-bs-target="#questionTicketAppointmentClosingDate"
-                                >預約<br>結案</button>
+                                >預約<br>案件</button>
                               </div>
                             </td>
 
@@ -1845,7 +1838,266 @@
                             </div>
                           </td>
 
+                          <!-- 表單三 -資訊部預約結案-編號2 過期 -->
 
+                          <tr class="content_table_tbody_tr clients--case-by-turnedIT-tr">
+                            <th>
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id=""
+                              />
+                            </th>
+                            <td
+                              data-label="提問時間"
+                              class=" payment-reminder-red2"
+                            >
+                              <div>
+                                2022/08/01
+                                <br />
+                                12:00
+                              </div>
+                            </td>
+                            <td
+                              data-label="預約起訖時間"
+                              class="text-danger"
+                            >
+                              <div>
+                                2022/07/05
+                                <br />
+                                13:00
+                              </div>
+                              <span class=" mb-3">~</span>
+                              <div>
+                                2022/08/03
+                                <br />
+                                17:00
+                              </div>
+                            </td>
+                            <td data-label="產品名稱">
+                              手機APP
+                            </td>
+                            <td data-label="客戶名稱">
+                              <a
+                                class=""
+                                href="allCustomer.html"
+                                target="_blank"
+                              >動態數學短期補習班</a>
+                            </td>
+                            <td data-label="提問人">
+                              Helen
+                            </td>
+                            <td data-label="聯絡電話">
+                              04-12345678
+                            </td>
+                            <td data-label="提問主題">
+                              密碼問題
+                            </td>
+                            <td data-label="問題內容">
+                              密碼忘記了
+                            </td>
+                            <td data-label="處理人員">
+                              林員工
+                            </td>
+                            <td
+                              class=""
+                              data-label="案件狀態"
+                            >
+                              <div>2022/08/01 14:00 </div>
+                              <div>處理中 林員工</div>
+                              <div>2022/08/02 10:30 </div>
+                              <div>轉交資訊部 林員工</div>
+                              <div>2022/08/03 14:30 </div>
+                              <div>設定結案時間 林員工</div>
+                              <div>2022/08/03 09:00 </div>
+                              <div>資訊部 處理中 陳員工</div>
+                            </td>
+                            <td data-label="操作">
+                              <div class="table-btn-group">
+
+                                <button
+                                  type="button"
+                                  class="btn btn-primary"
+                                >接手<br>服務</button>
+                                <button
+                                  type="button"
+                                  class="btn btn-warning"
+                                >資訊部<br>處理中</button>
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-success"
+                                >完成<br>結案</button>
+
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-info"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#questionTicketAppointmentClosingDate"
+                                >預約<br>案件</button>
+                              </div>
+                            </td>
+
+                          </tr>
+                          <td
+                            class="td_list_table"
+                            colspan="12"
+                          >
+                            <div class="panel_group">
+                              <div class="my-4">
+                                <div class="chat-app">
+                                  <div class="chat-app-header">
+                                    <div class="user-settings">
+                                      <img
+                                        class="chat-msg-img"
+                                        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                        alt=""
+                                      />
+                                      <div class="chat-area-title">客服名稱</div>
+                                    </div>
+                                    <div class="search-bar">
+                                      <input
+                                        type="text"
+                                        placeholder="搜尋..."
+                                      />
+                                    </div>
+
+                                  </div>
+                                  <div class="wrapper">
+                                    <div class="chat-area">
+                                      <div class="chat-area-header">
+
+
+                                      </div>
+
+                                      <div class="chat-area-main">
+                                        <div class="chat-msg ">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">
+                                              Message seen 1.22pm</div>
+                                          </div>
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">
+                                              客服的APP無法登入，跳出訊息如附件</div>
+                                            <div class="chat-msg-text chat-msg-content-img">
+                                              <img
+                                                src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                              />
+                                              <ul class='chat-msg-text-img-list'>
+                                                <li>
+                                                  <a>另存新檔</a>
+                                                </li>
+                                                <li>
+                                                  <a
+                                                    type="button"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#chatMsgContentImgModal"
+                                                  >
+                                                    分享
+                                                  </a>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                            <div class="chat-msg-text">Neque
+                                              gravida in fermentum et
+                                              sollicitudin ac orci
+                                              phasellus egestas. Pretium
+                                              lectus quam id leo.</div>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat-msg owner">
+                                          <div class="chat-msg-profile">
+                                            <img
+                                              class="chat-msg-img"
+                                              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                              alt=""
+                                            />
+                                            <div class="chat-msg-date">
+                                              Message seen 1.22pm</div>
+                                          </div>
+
+                                          <div class="chat-msg-content">
+                                            <div class="chat-msg-text">
+                                              收到，處理中。
+                                            </div>
+
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <!-- 聊天室底部 -->
+                                      <div class="chat-area-footer">
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="feather feather-image"
+                                        >
+                                          <rect
+                                            x="3"
+                                            y="3"
+                                            width="18"
+                                            height="18"
+                                            rx="2"
+                                            ry="2"
+                                          />
+                                          <circle
+                                            cx="8.5"
+                                            cy="8.5"
+                                            r="1.5"
+                                          />
+                                          <path d="M21 15l-5-5L5 21" />
+                                        </svg>
+
+                                        <svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          stroke-width="1.5"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          class="feather feather-paperclip"
+                                        >
+                                          <path
+                                            d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
+                                          />
+                                        </svg>
+                                        <input
+                                          type="text"
+                                          placeholder="輸入訊息..."
+                                        />
+
+                                        <div
+                                          class="btn-group"
+                                          role="group"
+                                          aria-label="Basic outlined example"
+                                        >
+                                          <button
+                                            type="button"
+                                            class="btn btn-outline-primary btn-custom-nowrap"
+                                          >發送</button>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </td>
 
                         </tbody>
                       </table>
@@ -1948,7 +2200,7 @@
                               />
                             </th>
                             <th>提問時間</th>
-                            <th>結案時間</th>
+                            <th>預約起訖時間</th>
                             <th>產品名稱</th>
                             <th>客戶名稱</th>
                             <th>提問人</th>
@@ -1985,7 +2237,7 @@
                               <div>2022/05/01</div>
                               <div>12:00</div>
                             </td>
-                            <td data-label="結案時間">
+                            <td data-label="預約起訖時間">
 
                             </td>
                             <td data-label="產品名稱:">校掌雲</td>
@@ -2031,7 +2283,7 @@
                                   class="btn btn-outline-info"
                                   data-bs-toggle="modal"
                                   data-bs-target="#questionTicketAppointmentClosingDate"
-                                >預約<br>結案</button>
+                                >預約<br>案件</button>
                               </div>
 
                             </td>
@@ -2485,7 +2737,7 @@
             <h4
               class="modal-title"
               id="questionTicketAppointmentClosingDateLabel"
-            >預約結案</h4>
+            >預約案件</h4>
             <button
               type="button"
               class="btn-close"
@@ -2619,13 +2871,17 @@
     <!-- 聊天視窗右鍵選單 -->
     <!--  -->
 
-    <div class="context-menu">
+    <div
+      class="context-menu"
+      id="right-menu"
+    >
       <ul>
         <li><a
             type="button"
             data-bs-toggle="modal"
             data-bs-target="#chatMsgContentImgModal"
           >分享</a></li>
+        <li>刪除</li>
       </ul>
     </div>
 

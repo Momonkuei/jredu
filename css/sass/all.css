@@ -15616,50 +15616,6 @@ img {
   font-weight: 500;
 }
 
-/* 右鍵選單 */
-div.context-menu ul {
-  margin: 0;
-  padding: 0;
-}
-
-div.context-menu {
-  width: 60px;
-  height: 30px;
-  background-color: #fff;
-  display: none;
-  -webkit-box-shadow: 0 12px 15px 5px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 12px 15px 5px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  text-align: center;
-}
-
-div.context-menu ul li {
-  min-width: 80px;
-  overflow: hidden;
-  white-space: nowrap;
-  height: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid #ecf0f1;
-  border-radius: 5px;
-}
-
-div.context-menu ul li a {
-  text-decoration: none;
-  color: #8e8e8e;
-  text-align: left;
-  line-height: 30px;
-  padding: 0 20px;
-  height: 100%;
-  display: block;
-  font-family: "Lato";
-  font-weight: bold;
-  font-size: 0.85rem;
-}
-
-div.context-menu ul li:hover a {
-  background-color: #ecf0f1;
-}
-
 @media (max-width: 780px) {
   .conversation-area {
     display: none;
@@ -15744,5 +15700,66 @@ div.context-menu ul li:hover a {
 
 .tab-content.tab-content-custom .nav-link:hover {
   font-size: 1.5rem;
+}
+
+.input-date.input-closed-customize-date {
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  stroke: #dc3545;
+}
+
+/* 右鍵選單 */
+div.context-menu {
+  position: absolute;
+}
+
+div.context-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+div.context-menu {
+  width: 60px;
+  height: 30px;
+  background-color: #fff;
+  display: none;
+  -webkit-box-shadow: 0 12px 15px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 12px 15px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  text-align: center;
+}
+
+div.context-menu ul li {
+  min-width: 80px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+div.context-menu ul li:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+div.context-menu ul li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+div.context-menu ul li a {
+  text-decoration: none;
+  color: #8e8e8e;
+  text-align: left;
+  line-height: 30px;
+  padding: 0 20px;
+  height: 100%;
+  display: block;
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+div.context-menu ul li:hover a {
+  background-color: #ecf0f1;
 }
 /*# sourceMappingURL=all.css.map */
