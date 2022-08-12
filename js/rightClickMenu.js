@@ -45,8 +45,8 @@ chatMsgTexts.forEach(chatMsgText => {
 	chatMsgText.oncontextmenu = function (e) {
 		e.preventDefault();
 		if (!document.getElementById('right-menu').contains(e.target)) {
-			document.getElementById('right-menu').style.top = e.clientY + 'px';
-			document.getElementById('right-menu').style.left = e.clientX + 'px';
+			document.getElementById('right-menu').style.top = e.pageY + 'px';
+			document.getElementById('right-menu').style.left = e.pageX + 'px';
 
 			document.getElementById('right-menu').style.display = 'block';
 		}

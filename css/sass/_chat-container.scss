@@ -12,9 +12,11 @@
     --body-color: #273346;
     --settings-icon-color: #c1c7cd;
     --msg-message: #969eaa;
+    --msg-message-had-read: #c0c7d2;
     --chat-text-bg: #f1f2f6;
     --theme-color: #9ec5fe;
     --msg-date: #c0c7d2;
+    --msg-speaker-name: #333;
     --button-bg-color: #f0f7ff;
     --button-color: var(--theme-color);
     --detail-font-color: #919ca2;
@@ -323,9 +325,16 @@ img {
     position: relative;
 }
 
+.chat-message-speaker-name {
+    left: calc(100% + 12px);
+    color: var(--msg-speaker-name);
+    font-size: 12px;
+    font-weight: 600;
+}
+
 .chat-msg-date {
     position: absolute;
-    left: calc(100% + 12px);
+    left: calc(100% + 30px);
     bottom: 0;
     font-size: 12px;
     font-weight: 600;
@@ -358,6 +367,21 @@ img {
 
 .chat-msg-text {
     color: var(--chat-text-color);
+    position: relative;
+    .chat-msg-text-had-read {
+        position: absolute;
+        font-size: 12px;
+        bottom: 5px;
+        left: -30px;
+        color: var(--msg-message-had-read);
+    }
+    .chat-msg-text-other-had-read {
+        position: absolute;
+        font-size: 12px;
+        bottom: 5px;
+        right: -30px;
+        color: var(--msg-message-had-read);
+    }
 }
 
 .owner {
@@ -371,8 +395,18 @@ img {
         background-color: var(--theme-color);
         color: #333;
         border-radius: 20px 20px 0 20px;
+
+        // .chat-msg-text-had-read {
+        //     // bottom: 5px;
+        //     right: 0;
+        // }
     }
     .chat-msg-date {
+        left: auto;
+        right: calc(100% + 12px);
+    }
+
+    .chat-message-speaker-name {
         left: auto;
         right: calc(100% + 12px);
     }
@@ -716,8 +750,6 @@ img {
     }
 }
 
-
-
 @media (max-width: 780px) {
     .conversation-area {
         display: none;
@@ -734,4 +766,3 @@ img {
         height: 75vh;
     }
 }
-
