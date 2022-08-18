@@ -739,18 +739,7 @@
                         </button>
 
 
-                        <div class="col-xs-2 ms-auto">
 
-
-                          <button
-                            type="button"
-                            class="btn btn-outline-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#addNewCustomerQuestion"
-                          >
-                            <i class="fas fa-plus"></i>
-                          </button>
-                        </div>
                       </div>
 
 
@@ -769,7 +758,6 @@
                               />
                             </th>
                             <th>提問時間</th>
-                            <th>預約起訖時間</th>
                             <th>產品名稱</th>
                             <th>客戶名稱</th>
                             <th>提問人</th>
@@ -809,9 +797,7 @@
                                 12:00
                               </div>
                             </td>
-                            <td data-label="預約起訖時間">
 
-                            </td>
                             <td data-label="產品名稱">
                               手機APP
                             </td>
@@ -862,20 +848,7 @@
                                   type="button"
                                   class="btn btn-outline-primary"
                                 >開始<br>服務</button>
-                                <button
-                                  type="button"
-                                  class="btn btn-warning"
-                                >資訊部<br>處理中</button>
-                                <button
-                                  type="button"
-                                  class="btn btn-outline-success"
-                                >完成<br>結案</button>
-                                <button
-                                  type="button"
-                                  class="btn btn-outline-info"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#questionTicketAppointmentClosingDate"
-                                >預約<br>案件</button>
+
                               </div>
                             </td>
 
@@ -1134,18 +1107,7 @@
                         </button>
 
 
-                        <div class="col-xs-2 ms-auto">
 
-
-                          <button
-                            type="button"
-                            class="btn btn-outline-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#addNewCustomerQuestion"
-                          >
-                            <i class="fas fa-plus"></i>
-                          </button>
-                        </div>
                       </div>
 
 
@@ -1164,7 +1126,6 @@
                               />
                             </th>
                             <th>提問時間</th>
-                            <th>預約起訖時間</th>
                             <th>產品名稱</th>
                             <th>客戶名稱</th>
                             <th>提問人</th>
@@ -1181,7 +1142,7 @@
 
 
 
-                          <!-- 表單一 問題單查詢-尚未處理-編號1 -尚未完成 -->
+                          <!-- 表單二 資訊問題單-處理中-編號1 -尚未完成 -->
 
 
 
@@ -1204,9 +1165,7 @@
                                 12:00
                               </div>
                             </td>
-                            <td data-label="預約起訖時間">
 
-                            </td>
                             <td data-label="產品名稱">
                               手機APP
                             </td>
@@ -1254,12 +1213,11 @@
 
                                 <button
                                   type="button"
-                                  class="btn btn-primary"
-                                >接手<br>服務</button>
-                                <button
-                                  type="button"
-                                  class="btn btn-warning"
-                                >資訊部<br>處理中</button>
+                                  class="btn btn-outline-primary"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#projectAssignmentITModel"
+                                >轉手<br>服務</button>
+
                                 <button
                                   type="button"
                                   class="btn btn-outline-success"
@@ -1548,22 +1506,12 @@
                         </button>
 
 
-                        <div class="col-xs-2 ms-auto">
 
-
-                          <button
-                            type="button"
-                            class="btn btn-outline-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#addNewCustomerQuestion"
-                          >
-                            <i class="fas fa-plus"></i>
-                          </button>
-                        </div>
                       </div>
 
 
                     </div>
+
 
                     <div>
                       <table class="content-table text-center">
@@ -1678,11 +1626,10 @@
                                 <button
                                   type="button"
                                   class="btn btn-primary"
-                                >接手<br>服務</button>
-                                <button
-                                  type="button"
-                                  class="btn btn-warning"
-                                >資訊部<br>處理中</button>
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#projectAssignmentITModel"
+                                >轉手<br>服務</button>
+
                                 <button
                                   type="button"
                                   class="btn btn-outline-success"
@@ -1919,7 +1866,7 @@
                               密碼忘記了
                             </td>
                             <td data-label="處理人員">
-                              林員工
+                              李員工
                             </td>
                             <td
                               class=""
@@ -1947,10 +1894,7 @@
                                   type="button"
                                   class="btn btn-primary"
                                 >接手<br>服務</button>
-                                <button
-                                  type="button"
-                                  class="btn btn-warning"
-                                >資訊部<br>處理中</button>
+
                                 <button
                                   type="button"
                                   class="btn btn-outline-success"
@@ -2148,27 +2092,55 @@
                   <div class=" flex">
 
                     <!-- 搜尋欄 -->
+                    <!-- 搜尋欄 -->
                     <div class="shadow p-3  bg-body rounded-3">
                       <div class="d-grid gap-2 input-group d-flex align-items-center">
-                        <button
-                          class="btn btn-outline-primary"
-                          type="button"
-                        >
-                          <ion-icon name="chevron-back-outline"></ion-icon>
-                        </button>
-                        <input
-                          id="bday-month"
-                          type="date"
-                          name="bday-month"
-                          class="input-date"
-                          value="2022-05"
-                        />
-                        <button
-                          class="btn btn-outline-primary"
-                          type="button"
-                        >
-                          <ion-icon name="chevron-forward-outline"></ion-icon>
-                        </button>
+                        <div class="btn-group">
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                          </button>
+                          <input
+                            id="bday-month"
+                            type="date"
+                            name="bday-month"
+                            class="input-date"
+                          />
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                          </button>
+
+
+                        </div>
+
+                        <div class="input-group-addon">to</div>
+
+                        <div class="btn-group">
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                          </button>
+                          <input
+                            id="bday-month"
+                            type="date"
+                            name="bday-month"
+                            class="input-date"
+                            value="2022-08-01"
+                          />
+                          <button
+                            class="btn btn-outline-primary"
+                            type="button"
+                          >
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                          </button>
+                        </div>
                         <div class="col-xs-2">
                           <select
                             class="form-select"
@@ -2200,6 +2172,7 @@
                             aria-label="搜尋"
                           />
                         </div>
+
                         <button
                           class="btn btn-outline-primary"
                           type="button"
@@ -2208,11 +2181,11 @@
                         </button>
 
 
+
                       </div>
 
 
-
-                    </div>
+                    </div>>
 
                     <div>
                       <table class="content-table text-center">
@@ -2299,24 +2272,12 @@
                             </td>
                             <td data-label="操作:">
                               <div class="table-btn-group">
-                                <button
-                                  type="button"
-                                  class="btn btn-primary"
-                                >接手<br>服務</button>
-                                <button
-                                  type="button"
-                                  class="btn btn-warning"
-                                >資訊部<br>處理中</button>
+
                                 <button
                                   type="button"
                                   class="btn btn-success"
-                                >已完成<br>結案</button>
-                                <button
-                                  type="button"
-                                  class="btn btn-outline-info"
-                                  data-bs-toggle="modal"
-                                  data-bs-target="#questionTicketAppointmentClosingDate"
-                                >預約<br>案件</button>
+                                >繼續<br>服務</button>
+
                               </div>
 
                             </td>
@@ -2748,7 +2709,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h4
-              class="modal-title"
+              class="modal-title modal-customize-title"
               id="questionTicketAppointmentClosingDateLabel"
             >預約案件</h4>
             <button
@@ -2764,9 +2725,9 @@
               <div class="col-12">
                 <label
                   for="inputState"
-                  class="form-label"
+                  class="form-label "
                 >
-                  預約結案日期
+                  開始日期
                 </label>
                 <input
                   type="date"
@@ -2778,6 +2739,28 @@
                   type="time"
                   name="bday-month"
                   class="input-date"
+                  value=""
+                />
+              </div>
+              <div class="col-12"></div>
+              <div class="col-12"></div>
+              <div class="col-12">
+                <label
+                  for="inputState"
+                  class="form-label "
+                >
+                  結束日期
+                </label>
+                <input
+                  type="date"
+                  name="bday-month"
+                  class="input-date input-closed-customize-date"
+                  value=""
+                />
+                <input
+                  type="time"
+                  name="bday-month"
+                  class="input-date input-closed-customize-date"
                   value=""
                 />
               </div>
@@ -2795,6 +2778,7 @@
       </div>
     </div>
 
+
     <!--  -->
     <!-- 聊天視窗分享Modal -->
     <!--  -->
@@ -2809,10 +2793,10 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5
-              class="modal-title"
+            <h4
+              class="modal-title modal-customize-title"
               id="chatMsgContentImgModalLabel"
-            >選擇傳送對象</h5>
+            >選擇傳送對象</h4>
             <button
               type="button"
               class="btn-close"
@@ -3007,7 +2991,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h4
-              class="modal-title"
+              class="modal-title modal-customize-title"
               id="historyOfCaseStatusModalLabel"
             >歷史紀錄</h4>
             <button
@@ -3110,28 +3094,24 @@
     </div>
 
 
-
     <!--  -->
-    <!-- 新增提問Modal -->
+    <!--轉給資訊部 Modal -->
     <!--  -->
-
 
     <div
       class="modal fade"
-      id="addNewCustomerQuestion"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
+      id="projectAssignmentITModel"
       tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
+      aria-labelledby="projectAssignmentITModelLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h4
-              class="modal-title"
-              id="staticBackdropLabel"
-            >新增提問</h4>
+              class="modal-title modal-customize-title"
+              id="projectAssignmentITModelLabel"
+            >選擇資訊人員</h4>
             <button
               type="button"
               class="btn-close"
@@ -3139,133 +3119,82 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body ">
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label
-                  for="teacherAskedQuestion"
-                  class="form-label"
-                >
-                  提問人:
-                </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="teacherAskedQuestion"
-                  value=""
-                />
-              </div>
-              <div class="col-md-4">
-                <label
-                  for="inputNumber"
-                  class="form-label"
-                >
-                  聯絡電話:
-                </label>
-                <input
-                  type="phone"
-                  class="form-control"
-                  id="inputNumber"
-                  value=""
-                />
-              </div>
-              <div class="col-md-2">
-                <label
-                  for="inputNumber"
-                  class="form-label"
-                >
-                  分機:
-                </label>
-                <input
-                  type="phone"
-                  class="form-control"
-                  id="inputNumber"
-                  value=""
-                />
-              </div>
-              <div class="col-md-6">
-                <label
-                  for="inputState"
-                  class="form-label"
-                >
-                  產品名稱:
-                </label>
-                <select
-                  id="inputState"
-                  class="form-select"
-                >
-                  <option selected>請選擇產品</option>
-                  <option>校掌雲</option>
-                  <option>WBaby</option>
-                  <option>感應機</option>
-                  <option>其他</option>
-                </select>
-              </div>
+          <div class="modal-body">
 
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control col-9"
+                placeholder="搜尋"
+                aria-label="搜尋"
+              />
+              <button
+                class="btn btn-outline-primary col-2"
+                type="button"
+              >
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
+            <hr>
 
-              <div class="col-md-6">
-                <label
-                  for="inputState"
-                  class="form-label"
-                >
-                  問題類型
-                </label>
-                <select
-                  id="inputState"
-                  class="form-select"
-                >
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-
-              <div class="col-12">
-                <div>
-                  <label
-                    for="exampleFormControlTextarea3"
-                    class="form-label"
-                  >
-                    問題說明:
-                  </label>
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea3"
-                    rows="3"
-                  ></textarea>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="mb-3">
-                  <label
-                    for="formFile"
-                    class="form-label"
-                  >
-                    檔案或影片上傳
-                  </label>
-                  <input
-                    class="form-control"
-                    type="file"
-                    id="formFile"
-                  />
-                </div>
-              </div>
-
-
-            </form>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              >
+              <label
+                class="form-check-label"
+                for="flexCheckDefault"
+              >
+                陳員工
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+              >
+              <label
+                class="form-check-label"
+                for="flexCheckChecked"
+              >
+                李員工
+              </label>
+            </div>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckChecked"
+              >
+              <label
+                class="form-check-label"
+                for="flexCheckChecked"
+              >
+                張員工
+              </label>
+            </div>
 
           </div>
           <div class="modal-footer justify-content-center">
+
             <button
               type="button"
-              class="btn btn-success w-25"
-            >送出</button>
+              class="btn btn-outline-success"
+            >確認</button>
           </div>
         </div>
       </div>
     </div>
 
+
   </div>
-  </div>
+
 
 
   <script

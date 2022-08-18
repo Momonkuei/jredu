@@ -12489,7 +12489,6 @@ div.openHideSideBar {
 
 .header_title a.active {
   text-decoration: none;
-  color: #6b94d0;
 }
 
 .header_navbar ul {
@@ -15673,9 +15672,9 @@ img {
   .customer-inquiry-page .content-table thead,
   .customer-inquiry-page .content-table tbody th,
   .customer-inquiry-page .web-search-group,
-  .customer-inquiry-page .content_table_tbody_tr td:nth-child(7),
   .customer-inquiry-page .content_table_tbody_tr td:nth-child(8),
-  .customer-inquiry-page .content_table_tbody_tr td:nth-child(9) {
+  .customer-inquiry-page .content_table_tbody_tr td:nth-child(9),
+  .customer-inquiry-page .content_table_tbody_tr td:nth-child(10) {
     display: none;
   }
   .customer-inquiry-page .phone-search-group {
@@ -15792,5 +15791,12 @@ div.context-menu ul li a {
 
 div.context-menu ul li:hover a {
   background-color: #ecf0f1;
+}
+
+.modal-customize-title {
+  background-color: #094db1;
+  color: #fff;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=all.css.map */
