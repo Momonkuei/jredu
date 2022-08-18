@@ -564,6 +564,12 @@
             data-bs-toggle="modal"
             data-bs-target="#software"
           >商品購買資訊</button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#CustomerHistoryQuestionsTicket"
+          >客戶歷史問題資訊</button>
         </div>
         <div class="right_btn">
           <button class="btn btn-success me-2">新增客戶</button>
@@ -838,7 +844,7 @@
                   <div class="row">
                     <div class="col-6 border-end border-light">
                       <form class="row">
-                        <div class="col-6 mb-2">
+                        <div class="col-4 mb-2">
                           <label for="CustomerID">
                             客戶編號
                           </label>
@@ -849,7 +855,24 @@
                             value="20081204-0001"
                           />
                         </div>
-                        <div class="col-6 mb-2">
+                        <div class="col-4 mb-2">
+                          <label for="CustomerID">
+                            客戶等級
+                          </label>
+                          <select
+                            class="form-select"
+                            aria-label="Default select"
+                            id="CountyAndCity"
+                          >
+                            <option
+                              selected
+                              value="1"
+                            >1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        </div>
+                        <div class="col-4 mb-2">
                           <label for="CustomerAbbreviation">客戶簡稱</label>
                           <input
                             type="text"
@@ -1236,7 +1259,7 @@
                   <div class="row">
                     <div class="col-6 border-end border-light">
                       <form class="row">
-                        <div class="col-6 mb-2">
+                        <div class="col-4 mb-2">
                           <label for="CustomerID">
                             客戶編號
                           </label>
@@ -1247,7 +1270,24 @@
                             value="20081204-0001"
                           />
                         </div>
-                        <div class="col-6 mb-2">
+                        <div class="col-4 mb-2">
+                          <label for="CustomerID">
+                            客戶等級
+                          </label>
+                          <select
+                            class="form-select"
+                            aria-label="Default select"
+                            id="CountyAndCity"
+                          >
+                            <option
+                              selected
+                              value="1"
+                            >1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        </div>
+                        <div class="col-4 mb-2">
                           <label for="CustomerAbbreviation">客戶簡稱</label>
                           <input
                             type="text"
@@ -2868,7 +2908,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xxl">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">建立新訂單</h4>
+              <h4 class="modal-title modal-customize-title">建立新訂單</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -3283,7 +3323,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xxl">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">查看客戶訂單</h4>
+              <h4 class="modal-title modal-customize-title">查看客戶訂單</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -4427,7 +4467,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xxl">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">訪談紀錄</h4>
+              <h4 class="modal-title modal-customize-title">訪談紀錄</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -4698,7 +4738,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xxl">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">面訪紀錄</h4>
+              <h4 class="modal-title modal-customize-title">面訪紀錄</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -5003,7 +5043,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xxl">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">面訪紀錄 調整版</h4>
+              <h4 class="modal-title modal-customize-title">面訪紀錄 調整版</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -5310,7 +5350,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xxl">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">金鼎作文</h4>
+              <h4 class="modal-title modal-customize-title">金鼎作文</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -5557,7 +5597,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xxl">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">甘丹數學</h4>
+              <h4 class="modal-title modal-customize-title">甘丹數學</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -5766,7 +5806,7 @@
                   <div class="mt-4 text-center">
                     <button
                       type="button"
-                      class="btn btn-secondary maintenance_credit_cancel"
+                      class="btn btn-secondary maintenance_credit_cancel w-25"
                     >
                       關閉
                     </button>
@@ -5803,7 +5843,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xxl">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">軟體購買資訊</h4>
+              <h4 class="modal-title modal-customize-title">軟體購買資訊</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -5971,24 +6011,27 @@
       </div>
 
 
-      <!-- 其他選項中的model -->
-      <!-- 查詢大掌櫃到期客戶Modal -->
+      <!-- 客戶資料表頭 -->
+      <!-- 客戶歷史問題資訊Modal -->
       <!--  -->
+
+
+
 
 
       <div
         class="modal fade"
-        id="expired_customer"
+        id="CustomerHistoryQuestionsTicket"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
         tabindex="-1"
-        aria-labelledby="staticBackdropLabel"
+        aria-labelledby="CustomerHistoryQuestionsTicketLabel"
         aria-hidden="true"
       >
         <div class="modal-dialog modal-dialog-centered modal-xxl">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">查詢大掌櫃到期客戶</h4>
+              <h4 class="modal-title modal-customize-title">客戶歷史問題資訊</h4>
               <button
                 type="button"
                 class="btn-close"
@@ -5997,211 +6040,1053 @@
               ></button>
             </div>
             <div class="modal-body">
-              <div class="mb-4 d-flex align-items-center">
-                <button class="btn btn-primary me-2">今日到期</button>
-                <select
-                  class="form-select w-25 me-2"
-                  aria-label="Default select"
-                >
-                  <option selected>1個月內</option>
-                  <option value="1">2隔月內</option>
-                </select>
-                <button class="btn btn-primary me-2">匯出到期資</button>
-                <p class="red mb-0 fs-5">到期的補習班共有56家</p>
-              </div>
-              <div class="software_table">
-                <table class="table table-bordered table-hover">
-                  <thead>
-                    <tr>
-                      <th scope="col">補習班編號</th>
-                      <th scope="col">補習班名稱</th>
-                      <th scope="col">大掌櫃版本</th>
-                      <th scope="col">大掌櫃到期日</th>
-                      <th scope="col">聯絡人</th>
-                      <th scope="col">聯絡人手機</th>
-                      <th scope="col">電話(一)</th>
-                      <th scope="col">電話(二)</th>
-                      <th scope="col">住址</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">58596</th>
-                      <td>東興文理短期補習班(鮑金秀)</td>
-                      <td>旗艦版</td>
-                      <td>2022/21/31 上午12:00:00</td>
-                      <td>楊主任</td>
-                      <td></td>
-                      <td>0985658963</td>
-                      <td>0258456933</td>
-                      <td>台中市台中區台中里台中路台中巷台中弄369號</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class=" flex">
+
+                <!-- 搜尋欄 -->
+                <div class="shadow p-3  bg-body rounded-3">
+                  <div class="d-grid gap-2 input-group d-flex align-items-center">
+                    <div class="btn-group">
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                      </button>
+                      <input
+                        id="bday-month"
+                        type="date"
+                        name="bday-month"
+                        class="input-date"
+                      />
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                      </button>
+
+
+                    </div>
+
+                    <div class="input-group-addon">to</div>
+
+                    <div class="btn-group">
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                      </button>
+                      <input
+                        id="bday-month"
+                        type="date"
+                        name="bday-month"
+                        class="input-date"
+                        value="2022-08-01"
+                      />
+                      <button
+                        class="btn btn-outline-primary"
+                        type="button"
+                      >
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                      </button>
+                    </div>
+
+
+
+
+
+
+                  </div>
+                </div>
+
+                <div>
+                  <table class="content-table text-center">
+                    <thead>
+                      <tr>
+                        <th>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id=""
+                          />
+                        </th>
+                        <th>提問時間</th>
+                        <th>預約起訖時間</th>
+                        <th>產品名稱</th>
+                        <th>客戶名稱</th>
+                        <th>提問人</th>
+                        <th>聯絡電話</th>
+                        <th>提問主題</th>
+                        <th>問題內容</th>
+                        <th>客服人員</th>
+                        <th>案件狀態</th>
+                        <th>操作</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+
+
+
+                      <!-- 表單五 問題單-已結案 -客戶自行結案 -->
+
+
+
+                      <tr class="content_table_tbody_tr clients-close-case-by-own-tr">
+                        <th>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id=""
+                          />
+                        </th>
+                        <td
+                          data-label="提問時間:"
+                          class="payment-reminder-green"
+                        >
+                          <div>2022/05/01</div>
+                          <div>12:00</div>
+                        </td>
+                        <td data-label="預約起訖時間:"></td>
+                        <td data-label="產品名稱:">校掌雲</td>
+                        <td data-label="客戶名稱:">
+                          <a
+                            href="allCustomer.html"
+                            target="_blank"
+                          >動態數學短期補習班</a>
+                        </td>
+                        <td data-label="提問人:">Helen</td>
+                        <td data-label="聯絡電話:">0912111333</td>
+                        <td data-label="提問主題:">忘記密碼</td>
+                        <td data-label="問題內容:">校掌雲密碼忘記了</td>
+                        <td data-label="客服人員:">Wayne</td>
+                        <td data-label="案件狀態:">
+                          <!-- <div>2022/05/01 14:00 </div>
+                                          <div>處理中 林員工</div>
+                                          <div>2022/05/01 14:30 </div>
+                                          <div>轉交資訊部 林員工</div>
+                                          <div>2022/05/02 08:00 </div>
+                                          <div>資訊部 處理中 陳員工</div>
+                                          <div>2022/05/02 15:00 </div>
+                                          <div>資訊部 已結案 陳員工</div> -->
+                          <div>2022/05/01 14:00 </div>
+                          <div>已結案 Helen</div>
+                          <button
+                            type="button"
+                            class="btn btn-primary mt-2"
+                            data-bs-toggle="modal"
+                            data-bs-target="#historyOfCaseStatusModal"
+                          >歷史紀錄</button>
+
+                        </td>
+                        <td data-label="操作:">
+                          <div class="table-btn-group">
+
+                            <button
+                              type="button"
+                              class="btn btn-success"
+                            >繼續<br>服務</button>
+
+                          </div>
+
+                        </td>
+
+                      </tr>
+                      <td
+                        class="td_list_table"
+                        colspan="12"
+                      >
+                        <div class="panel_group">
+                          <div class="my-4">
+                            <div class="chat-app">
+                              <div class="chat-app-header">
+                                <div class="user-settings">
+                                  <img
+                                    class="chat-msg-img"
+                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                    alt=""
+                                  />
+                                  <div class="chat-area-title">客戶名稱</div>
+                                </div>
+                                <div class="search-bar">
+                                  <input
+                                    type="text"
+                                    placeholder="搜尋..."
+                                  />
+                                </div>
+
+                              </div>
+                              <div class="wrapper">
+                                <div class="chat-area">
+                                  <div class="chat-area-header">
+
+
+                                  </div>
+
+                                  <div class="chat-area-main">
+                                    <!-- 對話內容
+                                                    chat-msg 對方
+                                                    chat-msg owner 我方
+                                                  -->
+                                    <div class="chat-msg ">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                          alt=""
+                                        />
+                                        <div class="chat-msg-date">Message seen 1.22pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
+                                        <div class="chat-msg-text chat-msg-content-img">
+                                          <img
+                                            src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                          />
+                                          <ul class='chat-msg-text-img-list'>
+                                            <li>
+                                              <a>另存新檔</a>
+                                            </li>
+                                            <li>
+                                              <a
+                                                type="button"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#chatMsgContentImgModal"
+                                              >
+                                                分享
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div class="chat-msg-text">Neque gravida in fermentum et
+                                          sollicitudin ac orci
+                                          phasellus egestas. Pretium
+                                          lectus quam id leo.</div>
+                                      </div>
+                                    </div>
+
+                                    <div class="chat-msg owner">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                          alt=""
+                                        />
+                                        <div class="chat-msg-date">Message seen 1.22pm</div>
+                                      </div>
+
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">Luctus et ultrices posuere
+                                          cubilia curae.</div>
+                                        <div class="chat-msg-text chat-msg-content-img">
+                                          <img
+                                            src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                          />
+                                          <ul class='chat-msg-text-img-list'>
+                                            <li>
+                                              <a>另存新檔</a>
+                                            </li>
+                                            <li>
+                                              <a>分享</a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div class="chat-msg-text">Neque gravida in fermentum et
+                                          sollicitudin ac orci
+                                          phasellus egestas. Pretium
+                                          lectus quam id leo.</div>
+                                        <div class="chat-msg-text">Sit amet risus nullam eget felis
+                                          eget. Dolor sed
+                                          viverra ipsum😂😂😂</div>
+                                        <div class="chat-msg-text">Cras mollis nec arcu malesuada
+                                          tincidunt.</div>
+                                      </div>
+                                    </div>
+                                    <div class="chat-msg owner">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                          alt=""
+                                        >
+                                        <div class="chat-msg-date">Message seen 2.45pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">Aenean tristique maximus tortor
+                                          non tincidunt.
+                                          Vestibulum ante ipsum primis in
+                                          faucibus orci luctus et ultrices posuere cubilia curae😊
+                                        </div>
+                                        <div class="chat-msg-text">Ut faucibus pulvinar elementum
+                                          integer enim neque
+                                          volutpat.</div>
+                                      </div>
+                                    </div>
+                                    <div class="chat-msg ">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                          alt=""
+                                        />
+                                        <div class="chat-msg-date">Message seen 2.50pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">posuere eget augue sodales,
+                                          aliquet posuere eros.
+                                        </div>
+                                        <div class="chat-msg-text">Cras mollis nec arcu malesuada
+                                          tincidunt.</div>
+                                      </div>
+                                    </div>
+                                    <div class="chat-msg owner">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                          alt=""
+                                        />
+                                        <div class="chat-msg-date">Message seen 3.16pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">Egestas tellus rutrum tellus
+                                          pellentesque</div>
+                                      </div>
+                                    </div>
+                                    <div class="chat-msg owner">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                          alt=""
+                                          class="account-profile"
+                                          alt=""
+                                        >
+                                        <div class="chat-msg-date">Message seen 3.16pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">Consectetur adipiscing elit
+                                          pellentesque habitant
+                                          morbi tristique senectus et.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="chat-msg ">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                          alt=""
+                                        />
+                                        <div class="chat-msg-date">Message seen 2.50pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">Tincidunt arcu non sodales😂
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="chat-msg owner">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                          alt=""
+                                        >
+                                        <div class="chat-msg-date">Message seen 3.16pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">Consectetur adipiscing elit
+                                          pellentesque habitant
+                                          morbi tristique senectus et🥰
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- 聊天室底部 -->
+                                  <div class="chat-area-footer">
+
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      class="feather feather-image"
+                                    >
+                                      <rect
+                                        x="3"
+                                        y="3"
+                                        width="18"
+                                        height="18"
+                                        rx="2"
+                                        ry="2"
+                                      />
+                                      <circle
+                                        cx="8.5"
+                                        cy="8.5"
+                                        r="1.5"
+                                      />
+                                      <path d="M21 15l-5-5L5 21" />
+                                    </svg>
+
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      class="feather feather-paperclip"
+                                    >
+                                      <path
+                                        d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
+                                      />
+                                    </svg>
+                                    <input
+                                      type="text"
+                                      placeholder="輸入訊息..."
+                                    />
+
+                                    <div
+                                      class="btn-group"
+                                      role="group"
+                                      aria-label="Basic outlined example"
+                                    >
+                                      <button
+                                        type="button"
+                                        class="btn btn-outline-primary btn-custom-nowrap"
+                                      >發送</button>
+
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </td>
+
+
+                      <!-- 表單五 問題單-已結案 -客服方結案 -->
+
+
+
+                      <tr class="content_table_tbody_tr customer-service-closed-tr">
+                        <th>
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id=""
+                          />
+                        </th>
+                        <td
+                          data-label="提問時間"
+                          class="payment-reminder-gray"
+                        >
+                          <div>
+                            2022/05/01
+                            <br />
+                            12:00
+                          </div>
+                        </td>
+                        <td data-label="預約起訖時間">
+
+                        </td>
+                        <td data-label="產品名稱">
+                          手機APP
+                        </td>
+                        <td data-label="客戶名稱">
+                          <a
+                            href="allCustomer.html"
+                            target="_blank"
+                          >動態數學短期補習班</a>
+                        </td>
+                        <td data-label="提問人">
+                          Helen
+                        </td>
+                        <td data-label="聯絡電話">
+                          04-12345678
+                        </td>
+                        <td data-label="提問主題">
+                          密碼問題
+                        </td>
+                        <td data-label="問題內容">
+                          密碼忘記了
+                        </td>
+                        <td data-label="問題內容">
+                          客服人員
+                        </td>
+                        <td data-label="案件狀態">
+
+                          <div>2022/05/01 14:00 </div>
+                          <div>
+                            已結案 Wayne
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-primary mt-2"
+                            data-bs-toggle="modal"
+                            data-bs-target="#historyOfCaseStatusModal"
+                          >歷史紀錄</button>
+                        </td>
+                        <td data-label="操作">
+                          <div class="table-btn-group">
+
+                            <button
+                              type="button"
+                              class="btn btn-success"
+                            >繼續<br>服務</button>
+
+                          </div>
+                        </td>
+
+                      </tr>
+                      <td
+                        class="td_list_table"
+                        colspan="12"
+                      >
+                        <div class="panel_group">
+                          <div class="my-4">
+                            <div class="chat-app">
+                              <div class="chat-app-header">
+                                <div class="user-settings">
+                                  <img
+                                    class="chat-msg-img"
+                                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                    alt=""
+                                  />
+                                  <div class="chat-area-title">客戶名稱</div>
+                                </div>
+                                <div class="search-bar">
+                                  <input
+                                    type="text"
+                                    placeholder="搜尋..."
+                                  />
+                                </div>
+
+                              </div>
+                              <div class="wrapper">
+                                <div class="chat-area">
+                                  <div class="chat-area-header">
+
+
+                                  </div>
+
+                                  <div class="chat-area-main">
+                                    <!-- 對話內容
+                                                                              chat-msg 對方
+                                                                              chat-msg owner 我方
+                                                                            -->
+                                    <div class="chat-msg ">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                          alt=""
+                                        />
+                                        <div class="chat-msg-date">Message seen 1.22pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">我的APP無法登入，跳出訊息如附件</div>
+                                        <div class="chat-msg-text chat-msg-content-img">
+                                          <img
+                                            src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                          />
+                                          <ul class='chat-msg-text-img-list'>
+                                            <li>
+                                              <a>另存新檔</a>
+                                            </li>
+                                            <li>
+                                              <a
+                                                type="button"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#chatMsgContentImgModal"
+                                              >
+                                                分享
+                                              </a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div class="chat-msg-text">Neque gravida in fermentum et
+                                          sollicitudin ac orci
+                                          phasellus egestas. Pretium
+                                          lectus quam id leo.</div>
+                                      </div>
+                                    </div>
+
+                                    <div class="chat-msg owner">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                          alt=""
+                                        />
+                                        <div class="chat-msg-date">Message seen 1.22pm</div>
+                                      </div>
+
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">Luctus et ultrices posuere
+                                          cubilia curae.</div>
+                                        <div class="chat-msg-text chat-msg-content-img">
+                                          <img
+                                            src="https://media0.giphy.com/media/yYSSBtDgbbRzq/giphy.gif?cid=ecf05e47344fb5d835f832a976d1007c241548cc4eea4e7e&rid=giphy.gif"
+                                          />
+                                          <ul class='chat-msg-text-img-list'>
+                                            <li>
+                                              <a>另存新檔</a>
+                                            </li>
+                                            <li>
+                                              <a>分享</a>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div class="chat-msg-text">Neque gravida in fermentum et
+                                          sollicitudin ac orci
+                                          phasellus egestas. Pretium
+                                          lectus quam id leo.</div>
+                                        <div class="chat-msg-text">Sit amet risus nullam eget felis
+                                          eget. Dolor sed
+                                          viverra ipsum😂😂😂</div>
+                                        <div class="chat-msg-text">Cras mollis nec arcu malesuada
+                                          tincidunt.</div>
+                                      </div>
+                                    </div>
+                                    <div class="chat-msg owner">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                          alt=""
+                                        >
+                                        <div class="chat-msg-date">Message seen 2.45pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">Aenean tristique maximus tortor
+                                          non tincidunt.
+                                          Vestibulum ante ipsum primis in
+                                          faucibus orci luctus et ultrices posuere cubilia curae😊
+                                        </div>
+                                        <div class="chat-msg-text">Ut faucibus pulvinar elementum
+                                          integer enim neque
+                                          volutpat.</div>
+                                      </div>
+                                    </div>
+                                    <div class="chat-msg ">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                          alt=""
+                                        />
+                                        <div class="chat-msg-date">Message seen 2.50pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">posuere eget augue sodales,
+                                          aliquet posuere eros.
+                                        </div>
+                                        <div class="chat-msg-text">Cras mollis nec arcu malesuada
+                                          tincidunt.</div>
+                                      </div>
+                                    </div>
+                                    <div class="chat-msg owner">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                          alt=""
+                                        />
+                                        <div class="chat-msg-date">Message seen 3.16pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">Egestas tellus rutrum tellus
+                                          pellentesque</div>
+                                      </div>
+                                    </div>
+                                    <div class="chat-msg owner">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                          alt=""
+                                          class="account-profile"
+                                          alt=""
+                                        >
+                                        <div class="chat-msg-date">Message seen 3.16pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">Consectetur adipiscing elit
+                                          pellentesque habitant
+                                          morbi tristique senectus et.
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="chat-msg ">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%281%29.png"
+                                          alt=""
+                                        />
+                                        <div class="chat-msg-date">Message seen 2.50pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">Tincidunt arcu non sodales😂
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="chat-msg owner">
+                                      <div class="chat-msg-profile">
+                                        <img
+                                          class="chat-msg-img"
+                                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3364143/download+%283%29+%281%29.png"
+                                          alt=""
+                                        >
+                                        <div class="chat-msg-date">Message seen 3.16pm</div>
+                                      </div>
+                                      <div class="chat-msg-content">
+                                        <div class="chat-msg-text">Consectetur adipiscing elit
+                                          pellentesque habitant
+                                          morbi tristique senectus et🥰
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- 聊天室底部 -->
+                                  <div class="chat-area-footer">
+
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      class="feather feather-image"
+                                    >
+                                      <rect
+                                        x="3"
+                                        y="3"
+                                        width="18"
+                                        height="18"
+                                        rx="2"
+                                        ry="2"
+                                      />
+                                      <circle
+                                        cx="8.5"
+                                        cy="8.5"
+                                        r="1.5"
+                                      />
+                                      <path d="M21 15l-5-5L5 21" />
+                                    </svg>
+
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-width="1.5"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      class="feather feather-paperclip"
+                                    >
+                                      <path
+                                        d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
+                                      />
+                                    </svg>
+                                    <input
+                                      type="text"
+                                      placeholder="輸入訊息..."
+                                    />
+
+                                    <div
+                                      class="btn-group"
+                                      role="group"
+                                      aria-label="Basic outlined example"
+                                    >
+                                      <button
+                                        type="button"
+                                        class="btn btn-outline-primary btn-custom-nowrap"
+                                      >發送</button>
+
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </td>
+                    </tbody>
+
+                  </table>
+
+
+                </div>
+
               </div>
             </div>
+            <div class="modal-footer justify-content-center">
+              <button
+                type="button"
+                class="btn btn-secondary w-25"
+                data-bs-dismiss="modal"
+              >關閉</button>
+
+            </div>
+
+
           </div>
         </div>
       </div>
+    </div>
 
 
+    <!-- 其他選項中的model -->
+    <!-- 查詢大掌櫃到期客戶Modal -->
+    <!--  -->
 
 
-      <!--  -->
-      <!-- 預存款使用明細 Model區域 -->
-      <!--  -->
-
-
-
-
-      <!-- 預存款使用明細 Model區域 -->
-      <!-- 詳細內容1 -->
-      <!--  -->
-      <div
-        class="modal fade"
-        id="detailsModal1"
-        tabindex="-1"
-        aria-labelledby="detailsModal1"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5
-                class="modal-title"
-                id="detailsModal1"
-              >簡訊花費</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+    <div
+      class="modal fade"
+      id="expired_customer"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xxl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">查詢大掌櫃到期客戶</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-4 d-flex align-items-center">
+              <button class="btn btn-primary me-2">今日到期</button>
+              <select
+                class="form-select w-25 me-2"
+                aria-label="Default select"
+              >
+                <option selected>1個月內</option>
+                <option value="1">2隔月內</option>
+              </select>
+              <button class="btn btn-primary me-2">匯出到期資</button>
+              <p class="red mb-0 fs-5">到期的補習班共有56家</p>
             </div>
-            <div class="modal-body">
-              <table class="table">
+            <div class="software_table">
+              <table class="table table-bordered table-hover">
                 <thead>
                   <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">使用者</th>
-                    <th scope="col">電話號碼</th>
+                    <th scope="col">補習班編號</th>
+                    <th scope="col">補習班名稱</th>
+                    <th scope="col">大掌櫃版本</th>
+                    <th scope="col">大掌櫃到期日</th>
+                    <th scope="col">聯絡人</th>
+                    <th scope="col">聯絡人手機</th>
+                    <th scope="col">電話(一)</th>
+                    <th scope="col">電話(二)</th>
+                    <th scope="col">住址</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>林阿三</td>
-                    <td>0912345678</td>
+                    <th scope="row">58596</th>
+                    <td>東興文理短期補習班(鮑金秀)</td>
+                    <td>旗艦版</td>
+                    <td>2022/21/31 上午12:00:00</td>
+                    <td>楊主任</td>
+                    <td></td>
+                    <td>0985658963</td>
+                    <td>0258456933</td>
+                    <td>台中市台中區台中里台中路台中巷台中弄369號</td>
                   </tr>
-
                 </tbody>
               </table>
             </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-danger"
-                data-bs-dismiss="modal"
-              >關閉</button>
-              <button
-                type="button"
-                class="btn btn-primary"
-              >確認</button>
-            </div>
           </div>
         </div>
       </div>
-
-
-      <!-- 執行扣款 Model區域 -->
-      <!-- 詳細內容1 -->
-      <!--  -->
-
-
-      <div
-        class="modal fade"
-        id="performDebitModal"
-        tabindex="-1"
-        aria-labelledby="performDebitModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5
-                class="modal-title"
-                id="performDebitModalLabel"
-              >是否執行扣款</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <p>網路空間使用費</p>
-                  <p>雲端系統維護費</p>
-                </div>
-
-
-              </div>
-            </div>
-            <div class="modal-footer">
-              <div class="d-flex align-content-center me-auto">
-                <h4>共<span class="badge bg-danger">$4000</span></h4>
-              </div>
-              <button
-                type="button"
-                class="btn btn-outline-danger "
-                data-bs-dismiss="modal"
-              >
-                取消
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-success"
-              >執行扣款</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <!-- ↓container-fluid div  container最外層-->
     </div>
 
 
 
 
-    <script
-      src="js/bootstrap.bundle.min.js"
-      async
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="js/index.js"></script>
-    <script src="./js/sidemenu.js"></script>
-    <script src="./js/headerTab.js"></script>
-    <script src="./js/manualDebit.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <!--  -->
+    <!-- 預存款使用明細 Model區域 -->
+    <!--  -->
+
+
+
+
+    <!-- 預存款使用明細 Model區域 -->
+    <!-- 詳細內容1 -->
+    <!--  -->
+    <div
+      class="modal fade"
+      id="detailsModal1"
+      tabindex="-1"
+      aria-labelledby="detailsModal1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title"
+              id="detailsModal1"
+            >簡訊花費</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">使用者</th>
+                  <th scope="col">電話號碼</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>林阿三</td>
+                  <td>0912345678</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >關閉</button>
+            <button
+              type="button"
+              class="btn btn-primary"
+            >確認</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 執行扣款 Model區域 -->
+    <!-- 詳細內容1 -->
+    <!--  -->
+
+
+    <div
+      class="modal fade"
+      id="performDebitModal"
+      tabindex="-1"
+      aria-labelledby="performDebitModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title"
+              id="performDebitModalLabel"
+            >是否執行扣款</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <p>網路空間使用費</p>
+                <p>雲端系統維護費</p>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="d-flex align-content-center me-auto">
+              <h4>共<span class="badge bg-danger">$4000</span></h4>
+            </div>
+            <button
+              type="button"
+              class="btn btn-outline-danger "
+              data-bs-dismiss="modal"
+            >
+              取消
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-success"
+            >執行扣款</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- ↓container-fluid div  container最外層-->
+  </div>
+
+
+
+
+  <script
+    src="js/bootstrap.bundle.min.js"
+    async
+  ></script>
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous"
+  />
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="js/index.js"></script>
+  <script src="./js/sidemenu.js"></script>
+  <script src="./js/headerTab.js"></script>
+  <script src="./js/manualDebit.js"></script>
+  <script src="./js/preDepositManagement.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
 </body>
 
 </html>
