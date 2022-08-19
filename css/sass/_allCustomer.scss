@@ -1,0 +1,14 @@
+#customerLevel {
+    background-color: rgba(240, 101, 149, 0.7);
+    option {
+        &[value="1"] {
+            background-color: rgba(240, 101, 149, 0.7);
+        }
+        &[value="2"] {
+            background-color: rgba(213, 163, 46, 0.7);
+        }
+        &[value="3"] {
+            background-color: white;
+        }
+    }
+}

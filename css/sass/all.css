@@ -15807,4 +15807,20 @@ div.context-menu ul li:hover a {
   padding: 0.5rem 0.5rem;
   border-radius: 5px;
 }
+
+#customerLevel {
+  background-color: rgba(240, 101, 149, 0.7);
+}
+
+#customerLevel option[value="1"] {
+  background-color: rgba(240, 101, 149, 0.7);
+}
+
+#customerLevel option[value="2"] {
+  background-color: rgba(213, 163, 46, 0.7);
+}
+
+#customerLevel option[value="3"] {
+  background-color: white;
+}
 /*# sourceMappingURL=all.css.map */
