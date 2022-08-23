@@ -73,16 +73,19 @@
   color: #555;
 }
 
-.predepositUserTable {
+.predepositUserTable,
+.predepositUserTable-web {
   width: 100%;
   border-collapse: collapse;
 }
 
-.predepositUserTable thead {
+.predepositUserTable thead,
+.predepositUserTable-web thead {
   background-color: #094db1;
   color: #fff;
 }
-
+.predepositUserTable-web th,
+.predepositUserTable-web td,
 .predepositUserTable th,
 .predepositUserTable td {
   padding: 0.8rem;
@@ -107,6 +110,18 @@
   }
 }
 
+.predepositUserTable-web tbody tr {
+  color: #555;
+  border: 1px solid #dee2e6;
+  // border-bottom: 1px solid #dee2e6;
+
+  th:first-child {
+    border-right: 1px solid #dee2e6;
+  }
+  td {
+    border-right: 1px solid #dee2e6;
+  }
+}
 // btnGroup 調整
 .btn-group-margin-right-minus-one {
   margin-right: -1px;
@@ -115,4 +130,8 @@
 .predepositUserTable-btngroup {
   display: flex;
   gap: 0.5rem;
+}
+
+.predepositUserTable-web tbody:nth-child(odd) {
+  background-color: #eee;
 }

@@ -2,74 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta
-        http-equiv="X-UA-Compatible"
-        content="IE=edge"
-    >
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-    <title>預存款管理</title>
-    <link
-        rel="stylesheet"
-        href="./css/sass/all.css"
-    >
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>預存款管理</title>
+  <link
+    rel="stylesheet"
+    href="./css/sass/all.css"
+  >
 </head>
 
 <body>
-    <div class="table-container mt-4 ">
+  <div class="table-container mt-4 ">
 
-        <div class="pre-deposit-usage-details-header mb-3 d-flex justify-content-between">
-            <div>
-                <h1 class="table-container-h1">動態數學短期補習班</h1>
-                <!-- <h3 class="text-decoration-underline">預存款使用明細</h3> -->
-            </div>
+    <div class="pre-deposit-usage-details-header mb-3 d-flex justify-content-between">
+      <div>
+        <h1 class="table-container-h1">動態數學短期補習班</h1>
+        <!-- <h3 class="text-decoration-underline">預存款使用明細</h3> -->
+      </div>
 
-            <div class="d-flex gap-4">
-                <div class="d-flex align-items-center gap-1">
-                    操作人:
-                    <h4 class="predeposit-usage-details-user">張三豐</h4>
-                </div>
-                <button
-                    type="button"
-                    class="btn btn-outline-success btn-custom-green"
-                >關閉</button>
-            </div>
+      <div class="d-flex gap-4">
+        <div class="d-flex align-items-center gap-1">
+          操作人:
+          <h4 class="predeposit-usage-details-user">張三豐</h4>
         </div>
+        <button
+          type="button"
+          class="btn btn-outline-success btn-custom-green"
+        >關閉</button>
+      </div>
+    </div>
 
 
-        <ul class="nav nav-pills mb-4 justify-content-center nav-fill">
-            <li class="nav-item ">
-                <a
-                    class="nav-link active nav-link-custom-orange"
-                    data-bs-toggle="pill"
-                    href="#paymentNotice"
-                >
-                    繳費通知
-                </a>
-            </li>
-            <li class="nav-item nav-delinquent-customers">
-                <a
-                    class="nav-link "
-                    data-bs-toggle="pill"
-                    href="#paymentRecord"
-                >
-                    繳費記錄
-                </a>
-            </li>
-            <li class="nav-item ">
-                <a
-                    class="nav-link nav-link-custom-green"
-                    data-bs-toggle="pill"
-                    href="#debitRecord"
-                >
-                    支出記錄
-                </a>
-            </li>
+    <ul class="nav nav-pills mb-4 justify-content-center nav-fill">
+      <li class="nav-item ">
+        <a
+          class="nav-link active nav-link-custom-orange"
+          data-bs-toggle="pill"
+          href="#paymentNotice"
+        >
+          繳費通知
+        </a>
+      </li>
+      <li class="nav-item nav-delinquent-customers">
+        <a
+          class="nav-link "
+          data-bs-toggle="pill"
+          href="#paymentRecord"
+        >
+          繳費記錄
+        </a>
+      </li>
+      <li class="nav-item ">
+        <a
+          class="nav-link nav-link-custom-green"
+          data-bs-toggle="pill"
+          href="#debitRecord"
+        >
+          支出記錄
+        </a>
+      </li>
 
-            <!-- <li class="nav-item ">
+      <!-- <li class="nav-item ">
                 <a
                     class="nav-link "
                     data-bs-toggle="pill"
@@ -79,983 +79,1193 @@
                 </a>
             </li> -->
 
-        </ul>
+    </ul>
 
-        <div class="tab-content">
+    <div class="tab-content">
 
 
-            <!-- 繳費通知 表單一 -->
+      <!-- 繳費通知 表單一 -->
 
-            <div
-                class="tab-pane active"
-                id="paymentNotice"
-            >
+      <div
+        class="tab-pane active"
+        id="paymentNotice"
+      >
 
-                <div class="mb-2">
-                    <div class=" flex">
+        <div class="">
+          <div class=" flex">
 
-                        <!-- 搜尋欄 -->
-                        <div>
-                            <div class="d-grid mb-3 ">
-                                <div class="btn-toolbar justify-content-between">
-                                    <div class="btn-group mb-2">
-                                        <button
-                                            class="btn btn-outline-primary btn-group-margin-right-minus-one"
-                                            type="button"
-                                        >
-                                            <ion-icon name="chevron-back-outline"></ion-icon>
-                                        </button>
-                                        <input
-                                            id="bday-week"
-                                            type="month"
-                                            name="bday-week"
-                                            class="input-date col-md-8 col-sm-6"
-                                        >
-                                        <button
-                                            class="btn btn-outline-primary "
-                                            type="button"
-                                        >
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                        </button>
-                                    </div>
-
-                                    <div class="btn-group ">
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            placeholder="搜尋"
-                                            aria-label="搜尋"
-                                        >
-                                        <button
-                                            class="btn btn-outline-success "
-                                            type="button"
-                                        >
-                                            <ion-icon name="search-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <table class="predepositUserTable">
-                            <thead>
-                                <tr>
-                                    <th>序號</th>
-                                    <th>訂單日期</th>
-                                    <th>項目</th>
-                                    <th>方案</th>
-                                    <th>有效日期</th>
-                                    <th>繳費期間</th>
-                                    <th>金額</th>
-
-                                    <th>操作</th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th data-label="序號">1</th>
-                                    <td data-label="訂單日期">2022/5/20</td>
-                                    <td data-label="項目">網路空間使用費</td>
-                                    <td data-label="方案">
-                                        <p>存放主機資料庫
-                                            <small class="badge bg-light text-dark">
-                                                100MB資料庫空間
-                                            </small>
-                                        </p>
-                                        <p>主機資料庫維護</p>
-                                    </td>
-                                    <td data-label="有效日期">
-                                        <p class="">2022/06/01</p>
-                                        <span class="mb-3">~</span>
-                                        <p class="">2023/05/31</p>
-                                    </td>
-                                    <td data-label="繳費期間">
-                                        <p class="">2022/05/21</p>
-                                        <span class="mb-3">~</span>
-                                        <p class="">2023/06/02</p>
-                                    </td>
-
-                                    <td data-label="金額">
-
-                                        5,000
-                                    </td>
-                                    <td data-label="操作">
-                                        <div class="predepositUserTable-btngroup">
-                                            <button
-                                                type="button"
-                                                class="btn btn-primary "
-                                            >
-                                                信用卡付款
-                                            </button>
-                                            <button
-                                                type="button"
-                                                class="btn btn-primary"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#moneyTransfer"
-                                            >
-                                                銀行匯款
-                                            </button>
-
-                                            <button
-                                                type="button"
-                                                class="btn btn-outline-primary"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#customerOrderDetails"
-                                            >
-                                                訂單明細
-                                            </button>
-                                        </div>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th data-label="序號">2</th>
-                                    <td data-label="訂單日期">2022/6/01</td>
-                                    <td data-label="項目">行政版系統服務費</td>
-                                    <td data-label="方案">
-
-                                        系統維護費
-                                    </td>
-                                    <td data-label="有效日期">
-
-                                    </td>
-                                    <td data-label="繳費期間">
-                                        <p class="">2022/05/21</p>
-                                        <span class="mb-3">~</span>
-                                        <p class="">2023/06/02</p>
-                                    </td>
-
-                                    <td data-label="金額">
-
-                                        2,000
-                                    </td>
-                                    <td data-label="操作">
-                                        <div class="predepositUserTable-btngroup">
-                                            <button
-                                                type="button"
-                                                class="btn btn-primary "
-                                            >信用卡付款</button>
-                                            <button
-                                                type="button"
-                                                class="btn btn-primary"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#moneyTransfer"
-                                            >銀行匯款</button>
-                                        </div>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <!--繳費記錄 表單二 -->
-            <div
-                class="tab-pane "
-                id="paymentRecord"
-            >
-
-                <div class="mb-2">
-                    <div class=" flex">
-
-                        <!-- 搜尋欄 -->
-                        <div>
-                            <div class="d-grid mb-3 ">
-                                <div class="btn-toolbar justify-content-between">
-                                    <div class="btn-group mb-2">
-                                        <button
-                                            class="btn btn-outline-primary btn-group-margin-right-minus-one"
-                                            type="button"
-                                        >
-                                            <ion-icon name="chevron-back-outline"></ion-icon>
-                                        </button>
-                                        <input
-                                            id="bday-month"
-                                            type="month"
-                                            name="bday-week"
-                                            class="input-date col-md-8 col-sm-6"
-                                        >
-                                        <button
-                                            class="btn btn-outline-primary "
-                                            type="button"
-                                        >
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                        </button>
-                                    </div>
-
-                                    <div class="btn-group ">
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            placeholder="搜尋"
-                                            aria-label="搜尋"
-                                        >
-                                        <button
-                                            class="btn btn-outline-success "
-                                            type="button"
-                                        >
-                                            <ion-icon name="search-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <table class="predepositUserTable">
-                            <thead>
-                                <tr>
-                                    <th>序號</th>
-                                    <th>訂單日期</th>
-                                    <th>項目</th>
-                                    <th>方案</th>
-                                    <th>有效日期</th>
-                                    <th>繳費期間</th>
-                                    <th>金額</th>
-                                    <th>入款日期</th>
-                                    <th>操作</th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th data-label="序號">1</th>
-                                    <td data-label="訂單日期">2022/5/20</td>
-                                    <td data-label="項目">網路空間使用費</td>
-                                    <td data-label="方案">
-                                        <p>存放主機資料庫
-                                            <small class="badge bg-light text-dark">
-                                                100MB資料庫空間
-                                            </small>
-                                        </p>
-                                        <p>主機資料庫維護</p>
-                                    </td>
-                                    <td
-                                        class=""
-                                        data-label="有效日期"
-                                    >
-                                        <p class="">2022/06/01</p>
-                                        <span class="r mb-3">~</span>
-                                        <p class="">2023/05/31</p>
-                                    </td>
-                                    <td data-label="繳費期間">
-                                        <p class="">2022/05/21</p>
-                                        <span class=" mb-3">~</span>
-                                        <p class="">2023/06/02</p>
-                                    </td>
-                                    <td data-label="金額">
-
-                                        5,000
-                                    </td>
-                                    <td data-label="入款日期">
-                                        2022/05/25
-                                    </td>
-                                    <td data-label="操作">
-                                        <div class="predepositUserTable-btngroup">
-
-                                            <button
-                                                type="button"
-                                                class="btn btn-outline-primary"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#customerOrderDetails"
-                                            >
-                                                訂單明細
-                                            </button>
-                                        </div>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th data-label="序號">2</th>
-                                    <td data-label="訂單日期">2022/5/20</td>
-                                    <td data-label="項目">簡訊費</td>
-                                    <td data-label="方案">
-                                        <p>1500通
-                                        </p>
-
-                                    </td>
-                                    <td data-label="有效日期">
-
-                                    </td>
-                                    <td data-label="繳費期間">
-                                        <p class="">2022/05/21</p>
-                                        <span class="mb-3">~</span>
-                                        <p class="">2023/06/02</p>
-                                    </td>
-
-                                    <td data-label="金額">
-
-                                        2,000
-                                    </td>
-                                    <td data-label="入款日期">
-                                        2022/05/25
-                                    </td>
-                                    <td data-label="操作">
-
-
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-
-            <!--支出記錄 表單三 -->
-
-            <div
-                class="tab-pane "
-                id="debitRecord"
-            >
-                <div class="mb-2">
-                    <div class=" flex">
-                        <!-- 搜尋欄 -->
-                        <div>
-                            <div class="d-grid mb-3 ">
-                                <div class="btn-toolbar justify-content-between">
-                                    <div class="btn-group mb-2">
-                                        <button
-                                            class="btn btn-outline-primary btn-group-margin-right-minus-one"
-                                            type="button"
-                                        >
-                                            <ion-icon name="chevron-back-outline"></ion-icon>
-                                        </button>
-                                        <input
-                                            id="bday-week"
-                                            type="month"
-                                            name="bday-week"
-                                            class="input-date col-md-8 col-sm-6"
-                                        >
-                                        <button
-                                            class="btn btn-outline-primary "
-                                            type="button"
-                                        >
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                        </button>
-                                    </div>
-
-                                    <div class="btn-group ">
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            placeholder="搜尋"
-                                            aria-label="搜尋"
-                                        >
-                                        <button
-                                            class="btn btn-outline-success "
-                                            type="button"
-                                        >
-                                            <ion-icon name="search-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <table class="predepositUserTable">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>日期</th>
-                                    <th>時間</th>
-                                    <th>項目</th>
-                                    <th>支出</th>
-                                    <th>餘額</th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>1</th>
-                                    <td data-label="日期">2022/07/01</td>
-                                    <td data-label="時間">13:30</td>
-                                    <td data-label="項目">簡訊費</td>
-                                    <td data-label="支出"> -2,000</td>
-                                    <td data-label="餘額">3,000</td>
-
-                                </tr>
-
-                                <tr>
-                                    <th>2</th>
-                                    <td data-label="日期">2022/07/01</td>
-                                    <td data-label="時間">11:00</td>
-                                    <td data-label="項目">網路空間使用費</td>
-                                    <td data-label="支出"> -3,000</td>
-                                    <td data-label="餘額">5,000</td>
-
-                                </tr>
-
-                                <tr>
-
-
-                                    <th>3</th>
-                                    <td data-label="日期">2022/07/01</td>
-                                    <td data-label="時間">10:00</td>
-                                    <td data-label="項目">簡訊費</td>
-                                    <td data-label="支出"> -2,000</td>
-                                    <td data-label="餘額">8,000</td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
-            <div
-                class="tab-pane "
-                id="debitRecord"
-            >
-                <div class="mb-2">
-                    <div class=" flex">
-                        <!-- 搜尋欄 -->
-                        <div>
-                            <div class="d-grid mb-3 ">
-                                <div class="btn-toolbar justify-content-between">
-                                    <div class="btn-group mb-2">
-                                        <button
-                                            class="btn btn-outline-primary btn-group-margin-right-minus-one"
-                                            type="button"
-                                        >
-                                            <ion-icon name="chevron-back-outline"></ion-icon>
-                                        </button>
-                                        <input
-                                            id="bday-week"
-                                            type="month"
-                                            name="bday-week"
-                                            class="input-date col-md-8 col-sm-6"
-                                        >
-                                        <button
-                                            class="btn btn-outline-primary "
-                                            type="button"
-                                        >
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                        </button>
-                                    </div>
-
-                                    <div class="btn-group ">
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            placeholder="搜尋"
-                                            aria-label="搜尋"
-                                        >
-                                        <button
-                                            class="btn btn-outline-success "
-                                            type="button"
-                                        >
-                                            <ion-icon name="search-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <table class="predepositUserTable">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>日期</th>
-                                    <th>時間</th>
-                                    <th>項目</th>
-                                    <th>支出</th>
-                                    <th>餘額</th>
-
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>1</th>
-                                    <td data-label="日期">2022/07/01</td>
-                                    <td data-label="時間">13:30</td>
-                                    <td data-label="項目">簡訊費</td>
-                                    <td data-label="支出"> -2,000</td>
-                                    <td data-label="餘額">3,000</td>
-
-
-                                </tr>
-
-                                <tr>
-                                    <th>2</th>
-                                    <td data-label="日期">2022/07/01</td>
-                                    <td data-label="時間">11:00</td>
-                                    <td data-label="項目">網路空間使用費</td>
-                                    <td data-label="支出"> -3,000</td>
-                                    <td data-label="餘額">5,000</td>
-
-                                </tr>
-
-                                <tr>
-                                    <th>3</th>
-                                    <td data-label="日期">2022/07/01</td>
-                                    <td data-label="時間">10:00</td>
-                                    <td data-label="項目">簡訊費</td>
-                                    <td data-label="支出"> -2,000</td>
-                                    <td data-label="餘額">8,000</td>
-
-
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
-
-            <!--簡訊使用明細 表單四 -->
-
-            <div
-                class="tab-pane "
-                id="smsUsageDetails"
-            >
-
-                <div class="mb-2">
-                    <div class=" flex">
-
-                        <!-- 搜尋欄 -->
-                        <div>
-                            <div class="d-grid mb-3 ">
-                                <div class="btn-toolbar justify-content-between">
-                                    <div class="btn-group mb-2">
-                                        <button
-                                            class="btn btn-outline-primary btn-group-margin-right-minus-one"
-                                            type="button"
-                                        >
-                                            <ion-icon name="chevron-back-outline"></ion-icon>
-                                        </button>
-                                        <input
-                                            id="bday-week"
-                                            type="month"
-                                            name="bday-week"
-                                            class="input-date col-md-8 col-sm-6"
-                                        >
-                                        <button
-                                            class="btn btn-outline-primary "
-                                            type="button"
-                                        >
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                        </button>
-                                    </div>
-
-                                    <div class="btn-group ">
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            placeholder="搜尋"
-                                            aria-label="搜尋"
-                                        >
-                                        <button
-                                            class="btn btn-outline-success "
-                                            type="button"
-                                        >
-                                            <ion-icon name="search-outline"></ion-icon>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <table class="predepositUserTable">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>日期</th>
-                                    <th>時間</th>
-                                    <th>存入</th>
-                                    <th>使用者</th>
-                                    <th>電話號碼</th>
-                                    <th>剩餘通數</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th>1</th>
-                                    <td data-label="日期">2022/06/20</td>
-                                    <td data-label="時間">11:30</td>
-                                    <td data-label="存入">&nbsp;</td>
-                                    <td data-label="使用者">孫大千</td>
-                                    <td data-label="電話號碼">0912345678</td>
-                                    <td data-label="剩餘通數">1499</td>
-
-                                </tr>
-
-                                <tr>
-                                    <th>2</th>
-                                    <td data-label="日期">2022/06/20</td>
-                                    <td data-label="時間">8:30</td>
-                                    <td data-label="存入">2,000</td>
-                                    <td data-label="使用者">&nbsp;</td>
-                                    <td data-label="電話號碼">&nbsp;</td>
-                                    <td data-label="剩餘通數">1500</td>
-
-                                </tr>
-
-
-
-                            </tbody>
-                        </table>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- Button trigger modal -->
-
-
-    <!--SMSDetails Modal -->
-    <div
-        class="modal fade"
-        id="SMSDetails"
-        tabindex="-1"
-        aria-labelledby="SMSDetailsLabel"
-        aria-hidden="true"
-    >
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5
-                        class="modal-title"
-                        id="SMSDetailsLabel"
-                    >簡訊明細</h5>
+            <!-- 搜尋欄 -->
+            <div>
+              <div class="d-grid mb-3 ">
+                <div class="btn-toolbar justify-content-between">
+                  <div class="btn-group mb-2">
                     <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                    ></button>
+                      class="btn btn-outline-primary btn-group-margin-right-minus-one"
+                      type="button"
+                    >
+                      <ion-icon name="chevron-back-outline"></ion-icon>
+                    </button>
+                    <input
+                      id="bday-week"
+                      type="month"
+                      name="bday-week"
+                      class="input-date col-md-8 col-sm-6"
+                    >
+                    <button
+                      class="btn btn-outline-primary "
+                      type="button"
+                    >
+                      <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="btn-group ">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="搜尋"
+                      aria-label="搜尋"
+                    >
+                    <button
+                      class="btn btn-outline-success "
+                      type="button"
+                    >
+                      <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <!-- 搜尋 -->
+              </div>
+            </div>
+
+            <!-- 手機版表單 -->
+            <table class="predepositUserTable d-block d-md-none">
+              <thead>
+                <tr>
+                  <th>序號</th>
+                  <th>訂單日期</th>
+                  <th>項目</th>
+                  <th>方案</th>
+                  <th>有效日期</th>
+                  <th>繳費期間</th>
+                  <th>金額</th>
+
+                  <th>操作</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th data-label="序號">1</th>
+                  <td data-label="訂單日期">2022/5/20</td>
+                  <td data-label="項目">網路空間使用費</td>
+                  <td data-label="方案">
+                    <p>存放主機資料庫
+                      <small class="badge bg-light text-dark">
+                        100MB資料庫空間
+                      </small>
+                    </p>
+                    <p>主機資料庫維護</p>
+                  </td>
+                  <td data-label="有效日期">
+                    <p class="">2022/06/01</p>
+                    <span class="mb-3">~</span>
+                    <p class="">2023/05/31</p>
+                  </td>
+                  <td data-label="繳費期間">
+                    <p class="">2022/05/21</p>
+                    <span class="mb-3">~</span>
+                    <p class="">2023/06/02</p>
+                  </td>
+
+                  <td data-label="金額">
+
+                    5,000
+                  </td>
+                  <td data-label="操作">
+                    <div class="predepositUserTable-btngroup">
+                      <button
+                        type="button"
+                        class="btn btn-primary "
+                      >
+                        信用卡付款
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#moneyTransfer"
+                      >
+                        銀行匯款
+                      </button>
+
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#customerOrderDetails"
+                      >
+                        訂單明細
+                      </button>
+                    </div>
+
+                  </td>
+                </tr>
+                <tr>
+                  <th data-label="序號">2</th>
+                  <td data-label="訂單日期">2022/6/01</td>
+                  <td data-label="項目">行政版系統服務費</td>
+                  <td data-label="方案">
+
+                    系統維護費
+                  </td>
+                  <td data-label="有效日期">
+
+                  </td>
+                  <td data-label="繳費期間">
+                    <p class="">2022/05/21</p>
+                    <span class="mb-3">~</span>
+                    <p class="">2023/06/02</p>
+                  </td>
+
+                  <td data-label="金額">
+
+                    2,000
+                  </td>
+                  <td data-label="操作">
+                    <div class="predepositUserTable-btngroup">
+                      <button
+                        type="button"
+                        class="btn btn-primary "
+                      >信用卡付款</button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#moneyTransfer"
+                      >銀行匯款</button>
+                    </div>
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- 桌機版表單 -->
+            <table class="predepositUserTable-web d-none d-md-block">
+              <thead>
+                <tr>
+                  <th>序號</th>
+                  <th>訂單日期</th>
+                  <th>繳費期間</th>
+
+                  <th>項目</th>
+                  <th>方案</th>
+                  <th>有效期間</th>
+                  <th>金額</th>
+                  <th>合計</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    rowspan="2"
+                    data-label="序號"
+                    class="align-middle"
+                  >
+                    1
+                  </td>
+                  <td
+                    rowspan="2"
+                    data-label="訂單日期"
+                    class="align-middle"
+                  >
+                    2022/5/20
+                  </td>
+                  <td
+                    rowspan="2"
+                    data-label="繳費期間"
+                    class="align-middle"
+                  >
+                    <p class="">2022/05/21</p>
+                    <span class="mb-3">~</span>
+                    <p class="">2023/06/02</p>
+                  </td>
+
+
+                  <td
+                    class="align-middle"
+                    data-label="項目"
+                  >網路空間使用費</td>
+                  <td
+                    class="align-middle"
+                    data-label="方案"
+                  >
+                    <p>存放主機資料庫
+                      <small class="badge bg-light text-dark">
+                        100MB資料庫空間
+                      </small>
+                    </p>
+                    <p>主機資料庫維護</p>
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="有效日期"
+                  >
+                    <p class="">2022/06/01</p>
+                    <span class="mb-3">~</span>
+                    <p class="">2023/05/31</p>
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="金額"
+                  >
+                    3,000
+                  </td>
+                  <td
+                    rowspan="2"
+                    data-label="合計"
+                    class="align-middle"
+                  >
+                    5,000
+                  </td>
+                  <td
+                    rowspan="2"
+                    data-label="操作"
+                    class="align-middle"
+                  >
+                    <div class="predepositUserTable-btngroup">
+                      <button
+                        type="button"
+                        class="btn btn-primary "
+                      >
+                        信用卡<br>付款
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#moneyTransfer"
+                      >
+                        銀行<br>匯款
+                      </button>
+                    </div>
+                  </td>
+                <tr>
+                  <td
+                    class="align-middle"
+                    data-label="項目"
+                  >簡訊費</td>
+                  <td
+                    class="align-middle"
+                    data-label="方案"
+                  >
                     <div>
-                        <div class="d-grid mb-3 ">
-                            <div class="btn-toolbar justify-content-between">
-                                <div class="btn-group ">
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="搜尋"
-                                        aria-label="搜尋"
-                                    >
-                                    <button
-                                        class="btn btn-outline-success "
-                                        type="button"
-                                    >
-                                        <ion-icon name="search-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                      1500通
                     </div>
-                    <table class="predepositUserTable">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>日期</th>
-                                <th>時間</th>
-                                <th>項目</th>
-                                <th>支出/存入</th>
-                                <th>餘額</th>
-                                <th>使用者</th>
-                                <th>電話號碼</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>1</th>
-                                <td data-label="日期">2020/12/20</td>
-                                <td data-label="時間">13:30</td>
-                                <td data-label="項目">簡訊費</td>
-                                <td data-label="支出/存入"> -$60</td>
-                                <td data-label="餘額">9,820</td>
-                                <td data-label="使用者">林阿三</td>
-                                <td data-label="電話號碼">0912345678</td>
-                            </tr>
 
-                            <tr>
-                                <th>2</th>
-                                <td data-label="日期">2020/12/20</td>
-                                <td data-label="時間">11:00</td>
-                                <td data-label="項目">簡訊費</td>
-                                <td data-label="支出/存入"> -$60</td>
-                                <td data-label="餘額">9,880</td>
-                                <td data-label="使用者">林阿三</td>
-                                <td data-label="電話號碼">0912345678</td>
-                            </tr>
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="有效日期"
+                  >
 
-                            <tr>
-                                <th>3</th>
-                                <td data-label="日期">2020/12/20</td>
-                                <td data-label="時間">10:00</td>
-                                <td data-label="項目">簡訊費</td>
-                                <td data-label="支出/存入"> -$60</td>
-                                <td data-label="餘額">9,940</td>
-                                <td data-label="使用者">林阿三</td>
-                                <td data-label="電話號碼">0912345678</td>
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="金額"
+                  >
+                    2,000
+                  </td>
+                </tr>
 
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="modal-footer">
-                    <button
+
+
+
+
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <th
+                    class="align-middle"
+                    data-label="序號"
+                  >2</th>
+                  <td
+                    class="align-middle"
+                    data-label="訂單日期"
+                  >2022/6/01</td>
+                  <td
+                    class="align-middle"
+                    data-label="繳費期間"
+                  >
+                    <p class="">2022/05/21</p>
+                    <span class="mb-3">~</span>
+                    <p class="">2023/06/02</p>
+                  </td>
+
+
+                  <td
+                    class="align-middle"
+                    data-label="項目"
+                  >行政版系統服務費</td>
+                  <td
+                    class="align-middle"
+                    data-label="方案"
+                  >
+
+                    系統維護費
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="有效日期"
+                  >
+
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="金額"
+                  >
+                    2,000
+                  </td>
+
+
+                  <td
+                    class="align-middle"
+                    data-label="合計"
+                  >
+                    2,000
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="操作"
+                  >
+                    <div class="predepositUserTable-btngroup">
+                      <button
                         type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                    >Close</button>
+                        class="btn btn-primary "
+                      >
+                        信用卡<br>付款
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#moneyTransfer"
+                      >
+                        銀行<br>匯款
+                      </button>
+                    </div>
+                  </td>
 
-                </div>
-            </div>
+
+                </tr>
+              </tbody>
+
+
+            </table>
+
+          </div>
         </div>
+
+
+
+      </div>
+
+      <!--繳費記錄 表單二 -->
+      <div
+        class="tab-pane "
+        id="paymentRecord"
+      >
+        <div class="mb-2">
+          <div class=" flex">
+
+            <!-- 搜尋欄 -->
+            <div>
+              <div class="d-grid mb-3 ">
+                <div class="btn-toolbar justify-content-between">
+                  <div class="btn-group mb-2">
+                    <button
+                      class="btn btn-outline-primary btn-group-margin-right-minus-one"
+                      type="button"
+                    >
+                      <ion-icon name="chevron-back-outline"></ion-icon>
+                    </button>
+                    <input
+                      id="bday-month"
+                      type="month"
+                      name="bday-week"
+                      class="input-date col-md-8 col-sm-6"
+                    >
+                    <button
+                      class="btn btn-outline-primary "
+                      type="button"
+                    >
+                      <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="btn-group ">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="搜尋"
+                      aria-label="搜尋"
+                    >
+                    <button
+                      class="btn btn-outline-success "
+                      type="button"
+                    >
+                      <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="predepositUserTable">
+              <thead>
+                <tr>
+                  <th>序號</th>
+                  <th>訂單日期</th>
+                  <th>項目</th>
+                  <th>方案</th>
+                  <th>有效日期</th>
+                  <th>繳費期間</th>
+                  <th>金額</th>
+                  <th>入款日期</th>
+                  <th>操作</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th data-label="序號">1</th>
+                  <td data-label="訂單日期">2022/5/20</td>
+                  <td data-label="項目">網路空間使用費</td>
+                  <td data-label="方案">
+                    <p>存放主機資料庫
+                      <small class="badge bg-light text-dark">
+                        100MB資料庫空間
+                      </small>
+                    </p>
+                    <p>主機資料庫維護</p>
+                  </td>
+                  <td
+                    class=""
+                    data-label="有效日期"
+                  >
+                    <p class="">2022/06/01</p>
+                    <span class="r mb-3">~</span>
+                    <p class="">2023/05/31</p>
+                  </td>
+                  <td data-label="繳費期間">
+                    <p class="">2022/05/21</p>
+                    <span class=" mb-3">~</span>
+                    <p class="">2023/06/02</p>
+                  </td>
+                  <td data-label="金額">
+
+                    5,000
+                  </td>
+                  <td data-label="入款日期">
+                    2022/05/25
+                  </td>
+                  <td data-label="操作">
+                    <div class="predepositUserTable-btngroup">
+
+                      <button
+                        type="button"
+                        class="btn btn-outline-primary"
+                        data-bs-toggle="modal"
+                        data-bs-target="#customerOrderDetails"
+                      >
+                        訂單明細
+                      </button>
+                    </div>
+
+                  </td>
+                </tr>
+                <tr>
+                  <th data-label="序號">2</th>
+                  <td data-label="訂單日期">2022/5/20</td>
+                  <td data-label="項目">簡訊費</td>
+                  <td data-label="方案">
+                    <p>1500通
+                    </p>
+
+                  </td>
+                  <td data-label="有效日期">
+
+                  </td>
+                  <td data-label="繳費期間">
+                    <p class="">2022/05/21</p>
+                    <span class="mb-3">~</span>
+                    <p class="">2023/06/02</p>
+                  </td>
+
+                  <td data-label="金額">
+
+                    2,000
+                  </td>
+                  <td data-label="入款日期">
+                    2022/05/25
+                  </td>
+                  <td data-label="操作">
+
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+      <!--支出記錄 表單三 -->
+
+      <div
+        class="tab-pane "
+        id="debitRecord"
+      >
+        <div class="mb-2">
+          <div class=" flex">
+            <!-- 搜尋欄 -->
+            <div>
+              <div class="d-grid mb-3 ">
+                <div class="btn-toolbar justify-content-between">
+                  <div class="btn-group mb-2">
+                    <button
+                      class="btn btn-outline-primary btn-group-margin-right-minus-one"
+                      type="button"
+                    >
+                      <ion-icon name="chevron-back-outline"></ion-icon>
+                    </button>
+                    <input
+                      id="bday-week"
+                      type="month"
+                      name="bday-week"
+                      class="input-date col-md-8 col-sm-6"
+                    >
+                    <button
+                      class="btn btn-outline-primary "
+                      type="button"
+                    >
+                      <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="btn-group ">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="搜尋"
+                      aria-label="搜尋"
+                    >
+                    <button
+                      class="btn btn-outline-success "
+                      type="button"
+                    >
+                      <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="predepositUserTable">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>日期</th>
+                  <th>時間</th>
+                  <th>項目</th>
+                  <th>支出</th>
+                  <th>餘額</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td data-label="日期">2022/07/01</td>
+                  <td data-label="時間">13:30</td>
+                  <td data-label="項目">簡訊費</td>
+                  <td data-label="支出"> -2,000</td>
+                  <td data-label="餘額">3,000</td>
+
+                </tr>
+
+                <tr>
+                  <th>2</th>
+                  <td data-label="日期">2022/07/01</td>
+                  <td data-label="時間">11:00</td>
+                  <td data-label="項目">網路空間使用費</td>
+                  <td data-label="支出"> -3,000</td>
+                  <td data-label="餘額">5,000</td>
+
+                </tr>
+
+                <tr>
+
+
+                  <th>3</th>
+                  <td data-label="日期">2022/07/01</td>
+                  <td data-label="時間">10:00</td>
+                  <td data-label="項目">簡訊費</td>
+                  <td data-label="支出"> -2,000</td>
+                  <td data-label="餘額">8,000</td>
+
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+      <div
+        class="tab-pane "
+        id="debitRecord"
+      >
+        <div class="mb-2">
+          <div class=" flex">
+            <!-- 搜尋欄 -->
+            <div>
+              <div class="d-grid mb-3 ">
+                <div class="btn-toolbar justify-content-between">
+                  <div class="btn-group mb-2">
+                    <button
+                      class="btn btn-outline-primary btn-group-margin-right-minus-one"
+                      type="button"
+                    >
+                      <ion-icon name="chevron-back-outline"></ion-icon>
+                    </button>
+                    <input
+                      id="bday-week"
+                      type="month"
+                      name="bday-week"
+                      class="input-date col-md-8 col-sm-6"
+                    >
+                    <button
+                      class="btn btn-outline-primary "
+                      type="button"
+                    >
+                      <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="btn-group ">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="搜尋"
+                      aria-label="搜尋"
+                    >
+                    <button
+                      class="btn btn-outline-success "
+                      type="button"
+                    >
+                      <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="predepositUserTable">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>日期</th>
+                  <th>時間</th>
+                  <th>項目</th>
+                  <th>支出</th>
+                  <th>餘額</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td data-label="日期">2022/07/01</td>
+                  <td data-label="時間">13:30</td>
+                  <td data-label="項目">簡訊費</td>
+                  <td data-label="支出"> -2,000</td>
+                  <td data-label="餘額">3,000</td>
+
+
+                </tr>
+
+                <tr>
+                  <th>2</th>
+                  <td data-label="日期">2022/07/01</td>
+                  <td data-label="時間">11:00</td>
+                  <td data-label="項目">網路空間使用費</td>
+                  <td data-label="支出"> -3,000</td>
+                  <td data-label="餘額">5,000</td>
+
+                </tr>
+
+                <tr>
+                  <th>3</th>
+                  <td data-label="日期">2022/07/01</td>
+                  <td data-label="時間">10:00</td>
+                  <td data-label="項目">簡訊費</td>
+                  <td data-label="支出"> -2,000</td>
+                  <td data-label="餘額">8,000</td>
+
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!--簡訊使用明細 表單四 -->
+
+      <div
+        class="tab-pane "
+        id="smsUsageDetails"
+      >
+
+        <div class="mb-2">
+          <div class=" flex">
+
+            <!-- 搜尋欄 -->
+            <div>
+              <div class="d-grid mb-3 ">
+                <div class="btn-toolbar justify-content-between">
+                  <div class="btn-group mb-2">
+                    <button
+                      class="btn btn-outline-primary btn-group-margin-right-minus-one"
+                      type="button"
+                    >
+                      <ion-icon name="chevron-back-outline"></ion-icon>
+                    </button>
+                    <input
+                      id="bday-week"
+                      type="month"
+                      name="bday-week"
+                      class="input-date col-md-8 col-sm-6"
+                    >
+                    <button
+                      class="btn btn-outline-primary "
+                      type="button"
+                    >
+                      <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="btn-group ">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="搜尋"
+                      aria-label="搜尋"
+                    >
+                    <button
+                      class="btn btn-outline-success "
+                      type="button"
+                    >
+                      <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <table class="predepositUserTable">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>日期</th>
+                  <th>時間</th>
+                  <th>存入</th>
+                  <th>使用者</th>
+                  <th>電話號碼</th>
+                  <th>剩餘通數</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td data-label="日期">2022/06/20</td>
+                  <td data-label="時間">11:30</td>
+                  <td data-label="存入">&nbsp;</td>
+                  <td data-label="使用者">孫大千</td>
+                  <td data-label="電話號碼">0912345678</td>
+                  <td data-label="剩餘通數">1499</td>
+
+                </tr>
+
+                <tr>
+                  <th>2</th>
+                  <td data-label="日期">2022/06/20</td>
+                  <td data-label="時間">8:30</td>
+                  <td data-label="存入">2,000</td>
+                  <td data-label="使用者">&nbsp;</td>
+                  <td data-label="電話號碼">&nbsp;</td>
+                  <td data-label="剩餘通數">1500</td>
+
+                </tr>
+
+
+
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+
+      </div>
+
     </div>
 
-    <!--moneyTransfer Modal -->
+  </div>
 
-    <div
-        class="modal fade"
-        id="moneyTransfer"
-        tabindex="-1"
-        aria-labelledby="moneyTransferLabel"
-        aria-hidden="true"
-    >
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5
-                        class="modal-title"
-                        id="moneyTransferLabel"
-                    >匯款資訊</h5>
-                    <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                    ></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 搜尋 -->
-
-                    <table class="predepositUserTable">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>銀行</th>
-                                <th>分行</th>
-                                <th>戶名</th>
-                                <th class="col-3">帳號</th>
-                                <th class="col-3">匯款後四碼</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+  <!-- Button trigger modal -->
 
 
-                            <tr>
-                                <th>匯款資訊</th>
-                                <td data-label="銀行">（103）台灣新光商業銀行</td>
-                                <td data-label="分行">向上分行</td>
-                                <td data-label="戶名">傑人文教科技有限公司</td>
-                                <td data-label="帳號"> 0912-10-000377-1</td>
-
-                                <td data-label="帳號後四碼">
-                                    <div class="input-group flex-nowrap">
-
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            placeholder="匯款帳號後四碼"
-                                            aria-label="Username"
-                                            aria-describedby="addon-wrapping"
-                                        >
-                                    </div>
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <th>匯款資訊</th>
-                                <td data-label="銀行">（103）台灣新光商業銀行</td>
-                                <td data-label="分行">向上分行</td>
-                                <td data-label="戶名">華奇智慧教育股份有限公司</td>
-                                <td data-label="帳號"> 0912-10-000622-2</td>
-
-                                <td data-label="帳號後四碼">
-                                    <div class="input-group flex-nowrap">
-
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            placeholder="匯款帳號後四碼"
-                                            aria-label="Username"
-                                            aria-describedby="addon-wrapping"
-                                        >
-                                    </div>
-                                </td>
-                            </tr>
-
-
-                        </tbody>
-                    </table>
-                </div>
-                <div class="modal-footer justify-content-between">
-                    <button
-                        type="button"
-                        class="btn btn-secondary ms-4"
-                        data-bs-dismiss="modal"
-                    >Close</button>
-                    <button
-                        type="button "
-                        class="btn btn-primary me-4"
-                        data-bs-dismiss="modal"
-                    >確認</button>
-
-                </div>
-            </div>
+  <!--SMSDetails Modal -->
+  <div
+    class="modal fade"
+    id="SMSDetails"
+    tabindex="-1"
+    aria-labelledby="SMSDetailsLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5
+            class="modal-title"
+            id="SMSDetailsLabel"
+          >簡訊明細</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
         </div>
-    </div>
-
-
-
-    <!--客戶訂單明細 Modal -->
-
-    <div
-        class="modal fade"
-        id="customerOrderDetails"
-        tabindex="-1"
-        aria-labelledby="customerOrderDetailsLabel"
-        aria-hidden="true"
-    >
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5
-                        class="modal-title"
-                        id="moneyTransferLabel"
-                    >訂單明細</h5>
-                    <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                    ></button>
+        <div class="modal-body">
+          <!-- 搜尋 -->
+          <div>
+            <div class="d-grid mb-3 ">
+              <div class="btn-toolbar justify-content-between">
+                <div class="btn-group ">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="搜尋"
+                    aria-label="搜尋"
+                  >
+                  <button
+                    class="btn btn-outline-success "
+                    type="button"
+                  >
+                    <ion-icon name="search-outline"></ion-icon>
+                  </button>
                 </div>
-                <div class="modal-body">
-                    <!-- 搜尋 -->
-
-                    <table class="predepositUserTable">
-                        <thead>
-                            <tr>
-                                <th class="col-1">序號</th>
-                                <th class="col-3">項目</th>
-                                <th class="col-2">方案</th>
-                                <th class="col-2">有效日期</th>
-                                <th class="col-2">單位</th>
-                                <th class="col-2">金額</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-
-
-                            <tr>
-                                <th>1</th>
-                                <td data-label="項目">網路空間使用費</td>
-                                <td data-label="方案">
-                                    <p>存放主機資料庫
-                                        <small class="badge bg-light text-dark">
-                                            100MB資料庫空間
-                                        </small>
-                                    </p>
-                                    <p>主機資料庫維護</p>
-                                </td>
-                                <td data-label="有效日期">
-                                    <p class="">2022/06/01</p>
-                                    <span class="mb-3">~</span>
-                                    <p class="">2023/05/31</p>
-                                </td>
-                                <td data-label="單位">
-                                    <span>1校/</span>$3,000
-                                </td>
-
-                                <td data-label="金額">
-                                    $3,000
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th>2</th>
-                                <td data-label="項目">簡訊費</td>
-                                <td data-label="方案">
-                                    <p>
-                                        1500通
-                                    </p>
-
-                                </td>
-                                <td data-label="有效日期">
-
-                                </td>
-                                <td data-label="單位">
-                                    1500通
-                                </td>
-
-                                <td data-label="金額">
-                                    $2,000
-                                </td>
-                            </tr>
-
-
-
-
-
-                        </tbody>
-                    </table>
-                </div>
-                <div class="modal-footer justify-content-between">
-                    <button
-                        type="button"
-                        class="btn btn-secondary ms-4"
-                        data-bs-dismiss="modal"
-                    >Close</button>
-                    <button
-                        type="button "
-                        class="btn btn-primary me-4"
-                        data-bs-dismiss="modal"
-                    >確認</button>
-
-                </div>
+              </div>
             </div>
+          </div>
+          <table class="predepositUserTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>日期</th>
+                <th>時間</th>
+                <th>項目</th>
+                <th>支出/存入</th>
+                <th>餘額</th>
+                <th>使用者</th>
+                <th>電話號碼</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td data-label="日期">2020/12/20</td>
+                <td data-label="時間">13:30</td>
+                <td data-label="項目">簡訊費</td>
+                <td data-label="支出/存入"> -$60</td>
+                <td data-label="餘額">9,820</td>
+                <td data-label="使用者">林阿三</td>
+                <td data-label="電話號碼">0912345678</td>
+              </tr>
+
+              <tr>
+                <th>2</th>
+                <td data-label="日期">2020/12/20</td>
+                <td data-label="時間">11:00</td>
+                <td data-label="項目">簡訊費</td>
+                <td data-label="支出/存入"> -$60</td>
+                <td data-label="餘額">9,880</td>
+                <td data-label="使用者">林阿三</td>
+                <td data-label="電話號碼">0912345678</td>
+              </tr>
+
+              <tr>
+                <th>3</th>
+                <td data-label="日期">2020/12/20</td>
+                <td data-label="時間">10:00</td>
+                <td data-label="項目">簡訊費</td>
+                <td data-label="支出/存入"> -$60</td>
+                <td data-label="餘額">9,940</td>
+                <td data-label="使用者">林阿三</td>
+                <td data-label="電話號碼">0912345678</td>
+
+              </tr>
+            </tbody>
+          </table>
         </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >Close</button>
+
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!--moneyTransfer Modal -->
+
+  <div
+    class="modal fade"
+    id="moneyTransfer"
+    tabindex="-1"
+    aria-labelledby="moneyTransferLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5
+            class="modal-title"
+            id="moneyTransferLabel"
+          >匯款資訊</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <!-- 搜尋 -->
+
+          <table class="predepositUserTable">
+            <thead>
+              <tr>
+                <th></th>
+                <th>銀行</th>
+                <th>分行</th>
+                <th>戶名</th>
+                <th class="col-3">帳號</th>
+                <th class="col-3">匯款後四碼</th>
+              </tr>
+            </thead>
+            <tbody>
 
 
-    <!-- Model End -->
-    <script
-        src="./js/bootstrap.bundle.min.js"
-        async
-    ></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/sidemenu.js"></script>
-    <script src="./js/preDepositManagement.js"></script>
-    <script
-        type="module"
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-        nomodule
-        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+              <tr>
+                <th>匯款資訊</th>
+                <td data-label="銀行">（103）台灣新光商業銀行</td>
+                <td data-label="分行">向上分行</td>
+                <td data-label="戶名">傑人文教科技有限公司</td>
+                <td data-label="帳號"> 0912-10-000377-1</td>
+
+                <td data-label="帳號後四碼">
+                  <div class="input-group flex-nowrap">
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="匯款帳號後四碼"
+                      aria-label="Username"
+                      aria-describedby="addon-wrapping"
+                    >
+                  </div>
+                </td>
+              </tr>
+
+
+              <tr>
+                <th>匯款資訊</th>
+                <td data-label="銀行">（103）台灣新光商業銀行</td>
+                <td data-label="分行">向上分行</td>
+                <td data-label="戶名">華奇智慧教育股份有限公司</td>
+                <td data-label="帳號"> 0912-10-000622-2</td>
+
+                <td data-label="帳號後四碼">
+                  <div class="input-group flex-nowrap">
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="匯款帳號後四碼"
+                      aria-label="Username"
+                      aria-describedby="addon-wrapping"
+                    >
+                  </div>
+                </td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button
+            type="button "
+            class="btn btn-primary me-4 w-25"
+            data-bs-dismiss="modal"
+          >確認</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--客戶訂單明細 Modal -->
+
+  <div
+    class="modal fade"
+    id="customerOrderDetails"
+    tabindex="-1"
+    aria-labelledby="customerOrderDetailsLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5
+            class="modal-title"
+            id="moneyTransferLabel"
+          >訂單明細</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <!-- 搜尋 -->
+
+          <table class="predepositUserTable">
+            <thead>
+              <tr>
+                <th class="col-1">序號</th>
+                <th class="col-3">項目</th>
+                <th class="col-2">方案</th>
+                <th class="col-2">有效日期</th>
+                <th class="col-2">單位</th>
+                <th class="col-2">金額</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+
+              <tr>
+                <th>1</th>
+                <td data-label="項目">網路空間使用費</td>
+                <td data-label="方案">
+                  <p>存放主機資料庫
+                    <small class="badge bg-light text-dark">
+                      100MB資料庫空間
+                    </small>
+                  </p>
+                  <p>主機資料庫維護</p>
+                </td>
+                <td data-label="有效日期">
+                  <p class="">2022/06/01</p>
+                  <span class="mb-3">~</span>
+                  <p class="">2023/05/31</p>
+                </td>
+                <td data-label="單位">
+                  <span>1校/</span>$3,000
+                </td>
+
+                <td data-label="金額">
+                  $3,000
+                </td>
+              </tr>
+
+              <tr>
+                <th>2</th>
+                <td data-label="項目">簡訊費</td>
+                <td data-label="方案">
+                  <p>
+                    1500通
+                  </p>
+
+                </td>
+                <td data-label="有效日期">
+
+                </td>
+                <td data-label="單位">
+                  1500通
+                </td>
+
+                <td data-label="金額">
+                  $2,000
+                </td>
+              </tr>
+
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer justify-content-center">
+
+          <button
+            type="button "
+            class="btn btn-primary me-4 w-25"
+            data-bs-dismiss="modal"
+          >確認</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Model End -->
+  <script
+    src="./js/bootstrap.bundle.min.js"
+    async
+  ></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/sidemenu.js"></script>
+  <script src="./js/preDepositManagement.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
 </body>
 
 </html>

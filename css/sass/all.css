@@ -14226,16 +14226,20 @@ tr.service-cancellation-state-tr:hover {
   color: #555;
 }
 
-.predepositUserTable {
+.predepositUserTable,
+.predepositUserTable-web {
   width: 100%;
   border-collapse: collapse;
 }
 
-.predepositUserTable thead {
+.predepositUserTable thead,
+.predepositUserTable-web thead {
   background-color: #094db1;
   color: #fff;
 }
 
+.predepositUserTable-web th,
+.predepositUserTable-web td,
 .predepositUserTable th,
 .predepositUserTable td {
   padding: 0.8rem;
@@ -14260,6 +14264,19 @@ tr.service-cancellation-state-tr:hover {
   background-color: #eee;
 }
 
+.predepositUserTable-web tbody tr {
+  color: #555;
+  border: 1px solid #dee2e6;
+}
+
+.predepositUserTable-web tbody tr th:first-child {
+  border-right: 1px solid #dee2e6;
+}
+
+.predepositUserTable-web tbody tr td {
+  border-right: 1px solid #dee2e6;
+}
+
 .btn-group-margin-right-minus-one {
   margin-right: -1px;
 }
@@ -14269,6 +14286,10 @@ tr.service-cancellation-state-tr:hover {
   display: -ms-flexbox;
   display: flex;
   gap: 0.5rem;
+}
+
+.predepositUserTable-web tbody:nth-child(odd) {
+  background-color: #eee;
 }
 
 .commodity_on thead {
