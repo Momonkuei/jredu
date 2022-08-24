@@ -24,12 +24,22 @@
 /********************************/
 /* nav-link */
 /********************************/
+
+@mixin navStyle($color) {
+  color: $color;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+$nav-font-size: 1.5rem;
 .btn-custom-green .predeposit-usage-details-user {
   margin-bottom: 0;
 }
 
 .nav-link-custom-orange {
-  color: #f76707;
+  // color: #f76707;
+  // font-size: $nav-font-size;
+  @include navStyle(#f76707);
 }
 
 .nav-link.active.nav-link-custom-orange {
@@ -37,11 +47,17 @@
 }
 
 .nav-link-custom-green {
-  color: #5c940d;
+  // color: #5c940d;
+  // font-size: $nav-font-size;
+  @include navStyle(#5c940d);
 }
 
 .nav-link.active.nav-link-custom-green {
   background: #5c940d;
+}
+
+.nav-link.nav-link-custom {
+  @include navStyle(#0d6efd);
 }
 
 .predeposit-usage-details-user {
@@ -134,4 +150,24 @@
 
 .predepositUserTable-web tbody:nth-child(odd) {
   background-color: #eee;
+}
+
+@media (max-width: 48em) {
+  .predepositUserTable-web {
+    display: table !important;
+  }
+}
+
+@media (max-width: 36em) {
+  .table-container-h1 {
+    font-size: 1.1rem;
+  }
+  .predeposit-usage-details-user {
+    font-size: 0.8rem;
+  }
+  .nav-link-custom-orange,
+  .nav-link-custom-green,
+  .nav-link.nav-link-custom {
+    font-size: 1rem;
+  }
 }

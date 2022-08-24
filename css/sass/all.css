@@ -14187,6 +14187,8 @@ tr.service-cancellation-state-tr:hover {
 
 .nav-link-custom-orange {
   color: #f76707;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .nav-link.active.nav-link-custom-orange {
@@ -14195,10 +14197,18 @@ tr.service-cancellation-state-tr:hover {
 
 .nav-link-custom-green {
   color: #5c940d;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .nav-link.active.nav-link-custom-green {
   background: #5c940d;
+}
+
+.nav-link.nav-link-custom {
+  color: #0d6efd;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .predeposit-usage-details-user {
@@ -14290,6 +14300,26 @@ tr.service-cancellation-state-tr:hover {
 
 .predepositUserTable-web tbody:nth-child(odd) {
   background-color: #eee;
+}
+
+@media (max-width: 48em) {
+  .predepositUserTable-web {
+    display: table !important;
+  }
+}
+
+@media (max-width: 36em) {
+  .table-container-h1 {
+    font-size: 1.1rem;
+  }
+  .predeposit-usage-details-user {
+    font-size: 0.8rem;
+  }
+  .nav-link-custom-orange,
+  .nav-link-custom-green,
+  .nav-link.nav-link-custom {
+    font-size: 1rem;
+  }
 }
 
 .commodity_on thead {
@@ -15842,6 +15872,22 @@ div.context-menu ul li:hover a {
 }
 
 #customerLevel option[value="3"] {
+  background-color: white;
+}
+
+#customerLevel1 {
+  background-color: rgba(240, 101, 149, 0.7);
+}
+
+#customerLevel1 option[value="1"] {
+  background-color: rgba(240, 101, 149, 0.7);
+}
+
+#customerLevel1 option[value="2"] {
+  background-color: rgba(213, 163, 46, 0.7);
+}
+
+#customerLevel1 option[value="3"] {
   background-color: white;
 }
 /*# sourceMappingURL=all.css.map */

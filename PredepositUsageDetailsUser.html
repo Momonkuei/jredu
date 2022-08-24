@@ -52,7 +52,7 @@
       </li>
       <li class="nav-item nav-delinquent-customers">
         <a
-          class="nav-link "
+          class="nav-link nav-link-custom"
           data-bs-toggle="pill"
           href="#paymentRecord"
         >
@@ -251,19 +251,19 @@
             </table>
 
             <!-- 桌機版表單 -->
-            <table class="predepositUserTable-web d-none d-md-block">
+
+            <table class="predepositUserTable-web d-none ">
               <thead>
                 <tr>
-                  <th>序號</th>
-                  <th>訂單日期</th>
-                  <th>繳費期間</th>
-
-                  <th>項目</th>
-                  <th>方案</th>
-                  <th>有效期間</th>
-                  <th>金額</th>
-                  <th>合計</th>
-                  <th>操作</th>
+                  <th class="col">序號</th>
+                  <th class="col">訂單日期</th>
+                  <th class="col">繳費期間</th>
+                  <th class="col">項目</th>
+                  <th class="col">方案</th>
+                  <th class="col">有效期間</th>
+                  <th class="col">金額</th>
+                  <th class="col">合計</th>
+                  <th class="col">操作</th>
                 </tr>
               </thead>
               <tbody>
@@ -465,6 +465,7 @@
 
             </table>
 
+
           </div>
         </div>
 
@@ -522,7 +523,10 @@
                 </div>
               </div>
             </div>
-            <table class="predepositUserTable">
+
+
+            <!-- 手機版表單 -->
+            <table class="predepositUserTable d-block d-md-none">
               <thead>
                 <tr>
                   <th>序號</th>
@@ -568,7 +572,7 @@
                     5,000
                   </td>
                   <td data-label="入款日期">
-                    2022/05/25
+                    <div>2022/05/25</div>
                   </td>
                   <td data-label="操作">
                     <div class="predepositUserTable-btngroup">
@@ -616,6 +620,192 @@
                   </td>
                 </tr>
               </tbody>
+            </table>
+
+
+            <!-- 桌機版表單 -->
+
+            <table class="predepositUserTable-web d-none ">
+              <thead>
+                <tr>
+                  <th class="col">序號</th>
+                  <th class="col">訂單日期</th>
+                  <th class="col">繳費期間</th>
+                  <th class="col">項目</th>
+                  <th class="col">方案</th>
+                  <th class="col">有效期間</th>
+                  <th class="col">金額</th>
+                  <th class="col">合計</th>
+                  <th class="col">入款日期</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    rowspan="2"
+                    data-label="序號"
+                    class="align-middle"
+                  >
+                    1
+                  </td>
+                  <td
+                    rowspan="2"
+                    data-label="訂單日期"
+                    class="align-middle"
+                  >
+                    2022/5/20
+                  </td>
+                  <td
+                    rowspan="2"
+                    data-label="繳費期間"
+                    class="align-middle"
+                  >
+                    <p class="">2022/05/21</p>
+                    <span class="mb-3">~</span>
+                    <p class="">2023/06/02</p>
+                  </td>
+
+
+                  <td
+                    class="align-middle"
+                    data-label="項目"
+                  >網路空間使用費</td>
+                  <td
+                    class="align-middle"
+                    data-label="方案"
+                  >
+                    <p>存放主機資料庫
+                      <small class="badge bg-light text-dark">
+                        100MB資料庫空間
+                      </small>
+                    </p>
+                    <p>主機資料庫維護</p>
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="有效日期"
+                  >
+                    <p class="">2022/06/01</p>
+                    <span class="mb-3">~</span>
+                    <p class="">2023/05/31</p>
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="金額"
+                  >
+                    3,000
+                  </td>
+                  <td
+                    rowspan="2"
+                    data-label="合計"
+                    class="align-middle"
+                  >
+                    5,000
+                  </td>
+                  <td
+                    rowspan="2"
+                    data-label="入款日期"
+                    class="align-middle"
+                  >
+                    <div>2022/05/25</div>
+                  </td>
+                <tr>
+                  <td
+                    class="align-middle"
+                    data-label="項目"
+                  >簡訊費</td>
+                  <td
+                    class="align-middle"
+                    data-label="方案"
+                  >
+                    <div>
+                      1500通
+                    </div>
+
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="有效日期"
+                  >
+
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="金額"
+                  >
+                    2,000
+                  </td>
+                </tr>
+
+
+
+
+
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <th
+                    class="align-middle"
+                    data-label="序號"
+                  >2</th>
+                  <td
+                    class="align-middle"
+                    data-label="訂單日期"
+                  >2022/6/01</td>
+                  <td
+                    class="align-middle"
+                    data-label="繳費期間"
+                  >
+                    <p class="">2022/05/21</p>
+                    <span class="mb-3">~</span>
+                    <p class="">2023/06/02</p>
+                  </td>
+
+
+                  <td
+                    class="align-middle"
+                    data-label="項目"
+                  >行政版系統服務費</td>
+                  <td
+                    class="align-middle"
+                    data-label="方案"
+                  >
+
+                    系統維護費
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="有效日期"
+                  >
+
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="金額"
+                  >
+                    2,000
+                  </td>
+
+
+                  <td
+                    class="align-middle"
+                    data-label="合計"
+                  >
+                    2,000
+                  </td>
+                  <td
+                    class="align-middle"
+                    data-label="入款日期"
+                  >
+                    <div>2022/05/25</div>
+                  </td>
+
+
+                </tr>
+              </tbody>
+
+
             </table>
 
           </div>
