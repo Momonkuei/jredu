@@ -14302,7 +14302,7 @@ tr.service-cancellation-state-tr:hover {
   background-color: #eee;
 }
 
-@media (max-width: 48em) {
+@media (min-width: 48em) {
   .predepositUserTable-web {
     display: table !important;
   }
